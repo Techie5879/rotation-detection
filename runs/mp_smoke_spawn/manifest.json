@@ -1,0 +1,74 @@
+{
+  "angles": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "created_at_utc": "20260206T220213Z",
+  "dataset_id": "mp_smoke_spawn",
+  "documents": [
+    {
+      "doc_id": "EW-2-22626634-4906a3cfbb",
+      "output_pdf": "train/pdfs/EW-2-22626634-4906a3cfbb.pdf",
+      "page_count": 1,
+      "pages": [
+        {
+          "height": 792,
+          "image_path": "train/pages/EW-2-22626634-4906a3cfbb_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 0,
+          "width": 612
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/EW-2-22626634/EW-2-22626634.pdf",
+      "split": "train"
+    },
+    {
+      "doc_id": "EW-2-22696801-c1adca76ae",
+      "output_pdf": "train/pdfs/EW-2-22696801-c1adca76ae.pdf",
+      "page_count": 1,
+      "pages": [
+        {
+          "height": 842,
+          "image_path": "train/pages/EW-2-22696801-c1adca76ae_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 180,
+          "width": 595
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/EW-2-22696801/EW-2-22696801.pdf",
+      "split": "train"
+    }
+  ],
+  "dpi": 72,
+  "labels_path": "labels.all.jsonl",
+  "rotate_probability": 0.7,
+  "seed": 42,
+  "split_ratios": {
+    "test": 0.1,
+    "train": 0.8,
+    "val": 0.1
+  },
+  "split_strategy": "document_page_weighted",
+  "splits": {
+    "test": {
+      "documents": 0,
+      "labels_path": "test/labels.jsonl",
+      "manifest_path": "test/manifest.json",
+      "pages": 0
+    },
+    "train": {
+      "documents": 2,
+      "labels_path": "train/labels.jsonl",
+      "manifest_path": "train/manifest.json",
+      "pages": 2
+    },
+    "val": {
+      "documents": 0,
+      "labels_path": "val/labels.jsonl",
+      "manifest_path": "val/manifest.json",
+      "pages": 0
+    }
+  }
+}

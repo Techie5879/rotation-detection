@@ -1,0 +1,16 @@
+{
+  "angles": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "created_at_utc": "20260206T220213Z",
+  "dataset_id": "mp_smoke_spawn",
+  "documents": [],
+  "dpi": 72,
+  "labels_path": "labels.jsonl",
+  "rotate_probability": 0.7,
+  "seed": 42,
+  "split": "test"
+}

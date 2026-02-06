@@ -1,0 +1,18 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/mp_smoke_spawn/dataset.log
+[dataset] run_dir=/Users/helios/rotation-detection/runs/mp_smoke_spawn
+[dataset] multiprocessing start_method=spawn workers=2 max_workers_cap=12
+[dataset] documents:   0%|          | 0/2 [00:00<?, ?doc/s]
+[dataset] pages:   0%|          | 0/2 [00:00<?, ?page/s][A[dataset] done split=train doc_id=EW-2-22696801-c1adca76ae pages=1 elapsed_s=0.1
+[dataset] progress overall=1/2 rate_pps=4.99
+[dataset] done split=train doc_id=EW-2-22626634-4906a3cfbb pages=1 elapsed_s=0.1
+[dataset] progress overall=2/2 rate_pps=9.41
+[dataset] documents: 100%|██████████| 2/2 [00:00<00:00,  8.83doc/s]
+[dataset] pages: 100%|██████████| 2/2 [00:00<00:00,  8.83page/s]
+[dataset] completed total_pages=2 elapsed_s=0.2 avg_pps=8.49
+Dataset created: /Users/helios/rotation-detection/runs/mp_smoke_spawn
+Documents: 2
+Split train: docs=2 pages=2
+Split val: docs=0 pages=0
+Split test: docs=0 pages=0
+All labels: /Users/helios/rotation-detection/runs/mp_smoke_spawn/labels.all.jsonl
+Manifest: /Users/helios/rotation-detection/runs/mp_smoke_spawn/manifest.json

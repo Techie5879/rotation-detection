@@ -1,0 +1,177 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/final_run_dataset/dataset.log
+[dataset] run_dir=/Users/helios/rotation-detection/runs/final_run_dataset
+[dataset] documents:   0%|          | 0/49 [00:00<?, ?doc/s]
+[dataset] pages:   0%|          | 0/32667 [00:00<?, ?page/s][A[dataset] start split=train doc_id=6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d target_pages=21985
+
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 0/21985 [00:00<?, ?page/s][A[A
+[dataset] pages:   0%|          | 4/32667 [00:00<1:23:57,  6.48page/s][A
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 4/21985 [00:00<56:27,  6.49page/s][A[A
+[dataset] pages:   0%|          | 8/32667 [00:01<1:22:08,  6.63page/s][A
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 8/21985 [00:01<55:15,  6.63page/s][A[A
+[dataset] pages:   0%|          | 12/32667 [00:01<1:18:11,  6.96page/s][A
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 12/21985 [00:01<52:36,  6.96page/s][A[A
+[dataset] pages:   0%|          | 16/32667 [00:02<1:15:21,  7.22page/s][A
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 16/21985 [00:02<50:41,  7.22page/s][A[A
+[dataset] pages:   0%|          | 20/32667 [00:02<1:16:58,  7.07page/s][A
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 20/21985 [00:02<51:47,  7.07page/s][A[A
+[dataset] pages:   0%|          | 24/32667 [00:03<1:20:16,  6.78page/s][A
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 24/21985 [00:03<54:00,  6.78page/s][A[A
+[dataset] pages:   0%|          | 28/32667 [00:04<1:19:19,  6.86page/s][A
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 28/21985 [00:04<53:21,  6.86page/s][A[A
+[dataset] pages:   0%|          | 32/32667 [00:04<1:17:24,  7.03page/s][A
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 32/21985 [00:04<52:03,  7.03page/s][A[A
+[dataset] pages:   0%|          | 36/32667 [00:05<1:19:01,  6.88page/s][A
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 36/21985 [00:05<53:09,  6.88page/s][A[A
+[dataset] pages:   0%|          | 40/32667 [00:05<1:17:27,  7.02page/s][A
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 40/21985 [00:05<52:05,  7.02page/s][A[A
+[dataset] pages:   0%|          | 45/32667 [00:06<1:13:56,  7.35page/s][A
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 45/21985 [00:06<49:43,  7.35page/s][A[A
+[dataset] pages:   0%|          | 49/32667 [00:06<1:14:01,  7.34page/s][A
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 49/21985 [00:06<49:47,  7.34page/s][A[A
+[dataset] pages:   0%|          | 53/32667 [00:07<1:15:14,  7.22page/s][A
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 53/21985 [00:07<50:35,  7.22page/s][A[A
+[dataset] pages:   0%|          | 57/32667 [00:08<1:14:01,  7.34page/s][A
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 57/21985 [00:08<49:46,  7.34page/s][A[A
+[dataset] pages:   0%|          | 62/32667 [00:08<1:10:13,  7.74page/s][A
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 62/21985 [00:08<47:12,  7.74page/s][A[A
+
+                                                                                        [A[A[dataset] documents:   0%|          | 0/49 [00:08<?, ?doc/s]
+[dataset] pages:   0%|          | 62/32667 [00:08<1:16:23,  7.11page/s]
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/final_run_dataset/dataset.log
+[dataset] run_dir=/Users/helios/rotation-detection/runs/final_run_dataset
+[dataset] multiprocessing start_method=spawn workers=12 max_workers_cap=12
+[dataset] documents:   0%|          | 0/49 [00:00<?, ?doc/s]
+[dataset] pages:   0%|          | 0/32667 [00:00<?, ?page/s][A[dataset] documents:   2%|▏         | 1/49 [00:00<00:24,  1.93doc/s]
+[dataset] pages:   0%|          | 4/32667 [00:00<1:10:40,  7.70page/s][A[dataset] done split=train doc_id=EW-2-22696428-1213547-2-f6bd932709 pages=4 elapsed_s=0.4
+[dataset] documents:   4%|▍         | 2/49 [00:04<02:10,  2.78s/doc]
+[dataset] pages:   0%|          | 53/32667 [00:04<49:37, 10.96page/s] [A[dataset] done split=val doc_id=EW-2-22696428-1213547-1-851faf7efd pages=49 elapsed_s=4.7
+[dataset] documents:   6%|▌         | 3/49 [00:06<01:47,  2.33s/doc]
+[dataset] pages:   0%|          | 105/32667 [00:06<31:19, 17.32page/s][A[dataset] done split=val doc_id=EW-2-22697100-11c88f020b pages=52 elapsed_s=6.5
+[dataset] documents:   8%|▊         | 4/49 [00:08<01:40,  2.23s/doc]
+[dataset] pages:   1%|          | 196/32667 [00:08<19:58, 27.08page/s][A[dataset] done split=train doc_id=EW-2-22744759-1212266-1-d8f40c6802 pages=91 elapsed_s=8.6
+[dataset] documents:  10%|█         | 5/49 [00:19<03:46,  5.15s/doc]
+[dataset] pages:   1%|          | 341/32667 [00:19<30:34, 17.63page/s][A[dataset] done split=train doc_id=EW-2-22749098-1210016-1-7ef775b29d pages=145 elapsed_s=14.2
+[dataset] progress overall=341/32667 rate_pps=17.85
+[dataset] documents:  12%|█▏        | 6/49 [00:25<04:07,  5.75s/doc]
+[dataset] pages:   2%|▏         | 516/32667 [00:25<25:47, 20.77page/s][A[dataset] done split=train doc_id=EW-2-22714892-06e937c20d pages=175 elapsed_s=25.9
+[dataset] progress overall=516/32667 rate_pps=19.83
+[dataset] documents:  14%|█▍        | 7/49 [00:26<02:56,  4.19s/doc]
+[dataset] pages:   2%|▏         | 617/32667 [00:26<19:45, 27.04page/s][A[dataset] done split=train doc_id=EW-2-22734634-1209455-2-37425b0857 pages=101 elapsed_s=26.8
+[dataset] progress overall=617/32667 rate_pps=22.85
+[dataset] documents:  16%|█▋        | 8/49 [00:32<03:04,  4.49s/doc]
+[dataset] pages:   3%|▎         | 910/32667 [00:32<13:56, 37.97page/s][A[dataset] done split=train doc_id=EW-2-22697411-e1a0161a7a pages=293 elapsed_s=32.0
+[dataset] progress overall=910/32667 rate_pps=28.32
+[dataset] documents:  18%|█▊        | 9/49 [00:33<02:14,  3.37s/doc][dataset] done split=val doc_id=EW-2-22756050-1214632-1-e6b67e0a69 pages=9 elapsed_s=0.9
+[dataset] documents:  20%|██        | 10/49 [00:34<01:53,  2.90s/doc]
+[dataset] pages:   4%|▎         | 1187/32667 [00:34<10:09, 51.63page/s][A[dataset] done split=train doc_id=EW-2-22749098-1210016-2-bc0f64f4b3 pages=268 elapsed_s=28.2
+[dataset] progress overall=1187/32667 rate_pps=34.02
+[dataset] documents:  22%|██▏       | 11/49 [00:36<01:38,  2.58s/doc]
+[dataset] pages:   4%|▍         | 1226/32667 [00:36<11:18, 46.31page/s][A[dataset] done split=train doc_id=EW-2-22756050-1214632-2-b6f4dae6e0 pages=39 elapsed_s=3.7
+[dataset] progress overall=1226/32667 rate_pps=33.36
+[dataset] documents:  24%|██▍       | 12/49 [00:40<01:47,  2.90s/doc]
+[dataset] pages:   4%|▍         | 1361/32667 [00:40<12:02, 43.34page/s][A[dataset] done split=train doc_id=EW-2-22749958-1210130-2-76e9bb1536 pages=135 elapsed_s=21.3
+[dataset] documents:  27%|██▋       | 13/49 [00:43<01:50,  3.08s/doc]
+[dataset] pages:   4%|▍         | 1458/32667 [00:43<13:29, 38.53page/s][A[dataset] done split=train doc_id=EW-2-22749958-1210130-1-1452392dd3 pages=97 elapsed_s=35.1
+[dataset] progress overall=1458/32667 rate_pps=33.24
+[dataset] documents:  29%|██▊       | 14/49 [00:46<01:42,  2.92s/doc]
+[dataset] pages:   6%|▌         | 1916/32667 [00:46<07:00, 73.05page/s][A[dataset] done split=train doc_id=EW-2-22696801-705c326024 pages=458 elapsed_s=46.3
+[dataset] progress overall=1916/32667 rate_pps=41.29
+[dataset] documents:  31%|███       | 15/49 [00:47<01:18,  2.30s/doc]
+[dataset] pages:   6%|▌         | 1986/32667 [00:47<06:56, 73.68page/s][A[dataset] done split=train doc_id=EW-2-22762720-1211783-1-0a483f586b pages=70 elapsed_s=6.9
+[dataset] progress overall=1986/32667 rate_pps=41.99
+[dataset] documents:  33%|███▎      | 16/49 [00:50<01:28,  2.67s/doc][dataset] done split=val doc_id=EW-2-22761468-1215221-1-629385f3e2 pages=29 elapsed_s=15.9
+[dataset] progress overall=2015/32667 rate_pps=39.66
+
+[dataset] pages:   6%|▋         | 2090/32667 [00:51<09:12, 55.37page/s][A[dataset] done split=train doc_id=EW-2-22762720-1211783-2-4856d68dd3 pages=75 elapsed_s=7.2
+[dataset] documents:  37%|███▋      | 18/49 [00:52<00:54,  1.76s/doc]
+[dataset] pages:   7%|▋         | 2264/32667 [00:52<07:18, 69.40page/s][A[dataset] done split=train doc_id=EW-2-22734634-1209455-1-86a491ace2 pages=174 elapsed_s=52.1
+[dataset] progress overall=2264/32667 rate_pps=43.35
+[dataset] documents:  39%|███▉      | 19/49 [00:53<00:50,  1.69s/doc][dataset] done split=test doc_id=EW-2-22765187-1212241-2-431c70469e pages=22 elapsed_s=2.6
+[dataset] documents:  41%|████      | 20/49 [00:59<01:23,  2.88s/doc]
+[dataset] pages:   7%|▋         | 2368/32667 [00:59<13:45, 36.70page/s][A[dataset] done split=train doc_id=EW-2-22765187-1212241-1-30bcaf7bba pages=82 elapsed_s=9.1
+[dataset] documents:  43%|████▎     | 21/49 [01:01<01:09,  2.48s/doc]
+[dataset] pages:   8%|▊         | 2499/32667 [01:01<11:22, 44.19page/s][A[dataset] done split=train doc_id=EW-2-22765157-1213045-2-1233915842 pages=131 elapsed_s=14.0
+[dataset] progress overall=2499/32667 rate_pps=40.74
+[dataset] done split=test doc_id=EW-2-22771512-1211938-2-3ac2f8cdf8 pages=49 elapsed_s=7.7
+[dataset] documents:  47%|████▋     | 23/49 [01:07<01:11,  2.75s/doc]
+[dataset] pages:   8%|▊         | 2608/32667 [01:07<15:36, 32.10page/s][A[dataset] done split=train doc_id=EW-2-22772688-1214689-1-5b54ca5e16 pages=60 elapsed_s=7.6
+[dataset] progress overall=2608/32667 rate_pps=38.62
+[dataset] documents:  49%|████▉     | 24/49 [01:10<01:09,  2.76s/doc]
+[dataset] pages:   8%|▊         | 2710/32667 [01:10<15:05, 33.08page/s][A[dataset] done split=train doc_id=EW-2-22772688-1214689-2-11c3317139 pages=102 elapsed_s=9.0
+[dataset] documents:  51%|█████     | 25/49 [01:15<01:23,  3.47s/doc]
+[dataset] pages:   9%|▊         | 2815/32667 [01:15<18:04, 27.53page/s][A[dataset] done split=train doc_id=EW-2-22750671-1213654-1-01f584dc58 pages=105 elapsed_s=49.9
+[dataset] progress overall=2815/32667 rate_pps=37.09
+[dataset] documents:  53%|█████▎    | 26/49 [01:16<01:04,  2.80s/doc]
+[dataset] pages:   9%|▉         | 2881/32667 [01:16<15:53, 31.23page/s][A[dataset] done split=train doc_id=EW-2-22777487-1216213-1-d1cce6f3b0 pages=66 elapsed_s=6.5
+[dataset] documents:  55%|█████▌    | 27/49 [01:17<00:49,  2.23s/doc]
+[dataset] pages:   9%|▉         | 2952/32667 [01:17<13:25, 36.91page/s][A[dataset] done split=train doc_id=EW-2-22765157-1213045-1-ebf365858e pages=71 elapsed_s=31.2
+[dataset] documents:  57%|█████▋    | 28/49 [01:18<00:37,  1.81s/doc]
+[dataset] pages:   9%|▉         | 3025/32667 [01:18<11:13, 43.98page/s][A[dataset] done split=train doc_id=EW-2-22761468-1215221-2-662656a616 pages=73 elapsed_s=41.6
+[dataset] progress overall=3025/32667 rate_pps=38.63
+[dataset] documents:  59%|█████▉    | 29/49 [01:18<00:29,  1.47s/doc]
+[dataset] pages:   9%|▉         | 3076/32667 [01:18<10:11, 48.40page/s][A[dataset] done split=train doc_id=EW-2-22774058-1216031-1-ad9cd6f12f pages=51 elapsed_s=17.5
+[dataset] documents:  61%|██████    | 30/49 [01:21<00:34,  1.79s/doc]
+[dataset] pages:  10%|▉         | 3141/32667 [01:21<12:41, 38.77page/s][A[dataset] done split=train doc_id=EW-2-22771512-1211938-1-f02ebffa0c pages=65 elapsed_s=29.3
+[dataset] documents:  63%|██████▎   | 31/49 [01:24<00:38,  2.14s/doc]
+[dataset] pages:  10%|▉         | 3238/32667 [01:24<13:29, 36.36page/s][A[dataset] done split=train doc_id=EW-2-22777487-1216213-2-6a7894abea pages=97 elapsed_s=8.6
+[dataset] progress overall=3238/32667 rate_pps=38.33
+[dataset] documents:  65%|██████▌   | 32/49 [01:27<00:38,  2.27s/doc]
+[dataset] pages:  10%|▉         | 3265/32667 [01:27<17:42, 27.67page/s][A[dataset] done split=train doc_id=EW-2-22784089-1215142-2-769ec9e886 pages=27 elapsed_s=2.6
+[dataset] documents:  67%|██████▋   | 33/49 [01:29<00:39,  2.47s/doc]
+[dataset] pages:  13%|█▎        | 4227/32667 [01:29<03:33, 133.11page/s][A[dataset] done split=train doc_id=EW-2-22626634-bd3f678897 pages=962 elapsed_s=89.9
+[dataset] progress overall=4227/32667 rate_pps=46.96
+[dataset] documents:  69%|██████▉   | 34/49 [01:30<00:29,  1.95s/doc]
+[dataset] pages:  13%|█▎        | 4321/32667 [01:30<03:33, 132.48page/s][A[dataset] done split=train doc_id=EW-2-22784089-1215142-1-a12f5b178d pages=94 elapsed_s=9.2
+[dataset] progress overall=4321/32667 rate_pps=47.62
+[dataset] documents:  71%|███████▏  | 35/49 [01:31<00:24,  1.74s/doc]
+[dataset] pages:  15%|█▍        | 4825/32667 [01:31<02:26, 190.59page/s][A[dataset] done split=train doc_id=EW-2-22697155-5c367b1d0d pages=504 elapsed_s=91.8
+[dataset] progress overall=4825/32667 rate_pps=52.45
+[dataset] documents:  73%|███████▎  | 36/49 [01:33<00:20,  1.60s/doc][dataset] done split=test doc_id=EW-2-22783818-1214336-1-470830634d pages=59 elapsed_s=14.9
+[dataset] progress overall=4884/32667 rate_pps=52.38
+[dataset] done split=test doc_id=EW-20-22771609-1213135-1-122f5960c6 pages=38 elapsed_s=3.0
+[dataset] progress overall=4922/32667 rate_pps=52.53
+[dataset] documents:  78%|███████▊  | 38/49 [01:36<00:18,  1.72s/doc]
+[dataset] pages:  15%|█▌        | 5058/32667 [01:36<04:07, 111.45page/s][A[dataset] done split=train doc_id=EW-2-22783818-1214336-2-f1ca841e7c pages=136 elapsed_s=18.1
+[dataset] progress overall=5058/32667 rate_pps=52.15
+[dataset] documents:  80%|███████▉  | 39/49 [01:46<00:36,  3.69s/doc]
+[dataset] pages:  16%|█▌        | 5218/32667 [01:46<08:25, 54.26page/s] [A[dataset] done split=train doc_id=EW-2-22750671-1213654-2-e5ab33af9e pages=160 elapsed_s=79.6
+[dataset] progress overall=5218/32667 rate_pps=48.93
+[dataset] documents:  82%|████████▏ | 40/49 [01:47<00:26,  2.90s/doc]
+[dataset] pages:  16%|█▋        | 5369/32667 [01:47<07:07, 63.90page/s][A[dataset] done split=train doc_id=BI-Serrano-medical-records-_p0001-0060_p-41984ec981 pages=151 elapsed_s=13.6
+[dataset] progress overall=5369/32667 rate_pps=50.03
+[dataset] documents:  84%|████████▎ | 41/49 [01:48<00:20,  2.54s/doc]
+[dataset] pages:  17%|█▋        | 5517/32667 [01:48<06:35, 68.73page/s][A[dataset] done split=train doc_id=EW-20-22771609-1213135-2-376e8a0009 pages=148 elapsed_s=16.9
+[dataset] progress overall=5517/32667 rate_pps=50.67
+
+[dataset] pages:  17%|█▋        | 5517/32667 [02:00<06:35, 68.73page/s][A[dataset] documents:  86%|████████▌ | 42/49 [02:18<01:11, 10.24s/doc]
+[dataset] pages:  17%|█▋        | 5665/32667 [02:18<26:41, 16.86page/s][A[dataset] done split=train doc_id=EW-2-22774058-1216031-2-6d0e5d1210 pages=148 elapsed_s=71.4
+[dataset] progress overall=5665/32667 rate_pps=40.77
+
+[dataset] pages:  17%|█▋        | 5665/32667 [02:30<26:41, 16.86page/s][A[dataset] documents:  88%|████████▊ | 43/49 [02:30<01:03, 10.64s/doc]
+[dataset] pages:  18%|█▊        | 5815/32667 [02:30<28:37, 15.63page/s][A[dataset] done split=train doc_id=EW-2-22781816-1212678-1-cb668b7735 pages=150 elapsed_s=73.8
+[dataset] progress overall=5815/32667 rate_pps=38.62
+[dataset] documents:  90%|████████▉ | 44/49 [02:32<00:41,  8.23s/doc]
+[dataset] pages:  19%|█▊        | 6053/32667 [02:32<19:34, 22.67page/s][A[dataset] done split=train doc_id=EW-2-22781816-1212678-2-637b148bcc pages=238 elapsed_s=75.4
+[dataset] progress overall=6053/32667 rate_pps=39.58
+
+[dataset] pages:  19%|█▊        | 6053/32667 [02:50<19:34, 22.67page/s][A[dataset] documents:  92%|█████████▏| 45/49 [03:24<01:23, 20.80s/doc]
+[dataset] pages:  20%|██        | 6555/32667 [03:24<32:24, 13.43page/s][A[dataset] done split=train doc_id=EW-2-22784200-1215157-1-ce3d96da77 pages=502 elapsed_s=117.0
+[dataset] progress overall=6555/32667 rate_pps=32.12
+
+[dataset] pages:  20%|██        | 6555/32667 [03:40<32:24, 13.43page/s][A

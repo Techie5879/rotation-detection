@@ -14,6 +14,7 @@ This repo now contains an end-to-end PDF orientation pipeline that avoids both o
   - Verifies output pages have neutral `/Rotate` metadata.
   - Saves explicit split folders: `train/`, `val/`, `test/` with `pages/`, `pdfs/`, `labels.jsonl`, `manifest.json`.
   - Saves root `manifest.json` and `labels.all.jsonl` index.
+  - Uses multiprocessing with `spawn` and up to 12 workers.
 - Orientation detectors:
   - `heuristic`: classical CV baseline (fast, weaker on hard 180 cases).
   - `torch`: trainable 4-class CNN (recommended for robust 180 handling).
@@ -44,7 +45,7 @@ uv run main.py make-dataset \
   --dataset-name run_seed42 \
   --seed 42 \
   --angles 0 90 180 270 \
-  --rotate-probability 1.0 \
+  --rotate-probability 0.7 \
   --train-ratio 0.8 \
   --val-ratio 0.1 \
   --test-ratio 0.1 \
@@ -167,7 +168,7 @@ uv run python scripts/ingest_gcs_zips.py \
 Prepare dataset:
 
 ```bash
-uv run main.py make-dataset --input-dir test_pdfs --output-root runs --dataset-name final_run_dataset --seed 42 --dpi 96 --rotate-probability 1.0 --angles 0 90 180 270 --train-ratio 0.8 --val-ratio 0.1 --test-ratio 0.1 --log-every-pages 200
+uv run main.py make-dataset --input-dir test_pdfs --output-root runs --dataset-name final_run_dataset --seed 42 --dpi 96 --rotate-probability 0.7 --angles 0 90 180 270 --train-ratio 0.8 --val-ratio 0.1 --test-ratio 0.1 --log-every-pages 200
 ```
 
 Train model:

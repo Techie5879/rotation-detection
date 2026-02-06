@@ -1,0 +1,49 @@
+{
+  "angles": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "created_at_utc": "20260206T220213Z",
+  "dataset_id": "mp_smoke_spawn",
+  "documents": [
+    {
+      "doc_id": "EW-2-22626634-4906a3cfbb",
+      "output_pdf": "pdfs/EW-2-22626634-4906a3cfbb.pdf",
+      "page_count": 1,
+      "pages": [
+        {
+          "height": 792,
+          "image_path": "pages/EW-2-22626634-4906a3cfbb_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 0,
+          "width": 612
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/EW-2-22626634/EW-2-22626634.pdf",
+      "split": "train"
+    },
+    {
+      "doc_id": "EW-2-22696801-c1adca76ae",
+      "output_pdf": "pdfs/EW-2-22696801-c1adca76ae.pdf",
+      "page_count": 1,
+      "pages": [
+        {
+          "height": 842,
+          "image_path": "pages/EW-2-22696801-c1adca76ae_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 180,
+          "width": 595
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/EW-2-22696801/EW-2-22696801.pdf",
+      "split": "train"
+    }
+  ],
+  "dpi": 72,
+  "labels_path": "labels.jsonl",
+  "rotate_probability": 0.7,
+  "seed": 42,
+  "split": "train"
+}
