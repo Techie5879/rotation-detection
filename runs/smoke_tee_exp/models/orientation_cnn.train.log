@@ -1,0 +1,3 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/smoke_tee_exp/models/orientation_cnn.train.log
+[train] checkpoint=/Users/helios/rotation-detection/runs/smoke_tee_exp/models/orientation_cnn.pt
+[train] rows train=7 val=1

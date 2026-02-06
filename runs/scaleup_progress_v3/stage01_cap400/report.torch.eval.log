@@ -1,0 +1,5 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage01_cap400/report.torch.eval.log
+[eval] manifest=/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage01_cap400/dataset/test/manifest.json
+[eval] predictions=/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage01_cap400/predictions.torch.jsonl
+Evaluation report: /Users/helios/rotation-detection/runs/scaleup_progress_v3/stage01_cap400/report.torch.json
+accuracy=0.9175 found=400/400 correct=367

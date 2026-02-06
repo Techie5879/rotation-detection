@@ -1,0 +1,45 @@
+{
+  "best_val_accuracy": 0.46,
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/models/orientation_cnn.pt",
+  "data_source": {
+    "mode": "split_manifest_labels",
+    "train_labels_path": "/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/dataset/train/labels.jsonl",
+    "train_split": "train",
+    "val_labels_path": "/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/dataset/val/labels.jsonl",
+    "val_split": "val"
+  },
+  "device": "mps",
+  "history": [
+    {
+      "epoch": 1.0,
+      "train_accuracy": 0.5718866916087654,
+      "train_loss": 1.0576512407390017,
+      "val_accuracy": 0.375,
+      "val_loss": 1.3508612775802613
+    },
+    {
+      "epoch": 2.0,
+      "train_accuracy": 0.8081239978621059,
+      "train_loss": 0.7661447767456988,
+      "val_accuracy": 0.46,
+      "val_loss": 1.2239219951629638
+    },
+    {
+      "epoch": 3.0,
+      "train_accuracy": 0.9037947621592731,
+      "train_loss": 0.5763382071291681,
+      "val_accuracy": 0.4425,
+      "val_loss": 1.2196380710601806
+    },
+    {
+      "epoch": 4.0,
+      "train_accuracy": 0.9337252805986104,
+      "train_loss": 0.45957542448550986,
+      "val_accuracy": 0.45,
+      "val_loss": 1.2092456340789794
+    }
+  ],
+  "train_rows": 1871,
+  "used_explicit_val_split": true,
+  "val_rows": 400
+}

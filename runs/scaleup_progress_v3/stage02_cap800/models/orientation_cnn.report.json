@@ -1,0 +1,38 @@
+{
+  "best_val_accuracy": 0.88125,
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/models/orientation_cnn.pt",
+  "data_source": {
+    "mode": "split_manifest_labels",
+    "train_labels_path": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/dataset/train/labels.jsonl",
+    "train_split": "train",
+    "val_labels_path": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/dataset/val/labels.jsonl",
+    "val_split": "val"
+  },
+  "device": "mps",
+  "history": [
+    {
+      "epoch": 1.0,
+      "train_accuracy": 0.5326757090012331,
+      "train_loss": 1.0988847546453981,
+      "val_accuracy": 0.38625,
+      "val_loss": 1.2907158756256103
+    },
+    {
+      "epoch": 2.0,
+      "train_accuracy": 0.7710645293875873,
+      "train_loss": 0.8124027438875191,
+      "val_accuracy": 0.79875,
+      "val_loss": 0.8288487815856933
+    },
+    {
+      "epoch": 3.0,
+      "train_accuracy": 0.8680641183723797,
+      "train_loss": 0.5948351229898144,
+      "val_accuracy": 0.88125,
+      "val_loss": 0.564485273361206
+    }
+  ],
+  "train_rows": 2433,
+  "used_explicit_val_split": true,
+  "val_rows": 800
+}

@@ -1,0 +1,5 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/report.heuristic.eval.log
+[eval] manifest=/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/dataset/test/manifest.json
+[eval] predictions=/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/predictions.heuristic.jsonl
+Evaluation report: /Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/report.heuristic.json
+accuracy=0.4875 found=800/800 correct=390

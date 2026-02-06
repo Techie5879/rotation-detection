@@ -1,0 +1,40 @@
+{
+  "angles": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "created_at_utc": "20260206T210004Z",
+  "dataset_id": "split_stability4_cap2",
+  "documents": [
+    {
+      "doc_id": "EW-2-22626634-bd3f678897",
+      "output_pdf": "pdfs/EW-2-22626634-bd3f678897.pdf",
+      "page_count": 2,
+      "pages": [
+        {
+          "height": 792,
+          "image_path": "pages/EW-2-22626634-bd3f678897_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 0,
+          "width": 612
+        },
+        {
+          "height": 792,
+          "image_path": "pages/EW-2-22626634-bd3f678897_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 0,
+          "width": 612
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/EW-2-22626634/EW-2-22626634.pdf",
+      "split": "test"
+    }
+  ],
+  "dpi": 72,
+  "labels_path": "labels.jsonl",
+  "rotate_probability": 1.0,
+  "seed": 42,
+  "split": "test"
+}

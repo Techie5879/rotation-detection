@@ -1,0 +1,9 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage02_cap800/dataset/test/saved_model_eval_20260206T212701Z/run.log
+[saved-model-test] checkpoint=/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage02_cap800/models/orientation_cnn.pt
+[saved-model-test] split_dir=/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage02_cap800/dataset/test
+[saved-model-test] labels=/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage02_cap800/dataset/test/labels.jsonl
+[saved-model-test] progress batch=5/7 pages=640/800 acc=0.9938 rate_pps=170.62
+[saved-model-test] progress batch=7/7 pages=800/800 acc=0.9925 rate_pps=169.30
+[saved-model-test] complete accuracy=0.9925
+[saved-model-test] report=/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage02_cap800/dataset/test/saved_model_eval_20260206T212701Z/report.json
+[saved-model-test] predictions=/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage02_cap800/dataset/test/saved_model_eval_20260206T212701Z/predictions.jsonl

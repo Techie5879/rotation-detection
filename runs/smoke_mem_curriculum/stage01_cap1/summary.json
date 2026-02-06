@@ -1,0 +1,13 @@
+{
+  "dataset_dir": "/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset",
+  "experiment_dir": "/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1",
+  "heuristic_predictions": null,
+  "heuristic_report": null,
+  "manifest": "/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/manifest.json",
+  "run_heuristic": false,
+  "run_log": "/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/run.log",
+  "test_manifest": "/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/test/manifest.json",
+  "torch_checkpoint": "/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/models/orientation_cnn.pt",
+  "torch_predictions": "/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/predictions.torch.jsonl",
+  "torch_report": "/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/report.torch.json"
+}

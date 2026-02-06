@@ -1,0 +1,592 @@
+{
+  "angles": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "created_at_utc": "20260206T194402Z",
+  "dataset_id": "benchmark_seed99_p8_eval",
+  "documents": [
+    {
+      "doc_id": "6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d",
+      "output_pdf": "pdfs/6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d.pdf",
+      "page_count": 8,
+      "pages": [
+        {
+          "height": 992,
+          "image_path": "pages/6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 90,
+          "width": 1404
+        },
+        {
+          "height": 992,
+          "image_path": "pages/6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 90,
+          "width": 1404
+        },
+        {
+          "height": 1404,
+          "image_path": "pages/6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 0,
+          "width": 992
+        },
+        {
+          "height": 992,
+          "image_path": "pages/6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 270,
+          "width": 1404
+        },
+        {
+          "height": 1404,
+          "image_path": "pages/6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 0,
+          "width": 992
+        },
+        {
+          "height": 992,
+          "image_path": "pages/6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 270,
+          "width": 1404
+        },
+        {
+          "height": 992,
+          "image_path": "pages/6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 90,
+          "width": 1404
+        },
+        {
+          "height": 1404,
+          "image_path": "pages/6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 180,
+          "width": 992
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/6c199e86-deaf-48f0-ab1a-c21b10a17c3e/6c199e86-deaf-48f0-ab1a-c21b10a17c3e.pdf"
+    },
+    {
+      "doc_id": "EW-2-22626634-bd3f678897",
+      "output_pdf": "pdfs/EW-2-22626634-bd3f678897.pdf",
+      "page_count": 8,
+      "pages": [
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22626634-bd3f678897_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 90,
+          "width": 1320
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22626634-bd3f678897_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 90,
+          "width": 1320
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/EW-2-22626634-bd3f678897_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 180,
+          "width": 1020
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/EW-2-22626634-bd3f678897_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 0,
+          "width": 1020
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22626634-bd3f678897_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 270,
+          "width": 1320
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/EW-2-22626634-bd3f678897_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 0,
+          "width": 1020
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/EW-2-22626634-bd3f678897_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 180,
+          "width": 1020
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/EW-2-22626634-bd3f678897_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 0,
+          "width": 1020
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/EW-2-22626634/EW-2-22626634.pdf"
+    },
+    {
+      "doc_id": "EW-2-22696801-705c326024",
+      "output_pdf": "pdfs/EW-2-22696801-705c326024.pdf",
+      "page_count": 8,
+      "pages": [
+        {
+          "height": 992,
+          "image_path": "pages/EW-2-22696801-705c326024_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 90,
+          "width": 1404
+        },
+        {
+          "height": 1404,
+          "image_path": "pages/EW-2-22696801-705c326024_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 0,
+          "width": 992
+        },
+        {
+          "height": 1011,
+          "image_path": "pages/EW-2-22696801-705c326024_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 90,
+          "width": 1243
+        },
+        {
+          "height": 1011,
+          "image_path": "pages/EW-2-22696801-705c326024_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 90,
+          "width": 1243
+        },
+        {
+          "height": 1010,
+          "image_path": "pages/EW-2-22696801-705c326024_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 270,
+          "width": 1199
+        },
+        {
+          "height": 1015,
+          "image_path": "pages/EW-2-22696801-705c326024_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 90,
+          "width": 1255
+        },
+        {
+          "height": 992,
+          "image_path": "pages/EW-2-22696801-705c326024_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 90,
+          "width": 1404
+        },
+        {
+          "height": 1404,
+          "image_path": "pages/EW-2-22696801-705c326024_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 0,
+          "width": 992
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/EW-2-22696801/EW-2-22696801.pdf"
+    },
+    {
+      "doc_id": "EW-2-22697100-11c88f020b",
+      "output_pdf": "pdfs/EW-2-22697100-11c88f020b.pdf",
+      "page_count": 8,
+      "pages": [
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22697100-11c88f020b_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 270,
+          "width": 1320
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22697100-11c88f020b_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 270,
+          "width": 1320
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22697100-11c88f020b_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 90,
+          "width": 1320
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/EW-2-22697100-11c88f020b_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 0,
+          "width": 1020
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22697100-11c88f020b_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 90,
+          "width": 1320
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22697100-11c88f020b_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 90,
+          "width": 1320
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/EW-2-22697100-11c88f020b_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 0,
+          "width": 1020
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22697100-11c88f020b_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 270,
+          "width": 1320
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/EW-2-22697100/EW-2-22697100.pdf"
+    },
+    {
+      "doc_id": "EW-2-22697155-5c367b1d0d",
+      "output_pdf": "pdfs/EW-2-22697155-5c367b1d0d.pdf",
+      "page_count": 8,
+      "pages": [
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22697155-5c367b1d0d_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 270,
+          "width": 1320
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22697155-5c367b1d0d_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 90,
+          "width": 1320
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22697155-5c367b1d0d_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 270,
+          "width": 1320
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22697155-5c367b1d0d_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 90,
+          "width": 1320
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22697155-5c367b1d0d_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 90,
+          "width": 1320
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22697155-5c367b1d0d_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 270,
+          "width": 1320
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/EW-2-22697155-5c367b1d0d_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 0,
+          "width": 1020
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22697155-5c367b1d0d_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 90,
+          "width": 1320
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/EW-2-22697155/EW-2-22697155.pdf"
+    },
+    {
+      "doc_id": "EW-2-22697411-e1a0161a7a",
+      "output_pdf": "pdfs/EW-2-22697411-e1a0161a7a.pdf",
+      "page_count": 8,
+      "pages": [
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22697411-e1a0161a7a_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 270,
+          "width": 1320
+        },
+        {
+          "height": 1024,
+          "image_path": "pages/EW-2-22697411-e1a0161a7a_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 90,
+          "width": 1323
+        },
+        {
+          "height": 1324,
+          "image_path": "pages/EW-2-22697411-e1a0161a7a_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 180,
+          "width": 1025
+        },
+        {
+          "height": 1038,
+          "image_path": "pages/EW-2-22697411-e1a0161a7a_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 90,
+          "width": 1334
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/EW-2-22697411-e1a0161a7a_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 0,
+          "width": 1020
+        },
+        {
+          "height": 549,
+          "image_path": "pages/EW-2-22697411-e1a0161a7a_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 180,
+          "width": 1176
+        },
+        {
+          "height": 1335,
+          "image_path": "pages/EW-2-22697411-e1a0161a7a_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 0,
+          "width": 1039
+        },
+        {
+          "height": 1328,
+          "image_path": "pages/EW-2-22697411-e1a0161a7a_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 0,
+          "width": 1030
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/EW-2-22697411/EW-2-22697411.pdf"
+    },
+    {
+      "doc_id": "EW-2-22714892-06e937c20d",
+      "output_pdf": "pdfs/EW-2-22714892-06e937c20d.pdf",
+      "page_count": 8,
+      "pages": [
+        {
+          "height": 1320,
+          "image_path": "pages/EW-2-22714892-06e937c20d_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 0,
+          "width": 1025
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22714892-06e937c20d_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 270,
+          "width": 1320
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22714892-06e937c20d_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 270,
+          "width": 1320
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/EW-2-22714892-06e937c20d_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 180,
+          "width": 1020
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22714892-06e937c20d_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 90,
+          "width": 1320
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/EW-2-22714892-06e937c20d_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 180,
+          "width": 1020
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/EW-2-22714892-06e937c20d_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 270,
+          "width": 1320
+        },
+        {
+          "height": 1025,
+          "image_path": "pages/EW-2-22714892-06e937c20d_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 90,
+          "width": 1320
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/EW-2-22714892/EW-2-22714892.pdf"
+    },
+    {
+      "doc_id": "BI-Serrano-medical-records-512b805074",
+      "output_pdf": "pdfs/BI-Serrano-medical-records-512b805074.pdf",
+      "page_count": 8,
+      "pages": [
+        {
+          "height": 1020,
+          "image_path": "pages/BI-Serrano-medical-records-512b805074_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 90,
+          "width": 1320
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/BI-Serrano-medical-records-512b805074_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 180,
+          "width": 1020
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/BI-Serrano-medical-records-512b805074_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 180,
+          "width": 1020
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/BI-Serrano-medical-records-512b805074_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 90,
+          "width": 1320
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/BI-Serrano-medical-records-512b805074_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 270,
+          "width": 1320
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/BI-Serrano-medical-records-512b805074_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 0,
+          "width": 1020
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/BI-Serrano-medical-records-512b805074_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 270,
+          "width": 1320
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/BI-Serrano-medical-records-512b805074_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 180,
+          "width": 1020
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/one-leidos/BI-Serrano (medical records).pdf"
+    },
+    {
+      "doc_id": "BI-Serrano-medical-records-_p0001-0060_p-41984ec981",
+      "output_pdf": "pdfs/BI-Serrano-medical-records-_p0001-0060_p-41984ec981.pdf",
+      "page_count": 8,
+      "pages": [
+        {
+          "height": 1320,
+          "image_path": "pages/BI-Serrano-medical-records-_p0001-0060_p-41984ec981_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 180,
+          "width": 1020
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/BI-Serrano-medical-records-_p0001-0060_p-41984ec981_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 180,
+          "width": 1020
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/BI-Serrano-medical-records-_p0001-0060_p-41984ec981_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 90,
+          "width": 1320
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/BI-Serrano-medical-records-_p0001-0060_p-41984ec981_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 180,
+          "width": 1020
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/BI-Serrano-medical-records-_p0001-0060_p-41984ec981_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 180,
+          "width": 1020
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/BI-Serrano-medical-records-_p0001-0060_p-41984ec981_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 90,
+          "width": 1320
+        },
+        {
+          "height": 1020,
+          "image_path": "pages/BI-Serrano-medical-records-_p0001-0060_p-41984ec981_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 270,
+          "width": 1320
+        },
+        {
+          "height": 1320,
+          "image_path": "pages/BI-Serrano-medical-records-_p0001-0060_p-41984ec981_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 180,
+          "width": 1020
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/one-leidos-small/BI-Serrano (medical records)_p0001-0060_p0800-0890.pdf"
+    }
+  ],
+  "dpi": 120,
+  "labels_path": "labels.jsonl",
+  "rotate_probability": 1.0,
+  "seed": 99
+}

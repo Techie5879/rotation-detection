@@ -1,0 +1,51 @@
+{
+  "best_val_accuracy": 0.4,
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/models/orientation_cnn.pt",
+  "data_source": {
+    "mode": "split_manifest_labels",
+    "train_labels_path": "/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/train/labels.jsonl",
+    "train_split": "train",
+    "val_labels_path": "/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/val/labels.jsonl",
+    "val_split": "val"
+  },
+  "device": "mps",
+  "history": [
+    {
+      "epoch": 1.0,
+      "memory": {
+        "py_current_mb": 107.11062240600586,
+        "py_peak_mb": 4948.223431587219,
+        "rss_mb": 1133.78125,
+        "ru_maxrss_mb": 5425.703125,
+        "torch_allocated_mb": 15.38330078125,
+        "torch_mps_driver_mb": 122.5625,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.5384615384615384,
+      "train_loss": 1.2549167688076313,
+      "val_accuracy": 0.4,
+      "val_loss": 1.3827521800994873
+    }
+  ],
+  "memory_after_train": {
+    "py_current_mb": 107.07205772399902,
+    "py_peak_mb": 4948.223431587219,
+    "rss_mb": 1134.0625,
+    "ru_maxrss_mb": 5425.703125,
+    "torch_allocated_mb": null,
+    "torch_mps_driver_mb": null,
+    "torch_reserved_mb": null
+  },
+  "memory_before_train": {
+    "py_current_mb": 403.4803075790405,
+    "py_peak_mb": 4948.223431587219,
+    "rss_mb": 916.359375,
+    "ru_maxrss_mb": 5425.703125,
+    "torch_allocated_mb": null,
+    "torch_mps_driver_mb": null,
+    "torch_reserved_mb": null
+  },
+  "train_rows": 39,
+  "used_explicit_val_split": true,
+  "val_rows": 5
+}

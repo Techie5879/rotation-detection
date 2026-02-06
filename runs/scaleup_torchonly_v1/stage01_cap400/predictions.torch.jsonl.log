@@ -1,0 +1,7 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/predictions.torch.jsonl.log
+[detect] output=/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/predictions.torch.jsonl
+[detect] start method=torch targets=1 total_pages=400
+[detect] progress method=torch overall=250/400 rate_pps=105.17
+detected doc_id=EW-2-22626634-bd3f678897 pages=400 elapsed_s=3.7 pdf=/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/dataset/test/pdfs/EW-2-22626634-bd3f678897.pdf
+[detect] completed method=torch pages=400 elapsed_s=3.7 avg_pps=106.93
+Predictions written: /Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/predictions.torch.jsonl

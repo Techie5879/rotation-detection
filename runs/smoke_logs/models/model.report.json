@@ -1,0 +1,31 @@
+{
+  "best_val_accuracy": 0.0,
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/smoke_logs/models/model.pt",
+  "data_source": {
+    "mode": "split_manifest_labels",
+    "train_labels_path": "/Users/helios/rotation-detection/runs/smoke_logs/train/labels.jsonl",
+    "train_split": "train",
+    "val_labels_path": "/Users/helios/rotation-detection/runs/smoke_logs/val/labels.jsonl",
+    "val_split": "val"
+  },
+  "device": "mps",
+  "history": [
+    {
+      "epoch": 1.0,
+      "train_accuracy": 0.14285714285714285,
+      "train_loss": 1.4288991689682007,
+      "val_accuracy": 0.0,
+      "val_loss": 1.4075289964675903
+    },
+    {
+      "epoch": 2.0,
+      "train_accuracy": 0.21428571428571427,
+      "train_loss": 1.5404769693102156,
+      "val_accuracy": 0.0,
+      "val_loss": 1.4054242372512817
+    }
+  ],
+  "train_rows": 14,
+  "used_explicit_val_split": true,
+  "val_rows": 2
+}

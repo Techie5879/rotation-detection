@@ -1,0 +1,28 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/split_stability_cap1/dataset.log
+[dataset] run_dir=/Users/helios/rotation-detection/runs/split_stability_cap1
+[dataset] start split=train doc_id=6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d target_pages=1
+[dataset] done split=train doc_id=6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d pages=1 elapsed_s=0.3
+[dataset] start split=test doc_id=EW-2-22626634-bd3f678897 target_pages=1
+[dataset] done split=test doc_id=EW-2-22626634-bd3f678897 pages=1 elapsed_s=0.1
+[dataset] start split=test doc_id=EW-2-22696801-705c326024 target_pages=1
+[dataset] done split=test doc_id=EW-2-22696801-705c326024 pages=1 elapsed_s=0.1
+[dataset] start split=test doc_id=EW-2-22697100-11c88f020b target_pages=1
+[dataset] done split=test doc_id=EW-2-22697100-11c88f020b pages=1 elapsed_s=0.1
+[dataset] start split=test doc_id=EW-2-22697155-5c367b1d0d target_pages=1
+[dataset] done split=test doc_id=EW-2-22697155-5c367b1d0d pages=1 elapsed_s=0.1
+[dataset] start split=test doc_id=EW-2-22697411-e1a0161a7a target_pages=1
+[dataset] done split=test doc_id=EW-2-22697411-e1a0161a7a pages=1 elapsed_s=0.0
+[dataset] start split=val doc_id=EW-2-22714892-06e937c20d target_pages=1
+[dataset] done split=val doc_id=EW-2-22714892-06e937c20d pages=1 elapsed_s=0.1
+[dataset] start split=val doc_id=BI-Serrano-medical-records-512b805074 target_pages=1
+[dataset] done split=val doc_id=BI-Serrano-medical-records-512b805074 pages=1 elapsed_s=0.1
+[dataset] start split=val doc_id=BI-Serrano-medical-records-_p0001-0060_p-41984ec981 target_pages=1
+[dataset] done split=val doc_id=BI-Serrano-medical-records-_p0001-0060_p-41984ec981 pages=1 elapsed_s=0.0
+[dataset] completed total_pages=9 elapsed_s=0.8 avg_pps=11.47
+Dataset created: /Users/helios/rotation-detection/runs/split_stability_cap1
+Documents: 9
+Split train: docs=1 pages=1
+Split val: docs=3 pages=3
+Split test: docs=5 pages=5
+All labels: /Users/helios/rotation-detection/runs/split_stability_cap1/labels.all.jsonl
+Manifest: /Users/helios/rotation-detection/runs/split_stability_cap1/manifest.json

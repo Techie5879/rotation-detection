@@ -1,0 +1,18 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/models/orientation_cnn.train.log
+[train] checkpoint=/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/models/orientation_cnn.pt
+[train] rows train=2433 val=800
+[train] num_workers>0 requested but shared-memory workers are unstable in this environment; falling back to num_workers=0
+[train] epoch=001 batch=20/26 loss=1.1224 acc=0.5109
+[train] epoch=001 batch=26/26 loss=1.0989 acc=0.5327
+[val] epoch=001 batch=9/9 loss=1.2907 acc=0.3862
+epoch=001 train_loss=1.0989 train_acc=0.5327 val_loss=1.2907 val_acc=0.3862
+[train] epoch=002 batch=20/26 loss=0.8354 acc=0.7557
+[train] epoch=002 batch=26/26 loss=0.8124 acc=0.7711
+[val] epoch=002 batch=9/9 loss=0.8288 acc=0.7987
+epoch=002 train_loss=0.8124 train_acc=0.7711 val_loss=0.8288 val_acc=0.7987
+[train] epoch=003 batch=20/26 loss=0.6123 acc=0.8589
+[train] epoch=003 batch=26/26 loss=0.5948 acc=0.8681
+[val] epoch=003 batch=9/9 loss=0.5645 acc=0.8812
+epoch=003 train_loss=0.5948 train_acc=0.8681 val_loss=0.5645 val_acc=0.8812
+best_val_accuracy=0.8812 checkpoint=/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/models/orientation_cnn.pt
+Training report: /Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/models/orientation_cnn.report.json

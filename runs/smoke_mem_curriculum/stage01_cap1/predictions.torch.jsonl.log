@@ -1,0 +1,10 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/predictions.torch.jsonl.log
+[detect] output=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/predictions.torch.jsonl
+[detect] start method=torch targets=5 total_pages=5
+detected doc_id=EW-2-22765187-1212241-2-431c70469e pages=1 elapsed_s=0.1 pdf=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/test/pdfs/EW-2-22765187-1212241-2-431c70469e.pdf
+detected doc_id=EW-2-22771512-1211938-2-3ac2f8cdf8 pages=1 elapsed_s=0.0 pdf=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/test/pdfs/EW-2-22771512-1211938-2-3ac2f8cdf8.pdf
+detected doc_id=EW-2-22783818-1214336-1-470830634d pages=1 elapsed_s=0.0 pdf=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/test/pdfs/EW-2-22783818-1214336-1-470830634d.pdf
+detected doc_id=EW-2-22784200-1215157-2-5432dbdf7d pages=1 elapsed_s=0.0 pdf=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/test/pdfs/EW-2-22784200-1215157-2-5432dbdf7d.pdf
+detected doc_id=EW-20-22771609-1213135-1-122f5960c6 pages=1 elapsed_s=0.0 pdf=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/test/pdfs/EW-20-22771609-1213135-1-122f5960c6.pdf
+[detect] completed method=torch pages=5 elapsed_s=0.1 avg_pps=39.52
+Predictions written: /Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/predictions.torch.jsonl

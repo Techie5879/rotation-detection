@@ -1,0 +1,12 @@
+{
+  "dataset_dir": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/dataset",
+  "experiment_dir": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800",
+  "heuristic_predictions": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/predictions.heuristic.jsonl",
+  "heuristic_report": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/report.heuristic.json",
+  "manifest": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/dataset/manifest.json",
+  "run_log": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/run.log",
+  "test_manifest": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/dataset/test/manifest.json",
+  "torch_checkpoint": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/models/orientation_cnn.pt",
+  "torch_predictions": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/predictions.torch.jsonl",
+  "torch_report": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/report.torch.json"
+}

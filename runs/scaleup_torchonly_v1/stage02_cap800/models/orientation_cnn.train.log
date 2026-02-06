@@ -1,0 +1,22 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage02_cap800/models/orientation_cnn.train.log
+[train] checkpoint=/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage02_cap800/models/orientation_cnn.pt
+[train] rows train=2433 val=800
+[train] num_workers>0 requested but shared-memory workers are unstable in this environment; falling back to num_workers=0
+[train] epoch=001 batch=20/26 loss=1.0784 acc=0.5437
+[train] epoch=001 batch=26/26 loss=1.0258 acc=0.5956
+[val] epoch=001 batch=9/9 loss=1.3184 acc=0.3450
+epoch=001 train_loss=1.0258 train_acc=0.5956 val_loss=1.3184 val_acc=0.3450
+[train] epoch=002 batch=20/26 loss=0.7036 acc=0.8464
+[train] epoch=002 batch=26/26 loss=0.6856 acc=0.8578
+[val] epoch=002 batch=9/9 loss=1.4644 acc=0.3187
+epoch=002 train_loss=0.6856 train_acc=0.8578 val_loss=1.4644 val_acc=0.3187
+[train] epoch=003 batch=20/26 loss=0.5023 acc=0.9333
+[train] epoch=003 batch=26/26 loss=0.4916 acc=0.9342
+[val] epoch=003 batch=9/9 loss=1.5279 acc=0.3050
+epoch=003 train_loss=0.4916 train_acc=0.9342 val_loss=1.5279 val_acc=0.3050
+[train] epoch=004 batch=20/26 loss=0.4100 acc=0.9521
+[train] epoch=004 batch=26/26 loss=0.3980 acc=0.9560
+[val] epoch=004 batch=9/9 loss=1.2821 acc=0.4138
+epoch=004 train_loss=0.3980 train_acc=0.9560 val_loss=1.2821 val_acc=0.4138
+best_val_accuracy=0.4138 checkpoint=/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage02_cap800/models/orientation_cnn.pt
+Training report: /Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage02_cap800/models/orientation_cnn.report.json

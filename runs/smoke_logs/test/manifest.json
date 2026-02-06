@@ -1,0 +1,40 @@
+{
+  "angles": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "created_at_utc": "20260206T201907Z",
+  "dataset_id": "smoke_logs",
+  "documents": [
+    {
+      "doc_id": "6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d",
+      "output_pdf": "pdfs/6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d.pdf",
+      "page_count": 2,
+      "pages": [
+        {
+          "height": 1123,
+          "image_path": "pages/6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 180,
+          "width": 794
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/6c199e86-deaf-48f0-ab1a-c21b10a17c3e/6c199e86-deaf-48f0-ab1a-c21b10a17c3e.pdf",
+      "split": "test"
+    }
+  ],
+  "dpi": 96,
+  "labels_path": "labels.jsonl",
+  "rotate_probability": 1.0,
+  "seed": 17,
+  "split": "test"
+}

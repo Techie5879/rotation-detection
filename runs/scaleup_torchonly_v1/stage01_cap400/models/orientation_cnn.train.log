@@ -1,0 +1,18 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/models/orientation_cnn.train.log
+[train] checkpoint=/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/models/orientation_cnn.pt
+[train] rows train=1871 val=400
+[train] num_workers>0 requested but shared-memory workers are unstable in this environment; falling back to num_workers=0
+[train] epoch=001 batch=20/20 loss=1.0577 acc=0.5719
+[val] epoch=001 batch=5/5 loss=1.3509 acc=0.3750
+epoch=001 train_loss=1.0577 train_acc=0.5719 val_loss=1.3509 val_acc=0.3750
+[train] epoch=002 batch=20/20 loss=0.7661 acc=0.8081
+[val] epoch=002 batch=5/5 loss=1.2239 acc=0.4600
+epoch=002 train_loss=0.7661 train_acc=0.8081 val_loss=1.2239 val_acc=0.4600
+[train] epoch=003 batch=20/20 loss=0.5763 acc=0.9038
+[val] epoch=003 batch=5/5 loss=1.2196 acc=0.4425
+epoch=003 train_loss=0.5763 train_acc=0.9038 val_loss=1.2196 val_acc=0.4425
+[train] epoch=004 batch=20/20 loss=0.4596 acc=0.9337
+[val] epoch=004 batch=5/5 loss=1.2092 acc=0.4500
+epoch=004 train_loss=0.4596 train_acc=0.9337 val_loss=1.2092 val_acc=0.4500
+best_val_accuracy=0.4600 checkpoint=/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/models/orientation_cnn.pt
+Training report: /Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/models/orientation_cnn.report.json

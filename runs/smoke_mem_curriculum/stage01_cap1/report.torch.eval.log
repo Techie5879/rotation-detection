@@ -1,0 +1,5 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/report.torch.eval.log
+[eval] manifest=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/test/manifest.json
+[eval] predictions=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/predictions.torch.jsonl
+Evaluation report: /Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/report.torch.json
+accuracy=0.2000 found=5/5 correct=1

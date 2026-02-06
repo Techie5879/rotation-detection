@@ -1,0 +1,62 @@
+{
+  "accuracy": 0.4583333333333333,
+  "accuracy_on_found": 0.4583333333333333,
+  "confusion_matrix": {
+    "0": {
+      "0": 6,
+      "180": 5,
+      "270": 4,
+      "90": 0
+    },
+    "180": {
+      "0": 4,
+      "180": 7,
+      "270": 4,
+      "90": 0
+    },
+    "270": {
+      "0": 0,
+      "180": 0,
+      "270": 16,
+      "90": 1
+    },
+    "90": {
+      "0": 0,
+      "180": 2,
+      "270": 19,
+      "90": 4
+    }
+  },
+  "correct": 33,
+  "extra_examples": [],
+  "extra_predictions": 0,
+  "invalid_predictions": 0,
+  "manifest_path": "/Users/helios/rotation-detection/runs/benchmark_seed99_p8_eval/manifest.json",
+  "missing_examples": [],
+  "missing_predictions": 0,
+  "per_angle": {
+    "0": {
+      "accuracy": 0.4,
+      "correct": 6,
+      "support": 15
+    },
+    "180": {
+      "accuracy": 0.4666666666666667,
+      "correct": 7,
+      "support": 15
+    },
+    "270": {
+      "accuracy": 0.9411764705882353,
+      "correct": 16,
+      "support": 17
+    },
+    "90": {
+      "accuracy": 0.16,
+      "correct": 4,
+      "support": 25
+    }
+  },
+  "predictions_found": 72,
+  "predictions_path": "/Users/helios/rotation-detection/runs/benchmark_seed99_p8_eval/predictions.torch_tuned.jsonl",
+  "total_pages": 72
+}

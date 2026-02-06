@@ -1,0 +1,28 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/split_stability2_cap2/dataset.log
+[dataset] run_dir=/Users/helios/rotation-detection/runs/split_stability2_cap2
+[dataset] start split=train doc_id=6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d target_pages=2
+[dataset] done split=train doc_id=6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d pages=2 elapsed_s=0.2
+[dataset] start split=train doc_id=EW-2-22626634-bd3f678897 target_pages=2
+[dataset] done split=train doc_id=EW-2-22626634-bd3f678897 pages=2 elapsed_s=0.2
+[dataset] start split=train doc_id=EW-2-22696801-705c326024 target_pages=2
+[dataset] done split=train doc_id=EW-2-22696801-705c326024 pages=2 elapsed_s=0.1
+[dataset] start split=train doc_id=EW-2-22697100-11c88f020b target_pages=2
+[dataset] done split=train doc_id=EW-2-22697100-11c88f020b pages=2 elapsed_s=0.2
+[dataset] start split=train doc_id=EW-2-22697155-5c367b1d0d target_pages=2
+[dataset] done split=train doc_id=EW-2-22697155-5c367b1d0d pages=2 elapsed_s=0.1
+[dataset] start split=train doc_id=EW-2-22697411-e1a0161a7a target_pages=2
+[dataset] done split=train doc_id=EW-2-22697411-e1a0161a7a pages=2 elapsed_s=0.1
+[dataset] start split=val doc_id=EW-2-22714892-06e937c20d target_pages=2
+[dataset] done split=val doc_id=EW-2-22714892-06e937c20d pages=2 elapsed_s=0.1
+[dataset] start split=train doc_id=BI-Serrano-medical-records-512b805074 target_pages=2
+[dataset] done split=train doc_id=BI-Serrano-medical-records-512b805074 pages=2 elapsed_s=0.1
+[dataset] start split=test doc_id=BI-Serrano-medical-records-_p0001-0060_p-41984ec981 target_pages=2
+[dataset] done split=test doc_id=BI-Serrano-medical-records-_p0001-0060_p-41984ec981 pages=2 elapsed_s=0.1
+[dataset] completed total_pages=18 elapsed_s=1.2 avg_pps=15.15
+Dataset created: /Users/helios/rotation-detection/runs/split_stability2_cap2
+Documents: 9
+Split train: docs=7 pages=14
+Split val: docs=1 pages=2
+Split test: docs=1 pages=2
+All labels: /Users/helios/rotation-detection/runs/split_stability2_cap2/labels.all.jsonl
+Manifest: /Users/helios/rotation-detection/runs/split_stability2_cap2/manifest.json

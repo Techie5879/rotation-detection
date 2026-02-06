@@ -1,0 +1,33 @@
+{
+  "angles": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "created_at_utc": "20260206T205957Z",
+  "dataset_id": "split_stability4_cap1",
+  "documents": [
+    {
+      "doc_id": "BI-Serrano-medical-records-512b805074",
+      "output_pdf": "pdfs/BI-Serrano-medical-records-512b805074.pdf",
+      "page_count": 1,
+      "pages": [
+        {
+          "height": 612,
+          "image_path": "pages/BI-Serrano-medical-records-512b805074_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 270,
+          "width": 792
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/one-leidos/BI-Serrano (medical records).pdf",
+      "split": "val"
+    }
+  ],
+  "dpi": 72,
+  "labels_path": "labels.jsonl",
+  "rotate_probability": 1.0,
+  "seed": 42,
+  "split": "val"
+}

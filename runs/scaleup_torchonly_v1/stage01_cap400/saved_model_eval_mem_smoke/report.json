@@ -1,0 +1,71 @@
+{
+  "accuracy": 0.225,
+  "avg_pages_per_s": 136.56935946548808,
+  "batch_size": 64,
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/models/memory_tqdm_smoke.pt",
+  "confusion_matrix": {
+    "0": {
+      "0": 90,
+      "180": 0,
+      "270": 0,
+      "90": 0
+    },
+    "180": {
+      "0": 113,
+      "180": 0,
+      "270": 0,
+      "90": 0
+    },
+    "270": {
+      "0": 106,
+      "180": 0,
+      "270": 0,
+      "90": 0
+    },
+    "90": {
+      "0": 91,
+      "180": 0,
+      "270": 0,
+      "90": 0
+    }
+  },
+  "correct": 90,
+  "dataset_path": "/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/dataset",
+  "device": "mps",
+  "elapsed_s": 2.9289146669907495,
+  "labels_path": "/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/dataset/test/labels.jsonl",
+  "memory_end": {
+    "py_current_mb": 1.6627016067504883,
+    "py_peak_mb": 79.0441780090332,
+    "rss_mb": 516.3125,
+    "ru_maxrss_mb": 516.3125,
+    "torch_allocated_mb": 24.5615234375,
+    "torch_mps_driver_mb": 1074.734375,
+    "torch_reserved_mb": null
+  },
+  "per_angle": {
+    "0": {
+      "accuracy": 1.0,
+      "correct": 90,
+      "support": 90
+    },
+    "180": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "support": 113
+    },
+    "270": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "support": 106
+    },
+    "90": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "support": 91
+    }
+  },
+  "predictions_path": "/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/saved_model_eval_mem_smoke/predictions.jsonl",
+  "split_dir": "/Users/helios/rotation-detection/runs/scaleup_torchonly_v1/stage01_cap400/dataset/test",
+  "total_pages": 400
+}

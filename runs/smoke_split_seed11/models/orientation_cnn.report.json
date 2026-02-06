@@ -1,0 +1,45 @@
+{
+  "best_val_accuracy": 0.5,
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/smoke_split_seed11/models/orientation_cnn.pt",
+  "data_source": {
+    "mode": "split_manifest_labels",
+    "train_labels_path": "/Users/helios/rotation-detection/runs/smoke_split_seed11/train/labels.jsonl",
+    "train_split": "train",
+    "val_labels_path": "/Users/helios/rotation-detection/runs/smoke_split_seed11/val/labels.jsonl",
+    "val_split": "val"
+  },
+  "device": "mps",
+  "history": [
+    {
+      "epoch": 1.0,
+      "train_accuracy": 0.07142857142857142,
+      "train_loss": 1.3835151195526123,
+      "val_accuracy": 0.0,
+      "val_loss": 1.3823944330215454
+    },
+    {
+      "epoch": 2.0,
+      "train_accuracy": 0.2857142857142857,
+      "train_loss": 1.3633280992507935,
+      "val_accuracy": 0.0,
+      "val_loss": 1.3823126554489136
+    },
+    {
+      "epoch": 3.0,
+      "train_accuracy": 0.2857142857142857,
+      "train_loss": 1.3493144512176514,
+      "val_accuracy": 0.5,
+      "val_loss": 1.3791987895965576
+    },
+    {
+      "epoch": 4.0,
+      "train_accuracy": 0.5,
+      "train_loss": 1.2799131870269775,
+      "val_accuracy": 0.5,
+      "val_loss": 1.3718873262405396
+    }
+  ],
+  "train_rows": 14,
+  "used_explicit_val_split": true,
+  "val_rows": 2
+}

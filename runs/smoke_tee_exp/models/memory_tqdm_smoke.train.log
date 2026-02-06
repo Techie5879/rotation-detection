@@ -1,0 +1,4 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/smoke_tee_exp/models/memory_tqdm_smoke.train.log
+[train] checkpoint=/Users/helios/rotation-detection/runs/smoke_tee_exp/models/memory_tqdm_smoke.pt
+[train] start memory {'rss_mb': 49.390625, 'ru_maxrss_mb': 49.390625, 'py_current_mb': 0.0, 'py_peak_mb': 0.0, 'torch_allocated_mb': None, 'torch_reserved_mb': None, 'torch_mps_driver_mb': None}
+[train] rows train=7 val=1

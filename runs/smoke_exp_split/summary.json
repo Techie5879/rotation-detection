@@ -1,0 +1,11 @@
+{
+  "dataset_dir": "/Users/helios/rotation-detection/runs/smoke_exp_split/dataset",
+  "experiment_dir": "/Users/helios/rotation-detection/runs/smoke_exp_split",
+  "heuristic_predictions": "/Users/helios/rotation-detection/runs/smoke_exp_split/predictions.heuristic.jsonl",
+  "heuristic_report": "/Users/helios/rotation-detection/runs/smoke_exp_split/report.heuristic.json",
+  "manifest": "/Users/helios/rotation-detection/runs/smoke_exp_split/dataset/manifest.json",
+  "test_manifest": "/Users/helios/rotation-detection/runs/smoke_exp_split/dataset/test/manifest.json",
+  "torch_checkpoint": "/Users/helios/rotation-detection/runs/smoke_exp_split/models/orientation_cnn.pt",
+  "torch_predictions": "/Users/helios/rotation-detection/runs/smoke_exp_split/predictions.torch.jsonl",
+  "torch_report": "/Users/helios/rotation-detection/runs/smoke_exp_split/report.torch.json"
+}

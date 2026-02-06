@@ -1,0 +1,5 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/models/orientation_cnn.train.log
+[train] checkpoint=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/models/orientation_cnn.pt
+[train] rows train=1871 val=400
+/Users/helios/rotation-detection/.venv/lib/python3.13/site-packages/torch/utils/data/dataloader.py:433: UserWarning: Got pickle error when attempting to start a worker Process. This might be because the worker Process arguments are not picklable. Python 3.14+ changed the multiprocessing start method in non-Mac POSIX platforms to 'forkserver', which requires the worker Process arguments to be picklable. You can also try multiprocessing.set_start_method('fork').
+  return _MultiProcessingDataLoaderIter(self)

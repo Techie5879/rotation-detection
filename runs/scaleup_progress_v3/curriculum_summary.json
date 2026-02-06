@@ -1,0 +1,45 @@
+{
+  "curriculum_dir": "/Users/helios/rotation-detection/runs/scaleup_progress_v3",
+  "curriculum_log": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/curriculum.log",
+  "regression_tolerance": 0.02,
+  "seed": 42,
+  "stages": [
+    {
+      "experiment_dir": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage01_cap400",
+      "heuristic_accuracy": 0.335,
+      "max_pages_per_doc": 400,
+      "split_documents": {
+        "test": 1,
+        "train": 7,
+        "val": 1
+      },
+      "split_pages": {
+        "test": 400,
+        "train": 1871,
+        "val": 400
+      },
+      "stage": "stage01_cap400",
+      "stage_log": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage01_cap400/run.log",
+      "torch_accuracy": 0.9175
+    },
+    {
+      "experiment_dir": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800",
+      "heuristic_accuracy": 0.4875,
+      "max_pages_per_doc": 800,
+      "split_documents": {
+        "test": 1,
+        "train": 7,
+        "val": 1
+      },
+      "split_pages": {
+        "test": 800,
+        "train": 2433,
+        "val": 800
+      },
+      "stage": "stage02_cap800",
+      "stage_log": "/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/run.log",
+      "torch_accuracy": 0.85875
+    }
+  ],
+  "stop_on_regression": false
+}

@@ -1,0 +1,9 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/predictions.heuristic.jsonl.log
+[detect] output=/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/predictions.heuristic.jsonl
+[detect] start method=heuristic targets=1 total_pages=800
+[detect] progress method=heuristic overall=250/800 rate_pps=44.95
+[detect] progress method=heuristic overall=500/800 rate_pps=44.73
+[detect] progress method=heuristic overall=750/800 rate_pps=45.00
+detected doc_id=EW-2-22626634-bd3f678897 pages=800 elapsed_s=17.8 pdf=/Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/dataset/test/pdfs/EW-2-22626634-bd3f678897.pdf
+[detect] completed method=heuristic pages=800 elapsed_s=17.8 avg_pps=44.83
+Predictions written: /Users/helios/rotation-detection/runs/scaleup_progress_v3/stage02_cap800/predictions.heuristic.jsonl

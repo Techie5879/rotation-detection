@@ -1,0 +1,352 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/curriculum.log
+[curriculum] run_dir=/Users/helios/rotation-detection/runs/smoke_mem_curriculum
+[curriculum] start rss_mb=46.9 ru_maxrss_mb=46.9 py_current_mb=0.0 py_peak_mb=0.0
+[curriculum] starting stage01_cap1 max_pages_per_doc=1
+[curriculum] stage01_cap1 start rss_mb=46.9 ru_maxrss_mb=46.9 py_current_mb=0.0 py_peak_mb=0.1
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/run.log
+[experiment] run_dir=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/dataset.log
+[dataset] run_dir=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset
+[dataset] documents:   0%|          | 0/49 [00:00<?, ?doc/s]
+[dataset] pages:   0%|          | 0/49 [00:00<?, ?page/s][A[dataset] start split=train doc_id=6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d target_pages=1
+
+
+[dataset] 6c199e86-deaf-48f0-ab1a-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d pages=1 elapsed_s=0.4
+[dataset] start split=train doc_id=EW-2-22626634-bd3f678897 target_pages=1
+
+
+[dataset] EW-2-22626634-bd3f678897:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22626634-bd3f678897 pages=1 elapsed_s=0.1
+[dataset] start split=train doc_id=EW-2-22696801-705c326024 target_pages=1
+
+
+[dataset] EW-2-22696801-705c326024:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+[dataset] pages:   6%|▌         | 3/49 [00:00<00:07,  5.96page/s][A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22696801-705c326024 pages=1 elapsed_s=0.1
+[dataset] documents:   6%|▌         | 3/49 [00:00<00:07,  5.82doc/s][dataset] start split=val doc_id=EW-2-22697100-11c88f020b target_pages=1
+
+
+[dataset] EW-2-22697100-11c88f020b:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=val doc_id=EW-2-22697100-11c88f020b pages=1 elapsed_s=0.1
+[dataset] start split=train doc_id=EW-2-22697155-5c367b1d0d target_pages=1
+
+
+[dataset] EW-2-22697155-5c367b1d0d:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22697155-5c367b1d0d pages=1 elapsed_s=0.1
+[dataset] start split=train doc_id=EW-2-22697411-e1a0161a7a target_pages=1
+
+
+[dataset] EW-2-22697411-e1a0161a7a:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22697411-e1a0161a7a pages=1 elapsed_s=0.1
+[dataset] start split=train doc_id=EW-2-22714892-06e937c20d target_pages=1
+
+
+[dataset] EW-2-22714892-06e937c20d:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22714892-06e937c20d pages=1 elapsed_s=0.1
+[dataset] start split=val doc_id=EW-2-22696428-1213547-1-851faf7efd target_pages=1
+
+
+[dataset] EW-2-22696428-1213547-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=val doc_id=EW-2-22696428-1213547-1-851faf7efd pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22696428-1213547-2-f6bd932709 target_pages=1
+
+
+[dataset] EW-2-22696428-1213547-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22696428-1213547-2-f6bd932709 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22734634-1209455-1-86a491ace2 target_pages=1
+
+
+[dataset] EW-2-22734634-1209455-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22734634-1209455-1-86a491ace2 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22734634-1209455-2-37425b0857 target_pages=1
+
+
+[dataset] EW-2-22734634-1209455-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22734634-1209455-2-37425b0857 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22744759-1212266-1-d8f40c6802 target_pages=1
+
+
+[dataset] EW-2-22744759-1212266-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22744759-1212266-1-d8f40c6802 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22744759-1212266-2-100ef63551 target_pages=1
+
+
+[dataset] EW-2-22744759-1212266-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22744759-1212266-2-100ef63551 pages=1 elapsed_s=0.0
+[dataset] documents:  27%|██▋       | 13/49 [00:01<00:02, 13.97doc/s][dataset] start split=train doc_id=EW-2-22749098-1210016-1-7ef775b29d target_pages=1
+
+
+[dataset] EW-2-22749098-1210016-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+[dataset] pages:  29%|██▊       | 14/49 [00:01<00:02, 14.65page/s][A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22749098-1210016-1-7ef775b29d pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22749098-1210016-2-bc0f64f4b3 target_pages=1
+
+
+[dataset] EW-2-22749098-1210016-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22749098-1210016-2-bc0f64f4b3 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22749958-1210130-1-1452392dd3 target_pages=1
+
+
+[dataset] EW-2-22749958-1210130-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22749958-1210130-1-1452392dd3 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22749958-1210130-2-76e9bb1536 target_pages=1
+
+
+[dataset] EW-2-22749958-1210130-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22749958-1210130-2-76e9bb1536 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22750671-1213654-1-01f584dc58 target_pages=1
+
+
+[dataset] EW-2-22750671-1213654-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22750671-1213654-1-01f584dc58 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22750671-1213654-2-e5ab33af9e target_pages=1
+
+
+[dataset] EW-2-22750671-1213654-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22750671-1213654-2-e5ab33af9e pages=1 elapsed_s=0.1
+[dataset] start split=val doc_id=EW-2-22756050-1214632-1-e6b67e0a69 target_pages=1
+
+
+[dataset] EW-2-22756050-1214632-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=val doc_id=EW-2-22756050-1214632-1-e6b67e0a69 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22756050-1214632-2-b6f4dae6e0 target_pages=1
+
+
+[dataset] EW-2-22756050-1214632-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22756050-1214632-2-b6f4dae6e0 pages=1 elapsed_s=0.0
+[dataset] start split=val doc_id=EW-2-22761468-1215221-1-629385f3e2 target_pages=1
+
+
+[dataset] EW-2-22761468-1215221-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=val doc_id=EW-2-22761468-1215221-1-629385f3e2 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22761468-1215221-2-662656a616 target_pages=1
+
+
+[dataset] EW-2-22761468-1215221-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22761468-1215221-2-662656a616 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22762720-1211783-1-0a483f586b target_pages=1
+
+
+[dataset] EW-2-22762720-1211783-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22762720-1211783-1-0a483f586b pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22762720-1211783-2-4856d68dd3 target_pages=1
+
+
+[dataset] EW-2-22762720-1211783-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22762720-1211783-2-4856d68dd3 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22765157-1213045-1-ebf365858e target_pages=1
+
+
+[dataset] EW-2-22765157-1213045-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22765157-1213045-1-ebf365858e pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22765157-1213045-2-1233915842 target_pages=1
+
+
+[dataset] EW-2-22765157-1213045-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22765157-1213045-2-1233915842 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22765187-1212241-1-30bcaf7bba target_pages=1
+
+
+[dataset] EW-2-22765187-1212241-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22765187-1212241-1-30bcaf7bba pages=1 elapsed_s=0.0
+[dataset] start split=test doc_id=EW-2-22765187-1212241-2-431c70469e target_pages=1
+
+
+[dataset] EW-2-22765187-1212241-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=test doc_id=EW-2-22765187-1212241-2-431c70469e pages=1 elapsed_s=0.0
+[dataset] documents:  59%|█████▉    | 29/49 [00:01<00:00, 21.81doc/s][dataset] start split=train doc_id=EW-2-22771512-1211938-1-f02ebffa0c target_pages=1
+
+
+[dataset] EW-2-22771512-1211938-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+[dataset] pages:  61%|██████    | 30/49 [00:01<00:00, 22.05page/s][A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22771512-1211938-1-f02ebffa0c pages=1 elapsed_s=0.0
+[dataset] start split=test doc_id=EW-2-22771512-1211938-2-3ac2f8cdf8 target_pages=1
+
+
+[dataset] EW-2-22771512-1211938-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=test doc_id=EW-2-22771512-1211938-2-3ac2f8cdf8 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22772688-1214689-1-5b54ca5e16 target_pages=1
+
+
+[dataset] EW-2-22772688-1214689-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22772688-1214689-1-5b54ca5e16 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22772688-1214689-2-11c3317139 target_pages=1
+
+
+[dataset] EW-2-22772688-1214689-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22772688-1214689-2-11c3317139 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22774058-1216031-1-ad9cd6f12f target_pages=1
+
+
+[dataset] EW-2-22774058-1216031-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22774058-1216031-1-ad9cd6f12f pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22774058-1216031-2-6d0e5d1210 target_pages=1
+
+
+[dataset] EW-2-22774058-1216031-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22774058-1216031-2-6d0e5d1210 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22777487-1216213-1-d1cce6f3b0 target_pages=1
+
+
+[dataset] EW-2-22777487-1216213-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22777487-1216213-1-d1cce6f3b0 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22777487-1216213-2-6a7894abea target_pages=1
+
+
+[dataset] EW-2-22777487-1216213-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22777487-1216213-2-6a7894abea pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22781816-1212678-1-cb668b7735 target_pages=1
+
+
+[dataset] EW-2-22781816-1212678-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22781816-1212678-1-cb668b7735 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22781816-1212678-2-637b148bcc target_pages=1
+
+
+[dataset] EW-2-22781816-1212678-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22781816-1212678-2-637b148bcc pages=1 elapsed_s=0.0
+[dataset] start split=test doc_id=EW-2-22783818-1214336-1-470830634d target_pages=1
+
+
+[dataset] EW-2-22783818-1214336-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=test doc_id=EW-2-22783818-1214336-1-470830634d pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22783818-1214336-2-f1ca841e7c target_pages=1
+
+
+[dataset] EW-2-22783818-1214336-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22783818-1214336-2-f1ca841e7c pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22784089-1215142-1-a12f5b178d target_pages=1
+
+
+[dataset] EW-2-22784089-1215142-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22784089-1215142-1-a12f5b178d pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22784089-1215142-2-769ec9e886 target_pages=1
+
+
+[dataset] EW-2-22784089-1215142-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22784089-1215142-2-769ec9e886 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-2-22784200-1215157-1-ce3d96da77 target_pages=1
+
+
+[dataset] EW-2-22784200-1215157-1-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-2-22784200-1215157-1-ce3d96da77 pages=1 elapsed_s=0.0
+[dataset] documents:  90%|████████▉ | 44/49 [00:02<00:00, 24.67doc/s][dataset] start split=test doc_id=EW-2-22784200-1215157-2-5432dbdf7d target_pages=1
+
+
+[dataset] EW-2-22784200-1215157-2-:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+[dataset] pages:  92%|█████████▏| 45/49 [00:02<00:00, 24.89page/s][A
+
+                                                                           [A[A[dataset] done split=test doc_id=EW-2-22784200-1215157-2-5432dbdf7d pages=1 elapsed_s=0.0
+[dataset] start split=test doc_id=EW-20-22771609-1213135-1-122f5960c6 target_pages=1
+
+
+[dataset] EW-20-22771609-1213135-1:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=test doc_id=EW-20-22771609-1213135-1-122f5960c6 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=EW-20-22771609-1213135-2-376e8a0009 target_pages=1
+
+
+[dataset] EW-20-22771609-1213135-2:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=EW-20-22771609-1213135-2-376e8a0009 pages=1 elapsed_s=0.0
+[dataset] start split=val doc_id=BI-Serrano-medical-records-512b805074 target_pages=1
+
+
+[dataset] BI-Serrano-medical-recor:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=val doc_id=BI-Serrano-medical-records-512b805074 pages=1 elapsed_s=0.0
+[dataset] start split=train doc_id=BI-Serrano-medical-records-_p0001-0060_p-41984ec981 target_pages=1
+
+
+[dataset] BI-Serrano-medical-recor:   0%|          | 0/1 [00:00<?, ?page/s][A[A
+
+                                                                           [A[A[dataset] done split=train doc_id=BI-Serrano-medical-records-_p0001-0060_p-41984ec981 pages=1 elapsed_s=0.0
+[dataset] documents: 100%|██████████| 49/49 [00:02<00:00, 21.86doc/s]
+[dataset] pages: 100%|██████████| 49/49 [00:02<00:00, 21.86page/s]
+[dataset] completed total_pages=49 elapsed_s=2.3 avg_pps=21.65
+Dataset created: /Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset
+Documents: 49
+Split train: docs=39 pages=39
+Split val: docs=5 pages=5
+Split test: docs=5 pages=5
+All labels: /Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/labels.all.jsonl
+Manifest: /Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/manifest.json
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/models/orientation_cnn.train.log
+[train] checkpoint=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/models/orientation_cnn.pt
+[train] start memory {'rss_mb': 916.359375, 'ru_maxrss_mb': 5425.703125, 'py_current_mb': 403.4803075790405, 'py_peak_mb': 4948.223431587219, 'torch_allocated_mb': None, 'torch_reserved_mb': None, 'torch_mps_driver_mb': None}
+[train] rows train=39 val=5
+[train] init memory rss_mb=955.4 ru_maxrss_mb=5425.7 py_current_mb=107.1 py_peak_mb=4948.2 torch_allocated_mb=2.9 torch_mps_driver_mb=48.5
+[train] epoch=001:   0%|          | 0/3 [00:00<?, ?batch/s][train] epoch=001:   0%|          | 0/3 [00:01<?, ?batch/s, acc=0.3125, loss=1.4017][train] epoch=001 batch=1/3 loss=1.4017 acc=0.3125 rss_mb=1065.2 ru_maxrss_mb=5425.7 py_current_mb=107.1 py_peak_mb=4948.2 torch_allocated_mb=19.2 torch_mps_driver_mb=122.1
+[train] epoch=001:  33%|███▎      | 1/3 [00:01<00:02,  1.41s/batch, acc=0.3125, loss=1.4017][train] epoch=001:  33%|███▎      | 1/3 [00:01<00:02,  1.41s/batch, acc=0.4375, loss=1.2877][train] epoch=001 batch=2/3 loss=1.2877 acc=0.4375 rss_mb=1071.4 ru_maxrss_mb=5425.7 py_current_mb=107.1 py_peak_mb=4948.2 torch_allocated_mb=17.4 torch_mps_driver_mb=122.1
+[train] epoch=001:  33%|███▎      | 1/3 [00:02<00:02,  1.41s/batch, acc=0.5385, loss=1.2549][train] epoch=001 batch=3/3 loss=1.2549 acc=0.5385 rss_mb=1116.8 ru_maxrss_mb=5425.7 py_current_mb=107.1 py_peak_mb=4948.2 torch_allocated_mb=17.4 torch_mps_driver_mb=122.5
+[train] epoch=001: 100%|██████████| 3/3 [00:02<00:00,  1.10batch/s, acc=0.5385, loss=1.2549]                                                                                            [val] epoch=001:   0%|          | 0/1 [00:00<?, ?batch/s][val] epoch=001:   0%|          | 0/1 [00:00<?, ?batch/s, acc=0.4000, loss=1.3828][val] epoch=001 batch=1/1 loss=1.3828 acc=0.4000 rss_mb=1133.8 ru_maxrss_mb=5425.7 py_current_mb=107.1 py_peak_mb=4948.2 torch_allocated_mb=16.3 torch_mps_driver_mb=122.6
+                                                                                  epoch=001 train_loss=1.2549 train_acc=0.5385 val_loss=1.3828 val_acc=0.4000
+[train] epoch=001 rss_mb=1133.8 ru_maxrss_mb=5425.7 py_current_mb=107.1 py_peak_mb=4948.2 torch_allocated_mb=15.4 torch_mps_driver_mb=122.6
+best_val_accuracy=0.4000 checkpoint=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/models/orientation_cnn.pt
+[train] done memory rss_mb=1134.1 ru_maxrss_mb=5425.7 py_current_mb=107.1 py_peak_mb=4948.2 torch_allocated_mb=15.4 torch_mps_driver_mb=122.6
+Training report: /Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/models/orientation_cnn.report.json
+[train] final memory rss_mb=1134.1 ru_maxrss_mb=5425.7 py_current_mb=107.1 py_peak_mb=4948.2
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/predictions.torch.jsonl.log
+[detect] output=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/predictions.torch.jsonl
+[detect] start method=torch targets=5 total_pages=5
+detected doc_id=EW-2-22765187-1212241-2-431c70469e pages=1 elapsed_s=0.1 pdf=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/test/pdfs/EW-2-22765187-1212241-2-431c70469e.pdf
+detected doc_id=EW-2-22771512-1211938-2-3ac2f8cdf8 pages=1 elapsed_s=0.0 pdf=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/test/pdfs/EW-2-22771512-1211938-2-3ac2f8cdf8.pdf
+detected doc_id=EW-2-22783818-1214336-1-470830634d pages=1 elapsed_s=0.0 pdf=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/test/pdfs/EW-2-22783818-1214336-1-470830634d.pdf
+detected doc_id=EW-2-22784200-1215157-2-5432dbdf7d pages=1 elapsed_s=0.0 pdf=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/test/pdfs/EW-2-22784200-1215157-2-5432dbdf7d.pdf
+detected doc_id=EW-20-22771609-1213135-1-122f5960c6 pages=1 elapsed_s=0.0 pdf=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/test/pdfs/EW-20-22771609-1213135-1-122f5960c6.pdf
+[detect] completed method=torch pages=5 elapsed_s=0.1 avg_pps=39.52
+Predictions written: /Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/predictions.torch.jsonl
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/report.torch.eval.log
+[eval] manifest=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/dataset/test/manifest.json
+[eval] predictions=/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/predictions.torch.jsonl
+Evaluation report: /Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/report.torch.json
+accuracy=0.2000 found=5/5 correct=1
+Experiment summary: /Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/summary.json
+[curriculum] completed stage01_cap1 torch_acc=0.2000
+[curriculum] stage01_cap1 end rss_mb=1151.1 ru_maxrss_mb=5425.7 py_current_mb=107.1 py_peak_mb=4948.2
+[curriculum] summary: /Users/helios/rotation-detection/runs/smoke_mem_curriculum/curriculum_summary.json

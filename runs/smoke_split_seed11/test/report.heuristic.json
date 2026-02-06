@@ -1,0 +1,62 @@
+{
+  "accuracy": 0.5,
+  "accuracy_on_found": 0.5,
+  "confusion_matrix": {
+    "0": {
+      "0": 0,
+      "180": 0,
+      "270": 0,
+      "90": 0
+    },
+    "180": {
+      "0": 0,
+      "180": 0,
+      "270": 0,
+      "90": 0
+    },
+    "270": {
+      "0": 0,
+      "180": 0,
+      "270": 1,
+      "90": 0
+    },
+    "90": {
+      "0": 0,
+      "180": 1,
+      "270": 0,
+      "90": 0
+    }
+  },
+  "correct": 1,
+  "extra_examples": [],
+  "extra_predictions": 0,
+  "invalid_predictions": 0,
+  "manifest_path": "/Users/helios/rotation-detection/runs/smoke_split_seed11/test/manifest.json",
+  "missing_examples": [],
+  "missing_predictions": 0,
+  "per_angle": {
+    "0": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "support": 0
+    },
+    "180": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "support": 0
+    },
+    "270": {
+      "accuracy": 1.0,
+      "correct": 1,
+      "support": 1
+    },
+    "90": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "support": 1
+    }
+  },
+  "predictions_found": 2,
+  "predictions_path": "/Users/helios/rotation-detection/runs/smoke_split_seed11/test/predictions.heuristic.jsonl",
+  "total_pages": 2
+}

@@ -1,0 +1,4 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_progress_v4/stage01_cap400/run.log
+[experiment] run_dir=/Users/helios/rotation-detection/runs/scaleup_progress_v4/stage01_cap400
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_progress_v4/stage01_cap400/dataset/dataset.log
+[dataset] run_dir=/Users/helios/rotation-detection/runs/scaleup_progress_v4/stage01_cap400/dataset

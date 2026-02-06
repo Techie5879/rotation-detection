@@ -1,0 +1,55 @@
+{
+  "curriculum_dir": "/Users/helios/rotation-detection/runs/smoke_mem_curriculum",
+  "curriculum_log": "/Users/helios/rotation-detection/runs/smoke_mem_curriculum/curriculum.log",
+  "memory_end": {
+    "py_current_mb": 107.0905179977417,
+    "py_peak_mb": 4948.223431587219,
+    "rss_mb": 1151.09375,
+    "ru_maxrss_mb": 5425.703125,
+    "torch_allocated_mb": null,
+    "torch_mps_driver_mb": null,
+    "torch_reserved_mb": null
+  },
+  "regression_tolerance": 0.02,
+  "run_heuristic": false,
+  "seed": 123,
+  "stages": [
+    {
+      "experiment_dir": "/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1",
+      "heuristic_accuracy": null,
+      "max_pages_per_doc": 1,
+      "memory_end": {
+        "py_current_mb": 107.08936882019043,
+        "py_peak_mb": 4948.223431587219,
+        "rss_mb": 1151.09375,
+        "ru_maxrss_mb": 5425.703125,
+        "torch_allocated_mb": null,
+        "torch_mps_driver_mb": null,
+        "torch_reserved_mb": null
+      },
+      "memory_start": {
+        "py_current_mb": 0.009121894836425781,
+        "py_peak_mb": 0.06745243072509766,
+        "rss_mb": 46.859375,
+        "ru_maxrss_mb": 46.859375,
+        "torch_allocated_mb": null,
+        "torch_mps_driver_mb": null,
+        "torch_reserved_mb": null
+      },
+      "split_documents": {
+        "test": 5,
+        "train": 39,
+        "val": 5
+      },
+      "split_pages": {
+        "test": 5,
+        "train": 39,
+        "val": 5
+      },
+      "stage": "stage01_cap1",
+      "stage_log": "/Users/helios/rotation-detection/runs/smoke_mem_curriculum/stage01_cap1/run.log",
+      "torch_accuracy": 0.2
+    }
+  ],
+  "stop_on_regression": false
+}

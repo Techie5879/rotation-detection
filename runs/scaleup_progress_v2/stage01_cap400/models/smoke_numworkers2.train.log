@@ -1,0 +1,12 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/models/smoke_numworkers2.train.log
+[train] checkpoint=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/models/smoke_numworkers2.pt
+[train] rows train=200 val=50
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/models/smoke_numworkers2.train.log
+[train] checkpoint=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/models/smoke_numworkers2.pt
+[train] rows train=200 val=50
+[train] num_workers>0 requested but shared-memory workers are unstable in this environment; falling back to num_workers=0
+[train] epoch=001 batch=4/4 loss=1.3238 acc=0.3500
+[val] epoch=001 batch=1/1 loss=1.3833 acc=0.2800
+epoch=001 train_loss=1.3238 train_acc=0.3500 val_loss=1.3833 val_acc=0.2800
+best_val_accuracy=0.2800 checkpoint=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/models/smoke_numworkers2.pt
+Training report: /Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/models/smoke_numworkers2.report.json

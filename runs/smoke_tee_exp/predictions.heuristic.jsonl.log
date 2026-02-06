@@ -1,0 +1,7 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/smoke_tee_exp/predictions.heuristic.jsonl.log
+[detect] output=/Users/helios/rotation-detection/runs/smoke_tee_exp/predictions.heuristic.jsonl
+[detect] start method=heuristic targets=1 total_pages=1
+[detect] progress method=heuristic overall=1/1 rate_pps=32.23
+detected doc_id=6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d pages=1 elapsed_s=0.0 pdf=/Users/helios/rotation-detection/runs/smoke_tee_exp/dataset/test/pdfs/6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d.pdf
+[detect] completed method=heuristic pages=1 elapsed_s=0.0 avg_pps=31.96
+Predictions written: /Users/helios/rotation-detection/runs/smoke_tee_exp/predictions.heuristic.jsonl

@@ -1,0 +1,93 @@
+{
+  "best_val_accuracy": 0.5,
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/benchmark_seed42_p8/models/orientation_cnn.pt",
+  "device": "mps",
+  "history": [
+    {
+      "epoch": 1.0,
+      "train_accuracy": 0.19642857142857142,
+      "train_loss": 1.3978697913033622,
+      "val_accuracy": 0.25,
+      "val_loss": 1.3887014389038086
+    },
+    {
+      "epoch": 2.0,
+      "train_accuracy": 0.5535714285714286,
+      "train_loss": 1.2097055401120866,
+      "val_accuracy": 0.25,
+      "val_loss": 1.3941082954406738
+    },
+    {
+      "epoch": 3.0,
+      "train_accuracy": 0.6607142857142857,
+      "train_loss": 1.0806364672524589,
+      "val_accuracy": 0.25,
+      "val_loss": 1.4035958051681519
+    },
+    {
+      "epoch": 4.0,
+      "train_accuracy": 0.6428571428571429,
+      "train_loss": 1.0226356046540397,
+      "val_accuracy": 0.3125,
+      "val_loss": 1.4195475578308105
+    },
+    {
+      "epoch": 5.0,
+      "train_accuracy": 0.6785714285714286,
+      "train_loss": 0.971873572894505,
+      "val_accuracy": 0.1875,
+      "val_loss": 1.4419584274291992
+    },
+    {
+      "epoch": 6.0,
+      "train_accuracy": 0.8035714285714286,
+      "train_loss": 0.8573391352381025,
+      "val_accuracy": 0.1875,
+      "val_loss": 1.46897292137146
+    },
+    {
+      "epoch": 7.0,
+      "train_accuracy": 0.8214285714285714,
+      "train_loss": 0.7799620287758964,
+      "val_accuracy": 0.1875,
+      "val_loss": 1.4680331945419312
+    },
+    {
+      "epoch": 8.0,
+      "train_accuracy": 0.9107142857142857,
+      "train_loss": 0.7114233119147164,
+      "val_accuracy": 0.4375,
+      "val_loss": 1.42574143409729
+    },
+    {
+      "epoch": 9.0,
+      "train_accuracy": 0.9107142857142857,
+      "train_loss": 0.6600688866206578,
+      "val_accuracy": 0.4375,
+      "val_loss": 1.3432625532150269
+    },
+    {
+      "epoch": 10.0,
+      "train_accuracy": 0.9107142857142857,
+      "train_loss": 0.6266157286507743,
+      "val_accuracy": 0.4375,
+      "val_loss": 1.2515182495117188
+    },
+    {
+      "epoch": 11.0,
+      "train_accuracy": 0.875,
+      "train_loss": 0.6276344912392753,
+      "val_accuracy": 0.4375,
+      "val_loss": 1.2117300033569336
+    },
+    {
+      "epoch": 12.0,
+      "train_accuracy": 0.9107142857142857,
+      "train_loss": 0.574938680444445,
+      "val_accuracy": 0.5,
+      "val_loss": 1.1385694742202759
+    }
+  ],
+  "train_rows": 56,
+  "val_rows": 16
+}

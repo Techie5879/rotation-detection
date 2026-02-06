@@ -1,0 +1,134 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_progress_v2/curriculum.log
+[curriculum] run_dir=/Users/helios/rotation-detection/runs/scaleup_progress_v2
+[curriculum] starting stage01_cap400 max_pages_per_doc=400
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/run.log
+[experiment] run_dir=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/dataset/dataset.log
+[dataset] run_dir=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/dataset
+[dataset] start split=train doc_id=6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d target_pages=400
+[dataset] progress doc_id=6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d split=train doc_pages=250/400 overall=250/2671 rate_pps=8.00
+[dataset] done split=train doc_id=6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d pages=400 elapsed_s=49.0
+[dataset] start split=train doc_id=EW-2-22626634-bd3f678897 target_pages=400
+[dataset] progress doc_id=EW-2-22626634-bd3f678897 split=train doc_pages=250/400 overall=650/2671 rate_pps=9.10
+[dataset] done split=train doc_id=EW-2-22626634-bd3f678897 pages=400 elapsed_s=31.5
+[dataset] start split=test doc_id=EW-2-22696801-705c326024 target_pages=400
+[dataset] progress doc_id=EW-2-22696801-705c326024 split=test doc_pages=250/400 overall=1050/2671 rate_pps=9.82
+[dataset] done split=test doc_id=EW-2-22696801-705c326024 pages=400 elapsed_s=39.9
+[dataset] start split=train doc_id=EW-2-22697100-11c88f020b target_pages=52
+[dataset] done split=train doc_id=EW-2-22697100-11c88f020b pages=52 elapsed_s=6.3
+[dataset] start split=val doc_id=EW-2-22697155-5c367b1d0d target_pages=400
+[dataset] progress doc_id=EW-2-22697155-5c367b1d0d split=val doc_pages=250/400 overall=1502/2671 rate_pps=8.10
+[dataset] done split=val doc_id=EW-2-22697155-5c367b1d0d pages=400 elapsed_s=78.5
+[dataset] start split=train doc_id=EW-2-22697411-e1a0161a7a target_pages=293
+[dataset] progress doc_id=EW-2-22697411-e1a0161a7a split=train doc_pages=250/293 overall=1902/2671 rate_pps=8.22
+[dataset] done split=train doc_id=EW-2-22697411-e1a0161a7a pages=293 elapsed_s=31.1
+[dataset] start split=train doc_id=EW-2-22714892-06e937c20d target_pages=175
+[dataset] done split=train doc_id=EW-2-22714892-06e937c20d pages=175 elapsed_s=24.5
+[dataset] start split=train doc_id=BI-Serrano-medical-records-512b805074 target_pages=400
+[dataset] progress doc_id=BI-Serrano-medical-records-512b805074 split=train doc_pages=250/400 overall=2370/2671 rate_pps=8.34
+[dataset] done split=train doc_id=BI-Serrano-medical-records-512b805074 pages=400 elapsed_s=34.4
+[dataset] start split=train doc_id=BI-Serrano-medical-records-_p0001-0060_p-41984ec981 target_pages=151
+[dataset] done split=train doc_id=BI-Serrano-medical-records-_p0001-0060_p-41984ec981 pages=151 elapsed_s=13.3
+[dataset] completed total_pages=2671 elapsed_s=308.4 avg_pps=8.66
+Dataset created: /Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/dataset
+Documents: 9
+Split train: docs=7 pages=1871
+Split val: docs=1 pages=400
+Split test: docs=1 pages=400
+All labels: /Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/dataset/labels.all.jsonl
+Manifest: /Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/dataset/manifest.json
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/predictions.heuristic.jsonl.log
+[detect] output=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/predictions.heuristic.jsonl
+[detect] start method=heuristic targets=1 total_pages=400
+[detect] progress method=heuristic overall=250/400 rate_pps=44.97
+detected doc_id=EW-2-22696801-705c326024 pages=400 elapsed_s=8.9 pdf=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/dataset/test/pdfs/EW-2-22696801-705c326024.pdf
+[detect] completed method=heuristic pages=400 elapsed_s=8.9 avg_pps=44.80
+Predictions written: /Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/predictions.heuristic.jsonl
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/report.heuristic.eval.log
+[eval] manifest=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/dataset/test/manifest.json
+[eval] predictions=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/predictions.heuristic.jsonl
+Evaluation report: /Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/report.heuristic.json
+accuracy=0.3350 found=400/400 correct=134
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/models/orientation_cnn.train.log
+[train] checkpoint=/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/models/orientation_cnn.pt
+[train] rows train=1871 val=400
+/Users/helios/rotation-detection/.venv/lib/python3.13/site-packages/torch/utils/data/dataloader.py:433: UserWarning: Got pickle error when attempting to start a worker Process. This might be because the worker Process arguments are not picklable. Python 3.14+ changed the multiprocessing start method in non-Mac POSIX platforms to 'forkserver', which requires the worker Process arguments to be picklable. You can also try multiprocessing.set_start_method('fork').
+  return _MultiProcessingDataLoaderIter(self)
+Traceback (most recent call last):
+  File "/Users/helios/rotation-detection/main.py", line 252, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/helios/rotation-detection/main.py", line 219, in main
+    run_curriculum(
+    ~~~~~~~~~~~~~~^
+        input_pdfs=args.input_pdf,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<22 lines>...
+        regression_tolerance=args.regression_tolerance,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/helios/rotation-detection/rotation_detection/curriculum.py", line 69, in run_curriculum
+    stage_exp_dir = run_experiment(
+        input_pdfs=input_pdfs,
+    ...<20 lines>...
+        log_every_batches=log_every_batches,
+    )
+  File "/Users/helios/rotation-detection/rotation_detection/experiment.py", line 90, in run_experiment
+    run_training(
+    ~~~~~~~~~~~~^
+        manifest_path=str(root_manifest_path),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<14 lines>...
+        log_every_batches=log_every_batches,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/helios/rotation-detection/rotation_detection/train.py", line 127, in run_training
+    report = train_orientation_model(
+        labels=labels,
+    ...<3 lines>...
+        val_labels=val_labels,
+    )
+  File "/Users/helios/rotation-detection/rotation_detection/detectors/torch_detector.py", line 340, in train_orientation_model
+    train_loss, train_acc = _run_epoch(
+                            ~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<7 lines>...
+        log_every_batches=config.log_every_batches,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/helios/rotation-detection/rotation_detection/detectors/torch_detector.py", line 235, in _run_epoch
+    for batch_idx, (images, labels) in enumerate(dataloader, start=1):
+                                       ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/helios/rotation-detection/.venv/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 500, in __iter__
+    return self._get_iterator()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/helios/rotation-detection/.venv/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 433, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "/Users/helios/rotation-detection/.venv/lib/python3.13/site-packages/torch/utils/data/dataloader.py", line 1192, in __init__
+    w.start()
+    ~~~~~~~^^
+  File "/Users/helios/.local/share/uv/python/cpython-3.13.8-macos-aarch64-none/lib/python3.13/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ~~~~~~~~~~~^^^^^^
+  File "/Users/helios/.local/share/uv/python/cpython-3.13.8-macos-aarch64-none/lib/python3.13/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/helios/.local/share/uv/python/cpython-3.13.8-macos-aarch64-none/lib/python3.13/multiprocessing/context.py", line 289, in _Popen
+    return Popen(process_obj)
+  File "/Users/helios/.local/share/uv/python/cpython-3.13.8-macos-aarch64-none/lib/python3.13/multiprocessing/popen_spawn_posix.py", line 32, in __init__
+    super().__init__(process_obj)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/helios/.local/share/uv/python/cpython-3.13.8-macos-aarch64-none/lib/python3.13/multiprocessing/popen_fork.py", line 20, in __init__
+    self._launch(process_obj)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/helios/.local/share/uv/python/cpython-3.13.8-macos-aarch64-none/lib/python3.13/multiprocessing/popen_spawn_posix.py", line 47, in _launch
+    reduction.dump(process_obj, fp)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/helios/.local/share/uv/python/cpython-3.13.8-macos-aarch64-none/lib/python3.13/multiprocessing/reduction.py", line 60, in dump
+    ForkingPickler(file, protocol).dump(obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+AttributeError: Can't get local object '_make_dataset_class.<locals>.LabeledPageDataset'

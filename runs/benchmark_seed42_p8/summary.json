@@ -1,0 +1,10 @@
+{
+  "dataset_dir": "/Users/helios/rotation-detection/runs/benchmark_seed42_p8/dataset",
+  "experiment_dir": "/Users/helios/rotation-detection/runs/benchmark_seed42_p8",
+  "heuristic_predictions": "/Users/helios/rotation-detection/runs/benchmark_seed42_p8/predictions.heuristic.jsonl",
+  "heuristic_report": "/Users/helios/rotation-detection/runs/benchmark_seed42_p8/report.heuristic.json",
+  "manifest": "/Users/helios/rotation-detection/runs/benchmark_seed42_p8/dataset/manifest.json",
+  "torch_checkpoint": "/Users/helios/rotation-detection/runs/benchmark_seed42_p8/models/orientation_cnn.pt",
+  "torch_predictions": "/Users/helios/rotation-detection/runs/benchmark_seed42_p8/predictions.torch.jsonl",
+  "torch_report": "/Users/helios/rotation-detection/runs/benchmark_seed42_p8/report.torch.json"
+}

@@ -1,0 +1,24 @@
+{
+  "best_val_accuracy": 0.28,
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/models/smoke_numworkers2.pt",
+  "data_source": {
+    "mode": "split_manifest_labels",
+    "train_labels_path": "/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/dataset/train/labels.jsonl",
+    "train_split": "train",
+    "val_labels_path": "/Users/helios/rotation-detection/runs/scaleup_progress_v2/stage01_cap400/dataset/val/labels.jsonl",
+    "val_split": "val"
+  },
+  "device": "mps",
+  "history": [
+    {
+      "epoch": 1.0,
+      "train_accuracy": 0.35,
+      "train_loss": 1.3237678766250611,
+      "val_accuracy": 0.28,
+      "val_loss": 1.3832802772521973
+    }
+  ],
+  "train_rows": 200,
+  "used_explicit_val_split": true,
+  "val_rows": 50
+}
