@@ -35,6 +35,8 @@ def build_parser() -> argparse.ArgumentParser:
     ds.add_argument("--class-balance", choices=["random", "uniform"], default="uniform")
     ds.add_argument("--min-val-docs", type=int, default=8)
     ds.add_argument("--min-test-docs", type=int, default=8)
+    ds.add_argument("--max-val-doc-share", type=float, default=0.35)
+    ds.add_argument("--max-test-doc-share", type=float, default=0.35)
     ds.add_argument("--log-every-pages", type=int, default=200)
 
     detect = subparsers.add_parser("detect", help="Predict orientation for each page")
@@ -90,6 +92,8 @@ def build_parser() -> argparse.ArgumentParser:
     exp.add_argument("--class-balance", choices=["random", "uniform"], default="uniform")
     exp.add_argument("--min-val-docs", type=int, default=8)
     exp.add_argument("--min-test-docs", type=int, default=8)
+    exp.add_argument("--max-val-doc-share", type=float, default=0.35)
+    exp.add_argument("--max-test-doc-share", type=float, default=0.35)
     exp.add_argument("--log-every-pages", type=int, default=200)
     exp.add_argument("--train-epochs", type=int, default=10)
     exp.add_argument("--train-batch-size", type=int, default=64)
@@ -118,6 +122,8 @@ def build_parser() -> argparse.ArgumentParser:
     cur.add_argument("--class-balance", choices=["random", "uniform"], default="uniform")
     cur.add_argument("--min-val-docs", type=int, default=8)
     cur.add_argument("--min-test-docs", type=int, default=8)
+    cur.add_argument("--max-val-doc-share", type=float, default=0.35)
+    cur.add_argument("--max-test-doc-share", type=float, default=0.35)
     cur.add_argument("--log-every-pages", type=int, default=200)
     cur.add_argument("--train-epochs", type=int, default=5)
     cur.add_argument("--train-batch-size", type=int, default=96)
@@ -157,6 +163,8 @@ def main() -> int:
             class_balance=args.class_balance,
             min_val_docs=args.min_val_docs,
             min_test_docs=args.min_test_docs,
+            max_val_doc_share=args.max_val_doc_share,
+            max_test_doc_share=args.max_test_doc_share,
         )
         return 0
 
@@ -224,6 +232,8 @@ def main() -> int:
             class_balance=args.class_balance,
             min_val_docs=args.min_val_docs,
             min_test_docs=args.min_test_docs,
+            max_val_doc_share=args.max_val_doc_share,
+            max_test_doc_share=args.max_test_doc_share,
             train_epochs=args.train_epochs,
             train_batch_size=args.train_batch_size,
             train_lr=args.train_lr,
@@ -255,6 +265,8 @@ def main() -> int:
             class_balance=args.class_balance,
             min_val_docs=args.min_val_docs,
             min_test_docs=args.min_test_docs,
+            max_val_doc_share=args.max_val_doc_share,
+            max_test_doc_share=args.max_test_doc_share,
             train_epochs=args.train_epochs,
             train_batch_size=args.train_batch_size,
             train_lr=args.train_lr,

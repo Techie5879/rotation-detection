@@ -1,0 +1,232 @@
+{
+  "accuracy": 0.9821573398215734,
+  "avg_pages_per_s": 88.24298738242943,
+  "batch_size": 256,
+  "brier_mean": 0.009919110257996957,
+  "calibration": {
+    "bins": 15,
+    "ece": 0.06407542422788466,
+    "histogram": [
+      {
+        "accuracy": 0.0,
+        "avg_confidence": 0.0,
+        "count": 0,
+        "gap": 0.0,
+        "lower": 0.0,
+        "upper": 0.06666666666666667
+      },
+      {
+        "accuracy": 0.0,
+        "avg_confidence": 0.0,
+        "count": 0,
+        "gap": 0.0,
+        "lower": 0.06666666666666667,
+        "upper": 0.13333333333333333
+      },
+      {
+        "accuracy": 0.0,
+        "avg_confidence": 0.0,
+        "count": 0,
+        "gap": 0.0,
+        "lower": 0.13333333333333333,
+        "upper": 0.2
+      },
+      {
+        "accuracy": 0.0,
+        "avg_confidence": 0.0,
+        "count": 0,
+        "gap": 0.0,
+        "lower": 0.2,
+        "upper": 0.26666666666666666
+      },
+      {
+        "accuracy": 0.5,
+        "avg_confidence": 0.3273627758026123,
+        "count": 2,
+        "gap": 0.1726372241973877,
+        "lower": 0.26666666666666666,
+        "upper": 0.3333333333333333
+      },
+      {
+        "accuracy": 0.625,
+        "avg_confidence": 0.3607952520251274,
+        "count": 8,
+        "gap": 0.2642047479748726,
+        "lower": 0.3333333333333333,
+        "upper": 0.4
+      },
+      {
+        "accuracy": 0.7692307692307693,
+        "avg_confidence": 0.44040486904291004,
+        "count": 13,
+        "gap": 0.32882590018785923,
+        "lower": 0.4,
+        "upper": 0.4666666666666667
+      },
+      {
+        "accuracy": 0.5882352941176471,
+        "avg_confidence": 0.49961426766479716,
+        "count": 34,
+        "gap": 0.08862102645284992,
+        "lower": 0.4666666666666667,
+        "upper": 0.5333333333333333
+      },
+      {
+        "accuracy": 0.5789473684210527,
+        "avg_confidence": 0.5671759200723547,
+        "count": 38,
+        "gap": 0.011771448348697922,
+        "lower": 0.5333333333333333,
+        "upper": 0.6
+      },
+      {
+        "accuracy": 0.9767441860465116,
+        "avg_confidence": 0.6357906724131385,
+        "count": 43,
+        "gap": 0.3409535136333731,
+        "lower": 0.6,
+        "upper": 0.6666666666666666
+      },
+      {
+        "accuracy": 0.9259259259259259,
+        "avg_confidence": 0.7013635072443221,
+        "count": 54,
+        "gap": 0.22456241868160387,
+        "lower": 0.6666666666666666,
+        "upper": 0.7333333333333333
+      },
+      {
+        "accuracy": 0.99,
+        "avg_confidence": 0.7688513958454132,
+        "count": 100,
+        "gap": 0.22114860415458681,
+        "lower": 0.7333333333333333,
+        "upper": 0.8
+      },
+      {
+        "accuracy": 0.9940828402366864,
+        "avg_confidence": 0.8362863331856812,
+        "count": 169,
+        "gap": 0.15779650705100512,
+        "lower": 0.8,
+        "upper": 0.8666666666666667
+      },
+      {
+        "accuracy": 1.0,
+        "avg_confidence": 0.9051973505108679,
+        "count": 377,
+        "gap": 0.09480264948913208,
+        "lower": 0.8666666666666667,
+        "upper": 0.9333333333333333
+      },
+      {
+        "accuracy": 1.0,
+        "avg_confidence": 0.9775764886884784,
+        "count": 1628,
+        "gap": 0.02242351131152165,
+        "lower": 0.9333333333333333,
+        "upper": 1.0
+      }
+    ],
+    "mce": 0.3409535136333731
+  },
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/models/orientation_cnn.pt",
+  "confidence_stats": {
+    "max": 0.9997245669364929,
+    "mean": 0.9180819155936887,
+    "min": 0.32201266288757324,
+    "p05": 0.6467889100313187,
+    "p50": 0.9646604061126709,
+    "p95": 0.9977618604898453,
+    "std": 0.11524935824680087
+  },
+  "confusion_matrix": {
+    "0": {
+      "0": 608,
+      "180": 4,
+      "270": 1,
+      "90": 1
+    },
+    "180": {
+      "0": 7,
+      "180": 611,
+      "270": 0,
+      "90": 1
+    },
+    "270": {
+      "0": 3,
+      "180": 1,
+      "270": 589,
+      "90": 25
+    },
+    "90": {
+      "0": 0,
+      "180": 1,
+      "270": 0,
+      "90": 614
+    }
+  },
+  "correct": 2422,
+  "dataset_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2",
+  "device": "mps",
+  "elapsed_s": 27.94556341698626,
+  "labels_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test/labels.jsonl",
+  "memory_end": {
+    "py_current_mb": 152.5210199356079,
+    "py_peak_mb": 345.63923835754395,
+    "rss_mb": 1357.03125,
+    "ru_maxrss_mb": 1357.03125,
+    "torch_allocated_mb": 127.32763671875,
+    "torch_mps_driver_mb": 2098.734375,
+    "torch_reserved_mb": null
+  },
+  "metadata_check": {
+    "checked_pdfs": 14,
+    "violating_pages": 0,
+    "violation_examples": []
+  },
+  "nll_mean": 0.10985830726294793,
+  "per_angle": {
+    "0": {
+      "accuracy": 0.990228013029316,
+      "correct": 608,
+      "support": 614
+    },
+    "180": {
+      "accuracy": 0.9870759289176091,
+      "correct": 611,
+      "support": 619
+    },
+    "270": {
+      "accuracy": 0.9530744336569579,
+      "correct": 589,
+      "support": 618
+    },
+    "90": {
+      "accuracy": 0.9983739837398374,
+      "correct": 614,
+      "support": 615
+    }
+  },
+  "pred_logprob_stats": {
+    "max": -0.0002754547167569399,
+    "mean": -0.09583657144630986,
+    "min": -1.1331642866134644,
+    "p05": -0.4357353001832962,
+    "p50": -0.035979125648736954,
+    "p95": -0.0022406490752473474,
+    "std": 0.1550251130772384
+  },
+  "predictions_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/eval_test_with_logprobs/predictions.jsonl",
+  "split_dir": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test",
+  "total_pages": 2466,
+  "true_logprob_stats": {
+    "max": -0.0002754547167569399,
+    "mean": -0.10985830726294793,
+    "min": -3.4045679569244385,
+    "p05": -0.4467170014977455,
+    "p50": -0.035979125648736954,
+    "p95": -0.0022406490752473474,
+    "std": 0.23237839473666272
+  }
+}

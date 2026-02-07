@@ -1,0 +1,247 @@
+{
+  "accuracy": 0.9963503649635036,
+  "accuracy_before_postprocess": 0.9821573398215734,
+  "accuracy_delta_postprocess": 0.014193025141930216,
+  "avg_pages_per_s": 82.67541255862793,
+  "batch_size": 256,
+  "brier_mean": 0.005831257265501132,
+  "calibration": {
+    "bins": 15,
+    "ece": 0.06747449585217723,
+    "histogram": [
+      {
+        "accuracy": 0.0,
+        "avg_confidence": 0.0,
+        "count": 0,
+        "gap": 0.0,
+        "lower": 0.0,
+        "upper": 0.06666666666666667
+      },
+      {
+        "accuracy": 0.0,
+        "avg_confidence": 0.0,
+        "count": 0,
+        "gap": 0.0,
+        "lower": 0.06666666666666667,
+        "upper": 0.13333333333333333
+      },
+      {
+        "accuracy": 0.0,
+        "avg_confidence": 0.0,
+        "count": 0,
+        "gap": 0.0,
+        "lower": 0.13333333333333333,
+        "upper": 0.2
+      },
+      {
+        "accuracy": 0.0,
+        "avg_confidence": 0.0,
+        "count": 0,
+        "gap": 0.0,
+        "lower": 0.2,
+        "upper": 0.26666666666666666
+      },
+      {
+        "accuracy": 0.75,
+        "avg_confidence": 0.31910355389118195,
+        "count": 4,
+        "gap": 0.43089644610881805,
+        "lower": 0.26666666666666666,
+        "upper": 0.3333333333333333
+      },
+      {
+        "accuracy": 0.6,
+        "avg_confidence": 0.37648547291755674,
+        "count": 5,
+        "gap": 0.22351452708244324,
+        "lower": 0.3333333333333333,
+        "upper": 0.4
+      },
+      {
+        "accuracy": 0.8333333333333334,
+        "avg_confidence": 0.4318819095691045,
+        "count": 12,
+        "gap": 0.4014514237642289,
+        "lower": 0.4,
+        "upper": 0.4666666666666667
+      },
+      {
+        "accuracy": 0.9444444444444444,
+        "avg_confidence": 0.5057422402832243,
+        "count": 18,
+        "gap": 0.4387022041612201,
+        "lower": 0.4666666666666667,
+        "upper": 0.5333333333333333
+      },
+      {
+        "accuracy": 1.0,
+        "avg_confidence": 0.5724660564552654,
+        "count": 22,
+        "gap": 0.4275339435447346,
+        "lower": 0.5333333333333333,
+        "upper": 0.6
+      },
+      {
+        "accuracy": 0.95,
+        "avg_confidence": 0.6295433640480042,
+        "count": 20,
+        "gap": 0.3204566359519958,
+        "lower": 0.6,
+        "upper": 0.6666666666666666
+      },
+      {
+        "accuracy": 0.9655172413793104,
+        "avg_confidence": 0.7007940267694408,
+        "count": 29,
+        "gap": 0.2647232146098696,
+        "lower": 0.6666666666666666,
+        "upper": 0.7333333333333333
+      },
+      {
+        "accuracy": 1.0,
+        "avg_confidence": 0.7709092996558364,
+        "count": 49,
+        "gap": 0.22909070034416357,
+        "lower": 0.7333333333333333,
+        "upper": 0.8
+      },
+      {
+        "accuracy": 0.9954954954954955,
+        "avg_confidence": 0.8354899945022823,
+        "count": 222,
+        "gap": 0.1600055009932132,
+        "lower": 0.8,
+        "upper": 0.8666666666666667
+      },
+      {
+        "accuracy": 1.0,
+        "avg_confidence": 0.9035166368964465,
+        "count": 457,
+        "gap": 0.09648336310355354,
+        "lower": 0.8666666666666667,
+        "upper": 0.9333333333333333
+      },
+      {
+        "accuracy": 1.0,
+        "avg_confidence": 0.9775764886884784,
+        "count": 1628,
+        "gap": 0.02242351131152165,
+        "lower": 0.9333333333333333,
+        "upper": 1.0
+      }
+    ],
+    "mce": 0.4387022041612201
+  },
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/models/orientation_cnn.pt",
+  "confidence_stats": {
+    "max": 0.9997245669364929,
+    "mean": 0.9288758691113264,
+    "min": 0.30030447244644165,
+    "p05": 0.7563423216342926,
+    "p50": 0.9646604061126709,
+    "p95": 0.9977618604898453,
+    "std": 0.09748631559258071
+  },
+  "confusion_matrix": {
+    "0": {
+      "0": 611,
+      "180": 2,
+      "270": 1,
+      "90": 0
+    },
+    "180": {
+      "0": 2,
+      "180": 616,
+      "270": 0,
+      "90": 1
+    },
+    "270": {
+      "0": 0,
+      "180": 0,
+      "270": 617,
+      "90": 1
+    },
+    "90": {
+      "0": 0,
+      "180": 1,
+      "270": 1,
+      "90": 613
+    }
+  },
+  "correct": 2457,
+  "dataset_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2",
+  "device": "mps",
+  "elapsed_s": 29.827489499992225,
+  "labels_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test/labels.jsonl",
+  "memory_end": {
+    "py_current_mb": 153.0333080291748,
+    "py_peak_mb": 346.06556224823,
+    "rss_mb": 1527.625,
+    "ru_maxrss_mb": 1527.625,
+    "torch_allocated_mb": 149.903564453125,
+    "torch_mps_driver_mb": 4667.078125,
+    "torch_reserved_mb": null
+  },
+  "metadata_check": {
+    "checked_pdfs": 14,
+    "violating_pages": 0,
+    "violation_examples": []
+  },
+  "nll_mean": 0.08453178781977706,
+  "per_angle": {
+    "0": {
+      "accuracy": 0.995114006514658,
+      "correct": 611,
+      "support": 614
+    },
+    "180": {
+      "accuracy": 0.9951534733441034,
+      "correct": 616,
+      "support": 619
+    },
+    "270": {
+      "accuracy": 0.9983818770226537,
+      "correct": 617,
+      "support": 618
+    },
+    "90": {
+      "accuracy": 0.9967479674796748,
+      "correct": 613,
+      "support": 615
+    }
+  },
+  "postprocess": {
+    "applied": 292,
+    "candidates": 292,
+    "changed_predictions": 38,
+    "confidence_threshold": 0.8,
+    "enabled": true,
+    "fixed_errors": 36,
+    "margin_threshold": 0.05,
+    "max_pages": 0,
+    "method": "rotation_tta_consistency",
+    "regressed_errors": 1,
+    "skipped_budget": 0
+  },
+  "pred_logprob_stats": {
+    "max": -0.0002754547167569399,
+    "mean": -0.08113972786860238,
+    "min": -1.2029584646224976,
+    "p05": -0.27926120162010193,
+    "p50": -0.035979125648736954,
+    "p95": -0.0022406490752473474,
+    "std": 0.1313983450889606
+  },
+  "predictions_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/eval_test_postprocess_locked_from_val/predictions.jsonl",
+  "split_dir": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test",
+  "total_pages": 2466,
+  "true_logprob_stats": {
+    "max": -0.0002754547167569399,
+    "mean": -0.08453178781977706,
+    "min": -2.988821506500244,
+    "p05": -0.285100057721138,
+    "p50": -0.035979125648736954,
+    "p95": -0.0022406490752473474,
+    "std": 0.16224858617747967
+  }
+}

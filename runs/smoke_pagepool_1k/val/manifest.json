@@ -1,0 +1,1195 @@
+{
+  "angles": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "created_at_utc": "20260207T021757Z",
+  "dataset_id": "smoke_pagepool_1k",
+  "documents": [
+    {
+      "doc_id": "EW-2-22696428-1213547-2-f6bd932709",
+      "output_pdf": "pdfs/EW-2-22696428-1213547-2-f6bd932709.pdf",
+      "page_count": 4,
+      "pages": [
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22696428-1213547-2-f6bd932709_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22696428-1213547-2-f6bd932709_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22696428-1213547-2-f6bd932709_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22696428-1213547-2-f6bd932709_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 0,
+          "width": 794
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/gcs-ew-ny-dump/extracted/EW-2-22696428-1213547-Sorted/EW-2-22696428-1213547-2.pdf",
+      "split": "val"
+    },
+    {
+      "doc_id": "EW-2-22734634-1209455-2-37425b0857",
+      "output_pdf": "pdfs/EW-2-22734634-1209455-2-37425b0857.pdf",
+      "page_count": 22,
+      "pages": [
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00009.png",
+          "page_index": 8,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00010.png",
+          "page_index": 9,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00011.png",
+          "page_index": 10,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00012.png",
+          "page_index": 11,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00013.png",
+          "page_index": 12,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00014.png",
+          "page_index": 13,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00015.png",
+          "page_index": 14,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00016.png",
+          "page_index": 15,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00017.png",
+          "page_index": 16,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00018.png",
+          "page_index": 17,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00019.png",
+          "page_index": 18,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00020.png",
+          "page_index": 19,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00021.png",
+          "page_index": 20,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22734634-1209455-2-37425b0857_p00022.png",
+          "page_index": 21,
+          "rotation_deg": 180,
+          "width": 794
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/gcs-ew-ny-dump/extracted/EW-2-22734634-1209455-Sorted/EW-2-22734634-1209455-2.pdf",
+      "split": "val"
+    },
+    {
+      "doc_id": "EW-2-22756294-1213609-2-803ea07206",
+      "output_pdf": "pdfs/EW-2-22756294-1213609-2-803ea07206.pdf",
+      "page_count": 22,
+      "pages": [
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00009.png",
+          "page_index": 8,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00010.png",
+          "page_index": 9,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00011.png",
+          "page_index": 10,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00012.png",
+          "page_index": 11,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 3171,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00013.png",
+          "page_index": 12,
+          "rotation_deg": 180,
+          "width": 2304
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00014.png",
+          "page_index": 13,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00015.png",
+          "page_index": 14,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00016.png",
+          "page_index": 15,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00017.png",
+          "page_index": 16,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00018.png",
+          "page_index": 17,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00019.png",
+          "page_index": 18,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00020.png",
+          "page_index": 19,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00021.png",
+          "page_index": 20,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22756294-1213609-2-803ea07206_p00022.png",
+          "page_index": 21,
+          "rotation_deg": 0,
+          "width": 816
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/gcs-ew-ny-dump-fresh-eval1/extracted/EW-2-22756294-1213609-Sorted/EW-2-22756294-1213609-2.pdf",
+      "split": "val"
+    },
+    {
+      "doc_id": "EW-2-22765187-1212241-1-30bcaf7bba",
+      "output_pdf": "pdfs/EW-2-22765187-1212241-1-30bcaf7bba.pdf",
+      "page_count": 22,
+      "pages": [
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00009.png",
+          "page_index": 8,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00010.png",
+          "page_index": 9,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00011.png",
+          "page_index": 10,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00012.png",
+          "page_index": 11,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00013.png",
+          "page_index": 12,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00014.png",
+          "page_index": 13,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00015.png",
+          "page_index": 14,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00016.png",
+          "page_index": 15,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00017.png",
+          "page_index": 16,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00018.png",
+          "page_index": 17,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00019.png",
+          "page_index": 18,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00020.png",
+          "page_index": 19,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1054,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00021.png",
+          "page_index": 20,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00022.png",
+          "page_index": 21,
+          "rotation_deg": 270,
+          "width": 1054
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/gcs-ew-ny-dump/extracted/EW-2-22765187-1212241-Sorted/EW-2-22765187-1212241-1.pdf",
+      "split": "val"
+    },
+    {
+      "doc_id": "EW-2-22781816-1212678-1-cb668b7735",
+      "output_pdf": "pdfs/EW-2-22781816-1212678-1-cb668b7735.pdf",
+      "page_count": 22,
+      "pages": [
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00009.png",
+          "page_index": 8,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00010.png",
+          "page_index": 9,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 3378,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00011.png",
+          "page_index": 10,
+          "rotation_deg": 90,
+          "width": 4504
+        },
+        {
+          "height": 4504,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00012.png",
+          "page_index": 11,
+          "rotation_deg": 0,
+          "width": 3378
+        },
+        {
+          "height": 4486,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00013.png",
+          "page_index": 12,
+          "rotation_deg": 180,
+          "width": 3359
+        },
+        {
+          "height": 3379,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00014.png",
+          "page_index": 13,
+          "rotation_deg": 270,
+          "width": 4510
+        },
+        {
+          "height": 3379,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00015.png",
+          "page_index": 14,
+          "rotation_deg": 270,
+          "width": 4510
+        },
+        {
+          "height": 4506,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00016.png",
+          "page_index": 15,
+          "rotation_deg": 0,
+          "width": 3375
+        },
+        {
+          "height": 3375,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00017.png",
+          "page_index": 16,
+          "rotation_deg": 270,
+          "width": 4499
+        },
+        {
+          "height": 3376,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00018.png",
+          "page_index": 17,
+          "rotation_deg": 270,
+          "width": 4504
+        },
+        {
+          "height": 3372,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00019.png",
+          "page_index": 18,
+          "rotation_deg": 90,
+          "width": 4508
+        },
+        {
+          "height": 3376,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00020.png",
+          "page_index": 19,
+          "rotation_deg": 270,
+          "width": 4510
+        },
+        {
+          "height": 3367,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00021.png",
+          "page_index": 20,
+          "rotation_deg": 90,
+          "width": 4512
+        },
+        {
+          "height": 3363,
+          "image_path": "pages/EW-2-22781816-1212678-1-cb668b7735_p00022.png",
+          "page_index": 21,
+          "rotation_deg": 90,
+          "width": 4495
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/gcs-ew-ny-dump/extracted/EW-2-22781816-1212678-Sorted/EW-2-22781816-1212678-1.pdf",
+      "split": "val"
+    },
+    {
+      "doc_id": "EW-2-22781816-1212678-2-637b148bcc",
+      "output_pdf": "pdfs/EW-2-22781816-1212678-2-637b148bcc.pdf",
+      "page_count": 22,
+      "pages": [
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 2304,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 270,
+          "width": 3091
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 0,
+          "width": 820
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 180,
+          "width": 820
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 180,
+          "width": 820
+        },
+        {
+          "height": 820,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00009.png",
+          "page_index": 8,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00010.png",
+          "page_index": 9,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00011.png",
+          "page_index": 10,
+          "rotation_deg": 0,
+          "width": 820
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00012.png",
+          "page_index": 11,
+          "rotation_deg": 0,
+          "width": 820
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00013.png",
+          "page_index": 12,
+          "rotation_deg": 180,
+          "width": 820
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00014.png",
+          "page_index": 13,
+          "rotation_deg": 0,
+          "width": 820
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00015.png",
+          "page_index": 14,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00016.png",
+          "page_index": 15,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00017.png",
+          "page_index": 16,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00018.png",
+          "page_index": 17,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00019.png",
+          "page_index": 18,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00020.png",
+          "page_index": 19,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00021.png",
+          "page_index": 20,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00022.png",
+          "page_index": 21,
+          "rotation_deg": 270,
+          "width": 1056
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/gcs-ew-ny-dump/extracted/EW-2-22781816-1212678-Sorted/EW-2-22781816-1212678-2.pdf",
+      "split": "val"
+    },
+    {
+      "doc_id": "EW-2-22783576-1214033-2-69461afada",
+      "output_pdf": "pdfs/EW-2-22783576-1214033-2-69461afada.pdf",
+      "page_count": 22,
+      "pages": [
+        {
+          "height": 1123,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 0,
+          "width": 820
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00009.png",
+          "page_index": 8,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00010.png",
+          "page_index": 9,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00011.png",
+          "page_index": 10,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 2304,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00012.png",
+          "page_index": 11,
+          "rotation_deg": 270,
+          "width": 3171
+        },
+        {
+          "height": 3171,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00013.png",
+          "page_index": 12,
+          "rotation_deg": 0,
+          "width": 2304
+        },
+        {
+          "height": 3171,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00014.png",
+          "page_index": 13,
+          "rotation_deg": 0,
+          "width": 2304
+        },
+        {
+          "height": 2304,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00015.png",
+          "page_index": 14,
+          "rotation_deg": 270,
+          "width": 3171
+        },
+        {
+          "height": 2304,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00016.png",
+          "page_index": 15,
+          "rotation_deg": 90,
+          "width": 3171
+        },
+        {
+          "height": 3171,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00017.png",
+          "page_index": 16,
+          "rotation_deg": 180,
+          "width": 2304
+        },
+        {
+          "height": 2304,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00018.png",
+          "page_index": 17,
+          "rotation_deg": 270,
+          "width": 3171
+        },
+        {
+          "height": 2304,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00019.png",
+          "page_index": 18,
+          "rotation_deg": 90,
+          "width": 3171
+        },
+        {
+          "height": 3171,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00020.png",
+          "page_index": 19,
+          "rotation_deg": 180,
+          "width": 2304
+        },
+        {
+          "height": 3171,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00021.png",
+          "page_index": 20,
+          "rotation_deg": 180,
+          "width": 2304
+        },
+        {
+          "height": 3171,
+          "image_path": "pages/EW-2-22783576-1214033-2-69461afada_p00022.png",
+          "page_index": 21,
+          "rotation_deg": 180,
+          "width": 2304
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/gcs-ew-ny-dump-fresh-eval1/extracted/EW-2-22783576-1214033-Sorted/EW-2-22783576-1214033-2.pdf",
+      "split": "val"
+    },
+    {
+      "doc_id": "EW-20-22771609-1213135-1-122f5960c6",
+      "output_pdf": "pdfs/EW-20-22771609-1213135-1-122f5960c6.pdf",
+      "page_count": 22,
+      "pages": [
+        {
+          "height": 1123,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00009.png",
+          "page_index": 8,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00010.png",
+          "page_index": 9,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00011.png",
+          "page_index": 10,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00012.png",
+          "page_index": 11,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00013.png",
+          "page_index": 12,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00014.png",
+          "page_index": 13,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00015.png",
+          "page_index": 14,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00016.png",
+          "page_index": 15,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00017.png",
+          "page_index": 16,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00018.png",
+          "page_index": 17,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00019.png",
+          "page_index": 18,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00020.png",
+          "page_index": 19,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00021.png",
+          "page_index": 20,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "pages/EW-20-22771609-1213135-1-122f5960c6_p00022.png",
+          "page_index": 21,
+          "rotation_deg": 0,
+          "width": 816
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/gcs-ew-ny-dump/extracted/EW-20-22771609-1213135-Sorted/EW-20-22771609-1213135-1.pdf",
+      "split": "val"
+    }
+  ],
+  "dpi": 96,
+  "labels_path": "labels.jsonl",
+  "rotate_probability": 0.7,
+  "seed": 42,
+  "split": "val"
+}

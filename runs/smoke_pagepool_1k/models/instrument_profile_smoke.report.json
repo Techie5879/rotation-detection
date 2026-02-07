@@ -1,0 +1,206 @@
+{
+  "best_val_accuracy": 0.22,
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/smoke_pagepool_1k/models/instrument_profile_smoke.pt",
+  "data_source": {
+    "mode": "split_manifest_labels",
+    "train_labels_path": "/Users/helios/rotation-detection/runs/smoke_pagepool_1k/train/labels.jsonl",
+    "train_split": "train",
+    "val_labels_path": "/Users/helios/rotation-detection/runs/smoke_pagepool_1k/val/labels.jsonl",
+    "val_split": "val"
+  },
+  "device": "mps",
+  "history": [
+    {
+      "epoch": 1.0,
+      "generalization_gap": 0.04500000000000001,
+      "loss_gap": 0.003625702857971147,
+      "memory": {
+        "py_current_mb": 103.51729202270508,
+        "py_peak_mb": 201.08783721923828,
+        "rss_mb": 1099.375,
+        "ru_maxrss_mb": 1099.375,
+        "torch_allocated_mb": 30.858154296875,
+        "torch_mps_driver_mb": 2364.5625,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.265,
+      "train_loss": 1.38369779586792,
+      "train_stats": {
+        "avg_confidence": 0.3171881513297558,
+        "avg_entropy_nats": 1.3548451709747313,
+        "confusion_matrix": {
+          "0": {
+            "0": 13,
+            "180": 5,
+            "270": 8,
+            "90": 17
+          },
+          "180": {
+            "0": 19,
+            "180": 5,
+            "270": 17,
+            "90": 9
+          },
+          "270": {
+            "0": 16,
+            "180": 1,
+            "270": 15,
+            "90": 19
+          },
+          "90": {
+            "0": 16,
+            "180": 3,
+            "270": 17,
+            "90": 20
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.3023255813953488,
+            "correct": 13,
+            "support": 43
+          },
+          "180": {
+            "accuracy": 0.1,
+            "correct": 5,
+            "support": 50
+          },
+          "270": {
+            "accuracy": 0.29411764705882354,
+            "correct": 15,
+            "support": 51
+          },
+          "90": {
+            "accuracy": 0.35714285714285715,
+            "correct": 20,
+            "support": 56
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 19,
+            "pred": 0,
+            "true": 180
+          },
+          {
+            "count": 19,
+            "pred": 90,
+            "true": 270
+          },
+          {
+            "count": 17,
+            "pred": 90,
+            "true": 0
+          },
+          {
+            "count": 17,
+            "pred": 270,
+            "true": 90
+          },
+          {
+            "count": 17,
+            "pred": 270,
+            "true": 180
+          },
+          {
+            "count": 16,
+            "pred": 0,
+            "true": 90
+          }
+        ]
+      },
+      "val_accuracy": 0.22,
+      "val_loss": 1.3873234987258911,
+      "val_stats": {
+        "avg_confidence": 0.25890121817588807,
+        "avg_entropy_nats": 1.385664074420929,
+        "confusion_matrix": {
+          "0": {
+            "0": 0,
+            "180": 0,
+            "270": 13,
+            "90": 0
+          },
+          "180": {
+            "0": 0,
+            "180": 0,
+            "270": 12,
+            "90": 0
+          },
+          "270": {
+            "0": 0,
+            "180": 0,
+            "270": 11,
+            "90": 0
+          },
+          "90": {
+            "0": 0,
+            "180": 0,
+            "270": 14,
+            "90": 0
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "support": 13
+          },
+          "180": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "support": 12
+          },
+          "270": {
+            "accuracy": 1.0,
+            "correct": 11,
+            "support": 11
+          },
+          "90": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "support": 14
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 14,
+            "pred": 270,
+            "true": 90
+          },
+          {
+            "count": 13,
+            "pred": 270,
+            "true": 0
+          },
+          {
+            "count": 12,
+            "pred": 270,
+            "true": 180
+          }
+        ]
+      }
+    }
+  ],
+  "memory_after_train": {
+    "py_current_mb": 103.48016357421875,
+    "py_peak_mb": 201.08783721923828,
+    "rss_mb": 1099.734375,
+    "ru_maxrss_mb": 1099.734375,
+    "torch_allocated_mb": null,
+    "torch_mps_driver_mb": null,
+    "torch_reserved_mb": null
+  },
+  "memory_before_train": {
+    "py_current_mb": 0.0,
+    "py_peak_mb": 0.0,
+    "rss_mb": 47.6875,
+    "ru_maxrss_mb": 47.6875,
+    "torch_allocated_mb": null,
+    "torch_mps_driver_mb": null,
+    "torch_reserved_mb": null
+  },
+  "train_rows": 200,
+  "used_explicit_val_split": true,
+  "val_rows": 50
+}

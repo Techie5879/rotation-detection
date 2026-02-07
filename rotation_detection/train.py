@@ -4,12 +4,32 @@ from __future__ import annotations
 
 from pathlib import Path
 from typing import Any
+from collections import defaultdict
 
 from .detectors.torch_detector import TrainConfig, train_orientation_model
 from .logging_utils import tee_output
 from .memory_profile import log_memory, snapshot_memory
 from .manifest import read_jsonl
 from .utils import dump_json, load_json
+
+
+def _angle_counts(rows: list[dict[str, Any]]) -> dict[int, int]:
+    counts = {0: 0, 90: 0, 180: 0, 270: 0}
+    for row in rows:
+        angle = int(row.get("rotation_deg", 0)) % 360
+        if angle in counts:
+            counts[angle] += 1
+    return counts
+
+
+def _max_doc_share(rows: list[dict[str, Any]]) -> float:
+    if not rows:
+        return 0.0
+    per_doc: dict[str, int] = defaultdict(int)
+    for row in rows:
+        per_doc[str(row.get("doc_id", "unknown"))] += 1
+    largest = max(per_doc.values()) if per_doc else 0
+    return largest / max(len(rows), 1)
 
 
 def _resolve_labels_path(manifest_path: str | None, labels_path: str | None) -> Path:
@@ -124,6 +144,27 @@ def run_training(
         print(
             f"[train] rows train={len(labels)} val={(len(val_labels) if val_labels is not None else 'auto')}"
         )
+
+        train_counts = _angle_counts(labels)
+        train_share = _max_doc_share(labels)
+        print(
+            "[train] split_profile train "
+            f"angles=0:{train_counts[0]} 90:{train_counts[90]} 180:{train_counts[180]} 270:{train_counts[270]} "
+            f"max_doc_share={train_share:.3f}"
+        )
+        if val_labels is not None:
+            val_counts = _angle_counts(val_labels)
+            val_share = _max_doc_share(val_labels)
+            print(
+                "[train] split_profile val "
+                f"angles=0:{val_counts[0]} 90:{val_counts[90]} 180:{val_counts[180]} 270:{val_counts[270]} "
+                f"max_doc_share={val_share:.3f}"
+            )
+            if val_share >= 0.35:
+                print(
+                    "[train] warning val split is document-dominated; "
+                    "validation may be noisy for hyperparameter selection"
+                )
 
         config = TrainConfig(
             epochs=epochs,

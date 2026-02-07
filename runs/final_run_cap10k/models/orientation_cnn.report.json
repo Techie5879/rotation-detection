@@ -1,0 +1,99 @@
+{
+  "best_val_accuracy": 0.9136400322841001,
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/final_run_cap10k/models/orientation_cnn.pt",
+  "data_source": {
+    "mode": "split_manifest_labels",
+    "train_labels_path": "/Users/helios/rotation-detection/runs/final_run_cap10k/train/labels.jsonl",
+    "train_split": "train",
+    "val_labels_path": "/Users/helios/rotation-detection/runs/final_run_cap10k/val/labels.jsonl",
+    "val_split": "val"
+  },
+  "device": "mps",
+  "history": [
+    {
+      "epoch": 1.0,
+      "memory": {
+        "py_current_mb": 122.38190460205078,
+        "py_peak_mb": 316.4203157424927,
+        "rss_mb": 1725.046875,
+        "ru_maxrss_mb": 1725.046875,
+        "torch_allocated_mb": 40.311279296875,
+        "torch_mps_driver_mb": 4164.546875,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.6790775215337593,
+      "train_loss": 0.859747209885258,
+      "val_accuracy": 0.8111380145278451,
+      "val_loss": 0.7612274289131165
+    },
+    {
+      "epoch": 2.0,
+      "memory": {
+        "py_current_mb": 122.41615200042725,
+        "py_peak_mb": 316.4532403945923,
+        "rss_mb": 1730.328125,
+        "ru_maxrss_mb": 1730.328125,
+        "torch_allocated_mb": 40.311279296875,
+        "torch_mps_driver_mb": 5700.546875,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.9225710845605261,
+      "train_loss": 0.47086969877245516,
+      "val_accuracy": 0.9136400322841001,
+      "val_loss": 0.4563155232464911
+    },
+    {
+      "epoch": 3.0,
+      "memory": {
+        "py_current_mb": 122.42499256134033,
+        "py_peak_mb": 316.462158203125,
+        "rss_mb": 1747.65625,
+        "ru_maxrss_mb": 1747.703125,
+        "torch_allocated_mb": 40.311279296875,
+        "torch_mps_driver_mb": 6724.546875,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.9535056034083542,
+      "train_loss": 0.3584814857937533,
+      "val_accuracy": 0.903954802259887,
+      "val_loss": 0.44542113429986246
+    },
+    {
+      "epoch": 4.0,
+      "memory": {
+        "py_current_mb": 122.43015480041504,
+        "py_peak_mb": 316.4675817489624,
+        "rss_mb": 1747.96875,
+        "ru_maxrss_mb": 1748.0,
+        "torch_allocated_mb": 40.311279296875,
+        "torch_mps_driver_mb": 7236.546875,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.9716587941094749,
+      "train_loss": 0.3081211982236435,
+      "val_accuracy": 0.8950766747376917,
+      "val_loss": 0.4375844086438441
+    }
+  ],
+  "memory_after_train": {
+    "py_current_mb": 122.26706314086914,
+    "py_peak_mb": 316.4675817489624,
+    "rss_mb": 1747.96875,
+    "ru_maxrss_mb": 1748.0,
+    "torch_allocated_mb": null,
+    "torch_mps_driver_mb": null,
+    "torch_reserved_mb": null
+  },
+  "memory_before_train": {
+    "py_current_mb": 0.0,
+    "py_peak_mb": 0.0,
+    "rss_mb": 47.359375,
+    "ru_maxrss_mb": 47.375,
+    "torch_allocated_mb": null,
+    "torch_mps_driver_mb": null,
+    "torch_reserved_mb": null
+  },
+  "train_rows": 10797,
+  "used_explicit_val_split": true,
+  "val_rows": 1239
+}

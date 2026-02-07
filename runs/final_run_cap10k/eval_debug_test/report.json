@@ -1,0 +1,76 @@
+{
+  "accuracy": 0.9635955056179776,
+  "avg_pages_per_s": 118.60298345550164,
+  "batch_size": 256,
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/final_run_cap10k/models/orientation_cnn.pt",
+  "confusion_matrix": {
+    "0": {
+      "0": 541,
+      "180": 6,
+      "270": 7,
+      "90": 2
+    },
+    "180": {
+      "0": 4,
+      "180": 548,
+      "270": 1,
+      "90": 4
+    },
+    "270": {
+      "0": 2,
+      "180": 0,
+      "270": 505,
+      "90": 49
+    },
+    "90": {
+      "0": 2,
+      "180": 0,
+      "270": 4,
+      "90": 550
+    }
+  },
+  "correct": 2144,
+  "dataset_path": "/Users/helios/rotation-detection/runs/final_run_cap10k",
+  "device": "mps",
+  "elapsed_s": 18.760067708033603,
+  "labels_path": "/Users/helios/rotation-detection/runs/final_run_cap10k/test/labels.jsonl",
+  "memory_end": {
+    "py_current_mb": 205.12344932556152,
+    "py_peak_mb": 398.66961574554443,
+    "rss_mb": 1421.90625,
+    "ru_maxrss_mb": 1421.90625,
+    "torch_allocated_mb": 138.81787109375,
+    "torch_mps_driver_mb": 2098.734375,
+    "torch_reserved_mb": null
+  },
+  "metadata_check": {
+    "checked_pdfs": 8,
+    "violating_pages": 0,
+    "violation_examples": []
+  },
+  "per_angle": {
+    "0": {
+      "accuracy": 0.9730215827338129,
+      "correct": 541,
+      "support": 556
+    },
+    "180": {
+      "accuracy": 0.9838420107719928,
+      "correct": 548,
+      "support": 557
+    },
+    "270": {
+      "accuracy": 0.908273381294964,
+      "correct": 505,
+      "support": 556
+    },
+    "90": {
+      "accuracy": 0.9892086330935251,
+      "correct": 550,
+      "support": 556
+    }
+  },
+  "predictions_path": "/Users/helios/rotation-detection/runs/final_run_cap10k/eval_debug_test/predictions.jsonl",
+  "split_dir": "/Users/helios/rotation-detection/runs/final_run_cap10k/test",
+  "total_pages": 2225
+}

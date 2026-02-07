@@ -46,6 +46,8 @@ def run_curriculum(
     class_balance: str = "uniform",
     min_val_docs: int = 8,
     min_test_docs: int = 8,
+    max_val_doc_share: float = 0.35,
+    max_test_doc_share: float = 0.35,
 ) -> Path:
     """Run staged experiments with increasing page caps and live logs."""
     root = Path(output_root).expanduser().resolve()
@@ -91,6 +93,8 @@ def run_curriculum(
                 class_balance=class_balance,
                 min_val_docs=min_val_docs,
                 min_test_docs=min_test_docs,
+                max_val_doc_share=max_val_doc_share,
+                max_test_doc_share=max_test_doc_share,
                 train_epochs=train_epochs,
                 train_batch_size=train_batch_size,
                 train_lr=train_lr,
@@ -159,6 +163,8 @@ def run_curriculum(
             "class_balance": class_balance,
             "min_val_docs": min_val_docs,
             "min_test_docs": min_test_docs,
+            "max_val_doc_share": max_val_doc_share,
+            "max_test_doc_share": max_test_doc_share,
             "memory_end": snapshot_memory(),
         }
         summary_path = curriculum_dir / "curriculum_summary.json"

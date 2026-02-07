@@ -1,0 +1,13 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/smoke_pagepool_1k/eval_logprob_smoke/run.log
+[saved-model-test] checkpoint=/Users/helios/rotation-detection/runs/smoke_pagepool_1k/models/sweep_lr6e4_wd1e4.pt
+[saved-model-test] split_dir=/Users/helios/rotation-detection/runs/smoke_pagepool_1k/test
+[saved-model-test] labels=/Users/helios/rotation-detection/runs/smoke_pagepool_1k/test/labels.jsonl
+[saved-model-test] start memory rss_mb=194.8 ru_maxrss_mb=194.8 py_current_mb=0.0 py_peak_mb=0.0
+[saved-model-test] metadata:   0%|          | 0/8 [00:00<?, ?pdf/s][saved-model-test] metadata:   0%|          | 0/8 [00:00<?, ?pdf/s, violations=0][saved-model-test] metadata:   0%|          | 0/8 [00:00<?, ?pdf/s, violations=0][saved-model-test] metadata:   0%|          | 0/8 [00:00<?, ?pdf/s, violations=0][saved-model-test] metadata:   0%|          | 0/8 [00:00<?, ?pdf/s, violations=0][saved-model-test] metadata:   0%|          | 0/8 [00:00<?, ?pdf/s, violations=0][saved-model-test] metadata:   0%|          | 0/8 [00:00<?, ?pdf/s, violations=0][saved-model-test] metadata:   0%|          | 0/8 [00:00<?, ?pdf/s, violations=0][saved-model-test] metadata:   0%|          | 0/8 [00:00<?, ?pdf/s, violations=0]                                                                                 [saved-model-test] metadata_check passed checked_pdfs=8
+[saved-model-test] batches:   0%|          | 0/2 [00:00<?, ?batch/s][saved-model-test] batches:   0%|          | 0/2 [00:01<?, ?batch/s, acc=0.8750][saved-model-test] batches:  50%|█████     | 1/2 [00:01<00:01,  1.13s/batch, acc=0.8750][saved-model-test] batches:  50%|█████     | 1/2 [00:02<00:01,  1.13s/batch, acc=0.9034][saved-model-test] progress batch=2/2 pages=176/176 acc=0.9034 rate_pps=64.96 rss_mb=665.8 ru_maxrss_mb=665.8 py_current_mb=11.0 py_peak_mb=108.3 torch_allocated_mb=69.8 torch_mps_driver_mb=1074.7
+[saved-model-test] batches: 100%|██████████| 2/2 [00:02<00:00,  1.41s/batch, acc=0.9034]                                                                                        [saved-model-test] complete accuracy=0.9034
+[saved-model-test] calibration nll=0.4169 brier=0.0526 ece15=0.1970 mce15=0.5606
+[saved-model-test] rss_mb=665.8 ru_maxrss_mb=665.8 py_current_mb=11.0 py_peak_mb=108.3 torch_allocated_mb=69.8 torch_mps_driver_mb=1074.7
+[saved-model-test] report=/Users/helios/rotation-detection/runs/smoke_pagepool_1k/eval_logprob_smoke/report.json
+[saved-model-test] predictions=/Users/helios/rotation-detection/runs/smoke_pagepool_1k/eval_logprob_smoke/predictions.jsonl
+[saved-model-test] done memory rss_mb=665.8 ru_maxrss_mb=665.8 py_current_mb=11.0 py_peak_mb=108.3 torch_allocated_mb=69.8 torch_mps_driver_mb=1074.7

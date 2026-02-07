@@ -1,0 +1,1136 @@
+{
+  "best_val_accuracy": 0.8164556962025317,
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/smoke_pagepool_1k/models/sweep_lr3e4_wd1e4.pt",
+  "data_source": {
+    "mode": "split_manifest_labels",
+    "train_labels_path": "/Users/helios/rotation-detection/runs/smoke_pagepool_1k/train/labels.jsonl",
+    "train_split": "train",
+    "val_labels_path": "/Users/helios/rotation-detection/runs/smoke_pagepool_1k/val/labels.jsonl",
+    "val_split": "val"
+  },
+  "device": "mps",
+  "history": [
+    {
+      "epoch": 1.0,
+      "generalization_gap": 0.2235870921732929,
+      "loss_gap": 0.20468983257589768,
+      "memory": {
+        "py_current_mb": 104.69335174560547,
+        "py_peak_mb": 202.31246376037598,
+        "rss_mb": 1286.078125,
+        "ru_maxrss_mb": 1286.078125,
+        "torch_allocated_mb": 25.177490234375,
+        "torch_mps_driver_mb": 2190.5625,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.4704225352112676,
+      "train_loss": 1.1797252039394468,
+      "train_stats": {
+        "avg_confidence": 0.38033268031939654,
+        "avg_entropy_nats": 1.2742909306371715,
+        "confusion_matrix": {
+          "0": {
+            "0": 145,
+            "180": 50,
+            "270": 57,
+            "90": 17
+          },
+          "180": {
+            "0": 100,
+            "180": 74,
+            "270": 68,
+            "90": 19
+          },
+          "270": {
+            "0": 18,
+            "180": 9,
+            "270": 175,
+            "90": 76
+          },
+          "90": {
+            "0": 12,
+            "180": 12,
+            "270": 126,
+            "90": 107
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.5390334572490706,
+            "correct": 145,
+            "support": 269
+          },
+          "180": {
+            "accuracy": 0.2835249042145594,
+            "correct": 74,
+            "support": 261
+          },
+          "270": {
+            "accuracy": 0.6294964028776978,
+            "correct": 175,
+            "support": 278
+          },
+          "90": {
+            "accuracy": 0.4163424124513619,
+            "correct": 107,
+            "support": 257
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 126,
+            "pred": 270,
+            "true": 90
+          },
+          {
+            "count": 100,
+            "pred": 0,
+            "true": 180
+          },
+          {
+            "count": 76,
+            "pred": 90,
+            "true": 270
+          },
+          {
+            "count": 68,
+            "pred": 270,
+            "true": 180
+          },
+          {
+            "count": 57,
+            "pred": 270,
+            "true": 0
+          },
+          {
+            "count": 50,
+            "pred": 180,
+            "true": 0
+          }
+        ]
+      },
+      "val_accuracy": 0.2468354430379747,
+      "val_loss": 1.3844150365153445,
+      "val_stats": {
+        "avg_confidence": 0.2708076297105113,
+        "avg_entropy_nats": 1.3850611282300345,
+        "confusion_matrix": {
+          "0": {
+            "0": 0,
+            "180": 0,
+            "270": 39,
+            "90": 0
+          },
+          "180": {
+            "0": 0,
+            "180": 0,
+            "270": 40,
+            "90": 0
+          },
+          "270": {
+            "0": 0,
+            "180": 0,
+            "270": 39,
+            "90": 0
+          },
+          "90": {
+            "0": 0,
+            "180": 0,
+            "270": 40,
+            "90": 0
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "support": 39
+          },
+          "180": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "support": 40
+          },
+          "270": {
+            "accuracy": 1.0,
+            "correct": 39,
+            "support": 39
+          },
+          "90": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "support": 40
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 40,
+            "pred": 270,
+            "true": 90
+          },
+          {
+            "count": 40,
+            "pred": 270,
+            "true": 180
+          },
+          {
+            "count": 39,
+            "pred": 270,
+            "true": 0
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 2.0,
+      "generalization_gap": 0.1855470374992571,
+      "loss_gap": 0.40076056651382763,
+      "memory": {
+        "py_current_mb": 104.73466205596924,
+        "py_peak_mb": 202.35372257232666,
+        "rss_mb": 1292.390625,
+        "ru_maxrss_mb": 1292.390625,
+        "torch_allocated_mb": 25.177490234375,
+        "torch_mps_driver_mb": 3470.5625,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.5906103286384976,
+      "train_loss": 0.9187094437124583,
+      "train_stats": {
+        "avg_confidence": 0.4843559409251236,
+        "avg_entropy_nats": 1.0134766677175888,
+        "confusion_matrix": {
+          "0": {
+            "0": 152,
+            "180": 90,
+            "270": 5,
+            "90": 16
+          },
+          "180": {
+            "0": 80,
+            "180": 181,
+            "270": 6,
+            "90": 17
+          },
+          "270": {
+            "0": 4,
+            "180": 7,
+            "270": 156,
+            "90": 101
+          },
+          "90": {
+            "0": 2,
+            "180": 11,
+            "270": 97,
+            "90": 140
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.5779467680608364,
+            "correct": 152,
+            "support": 263
+          },
+          "180": {
+            "accuracy": 0.6373239436619719,
+            "correct": 181,
+            "support": 284
+          },
+          "270": {
+            "accuracy": 0.582089552238806,
+            "correct": 156,
+            "support": 268
+          },
+          "90": {
+            "accuracy": 0.56,
+            "correct": 140,
+            "support": 250
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 101,
+            "pred": 90,
+            "true": 270
+          },
+          {
+            "count": 97,
+            "pred": 270,
+            "true": 90
+          },
+          {
+            "count": 90,
+            "pred": 180,
+            "true": 0
+          },
+          {
+            "count": 80,
+            "pred": 0,
+            "true": 180
+          },
+          {
+            "count": 17,
+            "pred": 90,
+            "true": 180
+          },
+          {
+            "count": 16,
+            "pred": 90,
+            "true": 0
+          }
+        ]
+      },
+      "val_accuracy": 0.4050632911392405,
+      "val_loss": 1.319470010226286,
+      "val_stats": {
+        "avg_confidence": 0.27858761122709585,
+        "avg_entropy_nats": 1.3787972730926321,
+        "confusion_matrix": {
+          "0": {
+            "0": 14,
+            "180": 25,
+            "270": 0,
+            "90": 0
+          },
+          "180": {
+            "0": 13,
+            "180": 27,
+            "270": 0,
+            "90": 0
+          },
+          "270": {
+            "0": 1,
+            "180": 17,
+            "270": 12,
+            "90": 9
+          },
+          "90": {
+            "0": 0,
+            "180": 22,
+            "270": 7,
+            "90": 11
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.358974358974359,
+            "correct": 14,
+            "support": 39
+          },
+          "180": {
+            "accuracy": 0.675,
+            "correct": 27,
+            "support": 40
+          },
+          "270": {
+            "accuracy": 0.3076923076923077,
+            "correct": 12,
+            "support": 39
+          },
+          "90": {
+            "accuracy": 0.275,
+            "correct": 11,
+            "support": 40
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 25,
+            "pred": 180,
+            "true": 0
+          },
+          {
+            "count": 22,
+            "pred": 180,
+            "true": 90
+          },
+          {
+            "count": 17,
+            "pred": 180,
+            "true": 270
+          },
+          {
+            "count": 13,
+            "pred": 0,
+            "true": 180
+          },
+          {
+            "count": 9,
+            "pred": 90,
+            "true": 270
+          },
+          {
+            "count": 7,
+            "pred": 270,
+            "true": 90
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 3.0,
+      "generalization_gap": 0.16054555179176327,
+      "loss_gap": 0.24774121635630497,
+      "memory": {
+        "py_current_mb": 104.74756813049316,
+        "py_peak_mb": 202.36569023132324,
+        "rss_mb": 1292.484375,
+        "ru_maxrss_mb": 1292.484375,
+        "torch_allocated_mb": 25.177490234375,
+        "torch_mps_driver_mb": 3470.5625,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.647887323943662,
+      "train_loss": 0.8602192326330803,
+      "train_stats": {
+        "avg_confidence": 0.512524118054081,
+        "avg_entropy_nats": 0.9520227793236853,
+        "confusion_matrix": {
+          "0": {
+            "0": 177,
+            "180": 74,
+            "270": 7,
+            "90": 4
+          },
+          "180": {
+            "0": 83,
+            "180": 175,
+            "270": 4,
+            "90": 6
+          },
+          "270": {
+            "0": 3,
+            "180": 8,
+            "270": 130,
+            "90": 115
+          },
+          "90": {
+            "0": 4,
+            "180": 11,
+            "270": 56,
+            "90": 208
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.6755725190839694,
+            "correct": 177,
+            "support": 262
+          },
+          "180": {
+            "accuracy": 0.6529850746268657,
+            "correct": 175,
+            "support": 268
+          },
+          "270": {
+            "accuracy": 0.5078125,
+            "correct": 130,
+            "support": 256
+          },
+          "90": {
+            "accuracy": 0.7455197132616488,
+            "correct": 208,
+            "support": 279
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 115,
+            "pred": 90,
+            "true": 270
+          },
+          {
+            "count": 83,
+            "pred": 0,
+            "true": 180
+          },
+          {
+            "count": 74,
+            "pred": 180,
+            "true": 0
+          },
+          {
+            "count": 56,
+            "pred": 270,
+            "true": 90
+          },
+          {
+            "count": 11,
+            "pred": 180,
+            "true": 90
+          },
+          {
+            "count": 8,
+            "pred": 180,
+            "true": 270
+          }
+        ]
+      },
+      "val_accuracy": 0.4873417721518987,
+      "val_loss": 1.1079604489893853,
+      "val_stats": {
+        "avg_confidence": 0.3632200000029576,
+        "avg_entropy_nats": 1.2844965533365178,
+        "confusion_matrix": {
+          "0": {
+            "0": 35,
+            "180": 4,
+            "270": 0,
+            "90": 0
+          },
+          "180": {
+            "0": 30,
+            "180": 10,
+            "270": 0,
+            "90": 0
+          },
+          "270": {
+            "0": 7,
+            "180": 0,
+            "270": 17,
+            "90": 15
+          },
+          "90": {
+            "0": 11,
+            "180": 0,
+            "270": 14,
+            "90": 15
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.8974358974358975,
+            "correct": 35,
+            "support": 39
+          },
+          "180": {
+            "accuracy": 0.25,
+            "correct": 10,
+            "support": 40
+          },
+          "270": {
+            "accuracy": 0.4358974358974359,
+            "correct": 17,
+            "support": 39
+          },
+          "90": {
+            "accuracy": 0.375,
+            "correct": 15,
+            "support": 40
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 30,
+            "pred": 0,
+            "true": 180
+          },
+          {
+            "count": 15,
+            "pred": 90,
+            "true": 270
+          },
+          {
+            "count": 14,
+            "pred": 270,
+            "true": 90
+          },
+          {
+            "count": 11,
+            "pred": 0,
+            "true": 90
+          },
+          {
+            "count": 7,
+            "pred": 0,
+            "true": 270
+          },
+          {
+            "count": 4,
+            "pred": 180,
+            "true": 0
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 4.0,
+      "generalization_gap": 0.12761633089677304,
+      "loss_gap": 0.09658729821990819,
+      "memory": {
+        "py_current_mb": 104.7605619430542,
+        "py_peak_mb": 202.37854766845703,
+        "rss_mb": 1298.015625,
+        "ru_maxrss_mb": 1298.015625,
+        "torch_allocated_mb": 25.177490234375,
+        "torch_mps_driver_mb": 3470.5625,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.7352112676056338,
+      "train_loss": 0.7989699733089394,
+      "train_stats": {
+        "avg_confidence": 0.5499439270563529,
+        "avg_entropy_nats": 0.9203092341132008,
+        "confusion_matrix": {
+          "0": {
+            "0": 193,
+            "180": 57,
+            "270": 16,
+            "90": 2
+          },
+          "180": {
+            "0": 50,
+            "180": 206,
+            "270": 11,
+            "90": 0
+          },
+          "270": {
+            "0": 4,
+            "180": 4,
+            "270": 249,
+            "90": 15
+          },
+          "90": {
+            "0": 8,
+            "180": 4,
+            "270": 111,
+            "90": 135
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.7201492537313433,
+            "correct": 193,
+            "support": 268
+          },
+          "180": {
+            "accuracy": 0.7715355805243446,
+            "correct": 206,
+            "support": 267
+          },
+          "270": {
+            "accuracy": 0.9154411764705882,
+            "correct": 249,
+            "support": 272
+          },
+          "90": {
+            "accuracy": 0.5232558139534884,
+            "correct": 135,
+            "support": 258
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 111,
+            "pred": 270,
+            "true": 90
+          },
+          {
+            "count": 57,
+            "pred": 180,
+            "true": 0
+          },
+          {
+            "count": 50,
+            "pred": 0,
+            "true": 180
+          },
+          {
+            "count": 16,
+            "pred": 270,
+            "true": 0
+          },
+          {
+            "count": 15,
+            "pred": 90,
+            "true": 270
+          },
+          {
+            "count": 11,
+            "pred": 270,
+            "true": 180
+          }
+        ]
+      },
+      "val_accuracy": 0.6075949367088608,
+      "val_loss": 0.8955572715288476,
+      "val_stats": {
+        "avg_confidence": 0.4665909854671623,
+        "avg_entropy_nats": 1.101962123490587,
+        "confusion_matrix": {
+          "0": {
+            "0": 16,
+            "180": 23,
+            "270": 0,
+            "90": 0
+          },
+          "180": {
+            "0": 8,
+            "180": 32,
+            "270": 0,
+            "90": 0
+          },
+          "270": {
+            "0": 0,
+            "180": 1,
+            "270": 33,
+            "90": 5
+          },
+          "90": {
+            "0": 0,
+            "180": 2,
+            "270": 23,
+            "90": 15
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.41025641025641024,
+            "correct": 16,
+            "support": 39
+          },
+          "180": {
+            "accuracy": 0.8,
+            "correct": 32,
+            "support": 40
+          },
+          "270": {
+            "accuracy": 0.8461538461538461,
+            "correct": 33,
+            "support": 39
+          },
+          "90": {
+            "accuracy": 0.375,
+            "correct": 15,
+            "support": 40
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 23,
+            "pred": 180,
+            "true": 0
+          },
+          {
+            "count": 23,
+            "pred": 270,
+            "true": 90
+          },
+          {
+            "count": 8,
+            "pred": 0,
+            "true": 180
+          },
+          {
+            "count": 5,
+            "pred": 90,
+            "true": 270
+          },
+          {
+            "count": 2,
+            "pred": 180,
+            "true": 90
+          },
+          {
+            "count": 1,
+            "pred": 180,
+            "true": 270
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 5.0,
+      "generalization_gap": 0.1021275331312772,
+      "loss_gap": 0.030978745551162312,
+      "memory": {
+        "py_current_mb": 104.77329921722412,
+        "py_peak_mb": 202.39131259918213,
+        "rss_mb": 1299.546875,
+        "ru_maxrss_mb": 1299.546875,
+        "torch_allocated_mb": 25.177490234375,
+        "torch_mps_driver_mb": 3470.5625,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.7793427230046949,
+      "train_loss": 0.7362391138860317,
+      "train_stats": {
+        "avg_confidence": 0.5852651303642792,
+        "avg_entropy_nats": 0.8915779163999736,
+        "confusion_matrix": {
+          "0": {
+            "0": 225,
+            "180": 31,
+            "270": 7,
+            "90": 0
+          },
+          "180": {
+            "0": 60,
+            "180": 170,
+            "270": 15,
+            "90": 3
+          },
+          "270": {
+            "0": 4,
+            "180": 7,
+            "270": 215,
+            "90": 60
+          },
+          "90": {
+            "0": 4,
+            "180": 6,
+            "270": 38,
+            "90": 220
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.8555133079847909,
+            "correct": 225,
+            "support": 263
+          },
+          "180": {
+            "accuracy": 0.6854838709677419,
+            "correct": 170,
+            "support": 248
+          },
+          "270": {
+            "accuracy": 0.7517482517482518,
+            "correct": 215,
+            "support": 286
+          },
+          "90": {
+            "accuracy": 0.8208955223880597,
+            "correct": 220,
+            "support": 268
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 60,
+            "pred": 0,
+            "true": 180
+          },
+          {
+            "count": 60,
+            "pred": 90,
+            "true": 270
+          },
+          {
+            "count": 38,
+            "pred": 270,
+            "true": 90
+          },
+          {
+            "count": 31,
+            "pred": 180,
+            "true": 0
+          },
+          {
+            "count": 15,
+            "pred": 270,
+            "true": 180
+          },
+          {
+            "count": 7,
+            "pred": 270,
+            "true": 0
+          }
+        ]
+      },
+      "val_accuracy": 0.6772151898734177,
+      "val_loss": 0.767217859437194,
+      "val_stats": {
+        "avg_confidence": 0.5738755832367306,
+        "avg_entropy_nats": 0.9365900619120537,
+        "confusion_matrix": {
+          "0": {
+            "0": 20,
+            "180": 18,
+            "270": 0,
+            "90": 1
+          },
+          "180": {
+            "0": 3,
+            "180": 34,
+            "270": 0,
+            "90": 3
+          },
+          "270": {
+            "0": 0,
+            "180": 0,
+            "270": 16,
+            "90": 23
+          },
+          "90": {
+            "0": 0,
+            "180": 0,
+            "270": 3,
+            "90": 37
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.5128205128205128,
+            "correct": 20,
+            "support": 39
+          },
+          "180": {
+            "accuracy": 0.85,
+            "correct": 34,
+            "support": 40
+          },
+          "270": {
+            "accuracy": 0.41025641025641024,
+            "correct": 16,
+            "support": 39
+          },
+          "90": {
+            "accuracy": 0.925,
+            "correct": 37,
+            "support": 40
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 23,
+            "pred": 90,
+            "true": 270
+          },
+          {
+            "count": 18,
+            "pred": 180,
+            "true": 0
+          },
+          {
+            "count": 3,
+            "pred": 270,
+            "true": 90
+          },
+          {
+            "count": 3,
+            "pred": 0,
+            "true": 180
+          },
+          {
+            "count": 3,
+            "pred": 90,
+            "true": 180
+          },
+          {
+            "count": 1,
+            "pred": 90,
+            "true": 0
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 6.0,
+      "generalization_gap": 0.026736792060379155,
+      "loss_gap": -0.013337172320333046,
+      "memory": {
+        "py_current_mb": 104.7865343093872,
+        "py_peak_mb": 202.40356636047363,
+        "rss_mb": 1316.625,
+        "ru_maxrss_mb": 1316.625,
+        "torch_allocated_mb": 25.177490234375,
+        "torch_mps_driver_mb": 3470.5625,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.8431924882629108,
+      "train_loss": 0.6572923713446783,
+      "train_stats": {
+        "avg_confidence": 0.6209080750953424,
+        "avg_entropy_nats": 0.8657166860892739,
+        "confusion_matrix": {
+          "0": {
+            "0": 228,
+            "180": 37,
+            "270": 5,
+            "90": 3
+          },
+          "180": {
+            "0": 30,
+            "180": 213,
+            "270": 3,
+            "90": 7
+          },
+          "270": {
+            "0": 4,
+            "180": 6,
+            "270": 252,
+            "90": 20
+          },
+          "90": {
+            "0": 3,
+            "180": 9,
+            "270": 40,
+            "90": 205
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.8351648351648352,
+            "correct": 228,
+            "support": 273
+          },
+          "180": {
+            "accuracy": 0.841897233201581,
+            "correct": 213,
+            "support": 253
+          },
+          "270": {
+            "accuracy": 0.8936170212765957,
+            "correct": 252,
+            "support": 282
+          },
+          "90": {
+            "accuracy": 0.7976653696498055,
+            "correct": 205,
+            "support": 257
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 40,
+            "pred": 270,
+            "true": 90
+          },
+          {
+            "count": 37,
+            "pred": 180,
+            "true": 0
+          },
+          {
+            "count": 30,
+            "pred": 0,
+            "true": 180
+          },
+          {
+            "count": 20,
+            "pred": 90,
+            "true": 270
+          },
+          {
+            "count": 9,
+            "pred": 180,
+            "true": 90
+          },
+          {
+            "count": 7,
+            "pred": 90,
+            "true": 180
+          }
+        ]
+      },
+      "val_accuracy": 0.8164556962025317,
+      "val_loss": 0.6439551990243453,
+      "val_stats": {
+        "avg_confidence": 0.6256298684998404,
+        "avg_entropy_nats": 0.8425445241641395,
+        "confusion_matrix": {
+          "0": {
+            "0": 35,
+            "180": 3,
+            "270": 1,
+            "90": 0
+          },
+          "180": {
+            "0": 10,
+            "180": 26,
+            "270": 4,
+            "90": 0
+          },
+          "270": {
+            "0": 0,
+            "180": 0,
+            "270": 32,
+            "90": 7
+          },
+          "90": {
+            "0": 0,
+            "180": 0,
+            "270": 4,
+            "90": 36
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.8974358974358975,
+            "correct": 35,
+            "support": 39
+          },
+          "180": {
+            "accuracy": 0.65,
+            "correct": 26,
+            "support": 40
+          },
+          "270": {
+            "accuracy": 0.8205128205128205,
+            "correct": 32,
+            "support": 39
+          },
+          "90": {
+            "accuracy": 0.9,
+            "correct": 36,
+            "support": 40
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 10,
+            "pred": 0,
+            "true": 180
+          },
+          {
+            "count": 7,
+            "pred": 90,
+            "true": 270
+          },
+          {
+            "count": 4,
+            "pred": 270,
+            "true": 90
+          },
+          {
+            "count": 4,
+            "pred": 270,
+            "true": 180
+          },
+          {
+            "count": 3,
+            "pred": 180,
+            "true": 0
+          },
+          {
+            "count": 1,
+            "pred": 270,
+            "true": 0
+          }
+        ]
+      }
+    }
+  ],
+  "memory_after_train": {
+    "py_current_mb": 104.71580982208252,
+    "py_peak_mb": 202.40356636047363,
+    "rss_mb": 1316.65625,
+    "ru_maxrss_mb": 1316.65625,
+    "torch_allocated_mb": null,
+    "torch_mps_driver_mb": null,
+    "torch_reserved_mb": null
+  },
+  "memory_before_train": {
+    "py_current_mb": 0.0,
+    "py_peak_mb": 0.0,
+    "rss_mb": 47.53125,
+    "ru_maxrss_mb": 47.53125,
+    "torch_allocated_mb": null,
+    "torch_mps_driver_mb": null,
+    "torch_reserved_mb": null
+  },
+  "train_rows": 1065,
+  "used_explicit_val_split": true,
+  "val_rows": 158
+}

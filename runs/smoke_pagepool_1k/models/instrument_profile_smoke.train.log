@@ -1,0 +1,21 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/smoke_pagepool_1k/models/instrument_profile_smoke.train.log
+[train] checkpoint=/Users/helios/rotation-detection/runs/smoke_pagepool_1k/models/instrument_profile_smoke.pt
+[train] start memory {'rss_mb': 47.6875, 'ru_maxrss_mb': 47.6875, 'py_current_mb': 0.0, 'py_peak_mb': 0.0, 'torch_allocated_mb': None, 'torch_reserved_mb': None, 'torch_mps_driver_mb': None}
+[train] data_sampling class_balance=uniform split_strategy=document_page_weighted min_val_docs=8 min_test_docs=8
+[train] rows train=200 val=50
+[train] split_profile train angles=0:47 90:52 180:50 270:51 max_doc_share=0.110
+[train] split_profile val angles=0:13 90:14 180:12 270:11 max_doc_share=0.440
+[train] warning val split is document-dominated; validation may be noisy for hyperparameter selection
+[train] init memory rss_mb=345.5 ru_maxrss_mb=345.5 py_current_mb=103.7 py_peak_mb=104.0 torch_allocated_mb=2.9 torch_mps_driver_mb=48.5
+[train] epoch=001:   0%|          | 0/2 [00:00<?, ?batch/s][train] epoch=001:   0%|          | 0/2 [00:02<?, ?batch/s, acc=0.1953, loss=1.4080][train] epoch=001:  50%|█████     | 1/2 [00:02<00:02,  2.74s/batch, acc=0.1953, loss=1.4080][train] epoch=001:  50%|█████     | 1/2 [00:05<00:02,  2.74s/batch, acc=0.2650, loss=1.3837][train] epoch=001 batch=2/2 loss=1.3837 acc=0.2650 rss_mb=1081.5 ru_maxrss_mb=1081.5 py_current_mb=103.5 py_peak_mb=201.1 torch_allocated_mb=95.0 torch_mps_driver_mb=2364.5
+[train] epoch=001: 100%|██████████| 2/2 [00:05<00:00,  2.89s/batch, acc=0.2650, loss=1.3837]                                                                                            [val] epoch=001:   0%|          | 0/1 [00:00<?, ?batch/s][val] epoch=001:   0%|          | 0/1 [00:00<?, ?batch/s, acc=0.2200, loss=1.3873][val] epoch=001 batch=1/1 loss=1.3873 acc=0.2200 rss_mb=1099.4 ru_maxrss_mb=1099.4 py_current_mb=103.5 py_peak_mb=201.1 torch_allocated_mb=94.9 torch_mps_driver_mb=2364.6
+                                                                                  epoch=001 train_loss=1.3837 train_acc=0.2650 val_loss=1.3873 val_acc=0.2200
+[train] epoch=001 gaps acc=0.0450 loss=0.0036
+[train] epoch=001 train_per_angle 0:0.302(43) 90:0.357(56) 180:0.100(50) 270:0.294(51)
+[train] epoch=001 val_per_angle 0:0.000(13) 90:0.000(14) 180:0.000(12) 270:1.000(11)
+[train] epoch=001 val_top_confusions 90->270:14, 0->270:13, 180->270:12 avg_conf=0.2589 avg_entropy_nats=1.3857
+[train] epoch=001 rss_mb=1099.4 ru_maxrss_mb=1099.4 py_current_mb=103.5 py_peak_mb=201.1 torch_allocated_mb=30.9 torch_mps_driver_mb=2364.6
+best_val_accuracy=0.2200 checkpoint=/Users/helios/rotation-detection/runs/smoke_pagepool_1k/models/instrument_profile_smoke.pt
+[train] done memory rss_mb=1099.7 ru_maxrss_mb=1099.7 py_current_mb=103.5 py_peak_mb=201.1 torch_allocated_mb=30.9 torch_mps_driver_mb=2364.6
+Training report: /Users/helios/rotation-detection/runs/smoke_pagepool_1k/models/instrument_profile_smoke.report.json
+[train] final memory rss_mb=1099.7 ru_maxrss_mb=1099.7 py_current_mb=103.5 py_peak_mb=201.1

@@ -18,7 +18,7 @@ from tqdm.auto import tqdm
 from .constants import CARDINAL_ANGLES
 from .logging_utils import tee_output
 from .manifest import write_jsonl
-from .pdf_ops import append_image_as_pdf_page, iter_rendered_pages, rotate_image_clockwise, rotate_metadata_violations
+from .pdf_ops import append_image_as_pdf_page, rotate_image_clockwise, rotate_metadata_violations
 from .utils import (
     PdfInput,
     discover_input_pdfs,
@@ -32,6 +32,7 @@ from .utils import (
 
 SPLITS: tuple[str, str, str] = ("train", "val", "test")
 DATASET_MAX_WORKERS = 12
+PAGE_POOL_MIN_PAGES = 64
 
 
 def _sample_rotation(rng: random.Random, angles: tuple[int, ...], rotate_probability: float) -> int:
@@ -242,6 +243,44 @@ def _max_doc_share(labels: list[dict[str, Any]]) -> float:
     return max_pages / max(len(labels), 1)
 
 
+def _validate_doc_share_limit(name: str, value: float) -> None:
+    if value <= 0.0 or value > 1.0:
+        raise ValueError(f"{name} must be in (0, 1], got {value}.")
+
+
+def _render_page(task: dict[str, Any]) -> dict[str, Any]:
+    source_path = Path(str(task["source_path"]))
+    page_index = int(task["page_index"])
+    dpi = int(task["dpi"])
+    rotation_deg = int(task["rotation_deg"])
+    image_abs = Path(str(task["image_abs"]))
+    image_rel_root = str(task["image_rel_root"])
+    image_rel_split = str(task["image_rel_split"])
+
+    import pypdfium2 as pdfium
+
+    started = time.perf_counter()
+    pdf = pdfium.PdfDocument(str(source_path))
+    try:
+        page = pdf[page_index]
+        bitmap = page.render(scale=(dpi / 72.0), rotation=0)
+        image = bitmap.to_pil()
+        rotated_image = rotate_image_clockwise(image, rotation_deg)
+        rotated_image.save(image_abs, format="PNG", compress_level=3)
+        return {
+            "page_index": page_index,
+            "rotation_deg": rotation_deg,
+            "image_abs": str(image_abs),
+            "image_rel_root": image_rel_root,
+            "image_rel_split": image_rel_split,
+            "width": int(rotated_image.width),
+            "height": int(rotated_image.height),
+            "elapsed_s": time.perf_counter() - started,
+        }
+    finally:
+        pdf.close()
+
+
 def _process_document_job(job: dict[str, Any]) -> dict[str, Any]:
     source_path = Path(str(job["source_path"]))
     source_key = str(job["source_key"])
@@ -265,8 +304,6 @@ def _process_document_job(job: dict[str, Any]) -> dict[str, Any]:
         total_pages = _effective_page_count(source_path, max_pages_per_doc)
         selected_page_indices = list(range(total_pages))
 
-    selected_page_set = set(selected_page_indices)
-    max_selected_index = selected_page_indices[-1] if selected_page_indices else -1
     rotation_plan = _build_rotation_plan(
         page_indices=selected_page_indices,
         rng=rng,
@@ -280,22 +317,81 @@ def _process_document_job(job: dict[str, Any]) -> dict[str, Any]:
     root_doc_pages: list[dict[str, Any]] = []
     split_doc_pages: list[dict[str, Any]] = []
 
-    started = time.perf_counter()
-    for page_index, image in iter_rendered_pages(source_path, dpi=dpi):
-        if page_index > max_selected_index:
-            break
-        if page_index not in selected_page_set:
-            continue
-
+    page_tasks: list[dict[str, Any]] = []
+    for page_index in selected_page_indices:
         rotation_deg = int(rotation_plan[page_index])
-        rotated_image = rotate_image_clockwise(image, rotation_deg)
-
         image_rel_root = Path(split) / "pages" / f"{doc_id}_p{page_index + 1:05d}.png"
         image_rel_split = Path("pages") / f"{doc_id}_p{page_index + 1:05d}.png"
         image_abs = output_dir / image_rel_root
-        rotated_image.save(image_abs, format="PNG", optimize=True)
+        page_tasks.append(
+            {
+                "source_path": str(source_path),
+                "page_index": page_index,
+                "dpi": dpi,
+                "rotation_deg": rotation_deg,
+                "image_abs": str(image_abs),
+                "image_rel_root": str(image_rel_root),
+                "image_rel_split": str(image_rel_split),
+            }
+        )
 
-        append_image_as_pdf_page(writer, rotated_image, dpi=dpi)
+    started = time.perf_counter()
+    rendered_by_page: dict[int, dict[str, Any]] = {}
+    if page_tasks:
+        page_worker_count = _resolve_worker_count(len(page_tasks))
+        use_page_pool = len(page_tasks) >= PAGE_POOL_MIN_PAGES and page_worker_count > 1
+        completed = 0
+        page_started = time.perf_counter()
+
+        if use_page_pool:
+            print(
+                f"[dataset] doc={doc_id} split={split} page_pool=spawn workers={page_worker_count} pages={len(page_tasks)}"
+            )
+            spawn_ctx = mp.get_context("spawn")
+            with ProcessPoolExecutor(max_workers=page_worker_count, mp_context=spawn_ctx) as executor:
+                futures = [executor.submit(_render_page, task) for task in page_tasks]
+                for future in as_completed(futures):
+                    rendered = future.result(timeout=120)
+                    page_index = int(rendered["page_index"])
+                    rendered_by_page[page_index] = rendered
+                    completed += 1
+                    if completed == len(page_tasks) or completed % 25 == 0:
+                        elapsed = time.perf_counter() - page_started
+                        rate = completed / max(elapsed, 1e-9)
+                        print(
+                            f"[dataset] doc_progress doc_id={doc_id} pages={completed}/{len(page_tasks)} "
+                            f"rate_pps={rate:.2f}"
+                        )
+        else:
+            print(
+                f"[dataset] doc={doc_id} split={split} page_pool=off workers=1 pages={len(page_tasks)}"
+            )
+            for task in page_tasks:
+                rendered = _render_page(task)
+                page_index = int(rendered["page_index"])
+                rendered_by_page[page_index] = rendered
+                completed += 1
+                if completed == len(page_tasks) or completed % 25 == 0:
+                    elapsed = time.perf_counter() - page_started
+                    rate = completed / max(elapsed, 1e-9)
+                    print(
+                        f"[dataset] doc_progress doc_id={doc_id} pages={completed}/{len(page_tasks)} "
+                        f"rate_pps={rate:.2f}"
+                    )
+
+    from PIL import Image
+
+    for page_index in selected_page_indices:
+        rendered = rendered_by_page[page_index]
+        image_abs = Path(str(rendered["image_abs"]))
+        with Image.open(image_abs) as rotated_image:
+            append_image_as_pdf_page(writer, rotated_image, dpi=dpi)
+
+        image_rel_root = str(rendered["image_rel_root"])
+        image_rel_split = str(rendered["image_rel_split"])
+        rotation_deg = int(rendered["rotation_deg"])
+        width = int(rendered["width"])
+        height = int(rendered["height"])
 
         labels_records.append(
             {
@@ -305,9 +401,9 @@ def _process_document_job(job: dict[str, Any]) -> dict[str, Any]:
                 "rotation_deg": rotation_deg,
                 "source_pdf": str(source_path),
                 "output_pdf": str(output_pdf_rel_root),
-                "image_path": str(image_rel_root),
-                "width": rotated_image.width,
-                "height": rotated_image.height,
+                "image_path": image_rel_root,
+                "width": width,
+                "height": height,
             }
         )
 
@@ -315,18 +411,18 @@ def _process_document_job(job: dict[str, Any]) -> dict[str, Any]:
             {
                 "page_index": page_index,
                 "rotation_deg": rotation_deg,
-                "image_path": str(image_rel_root),
-                "width": rotated_image.width,
-                "height": rotated_image.height,
+                "image_path": image_rel_root,
+                "width": width,
+                "height": height,
             }
         )
         split_doc_pages.append(
             {
                 "page_index": page_index,
                 "rotation_deg": rotation_deg,
-                "image_path": str(image_rel_split),
-                "width": rotated_image.width,
-                "height": rotated_image.height,
+                "image_path": image_rel_split,
+                "width": width,
+                "height": height,
             }
         )
 
@@ -390,6 +486,8 @@ def build_dataset(
     class_balance: str,
     min_val_docs: int,
     min_test_docs: int,
+    max_val_doc_share: float,
+    max_test_doc_share: float,
 ) -> dict[str, Any]:
     """Create synthetic rotated PDFs with explicit train/val/test split folders."""
     if rotate_probability < 0 or rotate_probability > 1:
@@ -398,6 +496,8 @@ def build_dataset(
         raise ValueError("class_balance must be one of: random, uniform")
     if min_val_docs < 1 or min_test_docs < 1:
         raise ValueError("min_val_docs and min_test_docs must be >= 1")
+    _validate_doc_share_limit("max_val_doc_share", max_val_doc_share)
+    _validate_doc_share_limit("max_test_doc_share", max_test_doc_share)
 
     set_global_seed(seed)
 
@@ -458,9 +558,9 @@ def build_dataset(
             }
         )
 
-    worker_count = _resolve_worker_count(len(jobs))
     print(
-        f"[dataset] multiprocessing start_method=spawn workers={worker_count} max_workers_cap={DATASET_MAX_WORKERS}"
+        "[dataset] document_loop=sequential page_render_pool=spawn "
+        f"page_pool_min_pages={PAGE_POOL_MIN_PAGES} max_workers_cap={DATASET_MAX_WORKERS}"
     )
 
     docs_bar = tqdm(
@@ -481,53 +581,48 @@ def build_dataset(
     )
 
     try:
-        spawn_ctx = mp.get_context("spawn")
-        with ProcessPoolExecutor(max_workers=worker_count, mp_context=spawn_ctx) as executor:
-            future_to_job = {executor.submit(_process_document_job, job): job for job in jobs}
+        for job in jobs:
+            try:
+                result = _process_document_job(job)
+            except Exception as exc:
+                raise RuntimeError(
+                    f"Dataset worker failed for source={job['source_path']} doc_id={job['doc_id']}"
+                ) from exc
 
-            for future in as_completed(future_to_job):
-                job = future_to_job[future]
-                try:
-                    result = future.result()
-                except Exception as exc:
-                    raise RuntimeError(
-                        f"Dataset worker failed for source={job['source_path']} doc_id={job['doc_id']}"
-                    ) from exc
+            docs_bar.update(1)
+            page_count = int(result["page_count"])
+            pages_bar.update(page_count)
+            processed_total_pages += page_count
 
-                docs_bar.update(1)
-                page_count = int(result["page_count"])
-                pages_bar.update(page_count)
-                processed_total_pages += page_count
+            split = str(result["split"])
+            if page_count > 0:
+                split_page_counts[split] += page_count
+                labels_records = result["labels_records"]
+                all_labels_records.extend(labels_records)
+                split_labels_records[split].extend(labels_records)
 
-                split = str(result["split"])
-                if page_count > 0:
-                    split_page_counts[split] += page_count
-                    labels_records = result["labels_records"]
-                    all_labels_records.extend(labels_records)
-                    split_labels_records[split].extend(labels_records)
+                root_doc_record = result["root_doc_record"]
+                split_doc_record = result["split_doc_record"]
+                if root_doc_record is not None:
+                    all_docs_records.append(root_doc_record)
+                if split_doc_record is not None:
+                    split_docs_records[split].append(split_doc_record)
 
-                    root_doc_record = result["root_doc_record"]
-                    split_doc_record = result["split_doc_record"]
-                    if root_doc_record is not None:
-                        all_docs_records.append(root_doc_record)
-                    if split_doc_record is not None:
-                        split_docs_records[split].append(split_doc_record)
+                print(
+                    f"[dataset] done split={split} doc_id={result['doc_id']} pages={page_count} "
+                    f"elapsed_s={float(result['elapsed_s']):.1f}"
+                )
+            else:
+                print(f"[dataset] skipped split={split} doc_id={result['doc_id']} pages=0")
 
-                    print(
-                        f"[dataset] done split={split} doc_id={result['doc_id']} pages={page_count} "
-                        f"elapsed_s={float(result['elapsed_s']):.1f}"
-                    )
-                else:
-                    print(f"[dataset] skipped split={split} doc_id={result['doc_id']} pages=0")
-
-                if next_log_threshold is not None and processed_total_pages >= next_log_threshold:
-                    elapsed = time.perf_counter() - started_at
-                    rate = processed_total_pages / max(elapsed, 1e-9)
-                    print(
-                        "[dataset] progress "
-                        f"overall={processed_total_pages}/{total_target_pages} rate_pps={rate:.2f}"
-                    )
-                    next_log_threshold += log_every_pages
+            if next_log_threshold is not None and processed_total_pages >= next_log_threshold:
+                elapsed = time.perf_counter() - started_at
+                rate = processed_total_pages / max(elapsed, 1e-9)
+                print(
+                    "[dataset] progress "
+                    f"overall={processed_total_pages}/{total_target_pages} rate_pps={rate:.2f}"
+                )
+                next_log_threshold += log_every_pages
     finally:
         docs_bar.close()
         pages_bar.close()
@@ -537,6 +632,30 @@ def build_dataset(
     for split in SPLITS:
         split_labels_records[split].sort(key=lambda row: (str(row["doc_id"]), int(row["page_index"])))
         split_docs_records[split].sort(key=lambda row: str(row["doc_id"]))
+
+    split_angle_counts = {
+        split: _format_angle_counts(split_labels_records[split]) for split in SPLITS
+    }
+    split_doc_shares = {
+        split: _max_doc_share(split_labels_records[split]) for split in SPLITS
+    }
+
+    val_doc_share = float(split_doc_shares["val"])
+    test_doc_share = float(split_doc_shares["test"])
+    if val_doc_share > max_val_doc_share:
+        raise RuntimeError(
+            "Validation split is document-dominated: "
+            f"max_doc_share={val_doc_share:.3f} > allowed={max_val_doc_share:.3f}. "
+            "Increase --min-val-docs, lower --max-pages-per-doc, change --seed, "
+            "or relax --max-val-doc-share."
+        )
+    if test_doc_share > max_test_doc_share:
+        raise RuntimeError(
+            "Test split is document-dominated: "
+            f"max_doc_share={test_doc_share:.3f} > allowed={max_test_doc_share:.3f}. "
+            "Increase --min-test-docs, lower --max-pages-per-doc, change --seed, "
+            "or relax --max-test-doc-share."
+        )
 
     split_index = {}
     for split in SPLITS:
@@ -562,8 +681,8 @@ def build_dataset(
             "pages": split_page_counts[split],
         }
 
-        angle_counts = _format_angle_counts(split_labels_records[split])
-        doc_share = _max_doc_share(split_labels_records[split])
+        angle_counts = split_angle_counts[split]
+        doc_share = split_doc_shares[split]
         print(
             f"[dataset] split_proof split={split} docs={len(split_docs_records[split])} "
             f"pages={split_page_counts[split]} angles={angle_counts} max_doc_share={doc_share:.3f}"
@@ -581,6 +700,8 @@ def build_dataset(
         "split_ratios": split_ratios,
         "min_val_docs": int(min_val_docs),
         "min_test_docs": int(min_test_docs),
+        "max_val_doc_share": float(max_val_doc_share),
+        "max_test_doc_share": float(max_test_doc_share),
         "splits": split_index,
         "documents": all_docs_records,
         "labels_path": "labels.all.jsonl",
@@ -591,7 +712,8 @@ def build_dataset(
 
     print(
         f"[dataset] sampling_proof class_balance={class_balance} split_strategy=document_page_weighted "
-        f"min_val_docs={min_val_docs} min_test_docs={min_test_docs}"
+        f"min_val_docs={min_val_docs} min_test_docs={min_test_docs} "
+        f"max_val_doc_share={max_val_doc_share:.3f} max_test_doc_share={max_test_doc_share:.3f}"
     )
 
     total_elapsed = time.perf_counter() - started_at
@@ -620,6 +742,8 @@ def run_make_dataset(
     class_balance: str = "random",
     min_val_docs: int = 1,
     min_test_docs: int = 1,
+    max_val_doc_share: float = 0.35,
+    max_test_doc_share: float = 0.35,
 ) -> Path:
     """CLI wrapper for dataset generation."""
     selected = discover_input_pdfs(input_pdfs, input_dir)
@@ -637,7 +761,8 @@ def run_make_dataset(
         print(f"[dataset] run_dir={dataset_dir}")
         print(
             f"[dataset] requested_sampling class_balance={class_balance} "
-            f"min_val_docs={min_val_docs} min_test_docs={min_test_docs}"
+            f"min_val_docs={min_val_docs} min_test_docs={min_test_docs} "
+            f"max_val_doc_share={max_val_doc_share:.3f} max_test_doc_share={max_test_doc_share:.3f}"
         )
         manifest = build_dataset(
             selected,
@@ -654,6 +779,8 @@ def run_make_dataset(
             class_balance=class_balance,
             min_val_docs=min_val_docs,
             min_test_docs=min_test_docs,
+            max_val_doc_share=max_val_doc_share,
+            max_test_doc_share=max_test_doc_share,
         )
 
         print(f"Dataset created: {dataset_dir}")

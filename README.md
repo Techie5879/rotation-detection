@@ -201,7 +201,7 @@ uv run main.py make-dataset \
   --log-every-pages 100
 ```
 
-2) Train model (early stopping enabled):
+2) Train model (early stopping enabled, using latest successful LR=0.0006):
 
 ```bash
 uv run main.py train \

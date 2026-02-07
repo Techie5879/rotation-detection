@@ -1,0 +1,855 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/final_run_cap10k_v2/models/orientation_cnn.train.log
+[train] checkpoint=/Users/helios/rotation-detection/runs/final_run_cap10k_v2/models/orientation_cnn.pt
+[train] start memory {'rss_mb': 47.609375, 'ru_maxrss_mb': 47.609375, 'py_current_mb': 0.0, 'py_peak_mb': 0.0, 'torch_allocated_mb': None, 'torch_reserved_mb': None, 'torch_mps_driver_mb': None}
+[train] data_sampling class_balance=uniform split_strategy=document_page_weighted min_val_docs=14 min_test_docs=14
+[train] rows train=6074 val=1949
+[train] split_profile train angles=0:1517 90:1520 180:1517 270:1520 max_doc_share=0.066
+[train] split_profile val angles=0:488 90:488 180:486 270:487 max_doc_share=0.205
+[train] init memory rss_mb=370.9 ru_maxrss_mb=370.9 py_current_mb=116.3 py_peak_mb=116.6 torch_allocated_mb=2.9 torch_mps_driver_mb=48.5
+
+[train] epoch=001:   0%|          | 0/24 [00:00<?, ?batch/s]
+[train] epoch=001:   0%|          | 0/24 [00:11<?, ?batch/s, acc=0.2539, loss=1.4025]
+[train] epoch=001:   4%|▍         | 1/24 [00:11<04:32, 11.84s/batch, acc=0.2539, loss=1.4025]
+[train] epoch=001:   4%|▍         | 1/24 [00:23<04:32, 11.84s/batch, acc=0.3047, loss=1.3848]
+[train] epoch=001:   8%|▊         | 2/24 [00:23<04:18, 11.75s/batch, acc=0.3047, loss=1.3848]
+[train] epoch=001:   8%|▊         | 2/24 [00:33<04:18, 11.75s/batch, acc=0.3477, loss=1.3339]
+[train] epoch=001:  12%|█▎        | 3/24 [00:33<03:48, 10.89s/batch, acc=0.3477, loss=1.3339]
+[train] epoch=001:  12%|█▎        | 3/24 [00:42<03:48, 10.89s/batch, acc=0.4033, loss=1.2640]
+[train] epoch=001:  17%|█▋        | 4/24 [00:42<03:26, 10.33s/batch, acc=0.4033, loss=1.2640]
+[train] epoch=001:  17%|█▋        | 4/24 [00:53<03:26, 10.33s/batch, acc=0.4188, loss=1.2287][train] epoch=001 batch=5/24 loss=1.2287 acc=0.4188 rss_mb=1424.3 ru_maxrss_mb=1424.3 py_current_mb=116.3 py_peak_mb=309.9 torch_allocated_mb=232.8 torch_mps_driver_mb=4676.1
+
+[train] epoch=001:  21%|██        | 5/24 [00:53<03:17, 10.39s/batch, acc=0.4188, loss=1.2287]
+[train] epoch=001:  21%|██        | 5/24 [01:03<03:17, 10.39s/batch, acc=0.4421, loss=1.1903]
+[train] epoch=001:  25%|██▌       | 6/24 [01:03<03:04, 10.24s/batch, acc=0.4421, loss=1.1903]
+[train] epoch=001:  25%|██▌       | 6/24 [01:13<03:04, 10.24s/batch, acc=0.4548, loss=1.1558]
+[train] epoch=001:  29%|██▉       | 7/24 [01:13<02:53, 10.21s/batch, acc=0.4548, loss=1.1558]
+[train] epoch=001:  29%|██▉       | 7/24 [01:23<02:53, 10.21s/batch, acc=0.4697, loss=1.1322]
+[train] epoch=001:  33%|███▎      | 8/24 [01:23<02:44, 10.26s/batch, acc=0.4697, loss=1.1322]
+[train] epoch=001:  33%|███▎      | 8/24 [01:33<02:44, 10.26s/batch, acc=0.4926, loss=1.1040]
+[train] epoch=001:  38%|███▊      | 9/24 [01:33<02:32, 10.15s/batch, acc=0.4926, loss=1.1040]
+[train] epoch=001:  38%|███▊      | 9/24 [01:45<02:32, 10.15s/batch, acc=0.5094, loss=1.0829][train] epoch=001 batch=10/24 loss=1.0829 acc=0.5094 rss_mb=1461.6 ru_maxrss_mb=1461.6 py_current_mb=116.3 py_peak_mb=309.9 torch_allocated_mb=232.8 torch_mps_driver_mb=4676.1
+
+[train] epoch=001:  42%|████▏     | 10/24 [01:45<02:28, 10.61s/batch, acc=0.5094, loss=1.0829]
+[train] epoch=001:  42%|████▏     | 10/24 [01:55<02:28, 10.61s/batch, acc=0.5128, loss=1.0710]
+[train] epoch=001:  46%|████▌     | 11/24 [01:55<02:17, 10.59s/batch, acc=0.5128, loss=1.0710]
+[train] epoch=001:  46%|████▌     | 11/24 [02:06<02:17, 10.59s/batch, acc=0.5215, loss=1.0608]
+[train] epoch=001:  50%|█████     | 12/24 [02:06<02:05, 10.46s/batch, acc=0.5215, loss=1.0608]
+[train] epoch=001:  50%|█████     | 12/24 [02:16<02:05, 10.46s/batch, acc=0.5279, loss=1.0498]
+[train] epoch=001:  54%|█████▍    | 13/24 [02:16<01:56, 10.57s/batch, acc=0.5279, loss=1.0498]
+[train] epoch=001:  54%|█████▍    | 13/24 [02:27<01:56, 10.57s/batch, acc=0.5343, loss=1.0425]
+[train] epoch=001:  58%|█████▊    | 14/24 [02:27<01:44, 10.47s/batch, acc=0.5343, loss=1.0425]
+[train] epoch=001:  58%|█████▊    | 14/24 [02:38<01:44, 10.47s/batch, acc=0.5419, loss=1.0345][train] epoch=001 batch=15/24 loss=1.0345 acc=0.5419 rss_mb=1462.7 ru_maxrss_mb=1462.7 py_current_mb=116.3 py_peak_mb=309.9 torch_allocated_mb=232.8 torch_mps_driver_mb=4676.1
+
+[train] epoch=001:  62%|██████▎   | 15/24 [02:38<01:37, 10.78s/batch, acc=0.5419, loss=1.0345]
+[train] epoch=001:  62%|██████▎   | 15/24 [02:48<01:37, 10.78s/batch, acc=0.5481, loss=1.0247]
+[train] epoch=001:  67%|██████▋   | 16/24 [02:48<01:23, 10.43s/batch, acc=0.5481, loss=1.0247]
+[train] epoch=001:  67%|██████▋   | 16/24 [02:58<01:23, 10.43s/batch, acc=0.5568, loss=1.0163]
+[train] epoch=001:  71%|███████   | 17/24 [02:58<01:13, 10.51s/batch, acc=0.5568, loss=1.0163]
+[train] epoch=001:  71%|███████   | 17/24 [03:10<01:13, 10.51s/batch, acc=0.5629, loss=1.0080]
+[train] epoch=001:  75%|███████▌  | 18/24 [03:10<01:04, 10.73s/batch, acc=0.5629, loss=1.0080]
+[train] epoch=001:  75%|███████▌  | 18/24 [03:23<01:04, 10.73s/batch, acc=0.5703, loss=1.0008]
+[train] epoch=001:  79%|███████▉  | 19/24 [03:23<00:57, 11.42s/batch, acc=0.5703, loss=1.0008]
+[train] epoch=001:  79%|███████▉  | 19/24 [03:34<00:57, 11.42s/batch, acc=0.5752, loss=0.9928][train] epoch=001 batch=20/24 loss=0.9928 acc=0.5752 rss_mb=1462.7 ru_maxrss_mb=1462.7 py_current_mb=116.3 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=4676.1
+
+[train] epoch=001:  83%|████████▎ | 20/24 [03:34<00:45, 11.36s/batch, acc=0.5752, loss=0.9928]
+[train] epoch=001:  83%|████████▎ | 20/24 [03:45<00:45, 11.36s/batch, acc=0.5800, loss=0.9867]
+[train] epoch=001:  88%|████████▊ | 21/24 [03:45<00:33, 11.22s/batch, acc=0.5800, loss=0.9867]
+[train] epoch=001:  88%|████████▊ | 21/24 [03:56<00:33, 11.22s/batch, acc=0.5843, loss=0.9809]
+[train] epoch=001:  92%|█████████▏| 22/24 [03:56<00:22, 11.16s/batch, acc=0.5843, loss=0.9809]
+[train] epoch=001:  92%|█████████▏| 22/24 [04:06<00:22, 11.16s/batch, acc=0.5926, loss=0.9729]
+[train] epoch=001:  96%|█████████▌| 23/24 [04:06<00:10, 10.88s/batch, acc=0.5926, loss=0.9729]
+[train] epoch=001:  96%|█████████▌| 23/24 [04:15<00:10, 10.88s/batch, acc=0.5963, loss=0.9678][train] epoch=001 batch=24/24 loss=0.9678 acc=0.5963 rss_mb=1505.5 ru_maxrss_mb=1505.5 py_current_mb=116.1 py_peak_mb=310.0 torch_allocated_mb=180.3 torch_mps_driver_mb=4536.5
+
+[train] epoch=001: 100%|██████████| 24/24 [04:15<00:00, 10.25s/batch, acc=0.5963, loss=0.9678]
+                                                                                              
+
+[val] epoch=001:   0%|          | 0/8 [00:00<?, ?batch/s]
+[val] epoch=001:   0%|          | 0/8 [00:02<?, ?batch/s, acc=0.3867, loss=1.1857]
+[val] epoch=001:  12%|█▎        | 1/8 [00:02<00:14,  2.10s/batch, acc=0.3867, loss=1.1857]
+[val] epoch=001:  12%|█▎        | 1/8 [00:18<00:14,  2.10s/batch, acc=0.3613, loss=1.2007]
+[val] epoch=001:  25%|██▌       | 2/8 [00:18<01:03, 10.61s/batch, acc=0.3613, loss=1.2007]
+[val] epoch=001:  25%|██▌       | 2/8 [00:46<01:03, 10.61s/batch, acc=0.3594, loss=1.2069][val] epoch=001 batch=3/8 slow wait_s=27.3 step_s=0.1 rss_mb=1512.1 ru_maxrss_mb=1512.1 py_current_mb=116.1 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=5700.5
+
+[val] epoch=001:  38%|███▊      | 3/8 [00:46<01:31, 18.29s/batch, acc=0.3594, loss=1.2069]
+[val] epoch=001:  38%|███▊      | 3/8 [00:48<01:31, 18.29s/batch, acc=0.3721, loss=1.1950]
+[val] epoch=001:  50%|█████     | 4/8 [00:48<00:48, 12.20s/batch, acc=0.3721, loss=1.1950]
+[val] epoch=001:  50%|█████     | 4/8 [00:54<00:48, 12.20s/batch, acc=0.3594, loss=1.2102][val] epoch=001 batch=5/8 loss=1.2102 acc=0.3594 rss_mb=1513.6 ru_maxrss_mb=1513.6 py_current_mb=116.1 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=5700.5
+
+[val] epoch=001:  62%|██████▎   | 5/8 [00:55<00:29,  9.98s/batch, acc=0.3594, loss=1.2102]
+[val] epoch=001:  62%|██████▎   | 5/8 [01:06<00:29,  9.98s/batch, acc=0.3613, loss=1.2052]
+[val] epoch=001:  75%|███████▌  | 6/8 [01:06<00:20, 10.45s/batch, acc=0.3613, loss=1.2052]
+[val] epoch=001:  75%|███████▌  | 6/8 [01:14<00:20, 10.45s/batch, acc=0.3605, loss=1.2130]
+[val] epoch=001:  88%|████████▊ | 7/8 [01:14<00:09,  9.80s/batch, acc=0.3605, loss=1.2130]
+[val] epoch=001:  88%|████████▊ | 7/8 [01:16<00:09,  9.80s/batch, acc=0.3602, loss=1.2155][val] epoch=001 batch=8/8 loss=1.2155 acc=0.3602 rss_mb=1530.7 ru_maxrss_mb=1530.7 py_current_mb=116.1 py_peak_mb=310.0 torch_allocated_mb=169.1 torch_mps_driver_mb=5700.5
+
+[val] epoch=001: 100%|██████████| 8/8 [01:16<00:00,  7.26s/batch, acc=0.3602, loss=1.2155]
+                                                                                          
+epoch=001 train_loss=0.9678 train_acc=0.5963 val_loss=1.2155 val_acc=0.3602
+[train] epoch=001 gaps acc=0.2361 loss=0.2476
+[train] epoch=001 train_per_angle 0:0.524(1466) 90:0.611(1487) 180:0.643(1547) 270:0.604(1574)
+[train] epoch=001 val_per_angle 0:0.002(488) 90:0.002(488) 180:0.990(486) 270:0.450(487)
+[train] epoch=001 val_top_confusions 0->180:485, 90->180:268, 270->180:268, 90->270:219, 180->270:5, 0->270:2 avg_conf=0.3734 avg_entropy_nats=1.2917
+[train] epoch=001 rss_mb=1530.7 ru_maxrss_mb=1530.7 py_current_mb=116.1 py_peak_mb=310.0 torch_allocated_mb=40.3 torch_mps_driver_mb=5700.5
+
+[train] epoch=002:   0%|          | 0/24 [00:00<?, ?batch/s]
+[train] epoch=002:   0%|          | 0/24 [00:13<?, ?batch/s, acc=0.7188, loss=0.7771]
+[train] epoch=002:   4%|▍         | 1/24 [00:13<04:59, 13.03s/batch, acc=0.7188, loss=0.7771]
+[train] epoch=002:   4%|▍         | 1/24 [00:22<04:59, 13.03s/batch, acc=0.7207, loss=0.7878]
+[train] epoch=002:   8%|▊         | 2/24 [00:22<03:59, 10.87s/batch, acc=0.7207, loss=0.7878]
+[train] epoch=002:   8%|▊         | 2/24 [00:33<03:59, 10.87s/batch, acc=0.7500, loss=0.7882]
+[train] epoch=002:  12%|█▎        | 3/24 [00:33<03:49, 10.95s/batch, acc=0.7500, loss=0.7882]
+[train] epoch=002:  12%|█▎        | 3/24 [00:44<03:49, 10.95s/batch, acc=0.7646, loss=0.7828]
+[train] epoch=002:  17%|█▋        | 4/24 [00:44<03:37, 10.90s/batch, acc=0.7646, loss=0.7828]
+[train] epoch=002:  17%|█▋        | 4/24 [00:55<03:37, 10.90s/batch, acc=0.7703, loss=0.7732][train] epoch=002 batch=5/24 loss=0.7732 acc=0.7703 rss_mb=1552.8 ru_maxrss_mb=1552.8 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=7748.5
+
+[train] epoch=002:  21%|██        | 5/24 [00:55<03:29, 11.01s/batch, acc=0.7703, loss=0.7732]
+[train] epoch=002:  21%|██        | 5/24 [01:06<03:29, 11.01s/batch, acc=0.7786, loss=0.7608]
+[train] epoch=002:  25%|██▌       | 6/24 [01:06<03:18, 11.00s/batch, acc=0.7786, loss=0.7608]
+[train] epoch=002:  25%|██▌       | 6/24 [01:17<03:18, 11.00s/batch, acc=0.7840, loss=0.7591]
+[train] epoch=002:  29%|██▉       | 7/24 [01:17<03:05, 10.92s/batch, acc=0.7840, loss=0.7591]
+[train] epoch=002:  29%|██▉       | 7/24 [01:28<03:05, 10.92s/batch, acc=0.7866, loss=0.7553]
+[train] epoch=002:  33%|███▎      | 8/24 [01:28<02:55, 10.94s/batch, acc=0.7866, loss=0.7553]
+[train] epoch=002:  33%|███▎      | 8/24 [01:39<02:55, 10.94s/batch, acc=0.7908, loss=0.7531]
+[train] epoch=002:  38%|███▊      | 9/24 [01:39<02:44, 10.99s/batch, acc=0.7908, loss=0.7531]
+[train] epoch=002:  38%|███▊      | 9/24 [01:49<02:44, 10.99s/batch, acc=0.7918, loss=0.7475][train] epoch=002 batch=10/24 loss=0.7475 acc=0.7918 rss_mb=1552.8 ru_maxrss_mb=1552.8 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=7748.5
+
+[train] epoch=002:  42%|████▏     | 10/24 [01:49<02:31, 10.83s/batch, acc=0.7918, loss=0.7475]
+[train] epoch=002:  42%|████▏     | 10/24 [01:59<02:31, 10.83s/batch, acc=0.7923, loss=0.7429]
+[train] epoch=002:  46%|████▌     | 11/24 [01:59<02:17, 10.58s/batch, acc=0.7923, loss=0.7429]
+[train] epoch=002:  46%|████▌     | 11/24 [02:11<02:17, 10.58s/batch, acc=0.7969, loss=0.7352]
+[train] epoch=002:  50%|█████     | 12/24 [02:11<02:12, 11.06s/batch, acc=0.7969, loss=0.7352]
+[train] epoch=002:  50%|█████     | 12/24 [02:23<02:12, 11.06s/batch, acc=0.7999, loss=0.7279]
+[train] epoch=002:  54%|█████▍    | 13/24 [02:23<02:01, 11.07s/batch, acc=0.7999, loss=0.7279]
+[train] epoch=002:  54%|█████▍    | 13/24 [02:33<02:01, 11.07s/batch, acc=0.8027, loss=0.7221]
+[train] epoch=002:  58%|█████▊    | 14/24 [02:33<01:47, 10.77s/batch, acc=0.8027, loss=0.7221]
+[train] epoch=002:  58%|█████▊    | 14/24 [02:46<01:47, 10.77s/batch, acc=0.8052, loss=0.7159][train] epoch=002 batch=15/24 loss=0.7159 acc=0.8052 rss_mb=1553.5 ru_maxrss_mb=1553.5 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=7748.5
+
+[train] epoch=002:  62%|██████▎   | 15/24 [02:46<01:43, 11.46s/batch, acc=0.8052, loss=0.7159]
+[train] epoch=002:  62%|██████▎   | 15/24 [02:55<01:43, 11.46s/batch, acc=0.8081, loss=0.7096]
+[train] epoch=002:  67%|██████▋   | 16/24 [02:55<01:25, 10.72s/batch, acc=0.8081, loss=0.7096]
+[train] epoch=002:  67%|██████▋   | 16/24 [03:07<01:25, 10.72s/batch, acc=0.8132, loss=0.7026]
+[train] epoch=002:  71%|███████   | 17/24 [03:07<01:18, 11.27s/batch, acc=0.8132, loss=0.7026]
+[train] epoch=002:  71%|███████   | 17/24 [03:17<01:18, 11.27s/batch, acc=0.8188, loss=0.6950]
+[train] epoch=002:  75%|███████▌  | 18/24 [03:17<01:05, 10.97s/batch, acc=0.8188, loss=0.6950]
+[train] epoch=002:  75%|███████▌  | 18/24 [03:28<01:05, 10.97s/batch, acc=0.8230, loss=0.6891]
+[train] epoch=002:  79%|███████▉  | 19/24 [03:28<00:54, 10.95s/batch, acc=0.8230, loss=0.6891]
+[train] epoch=002:  79%|███████▉  | 19/24 [03:40<00:54, 10.95s/batch, acc=0.8258, loss=0.6831][train] epoch=002 batch=20/24 loss=0.6831 acc=0.8258 rss_mb=1567.5 ru_maxrss_mb=1567.5 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=7748.5
+
+[train] epoch=002:  83%|████████▎ | 20/24 [03:40<00:44, 11.17s/batch, acc=0.8258, loss=0.6831]
+[train] epoch=002:  83%|████████▎ | 20/24 [03:51<00:44, 11.17s/batch, acc=0.8296, loss=0.6764]
+[train] epoch=002:  88%|████████▊ | 21/24 [03:51<00:33, 11.20s/batch, acc=0.8296, loss=0.6764]
+[train] epoch=002:  88%|████████▊ | 21/24 [04:01<00:33, 11.20s/batch, acc=0.8338, loss=0.6705]
+[train] epoch=002:  92%|█████████▏| 22/24 [04:01<00:21, 10.71s/batch, acc=0.8338, loss=0.6705]
+[train] epoch=002:  92%|█████████▏| 22/24 [04:11<00:21, 10.71s/batch, acc=0.8364, loss=0.6665]
+[train] epoch=002:  96%|█████████▌| 23/24 [04:11<00:10, 10.64s/batch, acc=0.8364, loss=0.6665]
+[train] epoch=002:  96%|█████████▌| 23/24 [04:18<00:10, 10.64s/batch, acc=0.8390, loss=0.6626][train] epoch=002 batch=24/24 loss=0.6626 acc=0.8390 rss_mb=1591.5 ru_maxrss_mb=1591.5 py_current_mb=116.1 py_peak_mb=310.0 torch_allocated_mb=180.3 torch_mps_driver_mb=7608.5
+
+[train] epoch=002: 100%|██████████| 24/24 [04:18<00:00,  9.58s/batch, acc=0.8390, loss=0.6626]
+                                                                                              
+
+[val] epoch=002:   0%|          | 0/8 [00:00<?, ?batch/s]
+[val] epoch=002:   0%|          | 0/8 [00:02<?, ?batch/s, acc=0.9219, loss=0.5253]
+[val] epoch=002:  12%|█▎        | 1/8 [00:02<00:14,  2.08s/batch, acc=0.9219, loss=0.5253]
+[val] epoch=002:  12%|█▎        | 1/8 [00:18<00:14,  2.08s/batch, acc=0.8965, loss=0.5544]
+[val] epoch=002:  25%|██▌       | 2/8 [00:18<01:03, 10.58s/batch, acc=0.8965, loss=0.5544]
+[val] epoch=002:  25%|██▌       | 2/8 [00:45<01:03, 10.58s/batch, acc=0.8893, loss=0.5671][val] epoch=002 batch=3/8 slow wait_s=27.3 step_s=0.1 rss_mb=1590.6 ru_maxrss_mb=1591.5 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=8772.5
+
+[val] epoch=002:  38%|███▊      | 3/8 [00:46<01:31, 18.26s/batch, acc=0.8893, loss=0.5671]
+[val] epoch=002:  38%|███▊      | 3/8 [00:48<01:31, 18.26s/batch, acc=0.8740, loss=0.5700]
+[val] epoch=002:  50%|█████     | 4/8 [00:48<00:48, 12.20s/batch, acc=0.8740, loss=0.5700]
+[val] epoch=002:  50%|█████     | 4/8 [00:55<00:48, 12.20s/batch, acc=0.8641, loss=0.5813][val] epoch=002 batch=5/8 loss=0.5813 acc=0.8641 rss_mb=1590.4 ru_maxrss_mb=1591.5 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=8772.5
+
+[val] epoch=002:  62%|██████▎   | 5/8 [00:55<00:30, 10.03s/batch, acc=0.8641, loss=0.5813]
+[val] epoch=002:  62%|██████▎   | 5/8 [01:06<00:30, 10.03s/batch, acc=0.8574, loss=0.5874]
+[val] epoch=002:  75%|███████▌  | 6/8 [01:06<00:21, 10.52s/batch, acc=0.8574, loss=0.5874]
+[val] epoch=002:  75%|███████▌  | 6/8 [01:15<00:21, 10.52s/batch, acc=0.8465, loss=0.6042]
+[val] epoch=002:  88%|████████▊ | 7/8 [01:15<00:09,  9.88s/batch, acc=0.8465, loss=0.6042]
+[val] epoch=002:  88%|████████▊ | 7/8 [01:16<00:09,  9.88s/batch, acc=0.8517, loss=0.6034][val] epoch=002 batch=8/8 loss=0.6034 acc=0.8517 rss_mb=1590.4 ru_maxrss_mb=1591.5 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=169.1 torch_mps_driver_mb=8772.5
+
+[val] epoch=002: 100%|██████████| 8/8 [01:16<00:00,  7.31s/batch, acc=0.8517, loss=0.6034]
+                                                                                          
+epoch=002 train_loss=0.6626 train_acc=0.8390 val_loss=0.6034 val_acc=0.8517
+[train] epoch=002 gaps acc=-0.0127 loss=-0.0592
+[train] epoch=002 train_per_angle 0:0.836(1541) 90:0.798(1548) 180:0.831(1503) 270:0.893(1482)
+[train] epoch=002 val_per_angle 0:0.740(488) 90:0.764(488) 180:0.949(486) 270:0.955(487)
+[train] epoch=002 val_top_confusions 0->180:116, 90->270:90, 180->0:17, 90->180:15, 270->0:14, 90->0:10 avg_conf=0.6787 avg_entropy_nats=0.8217
+[train] epoch=002 rss_mb=1590.4 ru_maxrss_mb=1591.5 py_current_mb=116.1 py_peak_mb=310.0 torch_allocated_mb=40.3 torch_mps_driver_mb=8772.5
+
+[train] epoch=003:   0%|          | 0/24 [00:00<?, ?batch/s]
+[train] epoch=003:   0%|          | 0/24 [00:10<?, ?batch/s, acc=0.9297, loss=0.4884]
+[train] epoch=003:   4%|▍         | 1/24 [00:10<03:54, 10.18s/batch, acc=0.9297, loss=0.4884]
+[train] epoch=003:   4%|▍         | 1/24 [00:21<03:54, 10.18s/batch, acc=0.9258, loss=0.4925]
+[train] epoch=003:   8%|▊         | 2/24 [00:21<03:59, 10.88s/batch, acc=0.9258, loss=0.4925]
+[train] epoch=003:   8%|▊         | 2/24 [00:32<03:59, 10.88s/batch, acc=0.9167, loss=0.4935]
+[train] epoch=003:  12%|█▎        | 3/24 [00:32<03:50, 10.95s/batch, acc=0.9167, loss=0.4935]
+[train] epoch=003:  12%|█▎        | 3/24 [00:43<03:50, 10.95s/batch, acc=0.9111, loss=0.4959]
+[train] epoch=003:  17%|█▋        | 4/24 [00:43<03:39, 10.97s/batch, acc=0.9111, loss=0.4959]
+[train] epoch=003:  17%|█▋        | 4/24 [00:52<03:39, 10.97s/batch, acc=0.9195, loss=0.4908][train] epoch=003 batch=5/24 loss=0.4908 acc=0.9195 rss_mb=1562.0 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[train] epoch=003:  21%|██        | 5/24 [00:52<03:16, 10.32s/batch, acc=0.9195, loss=0.4908]
+[train] epoch=003:  21%|██        | 5/24 [01:04<03:16, 10.32s/batch, acc=0.9193, loss=0.4878]
+[train] epoch=003:  25%|██▌       | 6/24 [01:04<03:15, 10.87s/batch, acc=0.9193, loss=0.4878]
+[train] epoch=003:  25%|██▌       | 6/24 [01:17<03:15, 10.87s/batch, acc=0.9230, loss=0.4857]
+[train] epoch=003:  29%|██▉       | 7/24 [01:17<03:17, 11.62s/batch, acc=0.9230, loss=0.4857]
+[train] epoch=003:  29%|██▉       | 7/24 [01:29<03:17, 11.62s/batch, acc=0.9194, loss=0.4889]
+[train] epoch=003:  33%|███▎      | 8/24 [01:29<03:03, 11.48s/batch, acc=0.9194, loss=0.4889]
+[train] epoch=003:  33%|███▎      | 8/24 [01:39<03:03, 11.48s/batch, acc=0.9184, loss=0.4891]
+[train] epoch=003:  38%|███▊      | 9/24 [01:39<02:46, 11.08s/batch, acc=0.9184, loss=0.4891]
+[train] epoch=003:  38%|███▊      | 9/24 [01:50<02:46, 11.08s/batch, acc=0.9199, loss=0.4857][train] epoch=003 batch=10/24 loss=0.4857 acc=0.9199 rss_mb=1538.0 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[train] epoch=003:  42%|████▏     | 10/24 [01:50<02:35, 11.09s/batch, acc=0.9199, loss=0.4857]
+[train] epoch=003:  42%|████▏     | 10/24 [02:01<02:35, 11.09s/batch, acc=0.9197, loss=0.4846]
+[train] epoch=003:  46%|████▌     | 11/24 [02:01<02:23, 11.03s/batch, acc=0.9197, loss=0.4846]
+[train] epoch=003:  46%|████▌     | 11/24 [02:11<02:23, 11.03s/batch, acc=0.9209, loss=0.4794]
+[train] epoch=003:  50%|█████     | 12/24 [02:11<02:08, 10.70s/batch, acc=0.9209, loss=0.4794]
+[train] epoch=003:  50%|█████     | 12/24 [02:21<02:08, 10.70s/batch, acc=0.9198, loss=0.4806]
+[train] epoch=003:  54%|█████▍    | 13/24 [02:21<01:55, 10.54s/batch, acc=0.9198, loss=0.4806]
+[train] epoch=003:  54%|█████▍    | 13/24 [02:32<01:55, 10.54s/batch, acc=0.9208, loss=0.4767]
+[train] epoch=003:  58%|█████▊    | 14/24 [02:32<01:47, 10.75s/batch, acc=0.9208, loss=0.4767]
+[train] epoch=003:  58%|█████▊    | 14/24 [02:43<01:47, 10.75s/batch, acc=0.9216, loss=0.4745][train] epoch=003 batch=15/24 loss=0.4745 acc=0.9216 rss_mb=1538.1 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[train] epoch=003:  62%|██████▎   | 15/24 [02:43<01:36, 10.74s/batch, acc=0.9216, loss=0.4745]
+[train] epoch=003:  62%|██████▎   | 15/24 [02:54<01:36, 10.74s/batch, acc=0.9216, loss=0.4729]
+[train] epoch=003:  67%|██████▋   | 16/24 [02:54<01:27, 10.94s/batch, acc=0.9216, loss=0.4729]
+[train] epoch=003:  67%|██████▋   | 16/24 [03:06<01:27, 10.94s/batch, acc=0.9212, loss=0.4709]
+[train] epoch=003:  71%|███████   | 17/24 [03:06<01:19, 11.30s/batch, acc=0.9212, loss=0.4709]
+[train] epoch=003:  71%|███████   | 17/24 [03:17<01:19, 11.30s/batch, acc=0.9210, loss=0.4697]
+[train] epoch=003:  75%|███████▌  | 18/24 [03:17<01:06, 11.11s/batch, acc=0.9210, loss=0.4697]
+[train] epoch=003:  75%|███████▌  | 18/24 [03:28<01:06, 11.11s/batch, acc=0.9219, loss=0.4666]
+[train] epoch=003:  79%|███████▉  | 19/24 [03:28<00:55, 11.10s/batch, acc=0.9219, loss=0.4666]
+[train] epoch=003:  79%|███████▉  | 19/24 [03:39<00:55, 11.10s/batch, acc=0.9229, loss=0.4638][train] epoch=003 batch=20/24 loss=0.4638 acc=0.9229 rss_mb=1528.4 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[train] epoch=003:  83%|████████▎ | 20/24 [03:39<00:44, 11.01s/batch, acc=0.9229, loss=0.4638]
+[train] epoch=003:  83%|████████▎ | 20/24 [03:49<00:44, 11.01s/batch, acc=0.9237, loss=0.4628]
+[train] epoch=003:  88%|████████▊ | 21/24 [03:49<00:32, 10.87s/batch, acc=0.9237, loss=0.4628]
+[train] epoch=003:  88%|████████▊ | 21/24 [04:01<00:32, 10.87s/batch, acc=0.9251, loss=0.4609]
+[train] epoch=003:  92%|█████████▏| 22/24 [04:01<00:22, 11.19s/batch, acc=0.9251, loss=0.4609]
+[train] epoch=003:  92%|█████████▏| 22/24 [04:13<00:22, 11.19s/batch, acc=0.9258, loss=0.4585]
+[train] epoch=003:  96%|█████████▌| 23/24 [04:13<00:11, 11.29s/batch, acc=0.9258, loss=0.4585]
+[train] epoch=003:  96%|█████████▌| 23/24 [04:20<00:11, 11.29s/batch, acc=0.9267, loss=0.4564][train] epoch=003 batch=24/24 loss=0.4564 acc=0.9267 rss_mb=1528.5 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=180.3 torch_mps_driver_mb=9656.5
+
+[train] epoch=003: 100%|██████████| 24/24 [04:20<00:00,  9.97s/batch, acc=0.9267, loss=0.4564]
+                                                                                              
+
+[val] epoch=003:   0%|          | 0/8 [00:00<?, ?batch/s]
+[val] epoch=003:   0%|          | 0/8 [00:02<?, ?batch/s, acc=0.9375, loss=0.3888]
+[val] epoch=003:  12%|█▎        | 1/8 [00:02<00:15,  2.16s/batch, acc=0.9375, loss=0.3888]
+[val] epoch=003:  12%|█▎        | 1/8 [00:18<00:15,  2.16s/batch, acc=0.9199, loss=0.4348]
+[val] epoch=003:  25%|██▌       | 2/8 [00:18<01:04, 10.68s/batch, acc=0.9199, loss=0.4348]
+[val] epoch=003:  25%|██▌       | 2/8 [00:46<01:04, 10.68s/batch, acc=0.9180, loss=0.4381][val] epoch=003 batch=3/8 slow wait_s=27.2 step_s=0.1 rss_mb=1331.9 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=9284.5
+
+[val] epoch=003:  38%|███▊      | 3/8 [00:46<01:31, 18.26s/batch, acc=0.9180, loss=0.4381]
+[val] epoch=003:  38%|███▊      | 3/8 [00:49<01:31, 18.26s/batch, acc=0.9033, loss=0.4526]
+[val] epoch=003:  50%|█████     | 4/8 [00:49<00:48, 12.24s/batch, acc=0.9033, loss=0.4526]
+[val] epoch=003:  50%|█████     | 4/8 [00:55<00:48, 12.24s/batch, acc=0.8922, loss=0.4754][val] epoch=003 batch=5/8 loss=0.4754 acc=0.8922 rss_mb=1342.6 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=9284.5
+
+[val] epoch=003:  62%|██████▎   | 5/8 [00:55<00:30, 10.07s/batch, acc=0.8922, loss=0.4754]
+[val] epoch=003:  62%|██████▎   | 5/8 [01:06<00:30, 10.07s/batch, acc=0.8906, loss=0.4834]
+[val] epoch=003:  75%|███████▌  | 6/8 [01:06<00:21, 10.51s/batch, acc=0.8906, loss=0.4834]
+[val] epoch=003:  75%|███████▌  | 6/8 [01:15<00:21, 10.51s/batch, acc=0.8778, loss=0.5087]
+[val] epoch=003:  88%|████████▊ | 7/8 [01:15<00:09,  9.88s/batch, acc=0.8778, loss=0.5087]
+[val] epoch=003:  88%|████████▊ | 7/8 [01:17<00:09,  9.88s/batch, acc=0.8810, loss=0.5056][val] epoch=003 batch=8/8 loss=0.5056 acc=0.8810 rss_mb=1320.4 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=169.1 torch_mps_driver_mb=9284.5
+
+[val] epoch=003: 100%|██████████| 8/8 [01:17<00:00,  7.34s/batch, acc=0.8810, loss=0.5056]
+                                                                                          
+epoch=003 train_loss=0.4564 train_acc=0.9267 val_loss=0.5056 val_acc=0.8810
+[train] epoch=003 gaps acc=0.0458 loss=0.0493
+[train] epoch=003 train_per_angle 0:0.923(1466) 90:0.880(1505) 180:0.943(1511) 270:0.959(1592)
+[train] epoch=003 val_per_angle 0:0.822(488) 90:0.842(488) 180:0.998(486) 270:0.862(487)
+[train] epoch=003 val_top_confusions 0->180:85, 270->180:45, 90->180:44, 90->270:30, 270->0:19, 90->0:3 avg_conf=0.7978 avg_entropy_nats=0.5444
+[train] epoch=003 rss_mb=1320.5 ru_maxrss_mb=1591.6 py_current_mb=116.1 py_peak_mb=310.0 torch_allocated_mb=40.3 torch_mps_driver_mb=9284.5
+
+[train] epoch=004:   0%|          | 0/24 [00:00<?, ?batch/s]
+[train] epoch=004:   0%|          | 0/24 [00:10<?, ?batch/s, acc=0.9375, loss=0.4135]
+[train] epoch=004:   4%|▍         | 1/24 [00:10<04:09, 10.84s/batch, acc=0.9375, loss=0.4135]
+[train] epoch=004:   4%|▍         | 1/24 [00:23<04:09, 10.84s/batch, acc=0.9297, loss=0.4193]
+[train] epoch=004:   8%|▊         | 2/24 [00:23<04:15, 11.62s/batch, acc=0.9297, loss=0.4193]
+[train] epoch=004:   8%|▊         | 2/24 [00:33<04:15, 11.62s/batch, acc=0.9258, loss=0.4208]
+[train] epoch=004:  12%|█▎        | 3/24 [00:33<03:57, 11.32s/batch, acc=0.9258, loss=0.4208]
+[train] epoch=004:  12%|█▎        | 3/24 [00:45<03:57, 11.32s/batch, acc=0.9297, loss=0.4145]
+[train] epoch=004:  17%|█▋        | 4/24 [00:45<03:45, 11.30s/batch, acc=0.9297, loss=0.4145]
+[train] epoch=004:  17%|█▋        | 4/24 [00:56<03:45, 11.30s/batch, acc=0.9289, loss=0.4157][train] epoch=004 batch=5/24 loss=0.4157 acc=0.9289 rss_mb=1322.6 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=004:  21%|██        | 5/24 [00:56<03:34, 11.28s/batch, acc=0.9289, loss=0.4157]
+[train] epoch=004:  21%|██        | 5/24 [01:07<03:34, 11.28s/batch, acc=0.9329, loss=0.4104]
+[train] epoch=004:  25%|██▌       | 6/24 [01:07<03:22, 11.25s/batch, acc=0.9329, loss=0.4104]
+[train] epoch=004:  25%|██▌       | 6/24 [01:19<03:22, 11.25s/batch, acc=0.9364, loss=0.4048]
+[train] epoch=004:  29%|██▉       | 7/24 [01:19<03:13, 11.40s/batch, acc=0.9364, loss=0.4048]
+[train] epoch=004:  29%|██▉       | 7/24 [01:31<03:13, 11.40s/batch, acc=0.9390, loss=0.4002]
+[train] epoch=004:  33%|███▎      | 8/24 [01:31<03:04, 11.54s/batch, acc=0.9390, loss=0.4002]
+[train] epoch=004:  33%|███▎      | 8/24 [01:41<03:04, 11.54s/batch, acc=0.9397, loss=0.3989]
+[train] epoch=004:  38%|███▊      | 9/24 [01:41<02:49, 11.27s/batch, acc=0.9397, loss=0.3989]
+[train] epoch=004:  38%|███▊      | 9/24 [01:51<02:49, 11.27s/batch, acc=0.9414, loss=0.3962][train] epoch=004 batch=10/24 loss=0.3962 acc=0.9414 rss_mb=1323.5 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=004:  42%|████▏     | 10/24 [01:51<02:29, 10.71s/batch, acc=0.9414, loss=0.3962]
+[train] epoch=004:  42%|████▏     | 10/24 [02:01<02:29, 10.71s/batch, acc=0.9442, loss=0.3938]
+[train] epoch=004:  46%|████▌     | 11/24 [02:01<02:16, 10.52s/batch, acc=0.9442, loss=0.3938]
+[train] epoch=004:  46%|████▌     | 11/24 [02:11<02:16, 10.52s/batch, acc=0.9463, loss=0.3898]
+[train] epoch=004:  50%|█████     | 12/24 [02:11<02:05, 10.43s/batch, acc=0.9463, loss=0.3898]
+[train] epoch=004:  50%|█████     | 12/24 [02:23<02:05, 10.43s/batch, acc=0.9456, loss=0.3892]
+[train] epoch=004:  54%|█████▍    | 13/24 [02:23<01:58, 10.78s/batch, acc=0.9456, loss=0.3892]
+[train] epoch=004:  54%|█████▍    | 13/24 [02:33<01:58, 10.78s/batch, acc=0.9459, loss=0.3877]
+[train] epoch=004:  58%|█████▊    | 14/24 [02:33<01:47, 10.72s/batch, acc=0.9459, loss=0.3877]
+[train] epoch=004:  58%|█████▊    | 14/24 [02:45<01:47, 10.72s/batch, acc=0.9445, loss=0.3881][train] epoch=004 batch=15/24 loss=0.3881 acc=0.9445 rss_mb=1324.0 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=004:  62%|██████▎   | 15/24 [02:45<01:38, 10.95s/batch, acc=0.9445, loss=0.3881]
+[train] epoch=004:  62%|██████▎   | 15/24 [02:55<01:38, 10.95s/batch, acc=0.9465, loss=0.3846]
+[train] epoch=004:  67%|██████▋   | 16/24 [02:55<01:26, 10.77s/batch, acc=0.9465, loss=0.3846]
+[train] epoch=004:  67%|██████▋   | 16/24 [03:06<01:26, 10.77s/batch, acc=0.9474, loss=0.3832]
+[train] epoch=004:  71%|███████   | 17/24 [03:06<01:14, 10.68s/batch, acc=0.9474, loss=0.3832]
+[train] epoch=004:  71%|███████   | 17/24 [03:16<01:14, 10.68s/batch, acc=0.9486, loss=0.3810]
+[train] epoch=004:  75%|███████▌  | 18/24 [03:16<01:03, 10.63s/batch, acc=0.9486, loss=0.3810]
+[train] epoch=004:  75%|███████▌  | 18/24 [03:29<01:03, 10.63s/batch, acc=0.9484, loss=0.3792]
+[train] epoch=004:  79%|███████▉  | 19/24 [03:29<00:56, 11.21s/batch, acc=0.9484, loss=0.3792]
+[train] epoch=004:  79%|███████▉  | 19/24 [03:39<00:56, 11.21s/batch, acc=0.9492, loss=0.3782][train] epoch=004 batch=20/24 loss=0.3782 acc=0.9492 rss_mb=1324.3 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=004:  83%|████████▎ | 20/24 [03:39<00:43, 10.86s/batch, acc=0.9492, loss=0.3782]
+[train] epoch=004:  83%|████████▎ | 20/24 [03:49<00:43, 10.86s/batch, acc=0.9492, loss=0.3772]
+[train] epoch=004:  88%|████████▊ | 21/24 [03:49<00:32, 10.69s/batch, acc=0.9492, loss=0.3772]
+[train] epoch=004:  88%|████████▊ | 21/24 [04:01<00:32, 10.69s/batch, acc=0.9501, loss=0.3762]
+[train] epoch=004:  92%|█████████▏| 22/24 [04:01<00:22, 11.07s/batch, acc=0.9501, loss=0.3762]
+[train] epoch=004:  92%|█████████▏| 22/24 [04:11<00:22, 11.07s/batch, acc=0.9497, loss=0.3761]
+[train] epoch=004:  96%|█████████▌| 23/24 [04:11<00:10, 10.86s/batch, acc=0.9497, loss=0.3761]
+[train] epoch=004:  96%|█████████▌| 23/24 [04:20<00:10, 10.86s/batch, acc=0.9491, loss=0.3763][train] epoch=004 batch=24/24 loss=0.3763 acc=0.9491 rss_mb=1324.4 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=180.3 torch_mps_driver_mb=10168.5
+
+[train] epoch=004: 100%|██████████| 24/24 [04:21<00:00, 10.34s/batch, acc=0.9491, loss=0.3763]
+                                                                                              
+
+[val] epoch=004:   0%|          | 0/8 [00:00<?, ?batch/s]
+[val] epoch=004:   0%|          | 0/8 [00:02<?, ?batch/s, acc=0.9766, loss=0.2897]
+[val] epoch=004:  12%|█▎        | 1/8 [00:02<00:15,  2.15s/batch, acc=0.9766, loss=0.2897]
+[val] epoch=004:  12%|█▎        | 1/8 [00:18<00:15,  2.15s/batch, acc=0.9629, loss=0.3350]
+[val] epoch=004:  25%|██▌       | 2/8 [00:18<01:03, 10.65s/batch, acc=0.9629, loss=0.3350]
+[val] epoch=004:  25%|██▌       | 2/8 [00:46<01:03, 10.65s/batch, acc=0.9635, loss=0.3433][val] epoch=004 batch=3/8 slow wait_s=27.3 step_s=0.1 rss_mb=1324.8 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[val] epoch=004:  38%|███▊      | 3/8 [00:46<01:31, 18.30s/batch, acc=0.9635, loss=0.3433]
+[val] epoch=004:  38%|███▊      | 3/8 [00:49<01:31, 18.30s/batch, acc=0.9561, loss=0.3492]
+[val] epoch=004:  50%|█████     | 4/8 [00:49<00:48, 12.22s/batch, acc=0.9561, loss=0.3492]
+[val] epoch=004:  50%|█████     | 4/8 [00:55<00:48, 12.22s/batch, acc=0.9516, loss=0.3638][val] epoch=004 batch=5/8 loss=0.3638 acc=0.9516 rss_mb=1324.9 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[val] epoch=004:  62%|██████▎   | 5/8 [00:55<00:30, 10.01s/batch, acc=0.9516, loss=0.3638]
+[val] epoch=004:  62%|██████▎   | 5/8 [01:06<00:30, 10.01s/batch, acc=0.9447, loss=0.3733]
+[val] epoch=004:  75%|███████▌  | 6/8 [01:06<00:21, 10.52s/batch, acc=0.9447, loss=0.3733]
+[val] epoch=004:  75%|███████▌  | 6/8 [01:15<00:21, 10.52s/batch, acc=0.9330, loss=0.3924]
+[val] epoch=004:  88%|████████▊ | 7/8 [01:15<00:09,  9.88s/batch, acc=0.9330, loss=0.3924]
+[val] epoch=004:  88%|████████▊ | 7/8 [01:17<00:09,  9.88s/batch, acc=0.9348, loss=0.3906][val] epoch=004 batch=8/8 loss=0.3906 acc=0.9348 rss_mb=1325.0 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=169.1 torch_mps_driver_mb=9796.5
+
+[val] epoch=004: 100%|██████████| 8/8 [01:17<00:00,  7.31s/batch, acc=0.9348, loss=0.3906]
+                                                                                          
+epoch=004 train_loss=0.3763 train_acc=0.9491 val_loss=0.3906 val_acc=0.9348
+[train] epoch=004 gaps acc=0.0143 loss=0.0143
+[train] epoch=004 train_per_angle 0:0.952(1557) 90:0.931(1526) 180:0.944(1458) 270:0.969(1533)
+[train] epoch=004 val_per_angle 0:0.912(488) 90:0.910(488) 180:0.957(486) 270:0.961(487)
+[train] epoch=004 val_top_confusions 0->180:33, 90->270:23, 90->180:18, 180->270:11, 270->180:9, 0->90:7 avg_conf=0.8359 avg_entropy_nats=0.4948
+[train] epoch=004 rss_mb=1325.0 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=40.3 torch_mps_driver_mb=9796.5
+
+[train] epoch=005:   0%|          | 0/24 [00:00<?, ?batch/s]
+[train] epoch=005:   0%|          | 0/24 [00:12<?, ?batch/s, acc=0.9766, loss=0.3199]
+[train] epoch=005:   4%|▍         | 1/24 [00:12<04:55, 12.85s/batch, acc=0.9766, loss=0.3199]
+[train] epoch=005:   4%|▍         | 1/24 [00:23<04:55, 12.85s/batch, acc=0.9727, loss=0.3243]
+[train] epoch=005:   8%|▊         | 2/24 [00:23<04:19, 11.78s/batch, acc=0.9727, loss=0.3243]
+[train] epoch=005:   8%|▊         | 2/24 [00:35<04:19, 11.78s/batch, acc=0.9753, loss=0.3269]
+[train] epoch=005:  12%|█▎        | 3/24 [00:35<04:05, 11.67s/batch, acc=0.9753, loss=0.3269]
+[train] epoch=005:  12%|█▎        | 3/24 [00:45<04:05, 11.67s/batch, acc=0.9717, loss=0.3342]
+[train] epoch=005:  17%|█▋        | 4/24 [00:45<03:43, 11.18s/batch, acc=0.9717, loss=0.3342]
+[train] epoch=005:  17%|█▋        | 4/24 [00:56<03:43, 11.18s/batch, acc=0.9719, loss=0.3376][train] epoch=005 batch=5/24 loss=0.3376 acc=0.9719 rss_mb=1325.6 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=005:  21%|██        | 5/24 [00:56<03:31, 11.15s/batch, acc=0.9719, loss=0.3376]
+[train] epoch=005:  21%|██        | 5/24 [01:08<03:31, 11.15s/batch, acc=0.9681, loss=0.3402]
+[train] epoch=005:  25%|██▌       | 6/24 [01:08<03:23, 11.33s/batch, acc=0.9681, loss=0.3402]
+[train] epoch=005:  25%|██▌       | 6/24 [01:19<03:23, 11.33s/batch, acc=0.9643, loss=0.3416]
+[train] epoch=005:  29%|██▉       | 7/24 [01:19<03:10, 11.21s/batch, acc=0.9643, loss=0.3416]
+[train] epoch=005:  29%|██▉       | 7/24 [01:30<03:10, 11.21s/batch, acc=0.9595, loss=0.3469]
+[train] epoch=005:  33%|███▎      | 8/24 [01:30<02:57, 11.09s/batch, acc=0.9595, loss=0.3469]
+[train] epoch=005:  33%|███▎      | 8/24 [01:40<02:57, 11.09s/batch, acc=0.9583, loss=0.3482]
+[train] epoch=005:  38%|███▊      | 9/24 [01:40<02:40, 10.68s/batch, acc=0.9583, loss=0.3482]
+[train] epoch=005:  38%|███▊      | 9/24 [01:52<02:40, 10.68s/batch, acc=0.9590, loss=0.3474][train] epoch=005 batch=10/24 loss=0.3474 acc=0.9590 rss_mb=1326.2 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=005:  42%|████▏     | 10/24 [01:52<02:34, 11.06s/batch, acc=0.9590, loss=0.3474]
+[train] epoch=005:  42%|████▏     | 10/24 [02:03<02:34, 11.06s/batch, acc=0.9592, loss=0.3459]
+[train] epoch=005:  46%|████▌     | 11/24 [02:03<02:25, 11.20s/batch, acc=0.9592, loss=0.3459]
+[train] epoch=005:  46%|████▌     | 11/24 [02:13<02:25, 11.20s/batch, acc=0.9587, loss=0.3470]
+[train] epoch=005:  50%|█████     | 12/24 [02:13<02:11, 10.94s/batch, acc=0.9587, loss=0.3470]
+[train] epoch=005:  50%|█████     | 12/24 [02:23<02:11, 10.94s/batch, acc=0.9585, loss=0.3467]
+[train] epoch=005:  54%|█████▍    | 13/24 [02:23<01:54, 10.42s/batch, acc=0.9585, loss=0.3467]
+[train] epoch=005:  54%|█████▍    | 13/24 [02:34<01:54, 10.42s/batch, acc=0.9581, loss=0.3460]
+[train] epoch=005:  58%|█████▊    | 14/24 [02:34<01:45, 10.55s/batch, acc=0.9581, loss=0.3460]
+[train] epoch=005:  58%|█████▊    | 14/24 [02:46<01:45, 10.55s/batch, acc=0.9602, loss=0.3433][train] epoch=005 batch=15/24 loss=0.3433 acc=0.9602 rss_mb=1326.6 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=005:  62%|██████▎   | 15/24 [02:46<01:41, 11.24s/batch, acc=0.9602, loss=0.3433]
+[train] epoch=005:  62%|██████▎   | 15/24 [02:57<01:41, 11.24s/batch, acc=0.9590, loss=0.3449]
+[train] epoch=005:  67%|██████▋   | 16/24 [02:57<01:27, 10.99s/batch, acc=0.9590, loss=0.3449]
+[train] epoch=005:  67%|██████▋   | 16/24 [03:08<01:27, 10.99s/batch, acc=0.9596, loss=0.3438]
+[train] epoch=005:  71%|███████   | 17/24 [03:08<01:17, 11.04s/batch, acc=0.9596, loss=0.3438]
+[train] epoch=005:  71%|███████   | 17/24 [03:18<01:17, 11.04s/batch, acc=0.9605, loss=0.3430]
+[train] epoch=005:  75%|███████▌  | 18/24 [03:18<01:05, 10.87s/batch, acc=0.9605, loss=0.3430]
+[train] epoch=005:  75%|███████▌  | 18/24 [03:30<01:05, 10.87s/batch, acc=0.9616, loss=0.3425]
+[train] epoch=005:  79%|███████▉  | 19/24 [03:30<00:54, 10.94s/batch, acc=0.9616, loss=0.3425]
+[train] epoch=005:  79%|███████▉  | 19/24 [03:41<00:54, 10.94s/batch, acc=0.9617, loss=0.3422][train] epoch=005 batch=20/24 loss=0.3422 acc=0.9617 rss_mb=1325.2 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=005:  83%|████████▎ | 20/24 [03:41<00:43, 10.98s/batch, acc=0.9617, loss=0.3422]
+[train] epoch=005:  83%|████████▎ | 20/24 [03:52<00:43, 10.98s/batch, acc=0.9615, loss=0.3421]
+[train] epoch=005:  88%|████████▊ | 21/24 [03:52<00:32, 10.98s/batch, acc=0.9615, loss=0.3421]
+[train] epoch=005:  88%|████████▊ | 21/24 [04:01<00:32, 10.98s/batch, acc=0.9622, loss=0.3409]
+[train] epoch=005:  92%|█████████▏| 22/24 [04:01<00:20, 10.44s/batch, acc=0.9622, loss=0.3409]
+[train] epoch=005:  92%|█████████▏| 22/24 [04:12<00:20, 10.44s/batch, acc=0.9620, loss=0.3402]
+[train] epoch=005:  96%|█████████▌| 23/24 [04:12<00:10, 10.76s/batch, acc=0.9620, loss=0.3402]
+[train] epoch=005:  96%|█████████▌| 23/24 [04:20<00:10, 10.76s/batch, acc=0.9628, loss=0.3387][train] epoch=005 batch=24/24 loss=0.3387 acc=0.9628 rss_mb=1325.4 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=180.3 torch_mps_driver_mb=10168.5
+
+[train] epoch=005: 100%|██████████| 24/24 [04:20<00:00,  9.74s/batch, acc=0.9628, loss=0.3387]
+                                                                                              
+
+[val] epoch=005:   0%|          | 0/8 [00:00<?, ?batch/s]
+[val] epoch=005:   0%|          | 0/8 [00:02<?, ?batch/s, acc=0.9727, loss=0.3006]
+[val] epoch=005:  12%|█▎        | 1/8 [00:02<00:15,  2.15s/batch, acc=0.9727, loss=0.3006]
+[val] epoch=005:  12%|█▎        | 1/8 [00:18<00:15,  2.15s/batch, acc=0.9434, loss=0.3557]
+[val] epoch=005:  25%|██▌       | 2/8 [00:18<01:03, 10.62s/batch, acc=0.9434, loss=0.3557]
+[val] epoch=005:  25%|██▌       | 2/8 [00:46<01:03, 10.62s/batch, acc=0.9401, loss=0.3638][val] epoch=005 batch=3/8 slow wait_s=27.5 step_s=0.1 rss_mb=1324.2 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[val] epoch=005:  38%|███▊      | 3/8 [00:46<01:31, 18.37s/batch, acc=0.9401, loss=0.3638]
+[val] epoch=005:  38%|███▊      | 3/8 [00:49<01:31, 18.37s/batch, acc=0.9443, loss=0.3694]
+[val] epoch=005:  50%|█████     | 4/8 [00:49<00:49, 12.29s/batch, acc=0.9443, loss=0.3694]
+[val] epoch=005:  50%|█████     | 4/8 [00:55<00:49, 12.29s/batch, acc=0.9398, loss=0.3793][val] epoch=005 batch=5/8 loss=0.3793 acc=0.9398 rss_mb=1324.4 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[val] epoch=005:  62%|██████▎   | 5/8 [00:55<00:30, 10.11s/batch, acc=0.9398, loss=0.3793]
+[val] epoch=005:  62%|██████▎   | 5/8 [01:07<00:30, 10.11s/batch, acc=0.9323, loss=0.3939]
+[val] epoch=005:  75%|███████▌  | 6/8 [01:07<00:21, 10.60s/batch, acc=0.9323, loss=0.3939]
+[val] epoch=005:  75%|███████▌  | 6/8 [01:15<00:21, 10.60s/batch, acc=0.9174, loss=0.4214]
+[val] epoch=005:  88%|████████▊ | 7/8 [01:15<00:09,  9.97s/batch, acc=0.9174, loss=0.4214]
+[val] epoch=005:  88%|████████▊ | 7/8 [01:17<00:09,  9.97s/batch, acc=0.9179, loss=0.4195][val] epoch=005 batch=8/8 loss=0.4195 acc=0.9179 rss_mb=1324.5 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=169.1 torch_mps_driver_mb=9796.5
+
+[val] epoch=005: 100%|██████████| 8/8 [01:17<00:00,  7.38s/batch, acc=0.9179, loss=0.4195]
+                                                                                          
+epoch=005 train_loss=0.3387 train_acc=0.9628 val_loss=0.4195 val_acc=0.9179
+[train] epoch=005 gaps acc=0.0449 loss=0.0808
+[train] epoch=005 train_per_angle 0:0.963(1548) 90:0.947(1496) 180:0.965(1527) 270:0.977(1503)
+[train] epoch=005 val_per_angle 0:0.889(488) 90:0.879(488) 180:0.907(486) 270:0.996(487)
+[train] epoch=005 val_top_confusions 90->270:59, 180->270:38, 0->270:32, 0->90:13, 0->180:9, 180->0:4 avg_conf=0.8595 avg_entropy_nats=0.4094
+[train] epoch=005 rss_mb=1324.5 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=40.3 torch_mps_driver_mb=9796.5
+[train] no improvement for 1 epoch(s); patience=4
+
+[train] epoch=006:   0%|          | 0/24 [00:00<?, ?batch/s]
+[train] epoch=006:   0%|          | 0/24 [00:11<?, ?batch/s, acc=0.9648, loss=0.3539]
+[train] epoch=006:   4%|▍         | 1/24 [00:11<04:14, 11.05s/batch, acc=0.9648, loss=0.3539]
+[train] epoch=006:   4%|▍         | 1/24 [00:23<04:14, 11.05s/batch, acc=0.9629, loss=0.3415]
+[train] epoch=006:   8%|▊         | 2/24 [00:23<04:27, 12.16s/batch, acc=0.9629, loss=0.3415]
+[train] epoch=006:   8%|▊         | 2/24 [00:34<04:27, 12.16s/batch, acc=0.9622, loss=0.3300]
+[train] epoch=006:  12%|█▎        | 3/24 [00:34<04:02, 11.54s/batch, acc=0.9622, loss=0.3300]
+[train] epoch=006:  12%|█▎        | 3/24 [00:46<04:02, 11.54s/batch, acc=0.9629, loss=0.3272]
+[train] epoch=006:  17%|█▋        | 4/24 [00:46<03:50, 11.51s/batch, acc=0.9629, loss=0.3272]
+[train] epoch=006:  17%|█▋        | 4/24 [00:56<03:50, 11.51s/batch, acc=0.9625, loss=0.3290][train] epoch=006 batch=5/24 loss=0.3290 acc=0.9625 rss_mb=1326.4 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=006:  21%|██        | 5/24 [00:56<03:27, 10.91s/batch, acc=0.9625, loss=0.3290]
+[train] epoch=006:  21%|██        | 5/24 [01:07<03:27, 10.91s/batch, acc=0.9603, loss=0.3315]
+[train] epoch=006:  25%|██▌       | 6/24 [01:07<03:18, 11.05s/batch, acc=0.9603, loss=0.3315]
+[train] epoch=006:  25%|██▌       | 6/24 [01:18<03:18, 11.05s/batch, acc=0.9637, loss=0.3265]
+[train] epoch=006:  29%|██▉       | 7/24 [01:18<03:07, 11.05s/batch, acc=0.9637, loss=0.3265]
+[train] epoch=006:  29%|██▉       | 7/24 [01:30<03:07, 11.05s/batch, acc=0.9639, loss=0.3270]
+[train] epoch=006:  33%|███▎      | 8/24 [01:30<03:00, 11.29s/batch, acc=0.9639, loss=0.3270]
+[train] epoch=006:  33%|███▎      | 8/24 [01:40<03:00, 11.29s/batch, acc=0.9653, loss=0.3228]
+[train] epoch=006:  38%|███▊      | 9/24 [01:40<02:43, 10.93s/batch, acc=0.9653, loss=0.3228]
+[train] epoch=006:  38%|███▊      | 9/24 [01:51<02:43, 10.93s/batch, acc=0.9668, loss=0.3210][train] epoch=006 batch=10/24 loss=0.3210 acc=0.9668 rss_mb=1326.5 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=006:  42%|████▏     | 10/24 [01:51<02:34, 11.01s/batch, acc=0.9668, loss=0.3210]
+[train] epoch=006:  42%|████▏     | 10/24 [02:03<02:34, 11.01s/batch, acc=0.9673, loss=0.3197]
+[train] epoch=006:  46%|████▌     | 11/24 [02:03<02:26, 11.27s/batch, acc=0.9673, loss=0.3197]
+[train] epoch=006:  46%|████▌     | 11/24 [02:15<02:26, 11.27s/batch, acc=0.9681, loss=0.3187]
+[train] epoch=006:  50%|█████     | 12/24 [02:15<02:19, 11.63s/batch, acc=0.9681, loss=0.3187]
+[train] epoch=006:  50%|█████     | 12/24 [02:27<02:19, 11.63s/batch, acc=0.9691, loss=0.3174]
+[train] epoch=006:  54%|█████▍    | 13/24 [02:27<02:08, 11.64s/batch, acc=0.9691, loss=0.3174]
+[train] epoch=006:  54%|█████▍    | 13/24 [02:38<02:08, 11.64s/batch, acc=0.9699, loss=0.3164]
+[train] epoch=006:  58%|█████▊    | 14/24 [02:38<01:53, 11.32s/batch, acc=0.9699, loss=0.3164]
+[train] epoch=006:  58%|█████▊    | 14/24 [02:47<01:53, 11.32s/batch, acc=0.9703, loss=0.3157][train] epoch=006 batch=15/24 loss=0.3157 acc=0.9703 rss_mb=1326.9 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=006:  62%|██████▎   | 15/24 [02:47<01:37, 10.84s/batch, acc=0.9703, loss=0.3157]
+[train] epoch=006:  62%|██████▎   | 15/24 [02:59<01:37, 10.84s/batch, acc=0.9702, loss=0.3159]
+[train] epoch=006:  67%|██████▋   | 16/24 [02:59<01:27, 10.99s/batch, acc=0.9702, loss=0.3159]
+[train] epoch=006:  67%|██████▋   | 16/24 [03:09<01:27, 10.99s/batch, acc=0.9701, loss=0.3161]
+[train] epoch=006:  71%|███████   | 17/24 [03:09<01:14, 10.68s/batch, acc=0.9701, loss=0.3161]
+[train] epoch=006:  71%|███████   | 17/24 [03:19<01:14, 10.68s/batch, acc=0.9705, loss=0.3149]
+[train] epoch=006:  75%|███████▌  | 18/24 [03:19<01:03, 10.60s/batch, acc=0.9705, loss=0.3149]
+[train] epoch=006:  75%|███████▌  | 18/24 [03:31<01:03, 10.60s/batch, acc=0.9714, loss=0.3138]
+[train] epoch=006:  79%|███████▉  | 19/24 [03:31<00:55, 11.08s/batch, acc=0.9714, loss=0.3138]
+[train] epoch=006:  79%|███████▉  | 19/24 [03:41<00:55, 11.08s/batch, acc=0.9715, loss=0.3129][train] epoch=006 batch=20/24 loss=0.3129 acc=0.9715 rss_mb=1343.4 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=006:  83%|████████▎ | 20/24 [03:41<00:42, 10.74s/batch, acc=0.9715, loss=0.3129]
+[train] epoch=006:  83%|████████▎ | 20/24 [03:51<00:42, 10.74s/batch, acc=0.9723, loss=0.3114]
+[train] epoch=006:  88%|████████▊ | 21/24 [03:51<00:31, 10.54s/batch, acc=0.9723, loss=0.3114]
+[train] epoch=006:  88%|████████▊ | 21/24 [04:02<00:31, 10.54s/batch, acc=0.9725, loss=0.3106]
+[train] epoch=006:  92%|█████████▏| 22/24 [04:02<00:20, 10.45s/batch, acc=0.9725, loss=0.3106]
+[train] epoch=006:  92%|█████████▏| 22/24 [04:12<00:20, 10.45s/batch, acc=0.9727, loss=0.3103]
+[train] epoch=006:  96%|█████████▌| 23/24 [04:12<00:10, 10.46s/batch, acc=0.9727, loss=0.3103]
+[train] epoch=006:  96%|█████████▌| 23/24 [04:21<00:10, 10.46s/batch, acc=0.9728, loss=0.3099][train] epoch=006 batch=24/24 loss=0.3099 acc=0.9728 rss_mb=1343.6 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=180.3 torch_mps_driver_mb=10168.5
+
+[train] epoch=006: 100%|██████████| 24/24 [04:21<00:00,  9.87s/batch, acc=0.9728, loss=0.3099]
+                                                                                              
+
+[val] epoch=006:   0%|          | 0/8 [00:00<?, ?batch/s]
+[val] epoch=006:   0%|          | 0/8 [00:02<?, ?batch/s, acc=0.9805, loss=0.2679]
+[val] epoch=006:  12%|█▎        | 1/8 [00:02<00:15,  2.25s/batch, acc=0.9805, loss=0.2679]
+[val] epoch=006:  12%|█▎        | 1/8 [00:18<00:15,  2.25s/batch, acc=0.9512, loss=0.3320]
+[val] epoch=006:  25%|██▌       | 2/8 [00:18<01:04, 10.68s/batch, acc=0.9512, loss=0.3320]
+[val] epoch=006:  25%|██▌       | 2/8 [00:46<01:04, 10.68s/batch, acc=0.9479, loss=0.3505][val] epoch=006 batch=3/8 slow wait_s=27.4 step_s=0.1 rss_mb=1345.4 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[val] epoch=006:  38%|███▊      | 3/8 [00:46<01:31, 18.38s/batch, acc=0.9479, loss=0.3505]
+[val] epoch=006:  38%|███▊      | 3/8 [00:49<01:31, 18.38s/batch, acc=0.9590, loss=0.3377]
+[val] epoch=006:  50%|█████     | 4/8 [00:49<00:49, 12.30s/batch, acc=0.9590, loss=0.3377]
+[val] epoch=006:  50%|█████     | 4/8 [00:55<00:49, 12.30s/batch, acc=0.9578, loss=0.3445][val] epoch=006 batch=5/8 loss=0.3445 acc=0.9578 rss_mb=1345.5 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[val] epoch=006:  62%|██████▎   | 5/8 [00:55<00:30, 10.12s/batch, acc=0.9578, loss=0.3445]
+[val] epoch=006:  62%|██████▎   | 5/8 [01:07<00:30, 10.12s/batch, acc=0.9531, loss=0.3522]
+[val] epoch=006:  75%|███████▌  | 6/8 [01:07<00:21, 10.61s/batch, acc=0.9531, loss=0.3522]
+[val] epoch=006:  75%|███████▌  | 6/8 [01:15<00:21, 10.61s/batch, acc=0.9459, loss=0.3700]
+[val] epoch=006:  88%|████████▊ | 7/8 [01:15<00:09,  9.99s/batch, acc=0.9459, loss=0.3700]
+[val] epoch=006:  88%|████████▊ | 7/8 [01:17<00:09,  9.99s/batch, acc=0.9461, loss=0.3673][val] epoch=006 batch=8/8 loss=0.3673 acc=0.9461 rss_mb=1344.3 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=169.1 torch_mps_driver_mb=9796.5
+
+[val] epoch=006: 100%|██████████| 8/8 [01:17<00:00,  7.42s/batch, acc=0.9461, loss=0.3673]
+                                                                                          
+epoch=006 train_loss=0.3099 train_acc=0.9728 val_loss=0.3673 val_acc=0.9461
+[train] epoch=006 gaps acc=0.0267 loss=0.0574
+[train] epoch=006 train_per_angle 0:0.970(1584) 90:0.972(1550) 180:0.970(1475) 270:0.980(1465)
+[train] epoch=006 val_per_angle 0:0.939(488) 90:0.965(488) 180:0.901(486) 270:0.979(487)
+[train] epoch=006 val_top_confusions 180->90:22, 0->90:18, 180->270:17, 90->270:14, 0->270:9, 180->0:9 avg_conf=0.8556 avg_entropy_nats=0.4427
+[train] epoch=006 rss_mb=1344.3 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=40.3 torch_mps_driver_mb=9796.5
+
+[train] epoch=007:   0%|          | 0/24 [00:00<?, ?batch/s]
+[train] epoch=007:   0%|          | 0/24 [00:12<?, ?batch/s, acc=0.9883, loss=0.2830]
+[train] epoch=007:   4%|▍         | 1/24 [00:12<04:46, 12.45s/batch, acc=0.9883, loss=0.2830]
+[train] epoch=007:   4%|▍         | 1/24 [00:24<04:46, 12.45s/batch, acc=0.9883, loss=0.2881]
+[train] epoch=007:   8%|▊         | 2/24 [00:24<04:33, 12.43s/batch, acc=0.9883, loss=0.2881]
+[train] epoch=007:   8%|▊         | 2/24 [00:35<04:33, 12.43s/batch, acc=0.9857, loss=0.2877]
+[train] epoch=007:  12%|█▎        | 3/24 [00:35<04:07, 11.78s/batch, acc=0.9857, loss=0.2877]
+[train] epoch=007:  12%|█▎        | 3/24 [00:46<04:07, 11.78s/batch, acc=0.9863, loss=0.2866]
+[train] epoch=007:  17%|█▋        | 4/24 [00:46<03:49, 11.46s/batch, acc=0.9863, loss=0.2866]
+[train] epoch=007:  17%|█▋        | 4/24 [00:56<03:49, 11.46s/batch, acc=0.9844, loss=0.2900][train] epoch=007 batch=5/24 loss=0.2900 acc=0.9844 rss_mb=1345.7 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=007:  21%|██        | 5/24 [00:56<03:25, 10.84s/batch, acc=0.9844, loss=0.2900]
+[train] epoch=007:  21%|██        | 5/24 [01:05<03:25, 10.84s/batch, acc=0.9818, loss=0.2922]
+[train] epoch=007:  25%|██▌       | 6/24 [01:05<03:05, 10.29s/batch, acc=0.9818, loss=0.2922]
+[train] epoch=007:  25%|██▌       | 6/24 [01:18<03:05, 10.29s/batch, acc=0.9788, loss=0.2952]
+[train] epoch=007:  29%|██▉       | 7/24 [01:18<03:08, 11.08s/batch, acc=0.9788, loss=0.2952]
+[train] epoch=007:  29%|██▉       | 7/24 [01:29<03:08, 11.08s/batch, acc=0.9775, loss=0.2961]
+[train] epoch=007:  33%|███▎      | 8/24 [01:29<02:55, 10.98s/batch, acc=0.9775, loss=0.2961]
+[train] epoch=007:  33%|███▎      | 8/24 [01:42<02:55, 10.98s/batch, acc=0.9783, loss=0.2945]
+[train] epoch=007:  38%|███▊      | 9/24 [01:42<02:52, 11.53s/batch, acc=0.9783, loss=0.2945]
+[train] epoch=007:  38%|███▊      | 9/24 [01:52<02:52, 11.53s/batch, acc=0.9781, loss=0.2951][train] epoch=007 batch=10/24 loss=0.2951 acc=0.9781 rss_mb=1345.7 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=007:  42%|████▏     | 10/24 [01:52<02:37, 11.26s/batch, acc=0.9781, loss=0.2951]
+[train] epoch=007:  42%|████▏     | 10/24 [02:05<02:37, 11.26s/batch, acc=0.9776, loss=0.2953]
+[train] epoch=007:  46%|████▌     | 11/24 [02:05<02:31, 11.62s/batch, acc=0.9776, loss=0.2953]
+[train] epoch=007:  46%|████▌     | 11/24 [02:15<02:31, 11.62s/batch, acc=0.9772, loss=0.2952]
+[train] epoch=007:  50%|█████     | 12/24 [02:15<02:15, 11.29s/batch, acc=0.9772, loss=0.2952]
+[train] epoch=007:  50%|█████     | 12/24 [02:26<02:15, 11.29s/batch, acc=0.9763, loss=0.2957]
+[train] epoch=007:  54%|█████▍    | 13/24 [02:26<02:01, 11.07s/batch, acc=0.9763, loss=0.2957]
+[train] epoch=007:  54%|█████▍    | 13/24 [02:38<02:01, 11.07s/batch, acc=0.9757, loss=0.2959]
+[train] epoch=007:  58%|█████▊    | 14/24 [02:38<01:55, 11.53s/batch, acc=0.9757, loss=0.2959]
+[train] epoch=007:  58%|█████▊    | 14/24 [02:50<01:55, 11.53s/batch, acc=0.9755, loss=0.2963][train] epoch=007 batch=15/24 loss=0.2963 acc=0.9755 rss_mb=1345.9 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=007:  62%|██████▎   | 15/24 [02:50<01:43, 11.47s/batch, acc=0.9755, loss=0.2963]
+[train] epoch=007:  62%|██████▎   | 15/24 [03:00<01:43, 11.47s/batch, acc=0.9761, loss=0.2967]
+[train] epoch=007:  67%|██████▋   | 16/24 [03:00<01:28, 11.06s/batch, acc=0.9761, loss=0.2967]
+[train] epoch=007:  67%|██████▋   | 16/24 [03:11<01:28, 11.06s/batch, acc=0.9756, loss=0.2977]
+[train] epoch=007:  71%|███████   | 17/24 [03:11<01:17, 11.07s/batch, acc=0.9756, loss=0.2977]
+[train] epoch=007:  71%|███████   | 17/24 [03:20<01:17, 11.07s/batch, acc=0.9766, loss=0.2964]
+[train] epoch=007:  75%|███████▌  | 18/24 [03:20<01:02, 10.37s/batch, acc=0.9766, loss=0.2964]
+[train] epoch=007:  75%|███████▌  | 18/24 [03:32<01:02, 10.37s/batch, acc=0.9764, loss=0.2960]
+[train] epoch=007:  79%|███████▉  | 19/24 [03:32<00:54, 10.94s/batch, acc=0.9764, loss=0.2960]
+[train] epoch=007:  79%|███████▉  | 19/24 [03:42<00:54, 10.94s/batch, acc=0.9768, loss=0.2954][train] epoch=007 batch=20/24 loss=0.2954 acc=0.9768 rss_mb=1346.2 ru_maxrss_mb=1591.6 py_current_mb=116.4 py_peak_mb=310.0 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=007:  83%|████████▎ | 20/24 [03:42<00:42, 10.57s/batch, acc=0.9768, loss=0.2954]
+[train] epoch=007:  83%|████████▎ | 20/24 [03:52<00:42, 10.57s/batch, acc=0.9760, loss=0.2965]
+[train] epoch=007:  88%|████████▊ | 21/24 [03:52<00:31, 10.51s/batch, acc=0.9760, loss=0.2965]
+[train] epoch=007:  88%|████████▊ | 21/24 [04:02<00:31, 10.51s/batch, acc=0.9764, loss=0.2961]
+[train] epoch=007:  92%|█████████▏| 22/24 [04:02<00:20, 10.34s/batch, acc=0.9764, loss=0.2961]
+[train] epoch=007:  92%|█████████▏| 22/24 [04:14<00:20, 10.34s/batch, acc=0.9766, loss=0.2966]
+[train] epoch=007:  96%|█████████▌| 23/24 [04:14<00:10, 10.76s/batch, acc=0.9766, loss=0.2966]
+[train] epoch=007:  96%|█████████▌| 23/24 [04:22<00:10, 10.76s/batch, acc=0.9765, loss=0.2965][train] epoch=007 batch=24/24 loss=0.2965 acc=0.9765 rss_mb=1346.2 ru_maxrss_mb=1591.6 py_current_mb=116.2 py_peak_mb=310.0 torch_allocated_mb=180.3 torch_mps_driver_mb=10168.5
+
+[train] epoch=007: 100%|██████████| 24/24 [04:22<00:00, 10.05s/batch, acc=0.9765, loss=0.2965]
+                                                                                              
+
+[val] epoch=007:   0%|          | 0/8 [00:00<?, ?batch/s]
+[val] epoch=007:   0%|          | 0/8 [00:02<?, ?batch/s, acc=0.9961, loss=0.2542]
+[val] epoch=007:  12%|█▎        | 1/8 [00:02<00:15,  2.15s/batch, acc=0.9961, loss=0.2542]
+[val] epoch=007:  12%|█▎        | 1/8 [00:18<00:15,  2.15s/batch, acc=0.9766, loss=0.3051]
+[val] epoch=007:  25%|██▌       | 2/8 [00:18<01:04, 10.67s/batch, acc=0.9766, loss=0.3051]
+[val] epoch=007:  25%|██▌       | 2/8 [00:46<01:04, 10.67s/batch, acc=0.9753, loss=0.3128][val] epoch=007 batch=3/8 slow wait_s=27.6 step_s=0.1 rss_mb=1354.3 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.5 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[val] epoch=007:  38%|███▊      | 3/8 [00:46<01:32, 18.47s/batch, acc=0.9753, loss=0.3128]
+[val] epoch=007:  38%|███▊      | 3/8 [00:49<01:32, 18.47s/batch, acc=0.9785, loss=0.3058]
+[val] epoch=007:  50%|█████     | 4/8 [00:49<00:49, 12.33s/batch, acc=0.9785, loss=0.3058]
+[val] epoch=007:  50%|█████     | 4/8 [00:55<00:49, 12.33s/batch, acc=0.9734, loss=0.3162][val] epoch=007 batch=5/8 loss=0.3162 acc=0.9734 rss_mb=1354.4 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.5 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[val] epoch=007:  62%|██████▎   | 5/8 [00:55<00:30, 10.12s/batch, acc=0.9734, loss=0.3162]
+[val] epoch=007:  62%|██████▎   | 5/8 [01:07<00:30, 10.12s/batch, acc=0.9681, loss=0.3281]
+[val] epoch=007:  75%|███████▌  | 6/8 [01:07<00:21, 10.60s/batch, acc=0.9681, loss=0.3281]
+[val] epoch=007:  75%|███████▌  | 6/8 [01:15<00:21, 10.60s/batch, acc=0.9593, loss=0.3465]
+[val] epoch=007:  88%|████████▊ | 7/8 [01:15<00:09,  9.94s/batch, acc=0.9593, loss=0.3465]
+[val] epoch=007:  88%|████████▊ | 7/8 [01:17<00:09,  9.94s/batch, acc=0.9605, loss=0.3423][val] epoch=007 batch=8/8 loss=0.3423 acc=0.9605 rss_mb=1353.4 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.5 torch_allocated_mb=169.1 torch_mps_driver_mb=9796.5
+
+[val] epoch=007: 100%|██████████| 8/8 [01:17<00:00,  7.35s/batch, acc=0.9605, loss=0.3423]
+                                                                                          
+epoch=007 train_loss=0.2965 train_acc=0.9765 val_loss=0.3423 val_acc=0.9605
+[train] epoch=007 gaps acc=0.0160 loss=0.0459
+[train] epoch=007 train_per_angle 0:0.976(1498) 90:0.971(1566) 180:0.980(1465) 270:0.979(1545)
+[train] epoch=007 val_per_angle 0:0.914(488) 90:0.953(488) 180:0.977(486) 270:0.998(487)
+[train] epoch=007 val_top_confusions 0->180:19, 0->270:18, 90->270:17, 180->270:11, 90->180:6, 0->90:5 avg_conf=0.8747 avg_entropy_nats=0.3996
+[train] epoch=007 rss_mb=1353.4 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.5 torch_allocated_mb=40.3 torch_mps_driver_mb=9796.5
+
+[train] epoch=008:   0%|          | 0/24 [00:00<?, ?batch/s]
+[train] epoch=008:   0%|          | 0/24 [00:11<?, ?batch/s, acc=0.9727, loss=0.3005]
+[train] epoch=008:   4%|▍         | 1/24 [00:11<04:23, 11.45s/batch, acc=0.9727, loss=0.3005]
+[train] epoch=008:   4%|▍         | 1/24 [00:21<04:23, 11.45s/batch, acc=0.9805, loss=0.2839]
+[train] epoch=008:   8%|▊         | 2/24 [00:21<03:50, 10.47s/batch, acc=0.9805, loss=0.2839]
+[train] epoch=008:   8%|▊         | 2/24 [00:31<03:50, 10.47s/batch, acc=0.9831, loss=0.2871]
+[train] epoch=008:  12%|█▎        | 3/24 [00:31<03:38, 10.40s/batch, acc=0.9831, loss=0.2871]
+[train] epoch=008:  12%|█▎        | 3/24 [00:42<03:38, 10.40s/batch, acc=0.9824, loss=0.2879]
+[train] epoch=008:  17%|█▋        | 4/24 [00:42<03:32, 10.60s/batch, acc=0.9824, loss=0.2879]
+[train] epoch=008:  17%|█▋        | 4/24 [00:52<03:32, 10.60s/batch, acc=0.9797, loss=0.2945][train] epoch=008 batch=5/24 loss=0.2945 acc=0.9797 rss_mb=1358.7 ru_maxrss_mb=1591.6 py_current_mb=120.1 py_peak_mb=313.7 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=008:  21%|██        | 5/24 [00:52<03:20, 10.57s/batch, acc=0.9797, loss=0.2945]
+[train] epoch=008:  21%|██        | 5/24 [01:04<03:20, 10.57s/batch, acc=0.9805, loss=0.2957]
+[train] epoch=008:  25%|██▌       | 6/24 [01:04<03:14, 10.79s/batch, acc=0.9805, loss=0.2957]
+[train] epoch=008:  25%|██▌       | 6/24 [01:15<03:14, 10.79s/batch, acc=0.9810, loss=0.2944]
+[train] epoch=008:  29%|██▉       | 7/24 [01:15<03:06, 10.95s/batch, acc=0.9810, loss=0.2944]
+[train] epoch=008:  29%|██▉       | 7/24 [01:26<03:06, 10.95s/batch, acc=0.9810, loss=0.2910]
+[train] epoch=008:  33%|███▎      | 8/24 [01:26<02:55, 10.98s/batch, acc=0.9810, loss=0.2910]
+[train] epoch=008:  33%|███▎      | 8/24 [01:39<02:55, 10.98s/batch, acc=0.9818, loss=0.2892]
+[train] epoch=008:  38%|███▊      | 9/24 [01:39<02:54, 11.62s/batch, acc=0.9818, loss=0.2892]
+[train] epoch=008:  38%|███▊      | 9/24 [01:48<02:54, 11.62s/batch, acc=0.9793, loss=0.2931][train] epoch=008 batch=10/24 loss=0.2931 acc=0.9793 rss_mb=1358.9 ru_maxrss_mb=1591.6 py_current_mb=120.1 py_peak_mb=313.7 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=008:  42%|████▏     | 10/24 [01:48<02:32, 10.90s/batch, acc=0.9793, loss=0.2931]
+[train] epoch=008:  42%|████▏     | 10/24 [01:59<02:32, 10.90s/batch, acc=0.9798, loss=0.2928]
+[train] epoch=008:  46%|████▌     | 11/24 [01:59<02:22, 10.95s/batch, acc=0.9798, loss=0.2928]
+[train] epoch=008:  46%|████▌     | 11/24 [02:10<02:22, 10.95s/batch, acc=0.9785, loss=0.2938]
+[train] epoch=008:  50%|█████     | 12/24 [02:10<02:09, 10.80s/batch, acc=0.9785, loss=0.2938]
+[train] epoch=008:  50%|█████     | 12/24 [02:20<02:09, 10.80s/batch, acc=0.9775, loss=0.2939]
+[train] epoch=008:  54%|█████▍    | 13/24 [02:20<01:57, 10.67s/batch, acc=0.9775, loss=0.2939]
+[train] epoch=008:  54%|█████▍    | 13/24 [02:32<01:57, 10.67s/batch, acc=0.9785, loss=0.2926]
+[train] epoch=008:  58%|█████▊    | 14/24 [02:32<01:48, 10.90s/batch, acc=0.9785, loss=0.2926]
+[train] epoch=008:  58%|█████▊    | 14/24 [02:42<01:48, 10.90s/batch, acc=0.9784, loss=0.2928][train] epoch=008 batch=15/24 loss=0.2928 acc=0.9784 rss_mb=1359.0 ru_maxrss_mb=1591.6 py_current_mb=120.1 py_peak_mb=313.7 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=008:  62%|██████▎   | 15/24 [02:42<01:36, 10.69s/batch, acc=0.9784, loss=0.2928]
+[train] epoch=008:  62%|██████▎   | 15/24 [02:52<01:36, 10.69s/batch, acc=0.9780, loss=0.2930]
+[train] epoch=008:  67%|██████▋   | 16/24 [02:52<01:24, 10.57s/batch, acc=0.9780, loss=0.2930]
+[train] epoch=008:  67%|██████▋   | 16/24 [03:02<01:24, 10.57s/batch, acc=0.9782, loss=0.2929]
+[train] epoch=008:  71%|███████   | 17/24 [03:02<01:12, 10.41s/batch, acc=0.9782, loss=0.2929]
+[train] epoch=008:  71%|███████   | 17/24 [03:12<01:12, 10.41s/batch, acc=0.9781, loss=0.2923]
+[train] epoch=008:  75%|███████▌  | 18/24 [03:12<01:01, 10.26s/batch, acc=0.9781, loss=0.2923]
+[train] epoch=008:  75%|███████▌  | 18/24 [03:23<01:01, 10.26s/batch, acc=0.9782, loss=0.2920]
+[train] epoch=008:  79%|███████▉  | 19/24 [03:23<00:51, 10.39s/batch, acc=0.9782, loss=0.2920]
+[train] epoch=008:  79%|███████▉  | 19/24 [03:34<00:51, 10.39s/batch, acc=0.9789, loss=0.2917][train] epoch=008 batch=20/24 loss=0.2917 acc=0.9789 rss_mb=1390.3 ru_maxrss_mb=1591.6 py_current_mb=120.1 py_peak_mb=313.7 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=008:  83%|████████▎ | 20/24 [03:34<00:42, 10.52s/batch, acc=0.9789, loss=0.2917]
+[train] epoch=008:  83%|████████▎ | 20/24 [03:45<00:42, 10.52s/batch, acc=0.9794, loss=0.2907]
+[train] epoch=008:  88%|████████▊ | 21/24 [03:45<00:32, 10.84s/batch, acc=0.9794, loss=0.2907]
+[train] epoch=008:  88%|████████▊ | 21/24 [03:57<00:32, 10.84s/batch, acc=0.9794, loss=0.2904]
+[train] epoch=008:  92%|█████████▏| 22/24 [03:57<00:22, 11.03s/batch, acc=0.9794, loss=0.2904]
+[train] epoch=008:  92%|█████████▏| 22/24 [04:10<00:22, 11.03s/batch, acc=0.9796, loss=0.2897]
+[train] epoch=008:  96%|█████████▌| 23/24 [04:10<00:11, 11.68s/batch, acc=0.9796, loss=0.2897]
+[train] epoch=008:  96%|█████████▌| 23/24 [04:18<00:11, 11.68s/batch, acc=0.9801, loss=0.2892][train] epoch=008 batch=24/24 loss=0.2892 acc=0.9801 rss_mb=1395.3 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.7 torch_allocated_mb=180.3 torch_mps_driver_mb=10168.5
+
+[train] epoch=008: 100%|██████████| 24/24 [04:19<00:00, 10.77s/batch, acc=0.9801, loss=0.2892]
+                                                                                              
+
+[val] epoch=008:   0%|          | 0/8 [00:00<?, ?batch/s]
+[val] epoch=008:   0%|          | 0/8 [00:02<?, ?batch/s, acc=0.9922, loss=0.2592]
+[val] epoch=008:  12%|█▎        | 1/8 [00:02<00:14,  2.14s/batch, acc=0.9922, loss=0.2592]
+[val] epoch=008:  12%|█▎        | 1/8 [00:18<00:14,  2.14s/batch, acc=0.9766, loss=0.2950]
+[val] epoch=008:  25%|██▌       | 2/8 [00:18<01:03, 10.51s/batch, acc=0.9766, loss=0.2950]
+[val] epoch=008:  25%|██▌       | 2/8 [00:45<01:03, 10.51s/batch, acc=0.9740, loss=0.3012][val] epoch=008 batch=3/8 slow wait_s=26.9 step_s=0.1 rss_mb=1395.5 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.7 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[val] epoch=008:  38%|███▊      | 3/8 [00:45<01:30, 18.03s/batch, acc=0.9740, loss=0.3012]
+[val] epoch=008:  38%|███▊      | 3/8 [00:48<01:30, 18.03s/batch, acc=0.9795, loss=0.2933]
+[val] epoch=008:  50%|█████     | 4/8 [00:48<00:48, 12.05s/batch, acc=0.9795, loss=0.2933]
+[val] epoch=008:  50%|█████     | 4/8 [00:54<00:48, 12.05s/batch, acc=0.9766, loss=0.2990][val] epoch=008 batch=5/8 loss=0.2990 acc=0.9766 rss_mb=1394.3 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.7 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[val] epoch=008:  62%|██████▎   | 5/8 [00:54<00:29,  9.93s/batch, acc=0.9766, loss=0.2990]
+[val] epoch=008:  62%|██████▎   | 5/8 [01:05<00:29,  9.93s/batch, acc=0.9733, loss=0.3081]
+[val] epoch=008:  75%|███████▌  | 6/8 [01:05<00:20, 10.42s/batch, acc=0.9733, loss=0.3081]
+[val] epoch=008:  75%|███████▌  | 6/8 [01:14<00:20, 10.42s/batch, acc=0.9676, loss=0.3225]
+[val] epoch=008:  88%|████████▊ | 7/8 [01:14<00:09,  9.79s/batch, acc=0.9676, loss=0.3225]
+[val] epoch=008:  88%|████████▊ | 7/8 [01:16<00:09,  9.79s/batch, acc=0.9682, loss=0.3191][val] epoch=008 batch=8/8 loss=0.3191 acc=0.9682 rss_mb=1394.4 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.7 torch_allocated_mb=169.1 torch_mps_driver_mb=9796.5
+
+[val] epoch=008: 100%|██████████| 8/8 [01:16<00:00,  7.26s/batch, acc=0.9682, loss=0.3191]
+                                                                                          
+epoch=008 train_loss=0.2892 train_acc=0.9801 val_loss=0.3191 val_acc=0.9682
+[train] epoch=008 gaps acc=0.0119 loss=0.0299
+[train] epoch=008 train_per_angle 0:0.980(1531) 90:0.976(1500) 180:0.982(1541) 270:0.981(1502)
+[train] epoch=008 val_per_angle 0:0.963(488) 90:0.980(488) 180:0.963(486) 270:0.967(487)
+[train] epoch=008 val_top_confusions 0->90:13, 180->0:13, 270->0:11, 90->270:5, 270->90:5, 0->180:4 avg_conf=0.8879 avg_entropy_nats=0.3660
+[train] epoch=008 rss_mb=1394.4 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.7 torch_allocated_mb=40.3 torch_mps_driver_mb=9796.5
+
+[train] epoch=009:   0%|          | 0/24 [00:00<?, ?batch/s]
+[train] epoch=009:   0%|          | 0/24 [00:11<?, ?batch/s, acc=0.9805, loss=0.2915]
+[train] epoch=009:   4%|▍         | 1/24 [00:11<04:14, 11.07s/batch, acc=0.9805, loss=0.2915]
+[train] epoch=009:   4%|▍         | 1/24 [00:21<04:14, 11.07s/batch, acc=0.9824, loss=0.2891]
+[train] epoch=009:   8%|▊         | 2/24 [00:21<03:50, 10.48s/batch, acc=0.9824, loss=0.2891]
+[train] epoch=009:   8%|▊         | 2/24 [00:32<03:50, 10.48s/batch, acc=0.9831, loss=0.2894]
+[train] epoch=009:  12%|█▎        | 3/24 [00:32<03:44, 10.71s/batch, acc=0.9831, loss=0.2894]
+[train] epoch=009:  12%|█▎        | 3/24 [00:43<03:44, 10.71s/batch, acc=0.9814, loss=0.2932]
+[train] epoch=009:  17%|█▋        | 4/24 [00:43<03:37, 10.86s/batch, acc=0.9814, loss=0.2932]
+[train] epoch=009:  17%|█▋        | 4/24 [00:53<03:37, 10.86s/batch, acc=0.9805, loss=0.2910][train] epoch=009 batch=5/24 loss=0.2910 acc=0.9805 rss_mb=1395.9 ru_maxrss_mb=1591.6 py_current_mb=120.1 py_peak_mb=313.7 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=009:  21%|██        | 5/24 [00:53<03:24, 10.77s/batch, acc=0.9805, loss=0.2910]
+[train] epoch=009:  21%|██        | 5/24 [01:04<03:24, 10.77s/batch, acc=0.9805, loss=0.2893]
+[train] epoch=009:  25%|██▌       | 6/24 [01:04<03:13, 10.75s/batch, acc=0.9805, loss=0.2893]
+[train] epoch=009:  25%|██▌       | 6/24 [01:15<03:13, 10.75s/batch, acc=0.9810, loss=0.2866]
+[train] epoch=009:  29%|██▉       | 7/24 [01:15<03:01, 10.68s/batch, acc=0.9810, loss=0.2866]
+[train] epoch=009:  29%|██▉       | 7/24 [01:24<03:01, 10.68s/batch, acc=0.9800, loss=0.2878]
+[train] epoch=009:  33%|███▎      | 8/24 [01:24<02:42, 10.16s/batch, acc=0.9800, loss=0.2878]
+[train] epoch=009:  33%|███▎      | 8/24 [01:36<02:42, 10.16s/batch, acc=0.9809, loss=0.2866]
+[train] epoch=009:  38%|███▊      | 9/24 [01:36<02:40, 10.71s/batch, acc=0.9809, loss=0.2866]
+[train] epoch=009:  38%|███▊      | 9/24 [01:47<02:40, 10.71s/batch, acc=0.9805, loss=0.2872][train] epoch=009 batch=10/24 loss=0.2872 acc=0.9805 rss_mb=1402.8 ru_maxrss_mb=1591.6 py_current_mb=120.1 py_peak_mb=313.7 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=009:  42%|████▏     | 10/24 [01:48<02:35, 11.10s/batch, acc=0.9805, loss=0.2872]
+[train] epoch=009:  42%|████▏     | 10/24 [02:00<02:35, 11.10s/batch, acc=0.9805, loss=0.2862]
+[train] epoch=009:  46%|████▌     | 11/24 [02:00<02:28, 11.40s/batch, acc=0.9805, loss=0.2862]
+[train] epoch=009:  46%|████▌     | 11/24 [02:12<02:28, 11.40s/batch, acc=0.9818, loss=0.2849]
+[train] epoch=009:  50%|█████     | 12/24 [02:12<02:18, 11.56s/batch, acc=0.9818, loss=0.2849]
+[train] epoch=009:  50%|█████     | 12/24 [02:20<02:18, 11.56s/batch, acc=0.9823, loss=0.2837]
+[train] epoch=009:  54%|█████▍    | 13/24 [02:20<01:57, 10.69s/batch, acc=0.9823, loss=0.2837]
+[train] epoch=009:  54%|█████▍    | 13/24 [02:32<01:57, 10.69s/batch, acc=0.9813, loss=0.2845]
+[train] epoch=009:  58%|█████▊    | 14/24 [02:32<01:48, 10.89s/batch, acc=0.9813, loss=0.2845]
+[train] epoch=009:  58%|█████▊    | 14/24 [02:43<01:48, 10.89s/batch, acc=0.9812, loss=0.2846][train] epoch=009 batch=15/24 loss=0.2846 acc=0.9812 rss_mb=1415.0 ru_maxrss_mb=1591.6 py_current_mb=120.1 py_peak_mb=313.7 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=009:  62%|██████▎   | 15/24 [02:43<01:39, 11.01s/batch, acc=0.9812, loss=0.2846]
+[train] epoch=009:  62%|██████▎   | 15/24 [02:53<01:39, 11.01s/batch, acc=0.9812, loss=0.2843]
+[train] epoch=009:  67%|██████▋   | 16/24 [02:53<01:27, 10.90s/batch, acc=0.9812, loss=0.2843]
+[train] epoch=009:  67%|██████▋   | 16/24 [03:04<01:27, 10.90s/batch, acc=0.9818, loss=0.2838]
+[train] epoch=009:  71%|███████   | 17/24 [03:04<01:15, 10.74s/batch, acc=0.9818, loss=0.2838]
+[train] epoch=009:  71%|███████   | 17/24 [03:14<01:15, 10.74s/batch, acc=0.9820, loss=0.2838]
+[train] epoch=009:  75%|███████▌  | 18/24 [03:14<01:03, 10.61s/batch, acc=0.9820, loss=0.2838]
+[train] epoch=009:  75%|███████▌  | 18/24 [03:25<01:03, 10.61s/batch, acc=0.9821, loss=0.2836]
+[train] epoch=009:  79%|███████▉  | 19/24 [03:25<00:53, 10.71s/batch, acc=0.9821, loss=0.2836]
+[train] epoch=009:  79%|███████▉  | 19/24 [03:37<00:53, 10.71s/batch, acc=0.9824, loss=0.2839][train] epoch=009 batch=20/24 loss=0.2839 acc=0.9824 rss_mb=1416.5 ru_maxrss_mb=1591.6 py_current_mb=120.1 py_peak_mb=313.7 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=009:  83%|████████▎ | 20/24 [03:37<00:44, 11.16s/batch, acc=0.9824, loss=0.2839]
+[train] epoch=009:  83%|████████▎ | 20/24 [03:50<00:44, 11.16s/batch, acc=0.9825, loss=0.2839]
+[train] epoch=009:  88%|████████▊ | 21/24 [03:50<00:34, 11.64s/batch, acc=0.9825, loss=0.2839]
+[train] epoch=009:  88%|████████▊ | 21/24 [04:01<00:34, 11.64s/batch, acc=0.9806, loss=0.2857]
+[train] epoch=009:  92%|█████████▏| 22/24 [04:01<00:23, 11.55s/batch, acc=0.9806, loss=0.2857]
+[train] epoch=009:  92%|█████████▏| 22/24 [04:11<00:23, 11.55s/batch, acc=0.9805, loss=0.2855]
+[train] epoch=009:  96%|█████████▌| 23/24 [04:11<00:10, 10.91s/batch, acc=0.9805, loss=0.2855]
+[train] epoch=009:  96%|█████████▌| 23/24 [04:19<00:10, 10.91s/batch, acc=0.9804, loss=0.2861][train] epoch=009 batch=24/24 loss=0.2861 acc=0.9804 rss_mb=1416.5 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.7 torch_allocated_mb=180.3 torch_mps_driver_mb=10168.5
+
+[train] epoch=009: 100%|██████████| 24/24 [04:19<00:00, 10.12s/batch, acc=0.9804, loss=0.2861]
+                                                                                              
+
+[val] epoch=009:   0%|          | 0/8 [00:00<?, ?batch/s]
+[val] epoch=009:   0%|          | 0/8 [00:02<?, ?batch/s, acc=0.9570, loss=0.3317]
+[val] epoch=009:  12%|█▎        | 1/8 [00:02<00:15,  2.18s/batch, acc=0.9570, loss=0.3317]
+[val] epoch=009:  12%|█▎        | 1/8 [00:18<00:15,  2.18s/batch, acc=0.9199, loss=0.3940]
+[val] epoch=009:  25%|██▌       | 2/8 [00:18<01:03, 10.56s/batch, acc=0.9199, loss=0.3940]
+[val] epoch=009:  25%|██▌       | 2/8 [00:45<01:03, 10.56s/batch, acc=0.9115, loss=0.4100][val] epoch=009 batch=3/8 slow wait_s=27.0 step_s=0.1 rss_mb=1415.4 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.7 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[val] epoch=009:  38%|███▊      | 3/8 [00:45<01:30, 18.13s/batch, acc=0.9115, loss=0.4100]
+[val] epoch=009:  38%|███▊      | 3/8 [00:48<01:30, 18.13s/batch, acc=0.9238, loss=0.3879]
+[val] epoch=009:  50%|█████     | 4/8 [00:48<00:48, 12.16s/batch, acc=0.9238, loss=0.3879]
+[val] epoch=009:  50%|█████     | 4/8 [00:54<00:48, 12.16s/batch, acc=0.9195, loss=0.4046][val] epoch=009 batch=5/8 loss=0.4046 acc=0.9195 rss_mb=1415.4 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.7 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[val] epoch=009:  62%|██████▎   | 5/8 [00:54<00:30, 10.02s/batch, acc=0.9195, loss=0.4046]
+[val] epoch=009:  62%|██████▎   | 5/8 [01:06<00:30, 10.02s/batch, acc=0.9212, loss=0.4037]
+[val] epoch=009:  75%|███████▌  | 6/8 [01:06<00:20, 10.49s/batch, acc=0.9212, loss=0.4037]
+[val] epoch=009:  75%|███████▌  | 6/8 [01:14<00:20, 10.49s/batch, acc=0.9096, loss=0.4320]
+[val] epoch=009:  88%|████████▊ | 7/8 [01:14<00:09,  9.87s/batch, acc=0.9096, loss=0.4320]
+[val] epoch=009:  88%|████████▊ | 7/8 [01:16<00:09,  9.87s/batch, acc=0.9128, loss=0.4268][val] epoch=009 batch=8/8 loss=0.4268 acc=0.9128 rss_mb=1415.5 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.7 torch_allocated_mb=169.1 torch_mps_driver_mb=9796.5
+
+[val] epoch=009: 100%|██████████| 8/8 [01:16<00:00,  7.32s/batch, acc=0.9128, loss=0.4268]
+                                                                                          
+epoch=009 train_loss=0.2861 train_acc=0.9804 val_loss=0.4268 val_acc=0.9128
+[train] epoch=009 gaps acc=0.0676 loss=0.1408
+[train] epoch=009 train_per_angle 0:0.976(1475) 90:0.984(1532) 180:0.976(1519) 270:0.985(1548)
+[train] epoch=009 val_per_angle 0:0.969(488) 90:0.873(488) 180:0.984(486) 270:0.825(487)
+[train] epoch=009 val_top_confusions 90->180:54, 270->180:47, 270->0:35, 0->180:13, 90->0:7, 180->0:4 avg_conf=0.8691 avg_entropy_nats=0.3855
+[train] epoch=009 rss_mb=1415.5 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.7 torch_allocated_mb=40.3 torch_mps_driver_mb=9796.5
+[train] no improvement for 1 epoch(s); patience=4
+
+[train] epoch=010:   0%|          | 0/24 [00:00<?, ?batch/s]
+[train] epoch=010:   0%|          | 0/24 [00:09<?, ?batch/s, acc=0.9766, loss=0.2906]
+[train] epoch=010:   4%|▍         | 1/24 [00:09<03:32,  9.22s/batch, acc=0.9766, loss=0.2906]
+[train] epoch=010:   4%|▍         | 1/24 [00:20<03:32,  9.22s/batch, acc=0.9805, loss=0.2874]
+[train] epoch=010:   8%|▊         | 2/24 [00:20<03:46, 10.29s/batch, acc=0.9805, loss=0.2874]
+[train] epoch=010:   8%|▊         | 2/24 [00:31<03:46, 10.29s/batch, acc=0.9831, loss=0.2843]
+[train] epoch=010:  12%|█▎        | 3/24 [00:31<03:46, 10.79s/batch, acc=0.9831, loss=0.2843]
+[train] epoch=010:  12%|█▎        | 3/24 [00:42<03:46, 10.79s/batch, acc=0.9844, loss=0.2841]
+[train] epoch=010:  17%|█▋        | 4/24 [00:42<03:32, 10.62s/batch, acc=0.9844, loss=0.2841]
+[train] epoch=010:  17%|█▋        | 4/24 [00:54<03:32, 10.62s/batch, acc=0.9867, loss=0.2805][train] epoch=010 batch=5/24 loss=0.2805 acc=0.9867 rss_mb=1423.8 ru_maxrss_mb=1591.6 py_current_mb=120.1 py_peak_mb=313.8 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=010:  21%|██        | 5/24 [00:54<03:32, 11.20s/batch, acc=0.9867, loss=0.2805]
+[train] epoch=010:  21%|██        | 5/24 [01:05<03:32, 11.20s/batch, acc=0.9850, loss=0.2819]
+[train] epoch=010:  25%|██▌       | 6/24 [01:05<03:20, 11.15s/batch, acc=0.9850, loss=0.2819]
+[train] epoch=010:  25%|██▌       | 6/24 [01:16<03:20, 11.15s/batch, acc=0.9860, loss=0.2827]
+[train] epoch=010:  29%|██▉       | 7/24 [01:16<03:08, 11.10s/batch, acc=0.9860, loss=0.2827]
+[train] epoch=010:  29%|██▉       | 7/24 [01:26<03:08, 11.10s/batch, acc=0.9868, loss=0.2821]
+[train] epoch=010:  33%|███▎      | 8/24 [01:26<02:52, 10.78s/batch, acc=0.9868, loss=0.2821]
+[train] epoch=010:  33%|███▎      | 8/24 [01:38<02:52, 10.78s/batch, acc=0.9883, loss=0.2800]
+[train] epoch=010:  38%|███▊      | 9/24 [01:38<02:47, 11.14s/batch, acc=0.9883, loss=0.2800]
+[train] epoch=010:  38%|███▊      | 9/24 [01:48<02:47, 11.14s/batch, acc=0.9875, loss=0.2803][train] epoch=010 batch=10/24 loss=0.2803 acc=0.9875 rss_mb=1428.7 ru_maxrss_mb=1591.6 py_current_mb=120.1 py_peak_mb=313.8 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=010:  42%|████▏     | 10/24 [01:48<02:31, 10.85s/batch, acc=0.9875, loss=0.2803]
+[train] epoch=010:  42%|████▏     | 10/24 [01:59<02:31, 10.85s/batch, acc=0.9872, loss=0.2798]
+[train] epoch=010:  46%|████▌     | 11/24 [01:59<02:20, 10.80s/batch, acc=0.9872, loss=0.2798]
+[train] epoch=010:  46%|████▌     | 11/24 [02:10<02:20, 10.80s/batch, acc=0.9867, loss=0.2784]
+[train] epoch=010:  50%|█████     | 12/24 [02:10<02:11, 10.92s/batch, acc=0.9867, loss=0.2784]
+[train] epoch=010:  50%|█████     | 12/24 [02:21<02:11, 10.92s/batch, acc=0.9874, loss=0.2775]
+[train] epoch=010:  54%|█████▍    | 13/24 [02:21<02:00, 10.95s/batch, acc=0.9874, loss=0.2775]
+[train] epoch=010:  54%|█████▍    | 13/24 [02:31<02:00, 10.95s/batch, acc=0.9869, loss=0.2774]
+[train] epoch=010:  58%|█████▊    | 14/24 [02:31<01:47, 10.71s/batch, acc=0.9869, loss=0.2774]
+[train] epoch=010:  58%|█████▊    | 14/24 [02:43<01:47, 10.71s/batch, acc=0.9872, loss=0.2772][train] epoch=010 batch=15/24 loss=0.2772 acc=0.9872 rss_mb=1428.9 ru_maxrss_mb=1591.6 py_current_mb=120.1 py_peak_mb=313.8 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=010:  62%|██████▎   | 15/24 [02:43<01:39, 11.10s/batch, acc=0.9872, loss=0.2772]
+[train] epoch=010:  62%|██████▎   | 15/24 [02:55<01:39, 11.10s/batch, acc=0.9875, loss=0.2760]
+[train] epoch=010:  67%|██████▋   | 16/24 [02:55<01:29, 11.24s/batch, acc=0.9875, loss=0.2760]
+[train] epoch=010:  67%|██████▋   | 16/24 [03:06<01:29, 11.24s/batch, acc=0.9874, loss=0.2757]
+[train] epoch=010:  71%|███████   | 17/24 [03:06<01:19, 11.29s/batch, acc=0.9874, loss=0.2757]
+[train] epoch=010:  71%|███████   | 17/24 [03:18<01:19, 11.29s/batch, acc=0.9876, loss=0.2754]
+[train] epoch=010:  75%|███████▌  | 18/24 [03:18<01:08, 11.34s/batch, acc=0.9876, loss=0.2754]
+[train] epoch=010:  75%|███████▌  | 18/24 [03:28<01:08, 11.34s/batch, acc=0.9875, loss=0.2756]
+[train] epoch=010:  79%|███████▉  | 19/24 [03:28<00:55, 11.19s/batch, acc=0.9875, loss=0.2756]
+[train] epoch=010:  79%|███████▉  | 19/24 [03:38<00:55, 11.19s/batch, acc=0.9871, loss=0.2761][train] epoch=010 batch=20/24 loss=0.2761 acc=0.9871 rss_mb=1429.0 ru_maxrss_mb=1591.6 py_current_mb=120.1 py_peak_mb=313.8 torch_allocated_mb=232.8 torch_mps_driver_mb=10308.5
+
+[train] epoch=010:  83%|████████▎ | 20/24 [03:38<00:42, 10.72s/batch, acc=0.9871, loss=0.2761]
+[train] epoch=010:  83%|████████▎ | 20/24 [03:48<00:42, 10.72s/batch, acc=0.9875, loss=0.2758]
+[train] epoch=010:  88%|████████▊ | 21/24 [03:48<00:31, 10.37s/batch, acc=0.9875, loss=0.2758]
+[train] epoch=010:  88%|████████▊ | 21/24 [04:00<00:31, 10.37s/batch, acc=0.9872, loss=0.2755]
+[train] epoch=010:  92%|█████████▏| 22/24 [04:00<00:22, 11.02s/batch, acc=0.9872, loss=0.2755]
+[train] epoch=010:  92%|█████████▏| 22/24 [04:10<00:22, 11.02s/batch, acc=0.9874, loss=0.2745]
+[train] epoch=010:  96%|█████████▌| 23/24 [04:10<00:10, 10.55s/batch, acc=0.9874, loss=0.2745]
+[train] epoch=010:  96%|█████████▌| 23/24 [04:17<00:10, 10.55s/batch, acc=0.9877, loss=0.2742][train] epoch=010 batch=24/24 loss=0.2742 acc=0.9877 rss_mb=1429.1 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.8 torch_allocated_mb=180.3 torch_mps_driver_mb=10168.5
+
+[train] epoch=010: 100%|██████████| 24/24 [04:17<00:00,  9.68s/batch, acc=0.9877, loss=0.2742]
+                                                                                              
+
+[val] epoch=010:   0%|          | 0/8 [00:00<?, ?batch/s]
+[val] epoch=010:   0%|          | 0/8 [00:02<?, ?batch/s, acc=0.9844, loss=0.2562]
+[val] epoch=010:  12%|█▎        | 1/8 [00:02<00:15,  2.19s/batch, acc=0.9844, loss=0.2562]
+[val] epoch=010:  12%|█▎        | 1/8 [00:18<00:15,  2.19s/batch, acc=0.9668, loss=0.3091]
+[val] epoch=010:  25%|██▌       | 2/8 [00:18<01:04, 10.77s/batch, acc=0.9668, loss=0.3091]
+[val] epoch=010:  25%|██▌       | 2/8 [00:46<01:04, 10.77s/batch, acc=0.9648, loss=0.3263][val] epoch=010 batch=3/8 slow wait_s=27.4 step_s=0.1 rss_mb=1428.3 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.8 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[val] epoch=010:  38%|███▊      | 3/8 [00:46<01:32, 18.42s/batch, acc=0.9648, loss=0.3263]
+[val] epoch=010:  38%|███▊      | 3/8 [00:49<01:32, 18.42s/batch, acc=0.9727, loss=0.3152]
+[val] epoch=010:  50%|█████     | 4/8 [00:49<00:49, 12.31s/batch, acc=0.9727, loss=0.3152]
+[val] epoch=010:  50%|█████     | 4/8 [00:55<00:49, 12.31s/batch, acc=0.9688, loss=0.3215][val] epoch=010 batch=5/8 loss=0.3215 acc=0.9688 rss_mb=1428.4 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.8 torch_allocated_mb=232.8 torch_mps_driver_mb=9796.5
+
+[val] epoch=010:  62%|██████▎   | 5/8 [00:55<00:30, 10.12s/batch, acc=0.9688, loss=0.3215]
+[val] epoch=010:  62%|██████▎   | 5/8 [01:07<00:30, 10.12s/batch, acc=0.9668, loss=0.3267]
+[val] epoch=010:  75%|███████▌  | 6/8 [01:07<00:21, 10.59s/batch, acc=0.9668, loss=0.3267]
+[val] epoch=010:  75%|███████▌  | 6/8 [01:15<00:21, 10.59s/batch, acc=0.9570, loss=0.3455]
+[val] epoch=010:  88%|████████▊ | 7/8 [01:15<00:09,  9.94s/batch, acc=0.9570, loss=0.3455]
+[val] epoch=010:  88%|████████▊ | 7/8 [01:17<00:09,  9.94s/batch, acc=0.9584, loss=0.3427][val] epoch=010 batch=8/8 loss=0.3427 acc=0.9584 rss_mb=1419.5 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.8 torch_allocated_mb=169.1 torch_mps_driver_mb=9796.5
+
+[val] epoch=010: 100%|██████████| 8/8 [01:17<00:00,  7.35s/batch, acc=0.9584, loss=0.3427]
+                                                                                          
+epoch=010 train_loss=0.2742 train_acc=0.9877 val_loss=0.3427 val_acc=0.9584
+[train] epoch=010 gaps acc=0.0292 loss=0.0685
+[train] epoch=010 train_per_angle 0:0.989(1548) 90:0.986(1487) 180:0.984(1533) 270:0.991(1506)
+[train] epoch=010 val_per_angle 0:0.955(488) 90:0.924(488) 180:0.986(486) 270:0.969(487)
+[train] epoch=010 val_top_confusions 90->180:25, 0->180:20, 90->270:9, 270->0:8, 270->180:7, 180->270:4 avg_conf=0.8730 avg_entropy_nats=0.4033
+[train] epoch=010 rss_mb=1419.5 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.8 torch_allocated_mb=40.3 torch_mps_driver_mb=9796.5
+[train] no improvement for 2 epoch(s); patience=4
+best_val_accuracy=0.9682 checkpoint=/Users/helios/rotation-detection/runs/final_run_cap10k_v2/models/orientation_cnn.pt
+[train] done memory rss_mb=1419.5 ru_maxrss_mb=1591.6 py_current_mb=119.9 py_peak_mb=313.8 torch_allocated_mb=40.3 torch_mps_driver_mb=9796.5
+Training report: /Users/helios/rotation-detection/runs/final_run_cap10k_v2/models/orientation_cnn.report.json
+[train] final memory rss_mb=1422.5 ru_maxrss_mb=1591.6 py_current_mb=119.8 py_peak_mb=313.8

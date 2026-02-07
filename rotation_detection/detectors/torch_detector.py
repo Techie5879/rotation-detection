@@ -231,7 +231,7 @@ def _run_epoch(
     epoch: int,
     phase_name: str,
     log_every_batches: int,
-) -> tuple[float, float]:
+) -> tuple[float, float, dict[str, Any]]:
     torch, _, _, _ = _require_torch()
 
     if train_mode:
@@ -242,6 +242,11 @@ def _run_epoch(
     total_loss = 0.0
     total_count = 0
     total_correct = 0
+    total_confidence = 0.0
+    total_entropy_nats = 0.0
+    confusion: dict[int, dict[int, int]] = {
+        angle: {pred: 0 for pred in CARDINAL_ANGLES} for angle in CARDINAL_ANGLES
+    }
 
     total_batches = len(dataloader)
 
@@ -274,10 +279,25 @@ def _run_epoch(
                     loss.backward()
                     optimizer.step()
 
+            probs = torch.softmax(logits, dim=1)
+            pred_idx = logits.argmax(dim=1)
+
             batch_size = int(labels.shape[0])
             total_loss += float(loss.item()) * batch_size
             total_count += batch_size
-            total_correct += int((logits.argmax(dim=1) == labels).sum().item())
+            total_correct += int((pred_idx == labels).sum().item())
+
+            pred_cpu = pred_idx.detach().cpu().tolist()
+            label_cpu = labels.detach().cpu().tolist()
+            probs_cpu = probs.detach().cpu()
+            for sample_idx in range(batch_size):
+                true_angle = INDEX_TO_ANGLE[int(label_cpu[sample_idx])]
+                pred_angle = INDEX_TO_ANGLE[int(pred_cpu[sample_idx])]
+                confusion[true_angle][pred_angle] += 1
+                total_confidence += float(probs_cpu[sample_idx, int(pred_cpu[sample_idx])].item())
+                row_probs = probs_cpu[sample_idx]
+                entropy_nats = float((-(row_probs * torch.log(row_probs.clamp_min(1e-12)))).sum().item())
+                total_entropy_nats += entropy_nats
 
             running_loss = total_loss / max(total_count, 1)
             running_acc = total_correct / max(total_count, 1)
@@ -308,7 +328,40 @@ def _run_epoch(
 
     avg_loss = total_loss / max(total_count, 1)
     avg_acc = total_correct / max(total_count, 1)
-    return avg_loss, avg_acc
+    per_angle: dict[str, dict[str, float | int]] = {}
+    top_confusions: list[dict[str, int]] = []
+    for true_angle in CARDINAL_ANGLES:
+        support = sum(confusion[true_angle].values())
+        correct = confusion[true_angle][true_angle]
+        per_angle[str(true_angle)] = {
+            "support": int(support),
+            "correct": int(correct),
+            "accuracy": (correct / support) if support else 0.0,
+        }
+        for pred_angle in CARDINAL_ANGLES:
+            if pred_angle == true_angle:
+                continue
+            count = int(confusion[true_angle][pred_angle])
+            if count > 0:
+                top_confusions.append(
+                    {
+                        "true": int(true_angle),
+                        "pred": int(pred_angle),
+                        "count": count,
+                    }
+                )
+
+    top_confusions.sort(key=lambda item: item["count"], reverse=True)
+    stats = {
+        "per_angle": per_angle,
+        "top_confusions": top_confusions[:6],
+        "avg_confidence": total_confidence / max(total_count, 1),
+        "avg_entropy_nats": total_entropy_nats / max(total_count, 1),
+        "confusion_matrix": {
+            str(t): {str(p): int(c) for p, c in row.items()} for t, row in confusion.items()
+        },
+    }
+    return avg_loss, avg_acc, stats
 
 
 def train_orientation_model(
@@ -401,8 +454,27 @@ def train_orientation_model(
 
     log_memory("[train] init", device=device)
 
+    def _format_per_angle(stats: dict[str, Any]) -> str:
+        per_angle = stats.get("per_angle", {})
+        pieces = []
+        for angle in CARDINAL_ANGLES:
+            row = per_angle.get(str(angle), {})
+            acc = float(row.get("accuracy", 0.0))
+            support = int(row.get("support", 0))
+            pieces.append(f"{angle}:{acc:.3f}({support})")
+        return " ".join(pieces)
+
+    def _format_confusions(stats: dict[str, Any]) -> str:
+        confusions = stats.get("top_confusions", [])
+        if not confusions:
+            return "none"
+        return ", ".join(
+            f"{item['true']}->{item['pred']}:{item['count']}"
+            for item in confusions
+        )
+
     for epoch in range(1, config.epochs + 1):
-        train_loss, train_acc = _run_epoch(
+        train_loss, train_acc, train_stats = _run_epoch(
             model=model,
             dataloader=train_loader,
             criterion=criterion,
@@ -413,7 +485,7 @@ def train_orientation_model(
             phase_name="train",
             log_every_batches=config.log_every_batches,
         )
-        val_loss, val_acc = _run_epoch(
+        val_loss, val_acc, val_stats = _run_epoch(
             model=model,
             dataloader=val_loader,
             criterion=criterion,
@@ -431,6 +503,10 @@ def train_orientation_model(
             "train_accuracy": train_acc,
             "val_loss": val_loss,
             "val_accuracy": val_acc,
+            "generalization_gap": train_acc - val_acc,
+            "loss_gap": val_loss - train_loss,
+            "train_stats": train_stats,
+            "val_stats": val_stats,
         }
         row["memory"] = snapshot_memory(device=device)
         history.append(row)
@@ -438,6 +514,17 @@ def train_orientation_model(
         print(
             f"epoch={epoch:03d} train_loss={train_loss:.4f} train_acc={train_acc:.4f} "
             f"val_loss={val_loss:.4f} val_acc={val_acc:.4f}"
+        )
+        print(
+            f"[train] epoch={epoch:03d} gaps acc={row['generalization_gap']:.4f} "
+            f"loss={row['loss_gap']:.4f}"
+        )
+        print(f"[train] epoch={epoch:03d} train_per_angle {_format_per_angle(train_stats)}")
+        print(f"[train] epoch={epoch:03d} val_per_angle {_format_per_angle(val_stats)}")
+        print(
+            f"[train] epoch={epoch:03d} val_top_confusions {_format_confusions(val_stats)} "
+            f"avg_conf={float(val_stats.get('avg_confidence', 0.0)):.4f} "
+            f"avg_entropy_nats={float(val_stats.get('avg_entropy_nats', 0.0)):.4f}"
         )
         print(f"[train] epoch={epoch:03d} {format_memory(row['memory'])}")
 

@@ -1,0 +1,382 @@
+{
+  "best_val_accuracy": 0.29333333333333333,
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/smoke_pagepool_1k/models/instrument_smoke.pt",
+  "data_source": {
+    "mode": "split_manifest_labels",
+    "train_labels_path": "/Users/helios/rotation-detection/runs/smoke_pagepool_1k/train/labels.jsonl",
+    "train_split": "train",
+    "val_labels_path": "/Users/helios/rotation-detection/runs/smoke_pagepool_1k/val/labels.jsonl",
+    "val_split": "val"
+  },
+  "device": "mps",
+  "history": [
+    {
+      "epoch": 1.0,
+      "generalization_gap": 0.14666666666666667,
+      "loss_gap": 0.08298918088277185,
+      "memory": {
+        "py_current_mb": 104.11988735198975,
+        "py_peak_mb": 201.72016143798828,
+        "rss_mb": 1164.859375,
+        "ru_maxrss_mb": 1164.859375,
+        "torch_allocated_mb": 30.614990234375,
+        "torch_mps_driver_mb": 3388.5625,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.38666666666666666,
+      "train_loss": 1.3037321376800537,
+      "train_stats": {
+        "avg_confidence": 0.38669729948043824,
+        "avg_entropy_nats": 1.2774402179320654,
+        "confusion_matrix": {
+          "0": {
+            "0": 41,
+            "180": 38,
+            "270": 24,
+            "90": 32
+          },
+          "180": {
+            "0": 30,
+            "180": 48,
+            "270": 28,
+            "90": 35
+          },
+          "270": {
+            "0": 12,
+            "180": 12,
+            "270": 82,
+            "90": 61
+          },
+          "90": {
+            "0": 20,
+            "180": 15,
+            "270": 61,
+            "90": 61
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.3037037037037037,
+            "correct": 41,
+            "support": 135
+          },
+          "180": {
+            "accuracy": 0.3404255319148936,
+            "correct": 48,
+            "support": 141
+          },
+          "270": {
+            "accuracy": 0.49101796407185627,
+            "correct": 82,
+            "support": 167
+          },
+          "90": {
+            "accuracy": 0.3885350318471338,
+            "correct": 61,
+            "support": 157
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 61,
+            "pred": 270,
+            "true": 90
+          },
+          {
+            "count": 61,
+            "pred": 90,
+            "true": 270
+          },
+          {
+            "count": 38,
+            "pred": 180,
+            "true": 0
+          },
+          {
+            "count": 35,
+            "pred": 90,
+            "true": 180
+          },
+          {
+            "count": 32,
+            "pred": 90,
+            "true": 0
+          },
+          {
+            "count": 30,
+            "pred": 0,
+            "true": 180
+          }
+        ]
+      },
+      "val_accuracy": 0.24,
+      "val_loss": 1.3867213185628255,
+      "val_stats": {
+        "avg_confidence": 0.26620598514874777,
+        "avg_entropy_nats": 1.3853392910957336,
+        "confusion_matrix": {
+          "0": {
+            "0": 0,
+            "180": 0,
+            "270": 0,
+            "90": 37
+          },
+          "180": {
+            "0": 0,
+            "180": 0,
+            "270": 0,
+            "90": 39
+          },
+          "270": {
+            "0": 0,
+            "180": 0,
+            "270": 0,
+            "90": 38
+          },
+          "90": {
+            "0": 0,
+            "180": 0,
+            "270": 0,
+            "90": 36
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "support": 37
+          },
+          "180": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "support": 39
+          },
+          "270": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "support": 38
+          },
+          "90": {
+            "accuracy": 1.0,
+            "correct": 36,
+            "support": 36
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 39,
+            "pred": 90,
+            "true": 180
+          },
+          {
+            "count": 38,
+            "pred": 90,
+            "true": 270
+          },
+          {
+            "count": 37,
+            "pred": 90,
+            "true": 0
+          }
+        ]
+      }
+    },
+    {
+      "epoch": 2.0,
+      "generalization_gap": 0.22833333333333328,
+      "loss_gap": 0.3765374072392782,
+      "memory": {
+        "py_current_mb": 104.1590747833252,
+        "py_peak_mb": 201.7611427307129,
+        "rss_mb": 1200.84375,
+        "ru_maxrss_mb": 1200.84375,
+        "torch_allocated_mb": 30.614990234375,
+        "torch_mps_driver_mb": 4412.5625,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.5216666666666666,
+      "train_loss": 0.9951773866017659,
+      "train_stats": {
+        "avg_confidence": 0.48858894576629003,
+        "avg_entropy_nats": 1.054578063239654,
+        "confusion_matrix": {
+          "0": {
+            "0": 48,
+            "180": 80,
+            "270": 12,
+            "90": 1
+          },
+          "180": {
+            "0": 34,
+            "180": 91,
+            "270": 20,
+            "90": 1
+          },
+          "270": {
+            "0": 2,
+            "180": 5,
+            "270": 127,
+            "90": 18
+          },
+          "90": {
+            "0": 1,
+            "180": 4,
+            "270": 109,
+            "90": 47
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.3404255319148936,
+            "correct": 48,
+            "support": 141
+          },
+          "180": {
+            "accuracy": 0.6232876712328768,
+            "correct": 91,
+            "support": 146
+          },
+          "270": {
+            "accuracy": 0.8355263157894737,
+            "correct": 127,
+            "support": 152
+          },
+          "90": {
+            "accuracy": 0.2919254658385093,
+            "correct": 47,
+            "support": 161
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 109,
+            "pred": 270,
+            "true": 90
+          },
+          {
+            "count": 80,
+            "pred": 180,
+            "true": 0
+          },
+          {
+            "count": 34,
+            "pred": 0,
+            "true": 180
+          },
+          {
+            "count": 20,
+            "pred": 270,
+            "true": 180
+          },
+          {
+            "count": 18,
+            "pred": 90,
+            "true": 270
+          },
+          {
+            "count": 12,
+            "pred": 270,
+            "true": 0
+          }
+        ]
+      },
+      "val_accuracy": 0.29333333333333333,
+      "val_loss": 1.3717147938410441,
+      "val_stats": {
+        "avg_confidence": 0.278030722339948,
+        "avg_entropy_nats": 1.3833194677035014,
+        "confusion_matrix": {
+          "0": {
+            "0": 0,
+            "180": 37,
+            "270": 0,
+            "90": 0
+          },
+          "180": {
+            "0": 0,
+            "180": 39,
+            "270": 0,
+            "90": 0
+          },
+          "270": {
+            "0": 0,
+            "180": 33,
+            "270": 5,
+            "90": 0
+          },
+          "90": {
+            "0": 0,
+            "180": 35,
+            "270": 1,
+            "90": 0
+          }
+        },
+        "per_angle": {
+          "0": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "support": 37
+          },
+          "180": {
+            "accuracy": 1.0,
+            "correct": 39,
+            "support": 39
+          },
+          "270": {
+            "accuracy": 0.13157894736842105,
+            "correct": 5,
+            "support": 38
+          },
+          "90": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "support": 36
+          }
+        },
+        "top_confusions": [
+          {
+            "count": 37,
+            "pred": 180,
+            "true": 0
+          },
+          {
+            "count": 35,
+            "pred": 180,
+            "true": 90
+          },
+          {
+            "count": 33,
+            "pred": 180,
+            "true": 270
+          },
+          {
+            "count": 1,
+            "pred": 270,
+            "true": 90
+          }
+        ]
+      }
+    }
+  ],
+  "memory_after_train": {
+    "py_current_mb": 104.09251880645752,
+    "py_peak_mb": 201.7611427307129,
+    "rss_mb": 1200.84375,
+    "ru_maxrss_mb": 1200.84375,
+    "torch_allocated_mb": null,
+    "torch_mps_driver_mb": null,
+    "torch_reserved_mb": null
+  },
+  "memory_before_train": {
+    "py_current_mb": 0.0,
+    "py_peak_mb": 0.0,
+    "rss_mb": 47.390625,
+    "ru_maxrss_mb": 47.40625,
+    "torch_allocated_mb": null,
+    "torch_mps_driver_mb": null,
+    "torch_reserved_mb": null
+  },
+  "train_rows": 600,
+  "used_explicit_val_split": true,
+  "val_rows": 150
+}
