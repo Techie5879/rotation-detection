@@ -425,30 +425,42 @@ All examples below are non-zero rotations (`true_rotation_deg != 0` and `predict
 
 Example 1 (correct, true=270, pred=270, conf=0.9949):
 
-<img src="assets/visualizer_examples_nonzero/example_01_before.png" alt="example 1 before" width="320" />
-<img src="assets/visualizer_examples_nonzero/example_01_after.png" alt="example 1 after" width="320" />
+<p>
+  <img src="assets/visualizer_examples_nonzero/example_01_before.png" alt="example 1 before" width="49%" />
+  <img src="assets/visualizer_examples_nonzero/example_01_after.png" alt="example 1 after" width="49%" />
+</p>
 
 Example 2 (correct, true=180, pred=180, conf=0.9884):
 
-<img src="assets/visualizer_examples_nonzero/example_02_before.png" alt="example 2 before" width="320" />
-<img src="assets/visualizer_examples_nonzero/example_02_after.png" alt="example 2 after" width="320" />
+<p>
+  <img src="assets/visualizer_examples_nonzero/example_02_before.png" alt="example 2 before" width="49%" />
+  <img src="assets/visualizer_examples_nonzero/example_02_after.png" alt="example 2 after" width="49%" />
+</p>
 
 Example 3 (correct, true=270, pred=270, conf=0.9989):
 
-<img src="assets/visualizer_examples_nonzero/example_03_before.png" alt="example 3 before" width="320" />
-<img src="assets/visualizer_examples_nonzero/example_03_after.png" alt="example 3 after" width="320" />
+<p>
+  <img src="assets/visualizer_examples_nonzero/example_03_before.png" alt="example 3 before" width="49%" />
+  <img src="assets/visualizer_examples_nonzero/example_03_after.png" alt="example 3 after" width="49%" />
+</p>
 
 Example 4 (correct, true=90, pred=90, conf=0.9986):
 
-<img src="assets/visualizer_examples_nonzero/example_04_before.png" alt="example 4 before" width="320" />
-<img src="assets/visualizer_examples_nonzero/example_04_after.png" alt="example 4 after" width="320" />
+<p>
+  <img src="assets/visualizer_examples_nonzero/example_04_before.png" alt="example 4 before" width="49%" />
+  <img src="assets/visualizer_examples_nonzero/example_04_after.png" alt="example 4 after" width="49%" />
+</p>
 
 Example 5 (correct, true=270, pred=270, conf=0.9888):
 
-<img src="assets/visualizer_examples_nonzero/example_05_before.png" alt="example 5 before" width="320" />
-<img src="assets/visualizer_examples_nonzero/example_05_after.png" alt="example 5 after" width="320" />
+<p>
+  <img src="assets/visualizer_examples_nonzero/example_05_before.png" alt="example 5 before" width="49%" />
+  <img src="assets/visualizer_examples_nonzero/example_05_after.png" alt="example 5 after" width="49%" />
+</p>
 
 Example 6 (wrong, true=180, pred=90, conf=0.6514):
 
-<img src="assets/visualizer_examples_nonzero/example_06_before.png" alt="example 6 before" width="320" />
-<img src="assets/visualizer_examples_nonzero/example_06_after.png" alt="example 6 after" width="320" />
+<p>
+  <img src="assets/visualizer_examples_nonzero/example_06_before.png" alt="example 6 before" width="49%" />
+  <img src="assets/visualizer_examples_nonzero/example_06_after.png" alt="example 6 after" width="49%" />
+</p>
