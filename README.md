@@ -251,6 +251,126 @@ Expected key outputs:
 - Test eval report: `${DATASET_DIR}/saved_model_eval_test/report.json`
 - Test predictions: `${DATASET_DIR}/saved_model_eval_test/predictions.jsonl`
 
+## Test Final Model On External PDFs
+
+Use this when someone already has a trained final checkpoint and wants to run it on a separate PDF folder.
+
+### A) Inference-only on external PDFs (no labels required)
+
+This runs orientation prediction directly on every page and writes JSONL predictions.
+
+```bash
+uv run main.py detect \
+  --method torch \
+  --input-dir /path/to/external_pdfs \
+  --checkpoint-path runs/final_run_cap10k_v2/models/orientation_cnn.pt \
+  --device auto \
+  --dpi 96 \
+  --log-every-pages 100 \
+  --output-jsonl runs/external_pdf_inference/predictions.torch.jsonl
+```
+
+Output files:
+
+- `runs/external_pdf_inference/predictions.torch.jsonl`
+- `runs/external_pdf_inference/predictions.torch.jsonl.log`
+
+### B) Quantitative test on external PDFs (synthetic labels + report)
+
+If you want accuracy/confusion/calibration numbers, first make a synthetic dataset from the external folder, then run saved-model evaluation on its test split.
+
+1) Build synthetic dataset from external PDFs:
+
+```bash
+uv run main.py make-dataset \
+  --input-dir /path/to/external_pdfs \
+  --output-root runs \
+  --dataset-name external_eval_dataset \
+  --seed 42 \
+  --dpi 96 \
+  --rotate-probability 0.7 \
+  --angles 0 90 180 270 \
+  --max-pages-per-doc 400 \
+  --train-ratio 0.8 \
+  --val-ratio 0.1 \
+  --test-ratio 0.1 \
+  --class-balance uniform \
+  --min-val-docs 14 \
+  --min-test-docs 14 \
+  --max-val-doc-share 0.35 \
+  --max-test-doc-share 0.35 \
+  --log-every-pages 100
+```
+
+2) Evaluate final checkpoint on test split (with locked postprocess from val tuning):
+
+Use these postprocess thresholds exactly as-is for test runs in this repo:
+
+- `--postprocess-confidence-threshold 0.8`
+- `--postprocess-margin-threshold 0.05`
+
+Do not do threshold sweeps on test. If thresholds ever need to change, tune on val, lock, then run test once.
+
+```bash
+uv run python scripts/test_saved_model.py \
+  --checkpoint-path runs/final_run_cap10k_v2/models/orientation_cnn.pt \
+  --dataset-path runs/external_eval_dataset \
+  --split test \
+  --batch-size 256 \
+  --device auto \
+  --num-workers 0 \
+  --log-every-batches 5 \
+  --postprocess-rotation-tta \
+  --postprocess-confidence-threshold 0.8 \
+  --postprocess-margin-threshold 0.05 \
+  --output-dir runs/external_eval_dataset/eval_test_postprocess_locked_from_val
+```
+
+Output files:
+
+- `runs/external_eval_dataset/eval_test_postprocess_locked_from_val/report.json`
+- `runs/external_eval_dataset/eval_test_postprocess_locked_from_val/predictions.jsonl`
+- `runs/external_eval_dataset/eval_test_postprocess_locked_from_val/run.log`
+
+## Final Model Report
+
+Final model and dataset used in this repo:
+
+- Run id: `runs/final_run_cap10k_v2`
+- Checkpoint: `runs/final_run_cap10k_v2/models/orientation_cnn.pt`
+- Dataset size: `10,489` pages across `65` docs
+- Split sizes: train `6,074` pages (`37` docs), val `1,949` pages (`14` docs), test `2,466` pages (`14` docs)
+
+Training outcome:
+
+- Best val accuracy: `0.9682` at epoch `8` (`runs/final_run_cap10k_v2/models/orientation_cnn.report.json`)
+- Final epoch val accuracy: `0.9584` at epoch `10`
+
+Test outcome (base model, no postprocess):
+
+- Accuracy: `0.9822` (`runs/final_run_cap10k_v2/eval_test_with_logprobs/report.json`)
+- Per-angle accuracy: `0=0.9902`, `90=0.9984`, `180=0.9871`, `270=0.9531`
+- Calibration summary: `NLL=0.1099`, `Brier=0.0099`, `ECE15=0.0641`
+
+Test outcome (locked postprocess from val):
+
+- Accuracy: `0.9964` (`runs/final_run_cap10k_v2/eval_test_postprocess_locked_from_val/report.json`)
+- Delta vs base test: `+0.0142` (+1.42 pp)
+- Postprocess stats: `applied=292`, `changed=38`, `fixed=36`, `regressed=1`
+- Locked thresholds used: confidence `< 0.8` or margin `< 0.05`
+
+Postprocessing details (what was done and where it was tuned):
+
+- Method: rotation-consistency TTA in `scripts/test_saved_model.py` (`--postprocess-rotation-tta`)
+- For candidate pages only, the model is re-run on the page rotated by `0/90/180/270`; probabilities are mapped back to the original orientation frame and averaged.
+- Candidate rule (locked): run postprocess when either:
+  - top-1 confidence `< 0.8`, or
+  - top-1 minus top-2 probability margin `< 0.05`
+- Threshold selection split: **val only** (`runs/final_run_cap10k_v2/val`), not test.
+- Best val setting landed on: confidence `0.8`, margin `0.05`.
+- Val impact at locked setting: base `0.9682` -> postprocessed `0.9826`.
+- Test protocol: thresholds frozen from val, then one test run on `runs/final_run_cap10k_v2/test`.
+
 ## Notes
 
 - `rotation_deg` in labels means clockwise rotation applied during synthetic generation.
