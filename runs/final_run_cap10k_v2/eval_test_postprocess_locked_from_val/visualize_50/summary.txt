@@ -1,0 +1,28 @@
+Prediction Visualization Summary
+predictions_path=/Users/helios/rotation-detection/runs/final_run_cap10k_v2/eval_test_postprocess_locked_from_val/predictions.jsonl
+dataset_path=/Users/helios/rotation-detection/runs/final_run_cap10k_v2
+split=test
+prediction_field=predicted_rotation_deg
+matched_pages=1850 selected_pages=50
+excluded_upright_inputs=614
+excluded_zero_predictions=2
+
+Worst docs:
+- EW-2-22697155-5c367b1d0d acc=0.9900 pages=300 errors=3
+- EW-2-22696801-705c326024 acc=0.9967 pages=300 errors=1
+- EW-2-22626634-bd3f678897 acc=1.0000 pages=299 errors=0
+- EW-2-22749098-1210016-2-bc0f64f4b3 acc=1.0000 pages=201 errors=0
+- EW-2-22714892-06e937c20d acc=1.0000 pages=132 errors=0
+- EW-2-22733576-1209605-1-1878fb1ffc acc=1.0000 pages=121 errors=0
+- EW-2-22783818-1214336-2-f1ca841e7c acc=1.0000 pages=102 errors=0
+- EW-2-22765157-1213045-2-1233915842 acc=1.0000 pages=97 errors=0
+- EW-2-22772688-1214689-2-11c3317139 acc=1.0000 pages=77 errors=0
+- EW-2-22744759-1212266-1-d8f40c6802 acc=1.0000 pages=69 errors=0
+
+Best docs:
+- EW-2-22765187-1212241-1-30bcaf7bba acc=1.0000 pages=62 errors=0
+- EW-2-22774058-1216031-1-ad9cd6f12f acc=1.0000 pages=38 errors=0
+- EW-2-22749717-1213901-2-dd17fec400 acc=1.0000 pages=36 errors=0
+
+Dashboard: /Users/helios/rotation-detection/runs/final_run_cap10k_v2/eval_test_postprocess_locked_from_val/visualize_50/index.html
+Panels written: /Users/helios/rotation-detection/runs/final_run_cap10k_v2/eval_test_postprocess_locked_from_val/visualize_50/assets/panel

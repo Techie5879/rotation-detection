@@ -1,0 +1,257 @@
+{
+  "created_at_utc": "20260207T055627Z",
+  "dataset_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2",
+  "doc_stats": [
+    {
+      "accuracy": 0.9875,
+      "correct": 395,
+      "doc_id": "EW-2-22697155-5c367b1d0d",
+      "errors": 5,
+      "pages": 400
+    },
+    {
+      "accuracy": 0.9923664122137404,
+      "correct": 130,
+      "doc_id": "EW-2-22765157-1213045-2-1233915842",
+      "errors": 1,
+      "pages": 131
+    },
+    {
+      "accuracy": 0.995,
+      "correct": 398,
+      "doc_id": "EW-2-22626634-bd3f678897",
+      "errors": 2,
+      "pages": 400
+    },
+    {
+      "accuracy": 0.9975,
+      "correct": 399,
+      "doc_id": "EW-2-22696801-705c326024",
+      "errors": 1,
+      "pages": 400
+    },
+    {
+      "accuracy": 1.0,
+      "correct": 268,
+      "doc_id": "EW-2-22749098-1210016-2-bc0f64f4b3",
+      "errors": 0,
+      "pages": 268
+    },
+    {
+      "accuracy": 1.0,
+      "correct": 175,
+      "doc_id": "EW-2-22714892-06e937c20d",
+      "errors": 0,
+      "pages": 175
+    },
+    {
+      "accuracy": 1.0,
+      "correct": 161,
+      "doc_id": "EW-2-22733576-1209605-1-1878fb1ffc",
+      "errors": 0,
+      "pages": 161
+    },
+    {
+      "accuracy": 1.0,
+      "correct": 136,
+      "doc_id": "EW-2-22783818-1214336-2-f1ca841e7c",
+      "errors": 0,
+      "pages": 136
+    },
+    {
+      "accuracy": 1.0,
+      "correct": 102,
+      "doc_id": "EW-2-22772688-1214689-2-11c3317139",
+      "errors": 0,
+      "pages": 102
+    },
+    {
+      "accuracy": 1.0,
+      "correct": 91,
+      "doc_id": "EW-2-22744759-1212266-1-d8f40c6802",
+      "errors": 0,
+      "pages": 91
+    },
+    {
+      "accuracy": 1.0,
+      "correct": 82,
+      "doc_id": "EW-2-22765187-1212241-1-30bcaf7bba",
+      "errors": 0,
+      "pages": 82
+    },
+    {
+      "accuracy": 1.0,
+      "correct": 51,
+      "doc_id": "EW-2-22774058-1216031-1-ad9cd6f12f",
+      "errors": 0,
+      "pages": 51
+    },
+    {
+      "accuracy": 1.0,
+      "correct": 47,
+      "doc_id": "EW-2-22749717-1213901-2-dd17fec400",
+      "errors": 0,
+      "pages": 47
+    },
+    {
+      "accuracy": 1.0,
+      "correct": 22,
+      "doc_id": "EW-2-22765187-1212241-2-431c70469e",
+      "errors": 0,
+      "pages": 22
+    }
+  ],
+  "input_pages": 2466,
+  "matched_pages": 2466,
+  "missing_label_matches": 0,
+  "pages_dir": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/eval_test_postprocess_locked_from_val/visualize_smoke/pages",
+  "prediction_field": "predicted_rotation_deg",
+  "predictions_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/eval_test_postprocess_locked_from_val/predictions.jsonl",
+  "sample_pages_requested": 12,
+  "samples": [
+    {
+      "bucket": "best_doc",
+      "confidence": 0.9996178150177002,
+      "correct": true,
+      "doc_id": "EW-2-22714892-06e937c20d",
+      "image_abs_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test/pages/EW-2-22714892-06e937c20d_p00166.png",
+      "image_rel_path": "test/pages/EW-2-22714892-06e937c20d_p00166.png",
+      "page_index": 165,
+      "predicted_rotation_deg": 0,
+      "true_rotation_deg": 0
+    },
+    {
+      "bucket": "best_doc",
+      "confidence": 0.9996178150177002,
+      "correct": true,
+      "doc_id": "EW-2-22714892-06e937c20d",
+      "image_abs_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test/pages/EW-2-22714892-06e937c20d_p00168.png",
+      "image_rel_path": "test/pages/EW-2-22714892-06e937c20d_p00168.png",
+      "page_index": 167,
+      "predicted_rotation_deg": 0,
+      "true_rotation_deg": 0
+    },
+    {
+      "bucket": "best_doc",
+      "confidence": 0.9994651675224304,
+      "correct": true,
+      "doc_id": "EW-2-22733576-1209605-1-1878fb1ffc",
+      "image_abs_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test/pages/EW-2-22733576-1209605-1-1878fb1ffc_p00051.png",
+      "image_rel_path": "test/pages/EW-2-22733576-1209605-1-1878fb1ffc_p00051.png",
+      "page_index": 50,
+      "predicted_rotation_deg": 0,
+      "true_rotation_deg": 0
+    },
+    {
+      "bucket": "best_doc",
+      "confidence": 0.9991855025291443,
+      "correct": true,
+      "doc_id": "EW-2-22733576-1209605-1-1878fb1ffc",
+      "image_abs_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test/pages/EW-2-22733576-1209605-1-1878fb1ffc_p00122.png",
+      "image_rel_path": "test/pages/EW-2-22733576-1209605-1-1878fb1ffc_p00122.png",
+      "page_index": 121,
+      "predicted_rotation_deg": 0,
+      "true_rotation_deg": 0
+    },
+    {
+      "bucket": "best_doc",
+      "confidence": 0.9995673298835754,
+      "correct": true,
+      "doc_id": "EW-2-22749098-1210016-2-bc0f64f4b3",
+      "image_abs_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test/pages/EW-2-22749098-1210016-2-bc0f64f4b3_p00010.png",
+      "image_rel_path": "test/pages/EW-2-22749098-1210016-2-bc0f64f4b3_p00010.png",
+      "page_index": 9,
+      "predicted_rotation_deg": 0,
+      "true_rotation_deg": 0
+    },
+    {
+      "bucket": "best_doc",
+      "confidence": 0.9994718432426453,
+      "correct": true,
+      "doc_id": "EW-2-22749098-1210016-2-bc0f64f4b3",
+      "image_abs_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test/pages/EW-2-22749098-1210016-2-bc0f64f4b3_p00018.png",
+      "image_rel_path": "test/pages/EW-2-22749098-1210016-2-bc0f64f4b3_p00018.png",
+      "page_index": 17,
+      "predicted_rotation_deg": 90,
+      "true_rotation_deg": 90
+    },
+    {
+      "bucket": "worst_doc",
+      "confidence": 0.3527403771877289,
+      "correct": false,
+      "doc_id": "EW-2-22626634-bd3f678897",
+      "image_abs_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test/pages/EW-2-22626634-bd3f678897_p00019.png",
+      "image_rel_path": "test/pages/EW-2-22626634-bd3f678897_p00019.png",
+      "page_index": 18,
+      "predicted_rotation_deg": 180,
+      "true_rotation_deg": 0
+    },
+    {
+      "bucket": "worst_doc",
+      "confidence": 0.4144793152809143,
+      "correct": false,
+      "doc_id": "EW-2-22626634-bd3f678897",
+      "image_abs_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test/pages/EW-2-22626634-bd3f678897_p00241.png",
+      "image_rel_path": "test/pages/EW-2-22626634-bd3f678897_p00241.png",
+      "page_index": 240,
+      "predicted_rotation_deg": 0,
+      "true_rotation_deg": 180
+    },
+    {
+      "bucket": "worst_doc",
+      "confidence": 0.6514086127281189,
+      "correct": false,
+      "doc_id": "EW-2-22697155-5c367b1d0d",
+      "image_abs_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test/pages/EW-2-22697155-5c367b1d0d_p00107.png",
+      "image_rel_path": "test/pages/EW-2-22697155-5c367b1d0d_p00107.png",
+      "page_index": 106,
+      "predicted_rotation_deg": 90,
+      "true_rotation_deg": 180
+    },
+    {
+      "bucket": "worst_doc",
+      "confidence": 0.705263614654541,
+      "correct": false,
+      "doc_id": "EW-2-22697155-5c367b1d0d",
+      "image_abs_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test/pages/EW-2-22697155-5c367b1d0d_p00108.png",
+      "image_rel_path": "test/pages/EW-2-22697155-5c367b1d0d_p00108.png",
+      "page_index": 107,
+      "predicted_rotation_deg": 270,
+      "true_rotation_deg": 0
+    },
+    {
+      "bucket": "worst_doc",
+      "confidence": 0.48887649178504944,
+      "correct": false,
+      "doc_id": "EW-2-22765157-1213045-2-1233915842",
+      "image_abs_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test/pages/EW-2-22765157-1213045-2-1233915842_p00002.png",
+      "image_rel_path": "test/pages/EW-2-22765157-1213045-2-1233915842_p00002.png",
+      "page_index": 1,
+      "predicted_rotation_deg": 0,
+      "true_rotation_deg": 180
+    },
+    {
+      "bucket": "worst_doc",
+      "confidence": 0.9995580315589905,
+      "correct": true,
+      "doc_id": "EW-2-22765157-1213045-2-1233915842",
+      "image_abs_path": "/Users/helios/rotation-detection/runs/final_run_cap10k_v2/test/pages/EW-2-22765157-1213045-2-1233915842_p00088.png",
+      "image_rel_path": "test/pages/EW-2-22765157-1213045-2-1233915842_p00088.png",
+      "page_index": 87,
+      "predicted_rotation_deg": 90,
+      "true_rotation_deg": 90
+    }
+  ],
+  "selected_pages": 12,
+  "split": "test",
+  "top_docs": [
+    "EW-2-22749098-1210016-2-bc0f64f4b3",
+    "EW-2-22714892-06e937c20d",
+    "EW-2-22733576-1209605-1-1878fb1ffc"
+  ],
+  "worst_docs": [
+    "EW-2-22697155-5c367b1d0d",
+    "EW-2-22765157-1213045-2-1233915842",
+    "EW-2-22626634-bd3f678897"
+  ]
+}

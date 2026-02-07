@@ -332,6 +332,38 @@ Output files:
 - `runs/external_eval_dataset/eval_test_postprocess_locked_from_val/predictions.jsonl`
 - `runs/external_eval_dataset/eval_test_postprocess_locked_from_val/run.log`
 
+### C) Visualize a 50-page sample (top-10 best docs + top-10 worst docs)
+
+This generates side-by-side panels: left is the test input page, right is the page rotated back to upright using the model prediction.
+
+```bash
+uv run python scripts/visualize_test_predictions.py \
+  --dataset-path runs/external_eval_dataset \
+  --split test \
+  --predictions-path runs/external_eval_dataset/eval_test_postprocess_locked_from_val/predictions.jsonl \
+  --prediction-field predicted_rotation_deg \
+  --sample-pages 50 \
+  --top-docs 10 \
+  --worst-docs 10 \
+  --output-dir runs/external_eval_dataset/eval_test_postprocess_locked_from_val/visualize_50
+```
+
+Visualizer outputs:
+
+- `runs/external_eval_dataset/eval_test_postprocess_locked_from_val/visualize_50/index.html` (browser dashboard)
+- `runs/external_eval_dataset/eval_test_postprocess_locked_from_val/visualize_50/assets/before/*.png`
+- `runs/external_eval_dataset/eval_test_postprocess_locked_from_val/visualize_50/assets/after/*.png`
+- `runs/external_eval_dataset/eval_test_postprocess_locked_from_val/visualize_50/assets/panel/*.png`
+- `runs/external_eval_dataset/eval_test_postprocess_locked_from_val/visualize_50/summary.json`
+- `runs/external_eval_dataset/eval_test_postprocess_locked_from_val/visualize_50/summary.txt`
+
+Notes:
+
+- By default, the visualizer excludes pages where true input rotation is `0` and excludes pages where predicted rotation is `0`.
+- Use `--include-upright-inputs` and/or `--include-zero-predictions` only if you explicitly want those pages.
+- Use `--prediction-field base_predicted_rotation_deg` to visualize base model output before postprocess.
+- Keep `--prediction-field predicted_rotation_deg` to visualize final postprocessed output.
+
 ## Final Model Report
 
 Final model and dataset used in this repo:
