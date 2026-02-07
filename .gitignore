@@ -18,3 +18,5 @@ runs/**/dataset
 
 # Ignore PDF assets anywhere in repo
 **/*.[Pp][Dd][Ff]
+
+!assets/**/*
