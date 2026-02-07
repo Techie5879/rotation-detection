@@ -40,6 +40,27 @@ def _sample_rotation(rng: random.Random, angles: tuple[int, ...], rotate_probabi
     return rng.choice(angles)
 
 
+def _balanced_rotation_sequence(total: int, angles: tuple[int, ...], rng: random.Random) -> list[int]:
+    if total <= 0:
+        return []
+
+    classes = list(angles)
+    base = total // len(classes)
+    rem = total % len(classes)
+
+    counts = {angle: base for angle in classes}
+    remainder_classes = list(classes)
+    rng.shuffle(remainder_classes)
+    for idx in range(rem):
+        counts[remainder_classes[idx]] += 1
+
+    sequence: list[int] = []
+    for angle in classes:
+        sequence.extend([angle] * counts[angle])
+    rng.shuffle(sequence)
+    return sequence
+
+
 def _normalize_split_ratios(train_ratio: float, val_ratio: float, test_ratio: float) -> dict[str, float]:
     ratios = {"train": train_ratio, "val": val_ratio, "test": test_ratio}
     if any(value < 0 for value in ratios.values()):
@@ -67,37 +88,67 @@ def _resolve_worker_count(job_count: int) -> int:
     return max(1, min(DATASET_MAX_WORKERS, cpu, job_count))
 
 
+def _select_page_indices(
+    *,
+    total_pages: int,
+    max_pages_per_doc: int | None,
+    seed: int,
+    source_key: str,
+) -> list[int]:
+    del seed
+    del source_key
+    if total_pages <= 0:
+        return []
+    if max_pages_per_doc is None or max_pages_per_doc <= 0 or total_pages <= max_pages_per_doc:
+        return list(range(total_pages))
+    return list(range(max_pages_per_doc))
+
+
 def _assign_document_splits(
     inputs: list[PdfInput],
     *,
     page_counts: dict[str, int],
     split_ratios: dict[str, float],
     seed: int,
+    min_val_docs: int,
+    min_test_docs: int,
 ) -> dict[str, str]:
-    """Assign each input document to train/val/test with page-aware balancing."""
+    """Assign each input document to train/val/test with size stratification."""
     rng = random.Random(seed)
 
-    order = list(inputs)
-    rng.shuffle(order)
-    order.sort(key=lambda item: page_counts[item.source_key], reverse=True)
+    order = sorted(inputs, key=lambda item: page_counts[item.source_key], reverse=True)
 
     n_docs = len(order)
     raw_doc_targets = {split: split_ratios[split] * n_docs for split in SPLITS}
     doc_targets = {split: int(raw_doc_targets[split]) for split in SPLITS}
 
-    for split in SPLITS:
-        if n_docs >= len(SPLITS):
-            doc_targets[split] = max(1, doc_targets[split])
+    if n_docs >= len(SPLITS):
+        doc_targets["train"] = max(1, doc_targets["train"])
+        doc_targets["val"] = max(1, doc_targets["val"], min_val_docs)
+        doc_targets["test"] = max(1, doc_targets["test"], min_test_docs)
 
     assigned_so_far = sum(doc_targets.values())
     if assigned_so_far > n_docs:
+        minimums = {
+            "train": 1 if n_docs >= 3 else 0,
+            "val": 1 if n_docs >= 3 else 0,
+            "test": 1 if n_docs >= 3 else 0,
+        }
         while assigned_so_far > n_docs:
             split = max(SPLITS, key=lambda name: doc_targets[name])
-            if doc_targets[split] > 1:
+            if doc_targets[split] > minimums[split]:
                 doc_targets[split] -= 1
                 assigned_so_far -= 1
             else:
-                break
+                reduced = False
+                for alt in SPLITS:
+                    if doc_targets[alt] > minimums[alt]:
+                        doc_targets[alt] -= 1
+                        assigned_so_far -= 1
+                        reduced = True
+                        break
+                if not reduced:
+                    break
     elif assigned_so_far < n_docs:
         remainders = {
             split: raw_doc_targets[split] - int(raw_doc_targets[split]) for split in SPLITS
@@ -111,47 +162,84 @@ def _assign_document_splits(
     total_pages = sum(page_counts.values())
     target_pages = {split: split_ratios[split] * total_pages for split in SPLITS}
 
-    assigned_pages: defaultdict[str, int] = defaultdict(int)
-    assigned_docs: defaultdict[str, int] = defaultdict(int)
+    assigned_pages: dict[str, int] = {split: 0 for split in SPLITS}
+    assigned_docs: dict[str, int] = {split: 0 for split in SPLITS}
     assignments: dict[str, str] = {}
 
-    cursor = 0
-    if n_docs >= 3 and all(doc_targets[split] > 0 for split in SPLITS):
-        for split in SPLITS:
-            item = order[cursor]
-            assignments[item.source_key] = split
-            assigned_pages[split] += page_counts[item.source_key]
-            assigned_docs[split] += 1
-            cursor += 1
+    bin_count = max(1, min(6, n_docs))
+    bins: list[list[PdfInput]] = [[] for _ in range(bin_count)]
+    for idx, item in enumerate(order):
+        bins[idx % bin_count].append(item)
+    for bucket in bins:
+        rng.shuffle(bucket)
 
-    for item in order[cursor:]:
-        best_split = None
-        best_score = None
+    for bucket in bins:
+        for item in bucket:
+            best_split = None
+            best_score = None
 
-        for split in SPLITS:
-            docs_remaining = doc_targets[split] - assigned_docs[split]
-            if docs_remaining <= 0:
-                continue
-            remaining_pages = target_pages[split] - assigned_pages[split]
-            score = (docs_remaining, remaining_pages)
-            if best_score is None or score > best_score:
-                best_score = score
-                best_split = split
-
-        if best_split is None:
             for split in SPLITS:
+                docs_remaining = doc_targets[split] - assigned_docs[split]
+                if docs_remaining <= 0:
+                    continue
                 remaining_pages = target_pages[split] - assigned_pages[split]
-                score = (remaining_pages, -assigned_docs[split])
+                score = (docs_remaining, remaining_pages)
                 if best_score is None or score > best_score:
                     best_score = score
                     best_split = split
 
-        assert best_split is not None
-        assignments[item.source_key] = best_split
-        assigned_pages[best_split] += page_counts[item.source_key]
-        assigned_docs[best_split] += 1
+            if best_split is None:
+                for split in SPLITS:
+                    remaining_pages = target_pages[split] - assigned_pages[split]
+                    score = (remaining_pages, -assigned_docs[split])
+                    if best_score is None or score > best_score:
+                        best_score = score
+                        best_split = split
+
+            assert best_split is not None
+            assignments[item.source_key] = best_split
+            assigned_pages[best_split] += page_counts[item.source_key]
+            assigned_docs[best_split] += 1
 
     return assignments
+
+
+def _build_rotation_plan(
+    *,
+    page_indices: list[int],
+    rng: random.Random,
+    angles: tuple[int, ...],
+    rotate_probability: float,
+    class_balance: str,
+) -> dict[int, int]:
+    if not page_indices:
+        return {}
+
+    if class_balance == "uniform":
+        sequence = _balanced_rotation_sequence(len(page_indices), angles, rng)
+    else:
+        sequence = [_sample_rotation(rng, angles, rotate_probability) for _ in page_indices]
+
+    return {page_idx: sequence[idx] for idx, page_idx in enumerate(page_indices)}
+
+
+def _format_angle_counts(labels: list[dict[str, Any]]) -> str:
+    counts = {angle: 0 for angle in CARDINAL_ANGLES}
+    for row in labels:
+        angle = int(row["rotation_deg"]) % 360
+        if angle in counts:
+            counts[angle] += 1
+    return " ".join(f"{angle}:{counts[angle]}" for angle in CARDINAL_ANGLES)
+
+
+def _max_doc_share(labels: list[dict[str, Any]]) -> float:
+    if not labels:
+        return 0.0
+    per_doc: dict[str, int] = defaultdict(int)
+    for row in labels:
+        per_doc[str(row["doc_id"])] += 1
+    max_pages = max(per_doc.values()) if per_doc else 0
+    return max_pages / max(len(labels), 1)
 
 
 def _process_document_job(job: dict[str, Any]) -> dict[str, Any]:
@@ -165,12 +253,28 @@ def _process_document_job(job: dict[str, Any]) -> dict[str, Any]:
     rotate_probability = float(job["rotate_probability"])
     angles = tuple(int(a) for a in job["angles"])
     max_pages_per_doc = int(job["max_pages_per_doc"]) if job["max_pages_per_doc"] is not None else None
+    class_balance = str(job.get("class_balance", "random"))
 
     output_pdf_rel_root = Path(split) / "pdfs" / f"{doc_id}.pdf"
     output_pdf_rel_split = Path("pdfs") / f"{doc_id}.pdf"
     output_pdf_abs = output_dir / output_pdf_rel_root
 
     rng = random.Random(_stable_doc_seed(seed, source_key))
+    selected_page_indices = sorted(int(i) for i in job.get("selected_page_indices", []))
+    if not selected_page_indices:
+        total_pages = _effective_page_count(source_path, max_pages_per_doc)
+        selected_page_indices = list(range(total_pages))
+
+    selected_page_set = set(selected_page_indices)
+    max_selected_index = selected_page_indices[-1] if selected_page_indices else -1
+    rotation_plan = _build_rotation_plan(
+        page_indices=selected_page_indices,
+        rng=rng,
+        angles=angles,
+        rotate_probability=rotate_probability,
+        class_balance=class_balance,
+    )
+
     writer = PdfWriter()
     labels_records: list[dict[str, Any]] = []
     root_doc_pages: list[dict[str, Any]] = []
@@ -178,10 +282,12 @@ def _process_document_job(job: dict[str, Any]) -> dict[str, Any]:
 
     started = time.perf_counter()
     for page_index, image in iter_rendered_pages(source_path, dpi=dpi):
-        if max_pages_per_doc is not None and page_index >= max_pages_per_doc:
+        if page_index > max_selected_index:
             break
+        if page_index not in selected_page_set:
+            continue
 
-        rotation_deg = _sample_rotation(rng, angles, rotate_probability)
+        rotation_deg = int(rotation_plan[page_index])
         rotated_image = rotate_image_clockwise(image, rotation_deg)
 
         image_rel_root = Path(split) / "pages" / f"{doc_id}_p{page_index + 1:05d}.png"
@@ -281,10 +387,17 @@ def build_dataset(
     val_ratio: float,
     test_ratio: float,
     log_every_pages: int,
+    class_balance: str,
+    min_val_docs: int,
+    min_test_docs: int,
 ) -> dict[str, Any]:
     """Create synthetic rotated PDFs with explicit train/val/test split folders."""
     if rotate_probability < 0 or rotate_probability > 1:
         raise ValueError("rotate_probability must be between 0 and 1.")
+    if class_balance not in {"random", "uniform"}:
+        raise ValueError("class_balance must be one of: random, uniform")
+    if min_val_docs < 1 or min_test_docs < 1:
+        raise ValueError("min_val_docs and min_test_docs must be >= 1")
 
     set_global_seed(seed)
 
@@ -298,6 +411,8 @@ def build_dataset(
         page_counts=full_page_counts,
         split_ratios=split_ratios,
         seed=seed,
+        min_val_docs=min_val_docs,
+        min_test_docs=min_test_docs,
     )
 
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -320,6 +435,12 @@ def build_dataset(
     for source in inputs:
         split = split_by_source[source.source_key]
         doc_id = stable_doc_id(source.source_key, source.path.stem)
+        selected_page_indices = _select_page_indices(
+            total_pages=full_page_counts[source.source_key],
+            max_pages_per_doc=max_pages_per_doc,
+            seed=seed,
+            source_key=source.source_key,
+        )
         jobs.append(
             {
                 "source_path": str(source.path),
@@ -332,6 +453,8 @@ def build_dataset(
                 "rotate_probability": rotate_probability,
                 "angles": list(angles),
                 "max_pages_per_doc": max_pages_per_doc,
+                "selected_page_indices": selected_page_indices,
+                "class_balance": class_balance,
             }
         )
 
@@ -439,6 +562,13 @@ def build_dataset(
             "pages": split_page_counts[split],
         }
 
+        angle_counts = _format_angle_counts(split_labels_records[split])
+        doc_share = _max_doc_share(split_labels_records[split])
+        print(
+            f"[dataset] split_proof split={split} docs={len(split_docs_records[split])} "
+            f"pages={split_page_counts[split]} angles={angle_counts} max_doc_share={doc_share:.3f}"
+        )
+
     manifest = {
         "dataset_id": output_dir.name,
         "created_at_utc": utc_timestamp(),
@@ -446,8 +576,11 @@ def build_dataset(
         "dpi": dpi,
         "angles": list(angles),
         "rotate_probability": rotate_probability,
+        "class_balance": class_balance,
         "split_strategy": "document_page_weighted",
         "split_ratios": split_ratios,
+        "min_val_docs": int(min_val_docs),
+        "min_test_docs": int(min_test_docs),
         "splits": split_index,
         "documents": all_docs_records,
         "labels_path": "labels.all.jsonl",
@@ -455,6 +588,11 @@ def build_dataset(
 
     dump_json(manifest, output_dir / "manifest.json")
     write_jsonl(all_labels_records, output_dir / "labels.all.jsonl")
+
+    print(
+        f"[dataset] sampling_proof class_balance={class_balance} split_strategy=document_page_weighted "
+        f"min_val_docs={min_val_docs} min_test_docs={min_test_docs}"
+    )
 
     total_elapsed = time.perf_counter() - started_at
     print(
@@ -479,6 +617,9 @@ def run_make_dataset(
     val_ratio: float,
     test_ratio: float,
     log_every_pages: int,
+    class_balance: str = "random",
+    min_val_docs: int = 1,
+    min_test_docs: int = 1,
 ) -> Path:
     """CLI wrapper for dataset generation."""
     selected = discover_input_pdfs(input_pdfs, input_dir)
@@ -494,6 +635,10 @@ def run_make_dataset(
     log_path = dataset_dir / "dataset.log"
     with tee_output(log_path):
         print(f"[dataset] run_dir={dataset_dir}")
+        print(
+            f"[dataset] requested_sampling class_balance={class_balance} "
+            f"min_val_docs={min_val_docs} min_test_docs={min_test_docs}"
+        )
         manifest = build_dataset(
             selected,
             dataset_dir,
@@ -506,6 +651,9 @@ def run_make_dataset(
             val_ratio=val_ratio,
             test_ratio=test_ratio,
             log_every_pages=log_every_pages,
+            class_balance=class_balance,
+            min_val_docs=min_val_docs,
+            min_test_docs=min_test_docs,
         )
 
         print(f"Dataset created: {dataset_dir}")

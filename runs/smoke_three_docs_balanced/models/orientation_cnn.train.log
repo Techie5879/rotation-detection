@@ -1,0 +1,19 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/smoke_three_docs_balanced/models/orientation_cnn.train.log
+[train] checkpoint=/Users/helios/rotation-detection/runs/smoke_three_docs_balanced/models/orientation_cnn.pt
+[train] start memory {'rss_mb': 48.703125, 'ru_maxrss_mb': 48.71875, 'py_current_mb': 0.0, 'py_peak_mb': 0.0, 'torch_allocated_mb': None, 'torch_reserved_mb': None, 'torch_mps_driver_mb': None}
+[train] rows train=8 val=8
+[train] init memory rss_mb=343.6 ru_maxrss_mb=343.6 py_current_mb=102.8 py_peak_mb=103.2 torch_allocated_mb=2.9 torch_mps_driver_mb=48.5
+[train] epoch=001:   0%|          | 0/1 [00:00<?, ?batch/s][train] epoch=001:   0%|          | 0/1 [00:00<?, ?batch/s, acc=0.1250, loss=1.3983][train] epoch=001 batch=1/1 loss=1.3983 acc=0.1250 rss_mb=468.6 ru_maxrss_mb=468.6 py_current_mb=102.7 py_peak_mb=104.6 torch_allocated_mb=19.3 torch_mps_driver_mb=86.1
+[train] epoch=001: 100%|██████████| 1/1 [00:00<00:00,  1.49batch/s, acc=0.1250, loss=1.3983]                                                                                            [val] epoch=001:   0%|          | 0/1 [00:00<?, ?batch/s][val] epoch=001:   0%|          | 0/1 [00:00<?, ?batch/s, acc=0.2500, loss=1.3866][val] epoch=001 batch=1/1 loss=1.3866 acc=0.2500 rss_mb=480.7 ru_maxrss_mb=480.7 py_current_mb=102.7 py_peak_mb=104.6 torch_allocated_mb=19.2 torch_mps_driver_mb=86.1
+                                                                                  epoch=001 train_loss=1.3983 train_acc=0.1250 val_loss=1.3866 val_acc=0.2500
+[train] epoch=001 rss_mb=480.7 ru_maxrss_mb=480.7 py_current_mb=102.7 py_peak_mb=104.6 torch_allocated_mb=17.7 torch_mps_driver_mb=86.1
+[train] epoch=002:   0%|          | 0/1 [00:00<?, ?batch/s][train] epoch=002:   0%|          | 0/1 [00:00<?, ?batch/s, acc=0.2500, loss=1.3320][train] epoch=002 batch=1/1 loss=1.3320 acc=0.2500 rss_mb=482.2 ru_maxrss_mb=482.2 py_current_mb=102.7 py_peak_mb=104.6 torch_allocated_mb=18.6 torch_mps_driver_mb=94.1
+                                                                                    [val] epoch=002:   0%|          | 0/1 [00:00<?, ?batch/s][val] epoch=002:   0%|          | 0/1 [00:00<?, ?batch/s, acc=0.2500, loss=1.3867][val] epoch=002 batch=1/1 loss=1.3867 acc=0.2500 rss_mb=482.6 ru_maxrss_mb=482.6 py_current_mb=102.7 py_peak_mb=104.6 torch_allocated_mb=18.6 torch_mps_driver_mb=94.1
+                                                                                  epoch=002 train_loss=1.3320 train_acc=0.2500 val_loss=1.3867 val_acc=0.2500
+[train] epoch=002 rss_mb=482.6 ru_maxrss_mb=482.6 py_current_mb=102.7 py_peak_mb=104.6 torch_allocated_mb=17.1 torch_mps_driver_mb=94.1
+[train] no improvement for 1 epoch(s); patience=1
+[train] early stopping at epoch=002
+best_val_accuracy=0.2500 checkpoint=/Users/helios/rotation-detection/runs/smoke_three_docs_balanced/models/orientation_cnn.pt
+[train] done memory rss_mb=482.6 ru_maxrss_mb=482.6 py_current_mb=102.7 py_peak_mb=104.6 torch_allocated_mb=17.1 torch_mps_driver_mb=94.1
+Training report: /Users/helios/rotation-detection/runs/smoke_three_docs_balanced/models/orientation_cnn.report.json
+[train] final memory rss_mb=482.6 ru_maxrss_mb=482.6 py_current_mb=102.7 py_peak_mb=104.6

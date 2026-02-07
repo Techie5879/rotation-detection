@@ -80,6 +80,8 @@ def run_training(
     train_split: str,
     val_split_name: str,
     log_every_batches: int,
+    early_stopping_patience: int = 2,
+    early_stopping_min_delta: float = 1e-4,
 ) -> Path:
     """Train a torch classifier from dataset labels."""
     checkpoint_abs = Path(checkpoint_path).expanduser().resolve()
@@ -97,6 +99,15 @@ def run_training(
             val_labels = None
             source_meta = {"mode": "explicit_labels", "labels_path": str(labels_abs)}
         elif manifest_path:
+            manifest_abs = Path(manifest_path).expanduser().resolve()
+            manifest_payload = load_json(manifest_abs)
+            print(
+                "[train] data_sampling "
+                f"class_balance={manifest_payload.get('class_balance', 'unknown')} "
+                f"split_strategy={manifest_payload.get('split_strategy', 'unknown')} "
+                f"min_val_docs={manifest_payload.get('min_val_docs', 'unknown')} "
+                f"min_test_docs={manifest_payload.get('min_test_docs', 'unknown')}"
+            )
             labels, val_labels, dataset_root, source_meta = _resolve_split_labels(
                 manifest_path=manifest_path,
                 train_split=train_split,
@@ -125,6 +136,8 @@ def run_training(
             num_workers=num_workers,
             device=device,
             log_every_batches=log_every_batches,
+            early_stopping_patience=early_stopping_patience,
+            early_stopping_min_delta=early_stopping_min_delta,
         )
 
         report = train_orientation_model(

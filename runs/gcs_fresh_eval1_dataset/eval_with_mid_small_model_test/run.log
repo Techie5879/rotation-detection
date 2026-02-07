@@ -1,0 +1,12 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/gcs_fresh_eval1_dataset/eval_with_mid_small_model_test/run.log
+[saved-model-test] checkpoint=/Users/helios/rotation-detection/runs/mid_small_debug_v2/models/orientation_cnn.pt
+[saved-model-test] split_dir=/Users/helios/rotation-detection/runs/gcs_fresh_eval1_dataset/test
+[saved-model-test] labels=/Users/helios/rotation-detection/runs/gcs_fresh_eval1_dataset/test/labels.jsonl
+[saved-model-test] start memory rss_mb=194.3 ru_maxrss_mb=194.3 py_current_mb=0.0 py_peak_mb=0.0
+[saved-model-test] metadata:   0%|          | 0/2 [00:00<?, ?pdf/s][saved-model-test] metadata:   0%|          | 0/2 [00:00<?, ?pdf/s, violations=0][saved-model-test] metadata:   0%|          | 0/2 [00:00<?, ?pdf/s, violations=0]                                                                                 [saved-model-test] metadata_check passed checked_pdfs=2
+[saved-model-test] batches:   0%|          | 0/1 [00:00<?, ?batch/s][saved-model-test] batches:   0%|          | 0/1 [00:02<?, ?batch/s, acc=0.9865][saved-model-test] progress batch=1/1 pages=222/222 acc=0.9865 rate_pps=102.56 rss_mb=723.5 ru_maxrss_mb=723.5 py_current_mb=40.0 py_peak_mb=208.0 torch_allocated_mb=172.5 torch_mps_driver_mb=2098.7
+[saved-model-test] batches: 100%|██████████| 1/1 [00:02<00:00,  2.18s/batch, acc=0.9865]                                                                                        [saved-model-test] complete accuracy=0.9865
+[saved-model-test] rss_mb=723.5 ru_maxrss_mb=723.5 py_current_mb=40.0 py_peak_mb=208.0 torch_allocated_mb=172.5 torch_mps_driver_mb=2098.7
+[saved-model-test] report=/Users/helios/rotation-detection/runs/gcs_fresh_eval1_dataset/eval_with_mid_small_model_test/report.json
+[saved-model-test] predictions=/Users/helios/rotation-detection/runs/gcs_fresh_eval1_dataset/eval_with_mid_small_model_test/predictions.jsonl
+[saved-model-test] done memory rss_mb=723.5 ru_maxrss_mb=723.5 py_current_mb=40.0 py_peak_mb=208.0 torch_allocated_mb=172.5 torch_mps_driver_mb=2098.7

@@ -49,6 +49,9 @@ uv run main.py make-dataset \
   --train-ratio 0.8 \
   --val-ratio 0.1 \
   --test-ratio 0.1 \
+  --class-balance uniform \
+  --min-val-docs 8 \
+  --min-test-docs 8 \
   --log-every-pages 200
 ```
 
@@ -101,7 +104,9 @@ uv run main.py train \
   --manifest-path datasets/run_seed42/manifest.json \
   --checkpoint-path models/orientation_cnn.pt \
   --epochs 10 \
-  --batch-size 64 \
+  --batch-size 256 \
+  --early-stopping-patience 2 \
+  --early-stopping-min-delta 0.0001 \
   --log-every-batches 50 \
   --device auto
 ```
@@ -165,23 +170,77 @@ uv run python scripts/ingest_gcs_zips.py \
 
 ## Final Run
 
-Prepare dataset:
+Use this copy/paste flow for the final dataset + training + test-only evaluation run.
+
+Set reusable paths first:
 
 ```bash
-uv run main.py make-dataset --input-dir test_pdfs --output-root runs --dataset-name final_run_dataset --seed 42 --dpi 96 --rotate-probability 0.7 --angles 0 90 180 270 --train-ratio 0.8 --val-ratio 0.1 --test-ratio 0.1 --log-every-pages 200
+RUN_ROOT="runs"
+RUN_NAME="final_run_dataset"
+DATASET_DIR="${RUN_ROOT}/${RUN_NAME}"
+MODEL_PATH="${DATASET_DIR}/models/orientation_cnn.pt"
 ```
 
-Train model:
+1) Make dataset (uniform class balance + guarded val/test splits):
 
 ```bash
-uv run main.py train --manifest-path runs/final_run_dataset/manifest.json --checkpoint-path runs/final_run_dataset/models/orientation_cnn.pt --epochs 10 --batch-size 96 --learning-rate 0.0003 --weight-decay 0.0001 --image-size 256 --seed 42 --num-workers 0 --device auto --log-every-batches 20
+uv run main.py make-dataset \
+  --input-dir test_pdfs \
+  --output-root "${RUN_ROOT}" \
+  --dataset-name "${RUN_NAME}" \
+  --seed 42 \
+  --dpi 96 \
+  --rotate-probability 0.7 \
+  --angles 0 90 180 270 \
+  --train-ratio 0.8 \
+  --val-ratio 0.1 \
+  --test-ratio 0.1 \
+  --class-balance uniform \
+  --min-val-docs 8 \
+  --min-test-docs 8 \
+  --log-every-pages 100
 ```
 
-Evaluate saved model on test split:
+2) Train model (early stopping enabled):
 
 ```bash
-uv run python scripts/test_saved_model.py --checkpoint-path runs/final_run_dataset/models/orientation_cnn.pt --dataset-path runs/final_run_dataset --split test --batch-size 128 --device auto --num-workers 0 --log-every-batches 20 --output-dir runs/final_run_dataset/saved_model_eval_final
+uv run main.py train \
+  --manifest-path "${DATASET_DIR}/manifest.json" \
+  --checkpoint-path "${MODEL_PATH}" \
+  --epochs 10 \
+  --batch-size 256 \
+  --learning-rate 0.0006 \
+  --weight-decay 0.0001 \
+  --image-size 256 \
+  --seed 42 \
+  --num-workers 0 \
+  --device auto \
+  --log-every-batches 5 \
+  --early-stopping-patience 2 \
+  --early-stopping-min-delta 0.0001
 ```
+
+3) Evaluate saved model on test split only (no training in this step):
+
+```bash
+uv run python scripts/test_saved_model.py \
+  --checkpoint-path "${MODEL_PATH}" \
+  --dataset-path "${DATASET_DIR}" \
+  --split test \
+  --batch-size 256 \
+  --device auto \
+  --num-workers 0 \
+  --log-every-batches 5 \
+  --output-dir "${DATASET_DIR}/saved_model_eval_test"
+```
+
+Expected key outputs:
+
+- Dataset log: `${DATASET_DIR}/dataset.log`
+- Training log: `${MODEL_PATH}.train.log`
+- Checkpoint: `${MODEL_PATH}`
+- Test eval report: `${DATASET_DIR}/saved_model_eval_test/report.json`
+- Test predictions: `${DATASET_DIR}/saved_model_eval_test/predictions.jsonl`
 
 ## Notes
 

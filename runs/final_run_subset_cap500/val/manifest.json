@@ -1,0 +1,4520 @@
+{
+  "angles": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "dataset_id": "final_run_dataset",
+  "documents": [
+    {
+      "doc_id": "BI-Serrano-medical-records-512b805074",
+      "output_pdf": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pdfs/BI-Serrano-medical-records-512b805074.pdf",
+      "page_count": 500,
+      "pages": [
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00009.png",
+          "page_index": 8,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00011.png",
+          "page_index": 10,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00015.png",
+          "page_index": 14,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00016.png",
+          "page_index": 15,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00017.png",
+          "page_index": 16,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00023.png",
+          "page_index": 22,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00026.png",
+          "page_index": 25,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00034.png",
+          "page_index": 33,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00035.png",
+          "page_index": 34,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00036.png",
+          "page_index": 35,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00043.png",
+          "page_index": 42,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00051.png",
+          "page_index": 50,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00052.png",
+          "page_index": 51,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00054.png",
+          "page_index": 53,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00057.png",
+          "page_index": 56,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00061.png",
+          "page_index": 60,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00062.png",
+          "page_index": 61,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00063.png",
+          "page_index": 62,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00067.png",
+          "page_index": 66,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00068.png",
+          "page_index": 67,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00080.png",
+          "page_index": 79,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00081.png",
+          "page_index": 80,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00082.png",
+          "page_index": 81,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00083.png",
+          "page_index": 82,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00085.png",
+          "page_index": 84,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00086.png",
+          "page_index": 85,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00089.png",
+          "page_index": 88,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00090.png",
+          "page_index": 89,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00100.png",
+          "page_index": 99,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00101.png",
+          "page_index": 100,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00103.png",
+          "page_index": 102,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00106.png",
+          "page_index": 105,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00109.png",
+          "page_index": 108,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00111.png",
+          "page_index": 110,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00112.png",
+          "page_index": 111,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00117.png",
+          "page_index": 116,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00119.png",
+          "page_index": 118,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00120.png",
+          "page_index": 119,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00125.png",
+          "page_index": 124,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00133.png",
+          "page_index": 132,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00136.png",
+          "page_index": 135,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00142.png",
+          "page_index": 141,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00144.png",
+          "page_index": 143,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00150.png",
+          "page_index": 149,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00155.png",
+          "page_index": 154,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00159.png",
+          "page_index": 158,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00166.png",
+          "page_index": 165,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00167.png",
+          "page_index": 166,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00168.png",
+          "page_index": 167,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00172.png",
+          "page_index": 171,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00173.png",
+          "page_index": 172,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00174.png",
+          "page_index": 173,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00175.png",
+          "page_index": 174,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00183.png",
+          "page_index": 182,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00196.png",
+          "page_index": 195,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00197.png",
+          "page_index": 196,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00203.png",
+          "page_index": 202,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00204.png",
+          "page_index": 203,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00208.png",
+          "page_index": 207,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00233.png",
+          "page_index": 232,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00234.png",
+          "page_index": 233,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00245.png",
+          "page_index": 244,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00248.png",
+          "page_index": 247,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00251.png",
+          "page_index": 250,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00258.png",
+          "page_index": 257,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 813,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00262.png",
+          "page_index": 261,
+          "rotation_deg": 270,
+          "width": 1055
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00284.png",
+          "page_index": 283,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00295.png",
+          "page_index": 294,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00301.png",
+          "page_index": 300,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00302.png",
+          "page_index": 301,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00304.png",
+          "page_index": 303,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00313.png",
+          "page_index": 312,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00314.png",
+          "page_index": 313,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00315.png",
+          "page_index": 314,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00316.png",
+          "page_index": 315,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00322.png",
+          "page_index": 321,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00325.png",
+          "page_index": 324,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00328.png",
+          "page_index": 327,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00332.png",
+          "page_index": 331,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00342.png",
+          "page_index": 341,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00344.png",
+          "page_index": 343,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00346.png",
+          "page_index": 345,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00353.png",
+          "page_index": 352,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00354.png",
+          "page_index": 353,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00355.png",
+          "page_index": 354,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00362.png",
+          "page_index": 361,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00363.png",
+          "page_index": 362,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00367.png",
+          "page_index": 366,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00369.png",
+          "page_index": 368,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00371.png",
+          "page_index": 370,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00372.png",
+          "page_index": 371,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00374.png",
+          "page_index": 373,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00379.png",
+          "page_index": 378,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00381.png",
+          "page_index": 380,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00382.png",
+          "page_index": 381,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00383.png",
+          "page_index": 382,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00386.png",
+          "page_index": 385,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00388.png",
+          "page_index": 387,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00389.png",
+          "page_index": 388,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00391.png",
+          "page_index": 390,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00392.png",
+          "page_index": 391,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00395.png",
+          "page_index": 394,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00397.png",
+          "page_index": 396,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00403.png",
+          "page_index": 402,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00405.png",
+          "page_index": 404,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00409.png",
+          "page_index": 408,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00412.png",
+          "page_index": 411,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00413.png",
+          "page_index": 412,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00416.png",
+          "page_index": 415,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00421.png",
+          "page_index": 420,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00423.png",
+          "page_index": 422,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00426.png",
+          "page_index": 425,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00430.png",
+          "page_index": 429,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00431.png",
+          "page_index": 430,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00439.png",
+          "page_index": 438,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00444.png",
+          "page_index": 443,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00445.png",
+          "page_index": 444,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00451.png",
+          "page_index": 450,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00457.png",
+          "page_index": 456,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00465.png",
+          "page_index": 464,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00467.png",
+          "page_index": 466,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00469.png",
+          "page_index": 468,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00470.png",
+          "page_index": 469,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00471.png",
+          "page_index": 470,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00475.png",
+          "page_index": 474,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00476.png",
+          "page_index": 475,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00483.png",
+          "page_index": 482,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00490.png",
+          "page_index": 489,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00492.png",
+          "page_index": 491,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00493.png",
+          "page_index": 492,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00497.png",
+          "page_index": 496,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00498.png",
+          "page_index": 497,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00501.png",
+          "page_index": 500,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00507.png",
+          "page_index": 506,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00511.png",
+          "page_index": 510,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00515.png",
+          "page_index": 514,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00519.png",
+          "page_index": 518,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00526.png",
+          "page_index": 525,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00528.png",
+          "page_index": 527,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00532.png",
+          "page_index": 531,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00536.png",
+          "page_index": 535,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00540.png",
+          "page_index": 539,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00542.png",
+          "page_index": 541,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00545.png",
+          "page_index": 544,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00549.png",
+          "page_index": 548,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00550.png",
+          "page_index": 549,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00551.png",
+          "page_index": 550,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00554.png",
+          "page_index": 553,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00557.png",
+          "page_index": 556,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00570.png",
+          "page_index": 569,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00575.png",
+          "page_index": 574,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00576.png",
+          "page_index": 575,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00580.png",
+          "page_index": 579,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00583.png",
+          "page_index": 582,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00584.png",
+          "page_index": 583,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00585.png",
+          "page_index": 584,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00594.png",
+          "page_index": 593,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00598.png",
+          "page_index": 597,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00599.png",
+          "page_index": 598,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00600.png",
+          "page_index": 599,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00611.png",
+          "page_index": 610,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00613.png",
+          "page_index": 612,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00616.png",
+          "page_index": 615,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00620.png",
+          "page_index": 619,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00622.png",
+          "page_index": 621,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00629.png",
+          "page_index": 628,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00631.png",
+          "page_index": 630,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00634.png",
+          "page_index": 633,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00640.png",
+          "page_index": 639,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00644.png",
+          "page_index": 643,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00656.png",
+          "page_index": 655,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00659.png",
+          "page_index": 658,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00663.png",
+          "page_index": 662,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00664.png",
+          "page_index": 663,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00667.png",
+          "page_index": 666,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00673.png",
+          "page_index": 672,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00675.png",
+          "page_index": 674,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00677.png",
+          "page_index": 676,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00687.png",
+          "page_index": 686,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00692.png",
+          "page_index": 691,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00697.png",
+          "page_index": 696,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00699.png",
+          "page_index": 698,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00701.png",
+          "page_index": 700,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00711.png",
+          "page_index": 710,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00720.png",
+          "page_index": 719,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00724.png",
+          "page_index": 723,
+          "rotation_deg": 0,
+          "width": 795
+        },
+        {
+          "height": 795,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00725.png",
+          "page_index": 724,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 1058,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00735.png",
+          "page_index": 734,
+          "rotation_deg": 180,
+          "width": 812
+        },
+        {
+          "height": 1058,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00737.png",
+          "page_index": 736,
+          "rotation_deg": 0,
+          "width": 814
+        },
+        {
+          "height": 1114,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00741.png",
+          "page_index": 740,
+          "rotation_deg": 0,
+          "width": 835
+        },
+        {
+          "height": 1063,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00748.png",
+          "page_index": 747,
+          "rotation_deg": 180,
+          "width": 815
+        },
+        {
+          "height": 1061,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00753.png",
+          "page_index": 752,
+          "rotation_deg": 180,
+          "width": 815
+        },
+        {
+          "height": 1053,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00761.png",
+          "page_index": 760,
+          "rotation_deg": 0,
+          "width": 813
+        },
+        {
+          "height": 812,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00768.png",
+          "page_index": 767,
+          "rotation_deg": 90,
+          "width": 1050
+        },
+        {
+          "height": 1050,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00769.png",
+          "page_index": 768,
+          "rotation_deg": 0,
+          "width": 812
+        },
+        {
+          "height": 814,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00772.png",
+          "page_index": 771,
+          "rotation_deg": 270,
+          "width": 1048
+        },
+        {
+          "height": 813,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00773.png",
+          "page_index": 772,
+          "rotation_deg": 270,
+          "width": 1054
+        },
+        {
+          "height": 1048,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00775.png",
+          "page_index": 774,
+          "rotation_deg": 0,
+          "width": 814
+        },
+        {
+          "height": 1049,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00785.png",
+          "page_index": 784,
+          "rotation_deg": 0,
+          "width": 813
+        },
+        {
+          "height": 1045,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00790.png",
+          "page_index": 789,
+          "rotation_deg": 180,
+          "width": 813
+        },
+        {
+          "height": 814,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00794.png",
+          "page_index": 793,
+          "rotation_deg": 90,
+          "width": 1059
+        },
+        {
+          "height": 1060,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00799.png",
+          "page_index": 798,
+          "rotation_deg": 180,
+          "width": 815
+        },
+        {
+          "height": 1062,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00800.png",
+          "page_index": 799,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 814,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00804.png",
+          "page_index": 803,
+          "rotation_deg": 270,
+          "width": 1058
+        },
+        {
+          "height": 1057,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00805.png",
+          "page_index": 804,
+          "rotation_deg": 180,
+          "width": 814
+        },
+        {
+          "height": 1058,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00814.png",
+          "page_index": 813,
+          "rotation_deg": 0,
+          "width": 814
+        },
+        {
+          "height": 1057,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00815.png",
+          "page_index": 814,
+          "rotation_deg": 180,
+          "width": 813
+        },
+        {
+          "height": 1055,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00816.png",
+          "page_index": 815,
+          "rotation_deg": 180,
+          "width": 810
+        },
+        {
+          "height": 1055,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00820.png",
+          "page_index": 819,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1049,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00826.png",
+          "page_index": 825,
+          "rotation_deg": 0,
+          "width": 812
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00835.png",
+          "page_index": 834,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00836.png",
+          "page_index": 835,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1052,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00842.png",
+          "page_index": 841,
+          "rotation_deg": 180,
+          "width": 809
+        },
+        {
+          "height": 812,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00845.png",
+          "page_index": 844,
+          "rotation_deg": 270,
+          "width": 1053
+        },
+        {
+          "height": 1060,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00855.png",
+          "page_index": 854,
+          "rotation_deg": 180,
+          "width": 814
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00857.png",
+          "page_index": 856,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00858.png",
+          "page_index": 857,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00861.png",
+          "page_index": 860,
+          "rotation_deg": 180,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00864.png",
+          "page_index": 863,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00870.png",
+          "page_index": 869,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00872.png",
+          "page_index": 871,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00873.png",
+          "page_index": 872,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00874.png",
+          "page_index": 873,
+          "rotation_deg": 180,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00875.png",
+          "page_index": 874,
+          "rotation_deg": 180,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00879.png",
+          "page_index": 878,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00881.png",
+          "page_index": 880,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00883.png",
+          "page_index": 882,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00884.png",
+          "page_index": 883,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00889.png",
+          "page_index": 888,
+          "rotation_deg": 180,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00891.png",
+          "page_index": 890,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00896.png",
+          "page_index": 895,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00900.png",
+          "page_index": 899,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00901.png",
+          "page_index": 900,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00902.png",
+          "page_index": 901,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00904.png",
+          "page_index": 903,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00907.png",
+          "page_index": 906,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00911.png",
+          "page_index": 910,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00912.png",
+          "page_index": 911,
+          "rotation_deg": 180,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00913.png",
+          "page_index": 912,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00926.png",
+          "page_index": 925,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00929.png",
+          "page_index": 928,
+          "rotation_deg": 180,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00936.png",
+          "page_index": 935,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00938.png",
+          "page_index": 937,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00940.png",
+          "page_index": 939,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00958.png",
+          "page_index": 957,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00959.png",
+          "page_index": 958,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00964.png",
+          "page_index": 963,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00965.png",
+          "page_index": 964,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00966.png",
+          "page_index": 965,
+          "rotation_deg": 180,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00967.png",
+          "page_index": 966,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00970.png",
+          "page_index": 969,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00974.png",
+          "page_index": 973,
+          "rotation_deg": 180,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00977.png",
+          "page_index": 976,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00979.png",
+          "page_index": 978,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00980.png",
+          "page_index": 979,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00982.png",
+          "page_index": 981,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00987.png",
+          "page_index": 986,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00988.png",
+          "page_index": 987,
+          "rotation_deg": 180,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p00992.png",
+          "page_index": 991,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01001.png",
+          "page_index": 1000,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01004.png",
+          "page_index": 1003,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01015.png",
+          "page_index": 1014,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01019.png",
+          "page_index": 1018,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01027.png",
+          "page_index": 1026,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01031.png",
+          "page_index": 1030,
+          "rotation_deg": 180,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01032.png",
+          "page_index": 1031,
+          "rotation_deg": 180,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01034.png",
+          "page_index": 1033,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01046.png",
+          "page_index": 1045,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01049.png",
+          "page_index": 1048,
+          "rotation_deg": 180,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01052.png",
+          "page_index": 1051,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01053.png",
+          "page_index": 1052,
+          "rotation_deg": 180,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01056.png",
+          "page_index": 1055,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01064.png",
+          "page_index": 1063,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01068.png",
+          "page_index": 1067,
+          "rotation_deg": 180,
+          "width": 1632
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01077.png",
+          "page_index": 1076,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1632,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01082.png",
+          "page_index": 1081,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01087.png",
+          "page_index": 1086,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01093.png",
+          "page_index": 1092,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01096.png",
+          "page_index": 1095,
+          "rotation_deg": 0,
+          "width": 1632
+        },
+        {
+          "height": 1054,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01099.png",
+          "page_index": 1098,
+          "rotation_deg": 180,
+          "width": 813
+        },
+        {
+          "height": 813,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01104.png",
+          "page_index": 1103,
+          "rotation_deg": 270,
+          "width": 1052
+        },
+        {
+          "height": 1048,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01105.png",
+          "page_index": 1104,
+          "rotation_deg": 0,
+          "width": 812
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01109.png",
+          "page_index": 1108,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01111.png",
+          "page_index": 1110,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01112.png",
+          "page_index": 1111,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01113.png",
+          "page_index": 1112,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01114.png",
+          "page_index": 1113,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01116.png",
+          "page_index": 1115,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01122.png",
+          "page_index": 1121,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01123.png",
+          "page_index": 1122,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01131.png",
+          "page_index": 1130,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01132.png",
+          "page_index": 1131,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01139.png",
+          "page_index": 1138,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01141.png",
+          "page_index": 1140,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01144.png",
+          "page_index": 1143,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01152.png",
+          "page_index": 1151,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01156.png",
+          "page_index": 1155,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01157.png",
+          "page_index": 1156,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01158.png",
+          "page_index": 1157,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01160.png",
+          "page_index": 1159,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01170.png",
+          "page_index": 1169,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01175.png",
+          "page_index": 1174,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01184.png",
+          "page_index": 1183,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01185.png",
+          "page_index": 1184,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01195.png",
+          "page_index": 1194,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01196.png",
+          "page_index": 1195,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01200.png",
+          "page_index": 1199,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01206.png",
+          "page_index": 1205,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01213.png",
+          "page_index": 1212,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01217.png",
+          "page_index": 1216,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01234.png",
+          "page_index": 1233,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01235.png",
+          "page_index": 1234,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01236.png",
+          "page_index": 1235,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01240.png",
+          "page_index": 1239,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01244.png",
+          "page_index": 1243,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01258.png",
+          "page_index": 1257,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01261.png",
+          "page_index": 1260,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01264.png",
+          "page_index": 1263,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01265.png",
+          "page_index": 1264,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01267.png",
+          "page_index": 1266,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01268.png",
+          "page_index": 1267,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01280.png",
+          "page_index": 1279,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01289.png",
+          "page_index": 1288,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01293.png",
+          "page_index": 1292,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01296.png",
+          "page_index": 1295,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01306.png",
+          "page_index": 1305,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01324.png",
+          "page_index": 1323,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01333.png",
+          "page_index": 1332,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01335.png",
+          "page_index": 1334,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01336.png",
+          "page_index": 1335,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01337.png",
+          "page_index": 1336,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01346.png",
+          "page_index": 1345,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01347.png",
+          "page_index": 1346,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01348.png",
+          "page_index": 1347,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01349.png",
+          "page_index": 1348,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01350.png",
+          "page_index": 1349,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01352.png",
+          "page_index": 1351,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01358.png",
+          "page_index": 1357,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01359.png",
+          "page_index": 1358,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01369.png",
+          "page_index": 1368,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01383.png",
+          "page_index": 1382,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01386.png",
+          "page_index": 1385,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01388.png",
+          "page_index": 1387,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01389.png",
+          "page_index": 1388,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01397.png",
+          "page_index": 1396,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01398.png",
+          "page_index": 1397,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01399.png",
+          "page_index": 1398,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01405.png",
+          "page_index": 1404,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01408.png",
+          "page_index": 1407,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01411.png",
+          "page_index": 1410,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01414.png",
+          "page_index": 1413,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01415.png",
+          "page_index": 1414,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01420.png",
+          "page_index": 1419,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01422.png",
+          "page_index": 1421,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01424.png",
+          "page_index": 1423,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01429.png",
+          "page_index": 1428,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01431.png",
+          "page_index": 1430,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01441.png",
+          "page_index": 1440,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01446.png",
+          "page_index": 1445,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01454.png",
+          "page_index": 1453,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01457.png",
+          "page_index": 1456,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01458.png",
+          "page_index": 1457,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01464.png",
+          "page_index": 1463,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01466.png",
+          "page_index": 1465,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01468.png",
+          "page_index": 1467,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01475.png",
+          "page_index": 1474,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01477.png",
+          "page_index": 1476,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01479.png",
+          "page_index": 1478,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01481.png",
+          "page_index": 1480,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01484.png",
+          "page_index": 1483,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01489.png",
+          "page_index": 1488,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01491.png",
+          "page_index": 1490,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01493.png",
+          "page_index": 1492,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01497.png",
+          "page_index": 1496,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01499.png",
+          "page_index": 1498,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01502.png",
+          "page_index": 1501,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01504.png",
+          "page_index": 1503,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01506.png",
+          "page_index": 1505,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01508.png",
+          "page_index": 1507,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01511.png",
+          "page_index": 1510,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01513.png",
+          "page_index": 1512,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01515.png",
+          "page_index": 1514,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01516.png",
+          "page_index": 1515,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01518.png",
+          "page_index": 1517,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01529.png",
+          "page_index": 1528,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01530.png",
+          "page_index": 1529,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01534.png",
+          "page_index": 1533,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01536.png",
+          "page_index": 1535,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01537.png",
+          "page_index": 1536,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01545.png",
+          "page_index": 1544,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01550.png",
+          "page_index": 1549,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01551.png",
+          "page_index": 1550,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01557.png",
+          "page_index": 1556,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01563.png",
+          "page_index": 1562,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01565.png",
+          "page_index": 1564,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01570.png",
+          "page_index": 1569,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01573.png",
+          "page_index": 1572,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01577.png",
+          "page_index": 1576,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01584.png",
+          "page_index": 1583,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01586.png",
+          "page_index": 1585,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01588.png",
+          "page_index": 1587,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01589.png",
+          "page_index": 1588,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01592.png",
+          "page_index": 1591,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01594.png",
+          "page_index": 1593,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01598.png",
+          "page_index": 1597,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01602.png",
+          "page_index": 1601,
+          "rotation_deg": 0,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01608.png",
+          "page_index": 1607,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01612.png",
+          "page_index": 1611,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01613.png",
+          "page_index": 1612,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01617.png",
+          "page_index": 1616,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01624.png",
+          "page_index": 1623,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01625.png",
+          "page_index": 1624,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01628.png",
+          "page_index": 1627,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01629.png",
+          "page_index": 1628,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01631.png",
+          "page_index": 1630,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01632.png",
+          "page_index": 1631,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01636.png",
+          "page_index": 1635,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01639.png",
+          "page_index": 1638,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01640.png",
+          "page_index": 1639,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1767,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01641.png",
+          "page_index": 1640,
+          "rotation_deg": 0,
+          "width": 1500
+        },
+        {
+          "height": 4032,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01643.png",
+          "page_index": 1642,
+          "rotation_deg": 0,
+          "width": 5376
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01647.png",
+          "page_index": 1646,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01649.png",
+          "page_index": 1648,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01651.png",
+          "page_index": 1650,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01655.png",
+          "page_index": 1654,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01659.png",
+          "page_index": 1658,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01661.png",
+          "page_index": 1660,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01663.png",
+          "page_index": 1662,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01664.png",
+          "page_index": 1663,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01667.png",
+          "page_index": 1666,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01671.png",
+          "page_index": 1670,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01673.png",
+          "page_index": 1672,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01679.png",
+          "page_index": 1678,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01688.png",
+          "page_index": 1687,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01697.png",
+          "page_index": 1696,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01698.png",
+          "page_index": 1697,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01708.png",
+          "page_index": 1707,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01714.png",
+          "page_index": 1713,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01718.png",
+          "page_index": 1717,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01726.png",
+          "page_index": 1725,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01732.png",
+          "page_index": 1731,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01734.png",
+          "page_index": 1733,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01737.png",
+          "page_index": 1736,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01743.png",
+          "page_index": 1742,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01747.png",
+          "page_index": 1746,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01751.png",
+          "page_index": 1750,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01754.png",
+          "page_index": 1753,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01761.png",
+          "page_index": 1760,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01763.png",
+          "page_index": 1762,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01789.png",
+          "page_index": 1788,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01793.png",
+          "page_index": 1792,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01799.png",
+          "page_index": 1798,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01803.png",
+          "page_index": 1802,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01806.png",
+          "page_index": 1805,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01813.png",
+          "page_index": 1812,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01814.png",
+          "page_index": 1813,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01819.png",
+          "page_index": 1818,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01821.png",
+          "page_index": 1820,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01822.png",
+          "page_index": 1821,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01823.png",
+          "page_index": 1822,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01827.png",
+          "page_index": 1826,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01828.png",
+          "page_index": 1827,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01829.png",
+          "page_index": 1828,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01842.png",
+          "page_index": 1841,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01843.png",
+          "page_index": 1842,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01845.png",
+          "page_index": 1844,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01848.png",
+          "page_index": 1847,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01849.png",
+          "page_index": 1848,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01852.png",
+          "page_index": 1851,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01854.png",
+          "page_index": 1853,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01859.png",
+          "page_index": 1858,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01860.png",
+          "page_index": 1859,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01861.png",
+          "page_index": 1860,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01863.png",
+          "page_index": 1862,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01867.png",
+          "page_index": 1866,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01870.png",
+          "page_index": 1869,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01883.png",
+          "page_index": 1882,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01885.png",
+          "page_index": 1884,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01886.png",
+          "page_index": 1885,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01890.png",
+          "page_index": 1889,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01892.png",
+          "page_index": 1891,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01898.png",
+          "page_index": 1897,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01904.png",
+          "page_index": 1903,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01906.png",
+          "page_index": 1905,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01910.png",
+          "page_index": 1909,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01914.png",
+          "page_index": 1913,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01915.png",
+          "page_index": 1914,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01917.png",
+          "page_index": 1916,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01919.png",
+          "page_index": 1918,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01923.png",
+          "page_index": 1922,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01925.png",
+          "page_index": 1924,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01928.png",
+          "page_index": 1927,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01933.png",
+          "page_index": 1932,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01943.png",
+          "page_index": 1942,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01949.png",
+          "page_index": 1948,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01951.png",
+          "page_index": 1950,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/BI-Serrano-medical-records-512b805074_p01959.png",
+          "page_index": 1958,
+          "rotation_deg": 0,
+          "width": 794
+        }
+      ]
+    },
+    {
+      "doc_id": "EW-2-22696428-1213547-1-851faf7efd",
+      "output_pdf": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pdfs/EW-2-22696428-1213547-1-851faf7efd.pdf",
+      "page_count": 49,
+      "pages": [
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00009.png",
+          "page_index": 8,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00010.png",
+          "page_index": 9,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00011.png",
+          "page_index": 10,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00012.png",
+          "page_index": 11,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00013.png",
+          "page_index": 12,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00014.png",
+          "page_index": 13,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00015.png",
+          "page_index": 14,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00016.png",
+          "page_index": 15,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00017.png",
+          "page_index": 16,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00018.png",
+          "page_index": 17,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00019.png",
+          "page_index": 18,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00020.png",
+          "page_index": 19,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00021.png",
+          "page_index": 20,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00022.png",
+          "page_index": 21,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00023.png",
+          "page_index": 22,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00024.png",
+          "page_index": 23,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00025.png",
+          "page_index": 24,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00026.png",
+          "page_index": 25,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00027.png",
+          "page_index": 26,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00028.png",
+          "page_index": 27,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00029.png",
+          "page_index": 28,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00030.png",
+          "page_index": 29,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00031.png",
+          "page_index": 30,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00032.png",
+          "page_index": 31,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00033.png",
+          "page_index": 32,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00034.png",
+          "page_index": 33,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00035.png",
+          "page_index": 34,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00036.png",
+          "page_index": 35,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00037.png",
+          "page_index": 36,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00038.png",
+          "page_index": 37,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00039.png",
+          "page_index": 38,
+          "rotation_deg": 90,
+          "width": 1123
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00040.png",
+          "page_index": 39,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00041.png",
+          "page_index": 40,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00042.png",
+          "page_index": 41,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00043.png",
+          "page_index": 42,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00044.png",
+          "page_index": 43,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00045.png",
+          "page_index": 44,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00046.png",
+          "page_index": 45,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 794,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00047.png",
+          "page_index": 46,
+          "rotation_deg": 270,
+          "width": 1123
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00048.png",
+          "page_index": 47,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22696428-1213547-1-851faf7efd_p00049.png",
+          "page_index": 48,
+          "rotation_deg": 180,
+          "width": 794
+        }
+      ]
+    },
+    {
+      "doc_id": "EW-2-22697100-11c88f020b",
+      "output_pdf": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pdfs/EW-2-22697100-11c88f020b.pdf",
+      "page_count": 52,
+      "pages": [
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00009.png",
+          "page_index": 8,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00010.png",
+          "page_index": 9,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00011.png",
+          "page_index": 10,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00012.png",
+          "page_index": 11,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00013.png",
+          "page_index": 12,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00014.png",
+          "page_index": 13,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00015.png",
+          "page_index": 14,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00016.png",
+          "page_index": 15,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00017.png",
+          "page_index": 16,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00018.png",
+          "page_index": 17,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00019.png",
+          "page_index": 18,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00020.png",
+          "page_index": 19,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00021.png",
+          "page_index": 20,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00022.png",
+          "page_index": 21,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00023.png",
+          "page_index": 22,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00024.png",
+          "page_index": 23,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00025.png",
+          "page_index": 24,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00026.png",
+          "page_index": 25,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00027.png",
+          "page_index": 26,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00028.png",
+          "page_index": 27,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00029.png",
+          "page_index": 28,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00030.png",
+          "page_index": 29,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00031.png",
+          "page_index": 30,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00032.png",
+          "page_index": 31,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00033.png",
+          "page_index": 32,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00034.png",
+          "page_index": 33,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00035.png",
+          "page_index": 34,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00036.png",
+          "page_index": 35,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00037.png",
+          "page_index": 36,
+          "rotation_deg": 0,
+          "width": 820
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00038.png",
+          "page_index": 37,
+          "rotation_deg": 0,
+          "width": 820
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00039.png",
+          "page_index": 38,
+          "rotation_deg": 180,
+          "width": 820
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00040.png",
+          "page_index": 39,
+          "rotation_deg": 0,
+          "width": 820
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00041.png",
+          "page_index": 40,
+          "rotation_deg": 0,
+          "width": 820
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00042.png",
+          "page_index": 41,
+          "rotation_deg": 0,
+          "width": 820
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00043.png",
+          "page_index": 42,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00044.png",
+          "page_index": 43,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00045.png",
+          "page_index": 44,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00046.png",
+          "page_index": 45,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00047.png",
+          "page_index": 46,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00048.png",
+          "page_index": 47,
+          "rotation_deg": 90,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00049.png",
+          "page_index": 48,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00050.png",
+          "page_index": 49,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00051.png",
+          "page_index": 50,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22697100-11c88f020b_p00052.png",
+          "page_index": 51,
+          "rotation_deg": 90,
+          "width": 1056
+        }
+      ]
+    },
+    {
+      "doc_id": "EW-2-22756050-1214632-1-e6b67e0a69",
+      "output_pdf": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pdfs/EW-2-22756050-1214632-1-e6b67e0a69.pdf",
+      "page_count": 9,
+      "pages": [
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22756050-1214632-1-e6b67e0a69_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 180,
+          "width": 794
+        },
+        {
+          "height": 1065,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22756050-1214632-1-e6b67e0a69_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 0,
+          "width": 814
+        },
+        {
+          "height": 1024,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22756050-1214632-1-e6b67e0a69_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 180,
+          "width": 814
+        },
+        {
+          "height": 1065,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22756050-1214632-1-e6b67e0a69_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 180,
+          "width": 814
+        },
+        {
+          "height": 1024,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22756050-1214632-1-e6b67e0a69_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 0,
+          "width": 814
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22756050-1214632-1-e6b67e0a69_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 270,
+          "width": 1056
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22756050-1214632-1-e6b67e0a69_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22756050-1214632-1-e6b67e0a69_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1056,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22756050-1214632-1-e6b67e0a69_p00009.png",
+          "page_index": 8,
+          "rotation_deg": 0,
+          "width": 816
+        }
+      ]
+    },
+    {
+      "doc_id": "EW-2-22761468-1215221-1-629385f3e2",
+      "output_pdf": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pdfs/EW-2-22761468-1215221-1-629385f3e2.pdf",
+      "page_count": 29,
+      "pages": [
+        {
+          "height": 1123,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 0,
+          "width": 794
+        },
+        {
+          "height": 1054,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1054,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 270,
+          "width": 1054
+        },
+        {
+          "height": 1054,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1054,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1054,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 180,
+          "width": 816
+        },
+        {
+          "height": 1054,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00009.png",
+          "page_index": 8,
+          "rotation_deg": 90,
+          "width": 1054
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00010.png",
+          "page_index": 9,
+          "rotation_deg": 90,
+          "width": 1054
+        },
+        {
+          "height": 816,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00011.png",
+          "page_index": 10,
+          "rotation_deg": 90,
+          "width": 1054
+        },
+        {
+          "height": 1054,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00012.png",
+          "page_index": 11,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 1054,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00013.png",
+          "page_index": 12,
+          "rotation_deg": 0,
+          "width": 816
+        },
+        {
+          "height": 4514,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00014.png",
+          "page_index": 13,
+          "rotation_deg": 0,
+          "width": 3378
+        },
+        {
+          "height": 4514,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00015.png",
+          "page_index": 14,
+          "rotation_deg": 0,
+          "width": 3378
+        },
+        {
+          "height": 4514,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00016.png",
+          "page_index": 15,
+          "rotation_deg": 180,
+          "width": 3378
+        },
+        {
+          "height": 4514,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00017.png",
+          "page_index": 16,
+          "rotation_deg": 180,
+          "width": 3378
+        },
+        {
+          "height": 3378,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00018.png",
+          "page_index": 17,
+          "rotation_deg": 270,
+          "width": 4514
+        },
+        {
+          "height": 4514,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00019.png",
+          "page_index": 18,
+          "rotation_deg": 0,
+          "width": 3378
+        },
+        {
+          "height": 4514,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00020.png",
+          "page_index": 19,
+          "rotation_deg": 0,
+          "width": 3378
+        },
+        {
+          "height": 4514,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00021.png",
+          "page_index": 20,
+          "rotation_deg": 0,
+          "width": 3378
+        },
+        {
+          "height": 4514,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00022.png",
+          "page_index": 21,
+          "rotation_deg": 0,
+          "width": 3378
+        },
+        {
+          "height": 4514,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00023.png",
+          "page_index": 22,
+          "rotation_deg": 0,
+          "width": 3378
+        },
+        {
+          "height": 4514,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00024.png",
+          "page_index": 23,
+          "rotation_deg": 180,
+          "width": 3378
+        },
+        {
+          "height": 3378,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00025.png",
+          "page_index": 24,
+          "rotation_deg": 270,
+          "width": 4514
+        },
+        {
+          "height": 4514,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00026.png",
+          "page_index": 25,
+          "rotation_deg": 0,
+          "width": 3378
+        },
+        {
+          "height": 4514,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00027.png",
+          "page_index": 26,
+          "rotation_deg": 0,
+          "width": 3378
+        },
+        {
+          "height": 4514,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00028.png",
+          "page_index": 27,
+          "rotation_deg": 0,
+          "width": 3378
+        },
+        {
+          "height": 3378,
+          "image_path": "/Users/helios/rotation-detection/runs/final_run_dataset/val/pages/EW-2-22761468-1215221-1-629385f3e2_p00029.png",
+          "page_index": 28,
+          "rotation_deg": 270,
+          "width": 4514
+        }
+      ]
+    }
+  ],
+  "split": "val"
+}

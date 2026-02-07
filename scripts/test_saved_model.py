@@ -26,7 +26,8 @@ from rotation_detection.detectors.torch_detector import load_trained_model
 from rotation_detection.logging_utils import tee_output
 from rotation_detection.memory_profile import format_memory, log_memory, snapshot_memory
 from rotation_detection.manifest import read_jsonl, write_jsonl
-from rotation_detection.utils import dump_json, utc_timestamp
+from rotation_detection.pdf_ops import rotate_metadata_violations
+from rotation_detection.utils import dump_json, load_json, utc_timestamp
 
 
 def _resolve_split_dir(dataset_path: Path, split: str) -> Path:
@@ -39,6 +40,93 @@ def _resolve_split_dir(dataset_path: Path, split: str) -> Path:
         f"Could not resolve split labels from {dataset_path}. Expected either "
         f"{dataset_path}/labels.jsonl or {dataset_path}/{split}/labels.jsonl"
     )
+
+
+def _resolve_pdf_path(split_dir: Path, dataset_root: Path, raw_path: str) -> Path:
+    candidate = Path(raw_path)
+    if candidate.is_absolute():
+        return candidate
+    split_candidate = split_dir / candidate
+    if split_candidate.exists():
+        return split_candidate
+    root_candidate = dataset_root / candidate
+    if root_candidate.exists():
+        return root_candidate
+    return split_candidate
+
+
+def _collect_split_pdfs(split_dir: Path, dataset_root: Path, rows: list[dict]) -> list[Path]:
+    manifest_path = split_dir / "manifest.json"
+    pdfs: list[Path] = []
+    seen: set[Path] = set()
+
+    if manifest_path.exists():
+        manifest = load_json(manifest_path)
+        for doc in manifest.get("documents", []):
+            if "output_pdf" not in doc:
+                continue
+            resolved = _resolve_pdf_path(split_dir, dataset_root, str(doc["output_pdf"]))
+            if resolved not in seen:
+                seen.add(resolved)
+                pdfs.append(resolved)
+        if pdfs:
+            return pdfs
+
+    for row in rows:
+        if "output_pdf" not in row:
+            continue
+        resolved = _resolve_pdf_path(split_dir, dataset_root, str(row["output_pdf"]))
+        if resolved not in seen:
+            seen.add(resolved)
+            pdfs.append(resolved)
+    return pdfs
+
+
+def _assert_neutral_rotation_metadata(split_dir: Path, dataset_root: Path, rows: list[dict]) -> dict:
+    pdf_paths = _collect_split_pdfs(split_dir, dataset_root, rows)
+    if not pdf_paths:
+        raise RuntimeError("Metadata check failed: no PDF files were discovered for this split.")
+
+    checked = 0
+    violation_count = 0
+    violation_examples: list[dict] = []
+
+    progress = tqdm(
+        pdf_paths,
+        total=len(pdf_paths),
+        desc="[saved-model-test] metadata",
+        unit="pdf",
+        leave=False,
+        dynamic_ncols=True,
+        mininterval=0.5,
+    )
+    for pdf_path in progress:
+        checked += 1
+        violations = rotate_metadata_violations(pdf_path)
+        if violations:
+            violation_count += len(violations)
+            for row in violations[:10]:
+                violation_examples.append(
+                    {
+                        "pdf_path": str(pdf_path),
+                        "page_index": int(row["page_index"]),
+                        "rotate": int(row["rotate"]),
+                    }
+                )
+        progress.set_postfix(violations=violation_count)
+    progress.close()
+
+    result = {
+        "checked_pdfs": checked,
+        "violating_pages": violation_count,
+        "violation_examples": violation_examples[:50],
+    }
+    if violation_count > 0:
+        raise RuntimeError(
+            "Metadata check failed: non-zero /Rotate entries detected. "
+            f"violating_pages={violation_count} examples={result['violation_examples'][:5]}"
+        )
+    return result
 
 
 def _normalize_image(image: Image.Image, image_size: int, mean: tuple[float, float, float], std: tuple[float, float, float]):
@@ -130,6 +218,15 @@ def main() -> int:
         rows = read_jsonl(labels_path)
         if not rows:
             raise RuntimeError(f"No labels found in {labels_path}")
+
+        metadata_check = _assert_neutral_rotation_metadata(
+            split_dir=split_dir,
+            dataset_root=split_dir.parent,
+            rows=rows,
+        )
+        print(
+            f"[saved-model-test] metadata_check passed checked_pdfs={metadata_check['checked_pdfs']}"
+        )
 
         model, payload, device = load_trained_model(checkpoint_path, device=args.device)
         image_size = int(payload.get("image_size", 320))
@@ -244,6 +341,7 @@ def main() -> int:
             "dataset_path": str(dataset_path),
             "split_dir": str(split_dir),
             "labels_path": str(labels_path),
+            "metadata_check": metadata_check,
             "total_pages": total,
             "correct": correct,
             "accuracy": (correct / total) if total else 0.0,

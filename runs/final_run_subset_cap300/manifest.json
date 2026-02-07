@@ -1,0 +1,33 @@
+{
+  "angles": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "cap_per_doc": 300,
+  "dataset_id": "final_run_subset_cap300",
+  "labels_path": "labels.all.jsonl",
+  "seed": 42,
+  "source_root": "/Users/helios/rotation-detection/runs/final_run_dataset",
+  "splits": {
+    "test": {
+      "documents": 5,
+      "labels_path": "test/labels.jsonl",
+      "manifest_path": "test/manifest.json",
+      "pages": 468
+    },
+    "train": {
+      "documents": 39,
+      "labels_path": "train/labels.jsonl",
+      "manifest_path": "train/manifest.json",
+      "pages": 5622
+    },
+    "val": {
+      "documents": 5,
+      "labels_path": "val/labels.jsonl",
+      "manifest_path": "val/manifest.json",
+      "pages": 439
+    }
+  }
+}

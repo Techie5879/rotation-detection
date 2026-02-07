@@ -1,0 +1,195 @@
+{
+  "best_val_accuracy": 0.9885714285714285,
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/mid_small_debug_v2/models/orientation_cnn.pt",
+  "data_source": {
+    "mode": "split_manifest_labels",
+    "train_labels_path": "/Users/helios/rotation-detection/runs/mid_small_debug_v2/train/labels.jsonl",
+    "train_split": "train",
+    "val_labels_path": "/Users/helios/rotation-detection/runs/mid_small_debug_v2/val/labels.jsonl",
+    "val_split": "val"
+  },
+  "device": "mps",
+  "history": [
+    {
+      "epoch": 1.0,
+      "memory": {
+        "py_current_mb": 109.91248798370361,
+        "py_peak_mb": 303.69913387298584,
+        "rss_mb": 1622.34375,
+        "ru_maxrss_mb": 1622.34375,
+        "torch_allocated_mb": 40.308837890625,
+        "torch_mps_driver_mb": 5700.546875,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.5538243626062322,
+      "train_loss": 1.026919540309816,
+      "val_accuracy": 0.26857142857142857,
+      "val_loss": 1.344018189566476
+    },
+    {
+      "epoch": 2.0,
+      "memory": {
+        "py_current_mb": 109.94659805297852,
+        "py_peak_mb": 303.7333526611328,
+        "rss_mb": 1683.296875,
+        "ru_maxrss_mb": 1683.296875,
+        "torch_allocated_mb": 40.308837890625,
+        "torch_mps_driver_mb": 6212.546875,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.7698300283286119,
+      "train_loss": 0.7541435005757131,
+      "val_accuracy": 0.5942857142857143,
+      "val_loss": 0.9935144301823208
+    },
+    {
+      "epoch": 3.0,
+      "memory": {
+        "py_current_mb": 109.95255756378174,
+        "py_peak_mb": 303.73916149139404,
+        "rss_mb": 1686.59375,
+        "ru_maxrss_mb": 1686.59375,
+        "torch_allocated_mb": 40.308837890625,
+        "torch_mps_driver_mb": 6212.546875,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.8685080264400378,
+      "train_loss": 0.5743306057986727,
+      "val_accuracy": 0.8628571428571429,
+      "val_loss": 0.5771742255347115
+    },
+    {
+      "epoch": 4.0,
+      "memory": {
+        "py_current_mb": 109.94657135009766,
+        "py_peak_mb": 303.7427215576172,
+        "rss_mb": 1693.640625,
+        "ru_maxrss_mb": 1693.65625,
+        "torch_allocated_mb": 40.308837890625,
+        "torch_mps_driver_mb": 6212.546875,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.9246931067044382,
+      "train_loss": 0.45344354528881,
+      "val_accuracy": 0.9,
+      "val_loss": 0.4452946467058999
+    },
+    {
+      "epoch": 5.0,
+      "memory": {
+        "py_current_mb": 109.95077991485596,
+        "py_peak_mb": 303.7427215576172,
+        "rss_mb": 1694.03125,
+        "ru_maxrss_mb": 1694.03125,
+        "torch_allocated_mb": 40.308837890625,
+        "torch_mps_driver_mb": 6212.546875,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.9407459867799811,
+      "train_loss": 0.3881191533055364,
+      "val_accuracy": 0.9114285714285715,
+      "val_loss": 0.4068995816367013
+    },
+    {
+      "epoch": 6.0,
+      "memory": {
+        "py_current_mb": 109.95543670654297,
+        "py_peak_mb": 303.7427215576172,
+        "rss_mb": 1694.15625,
+        "ru_maxrss_mb": 1694.15625,
+        "torch_allocated_mb": 40.308837890625,
+        "torch_mps_driver_mb": 6212.546875,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.9525495750708215,
+      "train_loss": 0.36208192645321485,
+      "val_accuracy": 0.9228571428571428,
+      "val_loss": 0.36050892966134207
+    },
+    {
+      "epoch": 7.0,
+      "memory": {
+        "py_current_mb": 109.9600419998169,
+        "py_peak_mb": 303.74605655670166,
+        "rss_mb": 1694.21875,
+        "ru_maxrss_mb": 1694.21875,
+        "torch_allocated_mb": 40.308837890625,
+        "torch_mps_driver_mb": 6212.546875,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.9627006610009443,
+      "train_loss": 0.3372258650344762,
+      "val_accuracy": 0.9485714285714286,
+      "val_loss": 0.3575618617875235
+    },
+    {
+      "epoch": 8.0,
+      "memory": {
+        "py_current_mb": 109.96367835998535,
+        "py_peak_mb": 303.7498502731323,
+        "rss_mb": 1694.40625,
+        "ru_maxrss_mb": 1694.421875,
+        "torch_allocated_mb": 40.308837890625,
+        "torch_mps_driver_mb": 6212.546875,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.9683663833805477,
+      "train_loss": 0.31747564220338415,
+      "val_accuracy": 0.9485714285714286,
+      "val_loss": 0.3387763954911913
+    },
+    {
+      "epoch": 9.0,
+      "memory": {
+        "py_current_mb": 109.96791362762451,
+        "py_peak_mb": 303.7540235519409,
+        "rss_mb": 1694.4375,
+        "ru_maxrss_mb": 1694.4375,
+        "torch_allocated_mb": 40.308837890625,
+        "torch_mps_driver_mb": 6212.546875,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.9761567516525024,
+      "train_loss": 0.302904071309186,
+      "val_accuracy": 0.9885714285714285,
+      "val_loss": 0.267338302731514
+    },
+    {
+      "epoch": 10.0,
+      "memory": {
+        "py_current_mb": 109.9722785949707,
+        "py_peak_mb": 303.758731842041,
+        "rss_mb": 1694.5625,
+        "ru_maxrss_mb": 1694.578125,
+        "torch_allocated_mb": 40.308837890625,
+        "torch_mps_driver_mb": 6212.546875,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.9782813975448537,
+      "train_loss": 0.29375788808656933,
+      "val_accuracy": 0.9828571428571429,
+      "val_loss": 0.2925414865357535
+    }
+  ],
+  "memory_after_train": {
+    "py_current_mb": 109.86439800262451,
+    "py_peak_mb": 303.758731842041,
+    "rss_mb": 1694.5625,
+    "ru_maxrss_mb": 1694.578125,
+    "torch_allocated_mb": null,
+    "torch_mps_driver_mb": null,
+    "torch_reserved_mb": null
+  },
+  "memory_before_train": {
+    "py_current_mb": 0.0,
+    "py_peak_mb": 0.0,
+    "rss_mb": 47.671875,
+    "ru_maxrss_mb": 47.671875,
+    "torch_allocated_mb": null,
+    "torch_mps_driver_mb": null,
+    "torch_reserved_mb": null
+  },
+  "train_rows": 4236,
+  "used_explicit_val_split": true,
+  "val_rows": 350
+}

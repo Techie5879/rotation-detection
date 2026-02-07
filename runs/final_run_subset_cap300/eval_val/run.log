@@ -1,0 +1,12 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/final_run_subset_cap300/eval_val/run.log
+[saved-model-test] checkpoint=/Users/helios/rotation-detection/runs/final_run_subset_cap300/models/orientation_cnn.pt
+[saved-model-test] split_dir=/Users/helios/rotation-detection/runs/final_run_subset_cap300/val
+[saved-model-test] labels=/Users/helios/rotation-detection/runs/final_run_subset_cap300/val/labels.jsonl
+[saved-model-test] start memory rss_mb=194.8 ru_maxrss_mb=194.8 py_current_mb=0.0 py_peak_mb=0.0
+[saved-model-test] metadata:   0%|          | 0/5 [00:00<?, ?pdf/s][saved-model-test] metadata:   0%|          | 0/5 [00:00<?, ?pdf/s, violations=0][saved-model-test] metadata:  20%|██        | 1/5 [00:00<00:03,  1.22pdf/s, violations=0][saved-model-test] metadata:  20%|██        | 1/5 [00:00<00:03,  1.22pdf/s, violations=0][saved-model-test] metadata:  20%|██        | 1/5 [00:00<00:03,  1.22pdf/s, violations=0][saved-model-test] metadata:  20%|██        | 1/5 [00:00<00:03,  1.22pdf/s, violations=0][saved-model-test] metadata:  20%|██        | 1/5 [00:00<00:03,  1.22pdf/s, violations=0]                                                                                         [saved-model-test] metadata_check passed checked_pdfs=5
+[saved-model-test] batches:   0%|          | 0/2 [00:00<?, ?batch/s][saved-model-test] batches:   0%|          | 0/2 [00:02<?, ?batch/s, acc=0.5430][saved-model-test] batches:  50%|█████     | 1/2 [00:02<00:02,  2.03s/batch, acc=0.5430][saved-model-test] batches:  50%|█████     | 1/2 [00:05<00:02,  2.03s/batch, acc=0.6333][saved-model-test] progress batch=2/2 pages=439/439 acc=0.6333 rate_pps=86.37 rss_mb=1165.0 ru_maxrss_mb=1165.0 py_current_mb=201.0 py_peak_mb=394.5 torch_allocated_mb=143.2 torch_mps_driver_mb=3122.7
+[saved-model-test] batches: 100%|██████████| 2/2 [00:05<00:00,  2.65s/batch, acc=0.6333]                                                                                        [saved-model-test] complete accuracy=0.6333
+[saved-model-test] rss_mb=1165.0 ru_maxrss_mb=1165.0 py_current_mb=201.0 py_peak_mb=394.5 torch_allocated_mb=143.2 torch_mps_driver_mb=3122.7
+[saved-model-test] report=/Users/helios/rotation-detection/runs/final_run_subset_cap300/eval_val/report.json
+[saved-model-test] predictions=/Users/helios/rotation-detection/runs/final_run_subset_cap300/eval_val/predictions.jsonl
+[saved-model-test] done memory rss_mb=1165.0 ru_maxrss_mb=1165.0 py_current_mb=201.0 py_peak_mb=394.5 torch_allocated_mb=143.2 torch_mps_driver_mb=3122.7

@@ -16,6 +16,8 @@ class _TeeStream:
     def write(self, data: str) -> int:
         written = self.primary.write(data)
         self.secondary.write(data)
+        self.primary.flush()
+        self.secondary.flush()
         return written
 
     def flush(self) -> None:

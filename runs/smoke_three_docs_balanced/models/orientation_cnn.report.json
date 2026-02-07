@@ -1,0 +1,67 @@
+{
+  "best_val_accuracy": 0.25,
+  "checkpoint_path": "/Users/helios/rotation-detection/runs/smoke_three_docs_balanced/models/orientation_cnn.pt",
+  "data_source": {
+    "mode": "split_manifest_labels",
+    "train_labels_path": "/Users/helios/rotation-detection/runs/smoke_three_docs_balanced/train/labels.jsonl",
+    "train_split": "train",
+    "val_labels_path": "/Users/helios/rotation-detection/runs/smoke_three_docs_balanced/val/labels.jsonl",
+    "val_split": "val"
+  },
+  "device": "mps",
+  "history": [
+    {
+      "epoch": 1.0,
+      "memory": {
+        "py_current_mb": 102.68362998962402,
+        "py_peak_mb": 104.6009693145752,
+        "rss_mb": 480.703125,
+        "ru_maxrss_mb": 480.703125,
+        "torch_allocated_mb": 17.6884765625,
+        "torch_mps_driver_mb": 86.125,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.125,
+      "train_loss": 1.3983099460601807,
+      "val_accuracy": 0.25,
+      "val_loss": 1.3866240978240967
+    },
+    {
+      "epoch": 2.0,
+      "memory": {
+        "py_current_mb": 102.71907424926758,
+        "py_peak_mb": 104.63652515411377,
+        "rss_mb": 482.59375,
+        "ru_maxrss_mb": 482.59375,
+        "torch_allocated_mb": 17.116943359375,
+        "torch_mps_driver_mb": 94.125,
+        "torch_reserved_mb": null
+      },
+      "train_accuracy": 0.25,
+      "train_loss": 1.3319865465164185,
+      "val_accuracy": 0.25,
+      "val_loss": 1.3866832256317139
+    }
+  ],
+  "memory_after_train": {
+    "py_current_mb": 102.65424633026123,
+    "py_peak_mb": 104.63652515411377,
+    "rss_mb": 482.609375,
+    "ru_maxrss_mb": 482.609375,
+    "torch_allocated_mb": null,
+    "torch_mps_driver_mb": null,
+    "torch_reserved_mb": null
+  },
+  "memory_before_train": {
+    "py_current_mb": 0.0,
+    "py_peak_mb": 0.0,
+    "rss_mb": 48.703125,
+    "ru_maxrss_mb": 48.71875,
+    "torch_allocated_mb": null,
+    "torch_mps_driver_mb": null,
+    "torch_reserved_mb": null
+  },
+  "train_rows": 8,
+  "used_explicit_val_split": true,
+  "val_rows": 8
+}

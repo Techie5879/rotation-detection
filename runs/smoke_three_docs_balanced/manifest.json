@@ -1,0 +1,240 @@
+{
+  "angles": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "class_balance": "uniform",
+  "created_at_utc": "20260207T005403Z",
+  "dataset_id": "smoke_three_docs_balanced",
+  "documents": [
+    {
+      "doc_id": "EW-2-22626634-4906a3cfbb",
+      "output_pdf": "train/pdfs/EW-2-22626634-4906a3cfbb.pdf",
+      "page_count": 8,
+      "pages": [
+        {
+          "height": 792,
+          "image_path": "train/pages/EW-2-22626634-4906a3cfbb_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 180,
+          "width": 612
+        },
+        {
+          "height": 612,
+          "image_path": "train/pages/EW-2-22626634-4906a3cfbb_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 270,
+          "width": 792
+        },
+        {
+          "height": 612,
+          "image_path": "train/pages/EW-2-22626634-4906a3cfbb_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 90,
+          "width": 792
+        },
+        {
+          "height": 792,
+          "image_path": "train/pages/EW-2-22626634-4906a3cfbb_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 0,
+          "width": 612
+        },
+        {
+          "height": 792,
+          "image_path": "train/pages/EW-2-22626634-4906a3cfbb_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 180,
+          "width": 612
+        },
+        {
+          "height": 792,
+          "image_path": "train/pages/EW-2-22626634-4906a3cfbb_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 0,
+          "width": 612
+        },
+        {
+          "height": 612,
+          "image_path": "train/pages/EW-2-22626634-4906a3cfbb_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 270,
+          "width": 792
+        },
+        {
+          "height": 612,
+          "image_path": "train/pages/EW-2-22626634-4906a3cfbb_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 90,
+          "width": 792
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/EW-2-22626634/EW-2-22626634.pdf",
+      "split": "train"
+    },
+    {
+      "doc_id": "EW-2-22696801-c1adca76ae",
+      "output_pdf": "val/pdfs/EW-2-22696801-c1adca76ae.pdf",
+      "page_count": 8,
+      "pages": [
+        {
+          "height": 595,
+          "image_path": "val/pages/EW-2-22696801-c1adca76ae_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 270,
+          "width": 842
+        },
+        {
+          "height": 595,
+          "image_path": "val/pages/EW-2-22696801-c1adca76ae_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 270,
+          "width": 842
+        },
+        {
+          "height": 746,
+          "image_path": "val/pages/EW-2-22696801-c1adca76ae_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 180,
+          "width": 607
+        },
+        {
+          "height": 746,
+          "image_path": "val/pages/EW-2-22696801-c1adca76ae_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 180,
+          "width": 607
+        },
+        {
+          "height": 720,
+          "image_path": "val/pages/EW-2-22696801-c1adca76ae_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 0,
+          "width": 606
+        },
+        {
+          "height": 753,
+          "image_path": "val/pages/EW-2-22696801-c1adca76ae_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 0,
+          "width": 609
+        },
+        {
+          "height": 595,
+          "image_path": "val/pages/EW-2-22696801-c1adca76ae_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 90,
+          "width": 842
+        },
+        {
+          "height": 595,
+          "image_path": "val/pages/EW-2-22696801-c1adca76ae_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 90,
+          "width": 842
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/EW-2-22696801/EW-2-22696801.pdf",
+      "split": "val"
+    },
+    {
+      "doc_id": "EW-2-22697100-3e06bcb90c",
+      "output_pdf": "test/pdfs/EW-2-22697100-3e06bcb90c.pdf",
+      "page_count": 8,
+      "pages": [
+        {
+          "height": 792,
+          "image_path": "test/pages/EW-2-22697100-3e06bcb90c_p00001.png",
+          "page_index": 0,
+          "rotation_deg": 0,
+          "width": 612
+        },
+        {
+          "height": 612,
+          "image_path": "test/pages/EW-2-22697100-3e06bcb90c_p00002.png",
+          "page_index": 1,
+          "rotation_deg": 90,
+          "width": 792
+        },
+        {
+          "height": 612,
+          "image_path": "test/pages/EW-2-22697100-3e06bcb90c_p00003.png",
+          "page_index": 2,
+          "rotation_deg": 90,
+          "width": 792
+        },
+        {
+          "height": 792,
+          "image_path": "test/pages/EW-2-22697100-3e06bcb90c_p00004.png",
+          "page_index": 3,
+          "rotation_deg": 180,
+          "width": 612
+        },
+        {
+          "height": 612,
+          "image_path": "test/pages/EW-2-22697100-3e06bcb90c_p00005.png",
+          "page_index": 4,
+          "rotation_deg": 270,
+          "width": 792
+        },
+        {
+          "height": 612,
+          "image_path": "test/pages/EW-2-22697100-3e06bcb90c_p00006.png",
+          "page_index": 5,
+          "rotation_deg": 270,
+          "width": 792
+        },
+        {
+          "height": 792,
+          "image_path": "test/pages/EW-2-22697100-3e06bcb90c_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 180,
+          "width": 612
+        },
+        {
+          "height": 792,
+          "image_path": "test/pages/EW-2-22697100-3e06bcb90c_p00008.png",
+          "page_index": 7,
+          "rotation_deg": 0,
+          "width": 612
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/EW-2-22697100/EW-2-22697100.pdf",
+      "split": "test"
+    }
+  ],
+  "dpi": 72,
+  "labels_path": "labels.all.jsonl",
+  "min_test_docs": 1,
+  "min_val_docs": 1,
+  "rotate_probability": 0.7,
+  "seed": 42,
+  "split_ratios": {
+    "test": 0.2,
+    "train": 0.6,
+    "val": 0.2
+  },
+  "split_strategy": "document_page_weighted",
+  "splits": {
+    "test": {
+      "documents": 1,
+      "labels_path": "test/labels.jsonl",
+      "manifest_path": "test/manifest.json",
+      "pages": 8
+    },
+    "train": {
+      "documents": 1,
+      "labels_path": "train/labels.jsonl",
+      "manifest_path": "train/manifest.json",
+      "pages": 8
+    },
+    "val": {
+      "documents": 1,
+      "labels_path": "val/labels.jsonl",
+      "manifest_path": "val/manifest.json",
+      "pages": 8
+    }
+  }
+}

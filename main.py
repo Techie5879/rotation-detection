@@ -32,6 +32,9 @@ def build_parser() -> argparse.ArgumentParser:
     ds.add_argument("--train-ratio", type=float, default=0.8)
     ds.add_argument("--val-ratio", type=float, default=0.1)
     ds.add_argument("--test-ratio", type=float, default=0.1)
+    ds.add_argument("--class-balance", choices=["random", "uniform"], default="uniform")
+    ds.add_argument("--min-val-docs", type=int, default=8)
+    ds.add_argument("--min-test-docs", type=int, default=8)
     ds.add_argument("--log-every-pages", type=int, default=200)
 
     detect = subparsers.add_parser("detect", help="Predict orientation for each page")
@@ -63,6 +66,8 @@ def build_parser() -> argparse.ArgumentParser:
     train.add_argument("--device", default="auto")
     train.add_argument("--max-samples", type=int, default=None)
     train.add_argument("--log-every-batches", type=int, default=50)
+    train.add_argument("--early-stopping-patience", type=int, default=2)
+    train.add_argument("--early-stopping-min-delta", type=float, default=1e-4)
 
     evaluate = subparsers.add_parser("evaluate", help="Evaluate predictions against manifest labels")
     evaluate.add_argument("--manifest-path", required=True)
@@ -82,6 +87,9 @@ def build_parser() -> argparse.ArgumentParser:
     exp.add_argument("--train-ratio", type=float, default=0.8)
     exp.add_argument("--val-ratio", type=float, default=0.1)
     exp.add_argument("--test-ratio", type=float, default=0.1)
+    exp.add_argument("--class-balance", choices=["random", "uniform"], default="uniform")
+    exp.add_argument("--min-val-docs", type=int, default=8)
+    exp.add_argument("--min-test-docs", type=int, default=8)
     exp.add_argument("--log-every-pages", type=int, default=200)
     exp.add_argument("--train-epochs", type=int, default=10)
     exp.add_argument("--train-batch-size", type=int, default=64)
@@ -107,6 +115,9 @@ def build_parser() -> argparse.ArgumentParser:
     cur.add_argument("--train-ratio", type=float, default=0.8)
     cur.add_argument("--val-ratio", type=float, default=0.1)
     cur.add_argument("--test-ratio", type=float, default=0.1)
+    cur.add_argument("--class-balance", choices=["random", "uniform"], default="uniform")
+    cur.add_argument("--min-val-docs", type=int, default=8)
+    cur.add_argument("--min-test-docs", type=int, default=8)
     cur.add_argument("--log-every-pages", type=int, default=200)
     cur.add_argument("--train-epochs", type=int, default=5)
     cur.add_argument("--train-batch-size", type=int, default=96)
@@ -143,6 +154,9 @@ def main() -> int:
             val_ratio=args.val_ratio,
             test_ratio=args.test_ratio,
             log_every_pages=args.log_every_pages,
+            class_balance=args.class_balance,
+            min_val_docs=args.min_val_docs,
+            min_test_docs=args.min_test_docs,
         )
         return 0
 
@@ -179,6 +193,8 @@ def main() -> int:
             train_split=args.train_split,
             val_split_name=args.val_split_name,
             log_every_batches=args.log_every_batches,
+            early_stopping_patience=args.early_stopping_patience,
+            early_stopping_min_delta=args.early_stopping_min_delta,
         )
         return 0
 
@@ -205,6 +221,9 @@ def main() -> int:
             val_ratio=args.val_ratio,
             test_ratio=args.test_ratio,
             log_every_pages=args.log_every_pages,
+            class_balance=args.class_balance,
+            min_val_docs=args.min_val_docs,
+            min_test_docs=args.min_test_docs,
             train_epochs=args.train_epochs,
             train_batch_size=args.train_batch_size,
             train_lr=args.train_lr,
@@ -233,6 +252,9 @@ def main() -> int:
             val_ratio=args.val_ratio,
             test_ratio=args.test_ratio,
             log_every_pages=args.log_every_pages,
+            class_balance=args.class_balance,
+            min_val_docs=args.min_val_docs,
+            min_test_docs=args.min_test_docs,
             train_epochs=args.train_epochs,
             train_batch_size=args.train_batch_size,
             train_lr=args.train_lr,

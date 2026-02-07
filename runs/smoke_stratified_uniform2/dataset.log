@@ -1,0 +1,74 @@
+[logging] tee enabled log_file=/Users/helios/rotation-detection/runs/smoke_stratified_uniform2/dataset.log
+[dataset] run_dir=/Users/helios/rotation-detection/runs/smoke_stratified_uniform2
+[dataset] multiprocessing start_method=spawn workers=12 max_workers_cap=12
+[dataset] documents:   0%|          | 0/49 [00:00<?, ?doc/s]
+[dataset] pages:   0%|          | 0/49 [00:00<?, ?page/s][A[dataset] done split=train doc_id=EW-2-22696428-1213547-2-f6bd932709 pages=1 elapsed_s=0.1
+[dataset] done split=train doc_id=EW-2-22697100-11c88f020b pages=1 elapsed_s=0.2
+[dataset] done split=train doc_id=EW-2-22744759-1212266-1-d8f40c6802 pages=1 elapsed_s=0.1
+[dataset] done split=train doc_id=EW-2-22696428-1213547-1-851faf7efd pages=1 elapsed_s=0.2
+[dataset] documents:  10%|█         | 5/49 [00:00<00:06,  6.35doc/s]
+[dataset] pages:  10%|█         | 5/49 [00:00<00:06,  6.35page/s][A[dataset] done split=train doc_id=EW-2-22749958-1210130-1-1452392dd3 pages=1 elapsed_s=0.5
+[dataset] done split=train doc_id=EW-2-22734634-1209455-2-37425b0857 pages=1 elapsed_s=0.7
+[dataset] done split=train doc_id=EW-2-22714892-06e937c20d pages=1 elapsed_s=0.8
+[dataset] done split=train doc_id=EW-2-22749098-1210016-1-7ef775b29d pages=1 elapsed_s=0.8
+[dataset] done split=train doc_id=EW-2-22749958-1210130-2-76e9bb1536 pages=1 elapsed_s=0.3
+[dataset] done split=val doc_id=EW-2-22756050-1214632-1-e6b67e0a69 pages=1 elapsed_s=0.1
+[dataset] done split=train doc_id=EW-2-22697411-e1a0161a7a pages=1 elapsed_s=1.0
+[dataset] done split=train doc_id=EW-2-22756050-1214632-2-b6f4dae6e0 pages=1 elapsed_s=0.1
+[dataset] documents:  27%|██▋       | 13/49 [00:01<00:03, 10.32doc/s]
+[dataset] pages:  27%|██▋       | 13/49 [00:01<00:03, 10.32page/s][A[dataset] done split=val doc_id=EW-2-22750671-1213654-1-01f584dc58 pages=1 elapsed_s=0.5
+[dataset] done split=train doc_id=EW-2-22762720-1211783-1-0a483f586b pages=1 elapsed_s=0.2
+[dataset] done split=train doc_id=EW-2-22762720-1211783-2-4856d68dd3 pages=1 elapsed_s=0.1
+[dataset] done split=test doc_id=EW-2-22697155-5c367b1d0d pages=1 elapsed_s=1.4
+[dataset] done split=test doc_id=EW-2-22765187-1212241-1-30bcaf7bba pages=1 elapsed_s=0.1
+[dataset] done split=val doc_id=EW-2-22765187-1212241-2-431c70469e pages=1 elapsed_s=0.2
+[dataset] documents:  39%|███▉      | 19/49 [00:02<00:03,  7.83doc/s]
+[dataset] pages:  39%|███▉      | 19/49 [00:02<00:03,  7.83page/s][A[dataset] done split=train doc_id=EW-2-22749098-1210016-2-bc0f64f4b3 pages=1 elapsed_s=2.1
+[dataset] done split=train doc_id=EW-2-22761468-1215221-1-629385f3e2 pages=1 elapsed_s=1.7
+[dataset] done split=train doc_id=EW-2-22771512-1211938-2-3ac2f8cdf8 pages=1 elapsed_s=0.8
+[dataset] done split=train doc_id=EW-2-22772688-1214689-1-5b54ca5e16 pages=1 elapsed_s=0.5
+[dataset] done split=train doc_id=EW-2-22771512-1211938-1-f02ebffa0c pages=1 elapsed_s=1.5
+[dataset] documents:  49%|████▉     | 24/49 [00:03<00:03,  6.26doc/s]
+[dataset] pages:  49%|████▉     | 24/49 [00:03<00:03,  6.26page/s][A[dataset] done split=train doc_id=EW-2-22765157-1213045-2-1233915842 pages=1 elapsed_s=2.0
+[dataset] done split=train doc_id=EW-2-22774058-1216031-2-6d0e5d1210 pages=1 elapsed_s=0.1
+[dataset] done split=train doc_id=EW-2-22734634-1209455-1-86a491ace2 pages=1 elapsed_s=3.9
+[dataset] done split=test doc_id=EW-2-22772688-1214689-2-11c3317139 pages=1 elapsed_s=0.9
+[dataset] documents:  57%|█████▋    | 28/49 [00:04<00:03,  6.15doc/s]
+[dataset] pages:  57%|█████▋    | 28/49 [00:04<00:03,  6.15page/s][A[dataset] done split=val doc_id=EW-2-22777487-1216213-1-d1cce6f3b0 pages=1 elapsed_s=0.7
+[dataset] done split=train doc_id=EW-2-22750671-1213654-2-e5ab33af9e pages=1 elapsed_s=3.2
+[dataset] done split=train doc_id=EW-2-22774058-1216031-1-ad9cd6f12f pages=1 elapsed_s=0.9
+[dataset] done split=train doc_id=EW-2-22765157-1213045-1-ebf365858e pages=1 elapsed_s=2.9
+[dataset] done split=test doc_id=EW-2-22781816-1212678-2-637b148bcc pages=1 elapsed_s=0.2
+[dataset] done split=train doc_id=EW-2-22761468-1215221-2-662656a616 pages=1 elapsed_s=3.2
+[dataset] done split=train doc_id=EW-2-22777487-1216213-2-6a7894abea pages=1 elapsed_s=0.8
+[dataset] done split=train doc_id=EW-2-22784089-1215142-2-769ec9e886 pages=1 elapsed_s=0.3
+[dataset] documents:  73%|███████▎  | 36/49 [00:04<00:01,  8.36doc/s]
+[dataset] pages:  73%|███████▎  | 36/49 [00:04<00:01,  8.36page/s][A[dataset] done split=train doc_id=EW-20-22771609-1213135-1-122f5960c6 pages=1 elapsed_s=0.3
+[dataset] done split=train doc_id=EW-2-22783818-1214336-1-470830634d pages=1 elapsed_s=0.5
+[dataset] done split=train doc_id=EW-2-22784089-1215142-1-a12f5b178d pages=1 elapsed_s=0.5
+[dataset] done split=val doc_id=EW-20-22771609-1213135-2-376e8a0009 pages=1 elapsed_s=0.4
+[dataset] done split=train doc_id=EW-2-22696801-705c326024 pages=1 elapsed_s=5.4
+[dataset] documents:  84%|████████▎ | 41/49 [00:06<00:01,  6.07doc/s]
+[dataset] pages:  84%|████████▎ | 41/49 [00:06<00:01,  6.07page/s][A[dataset] done split=train doc_id=EW-2-22783818-1214336-2-f1ca841e7c pages=1 elapsed_s=1.9
+[dataset] done split=train doc_id=BI-Serrano-medical-records-_p0001-0060_p-41984ec981 pages=1 elapsed_s=1.6
+[dataset] done split=train doc_id=EW-2-22781816-1212678-1-cb668b7735 pages=1 elapsed_s=3.1
+[dataset] done split=test doc_id=EW-2-22744759-1212266-2-100ef63551 pages=1 elapsed_s=7.1
+[dataset] documents:  92%|█████████▏| 45/49 [00:08<00:01,  3.88doc/s]
+[dataset] pages:  92%|█████████▏| 45/49 [00:08<00:01,  3.88page/s][A[dataset] done split=train doc_id=EW-2-22626634-bd3f678897 pages=1 elapsed_s=8.1
+[dataset] done split=train doc_id=EW-2-22784200-1215157-1-ce3d96da77 pages=1 elapsed_s=7.6
+[dataset] done split=train doc_id=EW-2-22784200-1215157-2-5432dbdf7d pages=1 elapsed_s=10.2
+[dataset] documents:  96%|█████████▌| 47/49 [00:20<00:00,  3.88doc/s]
+[dataset] pages:  96%|█████████▌| 47/49 [00:20<00:00,  3.88page/s][A[dataset] documents:  98%|█████████▊| 48/49 [00:25<00:01,  1.39s/doc]
+[dataset] pages:  98%|█████████▊| 48/49 [00:25<00:01,  1.39s/page][A[dataset] done split=train doc_id=BI-Serrano-medical-records-512b805074 pages=1 elapsed_s=20.7
+[dataset] documents: 100%|██████████| 49/49 [02:44<00:00, 13.75s/doc]
+[dataset] pages: 100%|██████████| 49/49 [02:44<00:00, 13.75s/page][A[dataset] done split=train doc_id=6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d pages=1 elapsed_s=164.0
+[dataset] documents: 100%|██████████| 49/49 [02:44<00:00,  3.35s/doc]
+[dataset] pages: 100%|██████████| 49/49 [02:44<00:00,  3.35s/page]
+[dataset] completed total_pages=49 elapsed_s=164.3 avg_pps=0.30
+Dataset created: /Users/helios/rotation-detection/runs/smoke_stratified_uniform2
+Documents: 49
+Split train: docs=39 pages=39
+Split val: docs=5 pages=5
+Split test: docs=5 pages=5
+All labels: /Users/helios/rotation-detection/runs/smoke_stratified_uniform2/labels.all.jsonl
+Manifest: /Users/helios/rotation-detection/runs/smoke_stratified_uniform2/manifest.json

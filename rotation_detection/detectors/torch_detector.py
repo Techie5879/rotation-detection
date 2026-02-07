@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import math
 import random
+import time
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -44,6 +45,10 @@ def _augment_image(image: Image.Image, rng: random.Random) -> Image.Image:
         out = ImageEnhance.Brightness(out).enhance(rng.uniform(0.82, 1.18))
     if rng.random() < 0.6:
         out = ImageEnhance.Contrast(out).enhance(rng.uniform(0.82, 1.18))
+    if rng.random() < 0.4:
+        out = ImageEnhance.Color(out).enhance(rng.uniform(0.85, 1.15))
+    if rng.random() < 0.25:
+        out = ImageEnhance.Sharpness(out).enhance(rng.uniform(0.8, 1.3))
     if rng.random() < 0.25:
         out = out.filter(ImageFilter.GaussianBlur(radius=rng.uniform(0.0, 0.8)))
     return out
@@ -61,6 +66,8 @@ class TrainConfig:
     num_workers: int
     device: str
     log_every_batches: int
+    early_stopping_patience: int
+    early_stopping_min_delta: float
 
 
 def select_device(device: str):
@@ -249,7 +256,11 @@ def _run_epoch(
     )
 
     try:
+        last_batch_end = time.perf_counter()
         for batch_idx, (images, labels) in enumerate(progress, start=1):
+            waited_s = time.perf_counter() - last_batch_end
+            batch_started = time.perf_counter()
+
             images = images.to(device)
             labels = labels.to(device)
 
@@ -272,6 +283,14 @@ def _run_epoch(
             running_acc = total_correct / max(total_count, 1)
             progress.set_postfix(loss=f"{running_loss:.4f}", acc=f"{running_acc:.4f}")
 
+            batch_elapsed_s = time.perf_counter() - batch_started
+            if waited_s > 20.0 or batch_elapsed_s > 20.0:
+                mem = snapshot_memory(device=device)
+                print(
+                    f"[{phase_name}] epoch={epoch:03d} batch={batch_idx}/{total_batches} "
+                    f"slow wait_s={waited_s:.1f} step_s={batch_elapsed_s:.1f} {format_memory(mem)}"
+                )
+
             should_log = (
                 log_every_batches > 0
                 and (batch_idx % log_every_batches == 0 or batch_idx == total_batches)
@@ -282,6 +301,8 @@ def _run_epoch(
                     f"[{phase_name}] epoch={epoch:03d} batch={batch_idx}/{total_batches} "
                     f"loss={running_loss:.4f} acc={running_acc:.4f} {format_memory(mem)}"
                 )
+
+            last_batch_end = time.perf_counter()
     finally:
         progress.close()
 
@@ -374,6 +395,7 @@ def train_orientation_model(
     best_val_acc = -1.0
     best_val_loss = float("inf")
     history: list[dict[str, Any]] = []
+    epochs_since_improvement = 0
 
     checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -419,12 +441,14 @@ def train_orientation_model(
         )
         print(f"[train] epoch={epoch:03d} {format_memory(row['memory'])}")
 
-        is_better = (val_acc > best_val_acc) or (
-            abs(val_acc - best_val_acc) < 1e-9 and val_loss < best_val_loss
+        is_better = (val_acc > best_val_acc + config.early_stopping_min_delta) or (
+            abs(val_acc - best_val_acc) <= config.early_stopping_min_delta
+            and val_loss < best_val_loss - config.early_stopping_min_delta
         )
         if is_better:
             best_val_acc = val_acc
             best_val_loss = val_loss
+            epochs_since_improvement = 0
             torch.save(
                 {
                     "model_state_dict": model.state_dict(),
@@ -444,10 +468,22 @@ def train_orientation_model(
                         "num_workers": config.num_workers,
                         "effective_num_workers": effective_num_workers,
                         "log_every_batches": config.log_every_batches,
+                        "early_stopping_patience": config.early_stopping_patience,
+                        "early_stopping_min_delta": config.early_stopping_min_delta,
                     },
                 },
                 checkpoint_path,
             )
+        else:
+            epochs_since_improvement += 1
+            if config.early_stopping_patience > 0:
+                print(
+                    f"[train] no improvement for {epochs_since_improvement} epoch(s); "
+                    f"patience={config.early_stopping_patience}"
+                )
+                if epochs_since_improvement >= config.early_stopping_patience:
+                    print(f"[train] early stopping at epoch={epoch:03d}")
+                    break
 
     print(f"best_val_accuracy={best_val_acc:.4f} checkpoint={checkpoint_path}")
     log_memory("[train] done", device=device)

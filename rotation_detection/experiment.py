@@ -37,6 +37,9 @@ def run_experiment(
     train_device: str,
     log_every_batches: int,
     run_heuristic: bool,
+    class_balance: str = "uniform",
+    min_val_docs: int = 8,
+    min_test_docs: int = 8,
 ) -> Path:
     """Run the full benchmark pipeline with heuristic and torch detectors."""
     root = Path(output_root).expanduser().resolve()
@@ -62,6 +65,9 @@ def run_experiment(
             val_ratio=val_ratio,
             test_ratio=test_ratio,
             log_every_pages=log_every_pages,
+            class_balance=class_balance,
+            min_val_docs=min_val_docs,
+            min_test_docs=min_test_docs,
         )
 
         root_manifest_path = dataset_dir / "manifest.json"

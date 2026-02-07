@@ -43,6 +43,9 @@ def run_curriculum(
     stop_on_regression: bool,
     regression_tolerance: float,
     run_heuristic: bool,
+    class_balance: str = "uniform",
+    min_val_docs: int = 8,
+    min_test_docs: int = 8,
 ) -> Path:
     """Run staged experiments with increasing page caps and live logs."""
     root = Path(output_root).expanduser().resolve()
@@ -85,6 +88,9 @@ def run_curriculum(
                 val_ratio=val_ratio,
                 test_ratio=test_ratio,
                 log_every_pages=log_every_pages,
+                class_balance=class_balance,
+                min_val_docs=min_val_docs,
+                min_test_docs=min_test_docs,
                 train_epochs=train_epochs,
                 train_batch_size=train_batch_size,
                 train_lr=train_lr,
@@ -150,6 +156,9 @@ def run_curriculum(
             "stop_on_regression": stop_on_regression,
             "regression_tolerance": regression_tolerance,
             "run_heuristic": run_heuristic,
+            "class_balance": class_balance,
+            "min_val_docs": min_val_docs,
+            "min_test_docs": min_test_docs,
             "memory_end": snapshot_memory(),
         }
         summary_path = curriculum_dir / "curriculum_summary.json"

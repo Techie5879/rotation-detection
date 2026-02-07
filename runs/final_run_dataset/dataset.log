@@ -174,4 +174,28 @@
 [dataset] pages:  20%|██        | 6555/32667 [03:24<32:24, 13.43page/s][A[dataset] done split=train doc_id=EW-2-22784200-1215157-1-ce3d96da77 pages=502 elapsed_s=117.0
 [dataset] progress overall=6555/32667 rate_pps=32.12
 
-[dataset] pages:  20%|██        | 6555/32667 [03:40<32:24, 13.43page/s][A
+[dataset] pages:  20%|██        | 6555/32667 [03:40<32:24, 13.43page/s][A[dataset] documents:  94%|█████████▍| 46/49 [04:40<01:51, 37.26s/doc]
+[dataset] pages:  26%|██▌       | 8515/32667 [04:40<19:21, 20.79page/s][A[dataset] done split=val doc_id=BI-Serrano-medical-records-512b805074 pages=1960 elapsed_s=187.4
+[dataset] progress overall=8515/32667 rate_pps=30.34
+
+[dataset] pages:  26%|██▌       | 8515/32667 [05:00<19:21, 20.79page/s][A[dataset] documents:  96%|█████████▌| 47/49 [06:28<01:56, 58.04s/doc]
+[dataset] pages:  28%|██▊       | 9021/32667 [06:28<32:54, 11.98page/s][A[dataset] done split=train doc_id=EW-2-22744759-1212266-2-100ef63551 pages=506 elapsed_s=387.5
+[dataset] progress overall=9021/32667 rate_pps=23.25
+
+[dataset] pages:  28%|██▊       | 9021/32667 [06:40<32:54, 11.98page/s][A[dataset] documents:  98%|█████████▊| 48/49 [07:52<01:05, 65.95s/doc]
+[dataset] pages:  33%|███▎      | 10682/32667 [07:52<24:35, 14.90page/s][A[dataset] done split=test doc_id=EW-2-22784200-1215157-2-5432dbdf7d pages=1661 elapsed_s=382.7
+[dataset] progress overall=10682/32667 rate_pps=22.60
+
+[dataset] pages:  33%|███▎      | 10682/32667 [08:10<24:35, 14.90page/s][A[dataset] documents: 100%|██████████| 49/49 [32:15<00:00, 482.39s/doc]
+[dataset] pages: 100%|██████████| 32667/32667 [32:15<00:00, 15.02page/s][A[dataset] done split=train doc_id=6c199e86-deaf-48f0-ab1a-c21b10a17c3e-073482be5d pages=21985 elapsed_s=1934.9
+[dataset] progress overall=32667/32667 rate_pps=16.88
+[dataset] documents: 100%|██████████| 49/49 [32:16<00:00, 39.52s/doc] 
+[dataset] pages: 100%|██████████| 32667/32667 [32:16<00:00, 16.87page/s]
+[dataset] completed total_pages=32667 elapsed_s=1936.7 avg_pps=16.87
+Dataset created: /Users/helios/rotation-detection/runs/final_run_dataset
+Documents: 49
+Split train: docs=39 pages=28739
+Split val: docs=5 pages=2099
+Split test: docs=5 pages=1829
+All labels: /Users/helios/rotation-detection/runs/final_run_dataset/labels.all.jsonl
+Manifest: /Users/helios/rotation-detection/runs/final_run_dataset/manifest.json

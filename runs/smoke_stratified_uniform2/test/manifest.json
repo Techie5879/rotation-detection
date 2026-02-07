@@ -1,0 +1,97 @@
+{
+  "angles": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "created_at_utc": "20260207T005259Z",
+  "dataset_id": "smoke_stratified_uniform2",
+  "documents": [
+    {
+      "doc_id": "EW-2-22697155-5c367b1d0d",
+      "output_pdf": "pdfs/EW-2-22697155-5c367b1d0d.pdf",
+      "page_count": 1,
+      "pages": [
+        {
+          "height": 2533,
+          "image_path": "pages/EW-2-22697155-5c367b1d0d_p00017.png",
+          "page_index": 16,
+          "rotation_deg": 270,
+          "width": 3378
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/EW-2-22697155/EW-2-22697155.pdf",
+      "split": "test"
+    },
+    {
+      "doc_id": "EW-2-22744759-1212266-2-100ef63551",
+      "output_pdf": "pdfs/EW-2-22744759-1212266-2-100ef63551.pdf",
+      "page_count": 1,
+      "pages": [
+        {
+          "height": 2537,
+          "image_path": "pages/EW-2-22744759-1212266-2-100ef63551_p00119.png",
+          "page_index": 118,
+          "rotation_deg": 270,
+          "width": 3382
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/gcs-ew-ny-dump/extracted/EW-2-22744759-1212266-Sorted/EW-2-22744759-1212266-2.pdf",
+      "split": "test"
+    },
+    {
+      "doc_id": "EW-2-22765187-1212241-1-30bcaf7bba",
+      "output_pdf": "pdfs/EW-2-22765187-1212241-1-30bcaf7bba.pdf",
+      "page_count": 1,
+      "pages": [
+        {
+          "height": 595,
+          "image_path": "pages/EW-2-22765187-1212241-1-30bcaf7bba_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 270,
+          "width": 842
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/gcs-ew-ny-dump/extracted/EW-2-22765187-1212241-Sorted/EW-2-22765187-1212241-1.pdf",
+      "split": "test"
+    },
+    {
+      "doc_id": "EW-2-22772688-1214689-2-11c3317139",
+      "output_pdf": "pdfs/EW-2-22772688-1214689-2-11c3317139.pdf",
+      "page_count": 1,
+      "pages": [
+        {
+          "height": 792,
+          "image_path": "pages/EW-2-22772688-1214689-2-11c3317139_p00093.png",
+          "page_index": 92,
+          "rotation_deg": 180,
+          "width": 612
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/gcs-ew-ny-dump/extracted/EW-2-22772688-1214689-Sorted/EW-2-22772688-1214689-2.pdf",
+      "split": "test"
+    },
+    {
+      "doc_id": "EW-2-22781816-1212678-2-637b148bcc",
+      "output_pdf": "pdfs/EW-2-22781816-1212678-2-637b148bcc.pdf",
+      "page_count": 1,
+      "pages": [
+        {
+          "height": 792,
+          "image_path": "pages/EW-2-22781816-1212678-2-637b148bcc_p00007.png",
+          "page_index": 6,
+          "rotation_deg": 180,
+          "width": 612
+        }
+      ],
+      "source_pdf": "/Users/helios/rotation-detection/test_pdfs/gcs-ew-ny-dump/extracted/EW-2-22781816-1212678-Sorted/EW-2-22781816-1212678-2.pdf",
+      "split": "test"
+    }
+  ],
+  "dpi": 72,
+  "labels_path": "labels.jsonl",
+  "rotate_probability": 0.7,
+  "seed": 42,
+  "split": "test"
+}
