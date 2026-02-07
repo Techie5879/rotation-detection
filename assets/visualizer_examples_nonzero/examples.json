@@ -1,0 +1,74 @@
+[
+  {
+    "example": 1,
+    "doc_id": "EW-2-22749717-1213901-2-dd17fec400",
+    "page_index": 23,
+    "bucket": "best_doc",
+    "correct": true,
+    "true_rotation_deg": 270,
+    "predicted_rotation_deg": 270,
+    "confidence": 0.9949290752410889,
+    "before": "assets/visualizer_examples_nonzero/example_01_before.png",
+    "after": "assets/visualizer_examples_nonzero/example_01_after.png"
+  },
+  {
+    "example": 2,
+    "doc_id": "EW-2-22774058-1216031-1-ad9cd6f12f",
+    "page_index": 1,
+    "bucket": "best_doc",
+    "correct": true,
+    "true_rotation_deg": 180,
+    "predicted_rotation_deg": 180,
+    "confidence": 0.9883589744567871,
+    "before": "assets/visualizer_examples_nonzero/example_02_before.png",
+    "after": "assets/visualizer_examples_nonzero/example_02_after.png"
+  },
+  {
+    "example": 3,
+    "doc_id": "EW-2-22749098-1210016-2-bc0f64f4b3",
+    "page_index": 146,
+    "bucket": "global_fill",
+    "correct": true,
+    "true_rotation_deg": 270,
+    "predicted_rotation_deg": 270,
+    "confidence": 0.9989314675331116,
+    "before": "assets/visualizer_examples_nonzero/example_03_before.png",
+    "after": "assets/visualizer_examples_nonzero/example_03_after.png"
+  },
+  {
+    "example": 4,
+    "doc_id": "EW-2-22714892-06e937c20d",
+    "page_index": 114,
+    "bucket": "worst_doc",
+    "correct": true,
+    "true_rotation_deg": 90,
+    "predicted_rotation_deg": 90,
+    "confidence": 0.9986464381217957,
+    "before": "assets/visualizer_examples_nonzero/example_04_before.png",
+    "after": "assets/visualizer_examples_nonzero/example_04_after.png"
+  },
+  {
+    "example": 5,
+    "doc_id": "EW-2-22772688-1214689-2-11c3317139",
+    "page_index": 56,
+    "bucket": "worst_doc",
+    "correct": true,
+    "true_rotation_deg": 270,
+    "predicted_rotation_deg": 270,
+    "confidence": 0.9887719750404358,
+    "before": "assets/visualizer_examples_nonzero/example_05_before.png",
+    "after": "assets/visualizer_examples_nonzero/example_05_after.png"
+  },
+  {
+    "example": 6,
+    "doc_id": "EW-2-22697155-5c367b1d0d",
+    "page_index": 106,
+    "bucket": "worst_doc",
+    "correct": false,
+    "true_rotation_deg": 180,
+    "predicted_rotation_deg": 90,
+    "confidence": 0.6514086127281189,
+    "before": "assets/visualizer_examples_nonzero/example_06_before.png",
+    "after": "assets/visualizer_examples_nonzero/example_06_after.png"
+  }
+]
