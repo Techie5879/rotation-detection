@@ -1,6 +1,6 @@
 # Rotation Detection Pipeline (Metadata-Agnostic, No Tesseract OSD)
 
-This is an attempt at vibe prompting, vibe coding, vibe training and vibe fixing this. I have barely read code of this repo - have just skimmed through AGENTS.md and some of the train scripts a little bit. Maybe "vibe" isn't exactly right because this involved hella hella prompting to get this almost right the first try. This isn't one shot but is damn close lmao.
+This is an attempt at vibe prompting, vibe coding, vibe training and vibe fixing this. I have barely read any of the code in this repo - have just skimmed through AGENTS.md and some of the train scripts a little bit. Maybe "vibe" isn't exactly right because this involved hella hella prompting to get this almost right the first try. This isn't one shot but is damn close lmao.
 Most of the runs/tests are also autonomous. Maybe this works? We shall see.
 
 > "Just accept AI Love into your heart and die from the greatest increase of productivity ever."
